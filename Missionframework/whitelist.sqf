@@ -1,3 +1,7 @@
+#if __has_include("/serverscripts/zeus/guids.sqf")
+// use existing guids file on server
+#else
+// if file does not exist on server than do the following below.
 // Here you can allow people to use the commander slot. It will only be enforced if you activate the related mission option.
 // When editing be careful with quotes and commas
 
@@ -10,6 +14,7 @@ GRLIB_whitelisted_tags = [
 // Allowed individual players based on their SteamID64. This is the most secure way to do.
 // For example: "76561198016642627"
 // To know that information: https://steamid.io/
+
 GRLIB_whitelisted_steamids = [
 
 ];
@@ -19,3 +24,6 @@ GRLIB_whitelisted_steamids = [
 GRLIB_whitelisted_names = [
 
 ];
+#endif
+
+

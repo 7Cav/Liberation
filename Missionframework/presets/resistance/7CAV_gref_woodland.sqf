@@ -1,5 +1,3 @@
-// 7CAV custom variant for Greenfor
-
 /*
     Needed Mods:
     - RHS: AFRF
