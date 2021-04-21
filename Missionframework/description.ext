@@ -21,11 +21,11 @@
 class Header {
     gameType = "CTI";
     minPlayers = 1;
-    maxPlayers = 34;
+    maxPlayers = 67;
 };
 
 // Name of Mission author(s) and contributors. Obviously you can only add and not (!) remove someone.
-author = "[GREUH] Zbug & McKeewa, KP Liberation Dev Team";
+author = "[GREUH] Zbug & McKeewa, KP Liberation Dev Team, 7Cav";
 
 
 /*
@@ -40,7 +40,7 @@ briefingName = $STR_MISSION_TITLE;
 overviewPicture = "res\lib.paa";
 
 // Text to be displayed below the overviewPicture on the mission selection screen
-overviewText = "www.killahpotatoes.de";
+overviewText = "7cav.us";
 
 
 /*
@@ -56,8 +56,9 @@ onLoadName = $STR_MISSION_TITLE;
 loadScreen = "res\lib.paa";
 
 // Displays a message while the mission is loading below the loadScreen picture.
-onLoadMission = "www.killahpotatoes.de";
+onLoadMission = "7cav.us";
 
+cba_settings_hasSettingsFile = 1;
 
 /*
     ----- Respawn -----

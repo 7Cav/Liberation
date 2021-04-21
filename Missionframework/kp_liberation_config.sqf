@@ -109,7 +109,7 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 28 = SFP (Woodland)
 29 = SFP (Desert)
 30 = LDF (Contact DLC) */
-KP_liberation_preset_blufor = 0;
+KP_liberation_preset_blufor = 6;
 
 /* OPFOR preset:
 0  = Custom (default vanilla CSAT)
@@ -133,7 +133,7 @@ KP_liberation_preset_blufor = 0;
 18 = CUP Chernarus Defense Force
 19 = CUP British Armed Forces (Desert)
 20 = CUP British Armed Forces (Woodland) */
-KP_liberation_preset_opfor = 0;
+KP_liberation_preset_opfor = 2;
 
 /* Resistance preset:
 0  = Custom (default vanilla FIA)
@@ -145,7 +145,7 @@ KP_liberation_preset_opfor = 0;
 6  = Unsung
 7  = CUP Takistani Locals
 8  = CUP National Party of Chernarus */
-KP_liberation_preset_resistance = 0;
+KP_liberation_preset_resistance = 2;
 
 /* Civilians preset:
 0  = Custom (default vanilla)
@@ -180,11 +180,11 @@ KP_liberation_arsenal = 0;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */
-KP_liberation_fuel_neutral = 180;
+KP_liberation_fuel_neutral = 120;
 // Time in minutes till a full tank depletes whilst the vehicle is driving below max speed.
-KP_liberation_fuel_normal = 90;
+KP_liberation_fuel_normal = 60;
 // Time in minutes till a full tank depletes whilst the vehicle is driving at max speed.
-KP_liberation_fuel_max = 45;
+KP_liberation_fuel_max = 30;
 
 /* - Gameplay constant settings.
 Name of the savegame namespace inside of the [ServerProfileName].vars.Arma3Profile file. */
@@ -207,7 +207,7 @@ GRLIB_halo_altitude = 2500;                                             // Altit
 GRLIB_secondary_missions_costs = [15, 10, 8];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.6;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
 GRLIB_recycling_percentage = 0.5;                                       // Percentage of resources you get back from recycling.
-KP_liberation_production_interval = 30;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
+KP_liberation_production_interval = 25;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
 GRLIB_sector_size = 1000;                                               // Range to activate a sector.
 GRLIB_capture_size = 175;                                               // Range to capture a sector.
@@ -225,11 +225,11 @@ GRLIB_sector_cap = 180;                                                 // Cap f
 GRLIB_battlegroup_cap = 150;                                            // Cap for enemy battlegroups.
 GRLIB_patrol_cap = 150;                                                 // Cap for enemy patrols.
 
-KP_liberation_cr_kill_penalty = 5;                                      // Civil Reputation penalty for killing a civilian.
-KP_liberation_cr_building_penalty = 3;                                  // Civil Reputation penalty for destroying/damaging a building.
-KP_liberation_cr_vehicle_penalty = 2;                                   // Civil Reputation penalty for stealing a civilian vehicle.
+KP_liberation_cr_kill_penalty = 1;                                      // Civil Reputation penalty for killing a civilian.
+KP_liberation_cr_building_penalty = 1;                                  // Civil Reputation penalty for destroying/damaging a building.
+KP_liberation_cr_vehicle_penalty = 1;                                   // Civil Reputation penalty for stealing a civilian vehicle.
 KP_liberation_cr_resistance_penalty = 3;                                // Civil Reputation penalty for killing a friendly resistance soldier.
-KP_liberation_cr_sector_gain = 5;                                       // Civil Reputation gain for liberate a sector.
+KP_liberation_cr_sector_gain = 20;                                       // Civil Reputation gain for liberate a sector.
 KP_liberation_cr_wounded_chance = 35;                                   // Chance (0-100) that there are wounded civilians right after capturing a sector.
 KP_liberation_cr_wounded_gain = 2;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
 
