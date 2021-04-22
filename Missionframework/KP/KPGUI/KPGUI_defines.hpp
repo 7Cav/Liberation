@@ -4,7 +4,7 @@
     File: KPGUI_defines.hpp
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-07-10
-    Last Update: 2020-04-10
+    Last Update: 2020-10-01
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -126,6 +126,7 @@
 
 /*
     --- Left panel dialog components ---
+    (X from 0.0025 - 0.2025, Y from 0.0025 - 0.9975)
 */
 
 #define KP_X_VAL_LP                     0.0025

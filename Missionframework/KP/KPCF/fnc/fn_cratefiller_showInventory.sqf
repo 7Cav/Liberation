@@ -1,15 +1,20 @@
 #include "..\ui\defines.hpp"
 /*
     KPLIB_fnc_cratefiller_showInventory
+
     File: fn_cratefiller_showInventory.sqf
     Author: KP Liberation Dev Team - https://github.com/KillahPotatoes
     Date: 2019-04-06
     Last Update: 2020-09-23
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
+
+
     Description:
         Displays the items of the active storage.
+
     Parameter(s):
         NONE
+
     Returns:
         Function reached the end [BOOL]
 */

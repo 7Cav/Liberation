@@ -2,15 +2,20 @@
 #include "script_component.hpp"
 /*
     KPLIB_fnc_cratefiller_addEquipment
+
     File: fn_cratefiller_addEquipment.sqf
     Author: KP Liberation Dev Team - https://github.com/KillahPotatoes
     Date: 2019-04-06
     Last Update: 2020-09-23
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
+
+
     Description:
         Adds the given amount of the selected item to the inventory.
+
     Parameter(s):
         _controlId - Id of the control which is selected [NUMBER, defaults to 0]
+
     Returns:
         Function reached the end [BOOL]
 */

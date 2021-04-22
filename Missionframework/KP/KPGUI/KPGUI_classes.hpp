@@ -4,7 +4,7 @@
     File: KPGUI_classes.hpp
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-09-13
-    Last Update: 2020-05-09
+    Last Update: 2020-10-01
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -437,6 +437,7 @@ class KPGUI_PRE_ListBox {
     maxHistoryDelay = 1;
 };
 
+// ListNBox
 class KPGUI_PRE_ListNBox {
     deletable = 0;
     fade = 0;
@@ -1098,7 +1099,6 @@ class KPGUI_PRE_DialogButton_LeftPanel: KPGUI_PRE_Button {
     w = KP_GETWPLAIN(KP_WIDTH_VAL_LP,1);
 };
 
-
 /*
     --- Right panel sized classes ---
 */
@@ -1206,7 +1206,7 @@ class KPGUI_PRE_DialogButtonSR: KPGUI_PRE_Button {
 */
 
 class KPGUI_PRE_LogoRightCorner: KPGUI_PRE_PictureRatio {
-    text = "KP\KPGUI\res\kp512_CA.paa";
+    text = "KP\KPGUI\res\kp512_ca.paa";
     x = "safezoneX + safezoneW - 5.3 * (((safezoneW / safezoneH) min 1.2) / 40)";
     y = "safezoneY + safezoneH - 4.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
     w = "3.5 * (((safezoneW / safezoneH) min 1.2) / 40)";
