@@ -352,21 +352,19 @@ if (player == ([] call KPLIB_fnc_getCommander)) then {
     ];
 };
 
-// Create FOB clearance
+// Drop crate
 _player addAction [
-    ["<t color='#FFFF00'>", localize "STR_CLEARANCE_ACTION", "</t>"] joinString "",
-    {[player getVariable ["KPLIB_fobPos", [0, 0, 0]], GRLIB_fob_range * 0.9, true] call KPLIB_fnc_createClearanceConfirm;},
+    ["<t color='#FFFF00'>", localize "STR_ACTION_CRATE_DROP", "</t>"] joinString "",
+    {detach (((attachedObjects player) select {(typeOf _x) in [KPLIB_b_crateSupply, KPLIB_b_crateAmmo, KPLIB_b_crateFuel]}) select 0)},
     nil,
-    -850,
-    false,
+    -504,
     true,
+    false,
     "",
     "
-        _originalTarget getVariable ['KPLIB_hasDirectAccess', false]
-        && {isNull (objectParent _originalTarget)}
-        && {alive _originalTarget}
-        && {_originalTarget getVariable ['KPLIB_fobDist', 99999] < (GRLIB_fob_range * 0.8)}
+        alive _originalTarget
         && {build_confirmed isEqualTo 0}
+        && {!((((attachedObjects _originalTarget) apply {typeOf _x}) arrayIntersect [KPLIB_b_crateSupply, KPLIB_b_crateAmmo, KPLIB_b_crateFuel]) isEqualTo [])}
     "
 ];
 

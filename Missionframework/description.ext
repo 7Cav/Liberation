@@ -248,4 +248,4 @@ class CfgTaskDescriptions {
 #include "GREUH\UI\GREUH_interface.hpp"
 #include "KP\KPGUI\KPGUI_defines.hpp"
 #include "KP\KPPLM\ui\KPPLM_dialog.hpp"
-
+#include "KP\KPCF\ui.hpp"
