@@ -198,8 +198,10 @@ KPLIB_b_vehAir = [
     ["USAF_MQ9",500,750,200],                                           // MQ-9 Reaper
     ["I_Plane_Fighter_03_dynamicLoadout_F",500,400,350],                // A-143 Buzzard
     ["B_Plane_CAS_01_dynamicLoadout_F",1000,800,400],                   // A-164 Wipeout (CAS)
-    ["RHS_A10",1000,1000,400],                                          // A-10A (CAS)
+    ["RHS_A10",800,800,400],                                            // A-10A (CAS)
+    ["FIR_A10A",1000,1000,400],                                         // A-10A FIR
     ["USAF_A10",1500,1000,400],                                         // A-10C Thunderbolt II
+    ["FIR_A10C",1500,1000,400],                                         // A-10C FIR
     ["I_Plane_Fighter_04_F",1000,1200,400],                             // A-149 Gryphon
     ["FIR_F15C",1250,1250,450],                                         // F-15C Eagle
     ["FIR_F15D",1250,1250,450],                                         // F-15D Eagle

@@ -93,7 +93,7 @@ KPLIB_presetEnemy = 0;
     7  = CUP Takistani Locals
     8  = CUP National Party of Chernarus
 */
-KPLIB_presetResistance = 0;
+KPLIB_presetResistance = 2;
 
 /*
     ----- Civilians preset -----
@@ -180,7 +180,7 @@ KPLIB_save_interval = 60;
 */
 
 // Build range around the main FOB building.
-KPLIB_range_fob = 125;
+KPLIB_range_fob = 150;
 
 // Altitude in metres for the HALO jump.
 KPLIB_height_halo = 2500;
@@ -279,13 +279,13 @@ KPLIB_civinfo_chance = 75;
 KPLIB_civinfo_intel = 5;
 
 // Time until a civil informant will despawn after spawning. (seconds)
-KPLIB_civinfo_duration = 1200;
+KPLIB_civinfo_duration = 5400;
 
 // Chance (0-100) that the delivered informant will spawn a time critical task
-KPLIB_civinfo_task_chance = 40;
+KPLIB_civinfo_task_chance = 60;
 
 // Time until the task will despawn if no player is near. (seconds)
-KPLIB_civinfo_task_duration = 900;
+KPLIB_civinfo_task_duration = 1200;
 
 
 /*
@@ -342,7 +342,7 @@ KPLIB_resistance_ambush_chance = 25;
 */
 
 // Time in minutes until a resource crate is produced, when resources multiplier is set to 1.
-KPLIB_production_interval = 30;
+KPLIB_production_interval = 15;
 
 // Percentage of resources you get back from recycling.
 KPLIB_recycling_percentage = 0.5;
