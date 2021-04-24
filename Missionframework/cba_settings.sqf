@@ -8,11 +8,11 @@ force force ace_advanced_ballistics_simulationInterval = 0.05;
 
 // ACE Advanced Fatigue
 force force ace_advanced_fatigue_enabled = true;
-force force ace_advanced_fatigue_enableStaminaBar = true;
-force force ace_advanced_fatigue_fadeStaminaBar = true;
+force ace_advanced_fatigue_enableStaminaBar = true;
+force ace_advanced_fatigue_fadeStaminaBar = true;
 force force ace_advanced_fatigue_loadFactor = 1;
-force force ace_advanced_fatigue_performanceFactor = 1;
-force force ace_advanced_fatigue_recoveryFactor = 1;
+force force ace_advanced_fatigue_performanceFactor = 1.40374;
+force force ace_advanced_fatigue_recoveryFactor = 3.03773;
 force force ace_advanced_fatigue_swayFactor = 1;
 force force ace_advanced_fatigue_terrainGradientFactor = 1;
 
@@ -195,7 +195,7 @@ force force ace_medical_painCoefficient = 0.8;
 force force ace_medical_playerDamageThreshold = 10;
 force force ace_medical_spontaneousWakeUpChance = 0.2;
 force force ace_medical_spontaneousWakeUpEpinephrineBoost = 1.4;
-force force ace_medical_statemachine_AIUnconsciousness = true;
+force force ace_medical_statemachine_AIUnconsciousness = false;
 force force ace_medical_statemachine_cardiacArrestTime = 270;
 force force ace_medical_statemachine_cardiacArrestBleedoutEnabled = false;
 force force ace_medical_statemachine_fatalInjuriesAI = 0;
