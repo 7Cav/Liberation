@@ -80,7 +80,8 @@ private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew"];
 
     // Determine if vehicle is crewed
     if ((toLower _class) in KPLIB_b_allVeh_classes) then {
-        if (({!isPlayer _x} count (crew _x) ) > 0) then {
+        //if (({!isPlayer _x} count (crew _x) ) > 0) then {
+        if (((crew _x) findIf {!isPlayer _x}) > 0) then {
             _hasCrew = true;
         };
     };

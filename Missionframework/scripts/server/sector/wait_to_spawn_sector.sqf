@@ -37,7 +37,7 @@ if (_unitscount > 0 && _unitscount <= 2) then {
 sleep 0.1;
 
 _unitscount = [markerPos _sector, _corrected_size, GRLIB_side_friendly] call KPLIB_fnc_getUnitsCount;
-if (_unitscount == 1) then {
+if (_unitscount isEqualTo 1) then {
     sleep 5;
 };
 

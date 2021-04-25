@@ -10,7 +10,7 @@ while { true } do {
 	GRLIB_nametag_units = [] + _scanned_units;
 
 	_scanned_groups = [ allGroups, { ( side _x == side player ) && ( isplayer (leader _x) ) } ] call BIS_fnc_conditionalSelect;
-	_scanned_groups = [ _scanned_groups, { ( count units _x > 1 ) || ( count units _x == 1 && leader _x != player ) } ] call BIS_fnc_conditionalSelect;
+	_scanned_groups = [ _scanned_groups, { ( count units _x > 1 ) || ( count units _x isEqualTo 1 && leader _x != player ) } ] call BIS_fnc_conditionalSelect;
 	GRLIB_overlay_groups = [] + _scanned_groups;
 
 	sleep 1;

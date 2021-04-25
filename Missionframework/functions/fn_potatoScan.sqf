@@ -15,7 +15,7 @@
         Potato 01 [OBJECT]
 */
 
-private _potatoes = vehicles select {typeof _x == huron_typename && alive _x};
+private _potatoes = vehicles select {_x isEqualType huron_typename && alive _x};
 if !(_potatoes isEqualTo []) then {
     _potatoes select 0
 } else {

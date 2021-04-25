@@ -29,11 +29,11 @@ private _ctrlSliderSound = _dialog displayCtrl 7580317;
 
 // Fetch all selected values
 KPPLM_viewFoot = round (parseNumber (ctrlText _ctrlViewFoot));
-if (KPPLM_viewFoot == 0) then {KPPLM_viewFoot = 1600;};
+if (KPPLM_viewFoot isEqualTo 0) then {KPPLM_viewFoot = 1600;};
 KPPLM_viewVeh = round (parseNumber (ctrlText _ctrlViewVeh));
-if (KPPLM_viewVeh == 0) then {KPPLM_viewVeh = 1600;};
+if (KPPLM_viewVeh isEqualTo 0) then {KPPLM_viewVeh = 1600;};
 KPPLM_viewAir = round (parseNumber (ctrlText _ctrlViewAir));
-if (KPPLM_viewAir == 0) then {KPPLM_viewAir = 1600;};
+if (KPPLM_viewAir isEqualTo 0) then {KPPLM_viewAir = 1600;};
 KPPLM_terrain = lbCurSel _ctrlTerrain;
 KPPLM_tpv = lbCurSel _ctrlTpv;
 KPPLM_radio = lbCurSel _ctrlRadio;

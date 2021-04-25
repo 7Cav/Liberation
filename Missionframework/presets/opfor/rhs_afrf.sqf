@@ -134,12 +134,13 @@ opfor_troup_transports = [
 opfor_choppers = [
     "RHS_Mi8mt_Cargo_vvsc",                                             // Mi-8MT (Cargo)
     "RHS_Mi24P_AT_vvsc",                                                // Mi-24P (AT)
-    "RHS_Mi24V_AT_vvsc",                                                // Mi-24V (AT)
+    "rhs_mi28n_vvsc",                                                   // Mi-28n (Multi-role)
     "RHS_Ka52_vvsc"                                                     // Ka-52
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
     "RHS_Su25SM_vvsc",                                                  // Su-25
-    "RHS_Su25SM_KH29_vvsc"                                              // Su-25 (KH29)
+    "RHS_Su25SM_KH29_vvsc",                                             // Su-25 (KH29)
+    "rhs_mig29sm_vvsc"                                                  // Mig-29SM
 ];

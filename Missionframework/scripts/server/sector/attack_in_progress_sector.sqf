@@ -45,7 +45,7 @@ waitUntil {
     [markerpos _sector] call KPLIB_fnc_getSectorOwnership != GRLIB_side_resistance;
 };
 
-if ( GRLIB_endgame == 0 ) then {
+if ( GRLIB_endgame isEqualTo 0 ) then {
     if ( _attacktime <= 1 && ( [markerpos _sector] call KPLIB_fnc_getSectorOwnership == GRLIB_side_enemy ) ) then {
         blufor_sectors = blufor_sectors - [ _sector ];
         publicVariable "blufor_sectors";
@@ -55,7 +55,7 @@ if ( GRLIB_endgame == 0 ) then {
         stats_sectors_lost = stats_sectors_lost + 1;
         {
             if (_sector in _x) exitWith {
-                if ((count (_x select 3)) == 3) then {
+                if ((count (_x select 3)) isEqualTo 3) then {
                     {
                         detach _x;
                         deleteVehicle _x;

@@ -4,7 +4,7 @@ private _start = diag_tickTime;
 ["----- Loading save data", "SAVE"] call KPLIB_fnc_log;
 
 // Handle possible enabled "wipe save" mission parameters
-if (GRLIB_param_wipe_savegame_1 == 1 && GRLIB_param_wipe_savegame_2 == 1) then {
+if (GRLIB_param_wipe_savegame_1 isEqualTo 1 && GRLIB_param_wipe_savegame_2 isEqualTo 1) then {
     profileNamespace setVariable [GRLIB_save_key,nil];
     saveProfileNamespace;
     ["Save wiped via mission parameters", "SAVE"] call KPLIB_fnc_log;
@@ -440,7 +440,7 @@ if (!isNil "_saveData") then {
         _storage = _x select 3;
 
         // Spawn storage, if sector has valid storage
-        if ((count _storage) == 3) then {
+        if ((count _storage) isEqualTo 3) then {
             _storage params ["_pos", "_dir", "_vecUp"];
 
             // Create object without damage handling and simulation
@@ -553,12 +553,12 @@ private _saveTime = time + KP_liberation_save_interval;
 while {true} do {
     waitUntil {
         sleep 0.5;
-        (time > _saveTime) || {GRLIB_endgame == 1};
+        (time > _saveTime) || {GRLIB_endgame isEqualTo 1};
     };
     _start = diag_tickTime;
 
     // Exit the while and wipe save, if campaign ended
-    if (GRLIB_endgame == 1) exitWith {
+    if (GRLIB_endgame isEqualTo 1) exitWith {
         profileNamespace setVariable [GRLIB_save_key, nil];
         saveProfileNamespace;
     };

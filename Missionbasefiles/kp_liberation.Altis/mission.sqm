@@ -270,7 +270,7 @@ class Mission
 				timeout[]={0.2,0.2,0.2};
 				interuptable=1;
 				activationBy="WEST";
-				effectMusic="EventTrack01_F_Curator";
+				effectMusic="";
 			};
 			id=332;
 			type="EmptyDetector";

@@ -25,7 +25,7 @@ if (KP_liberation_ace && KP_liberation_arsenal_type) then {
     private _counter = 0;
     if (!isNil "_saved_loadouts") then {
         {
-            if (_counter % 2 == 0) then {
+            if (_counter % 2 isEqualTo 0) then {
                 _loadouts_data pushback _x;
             };
             _counter = _counter + 1;
@@ -62,7 +62,7 @@ if ( count _loadplayers > 0 ) then {
     {
         private _nextplayer = _x select 1;
         private _namestr = "";
-        if(count (squadParams _nextplayer) != 0) then {
+        if(count (squadParams _nextplayer) isNotEqualTo 0) then {
             _namestr = "[" + ((squadParams _nextplayer select 0) select 0) + "] ";
         };
         _namestr = _namestr + name _nextplayer;
@@ -78,7 +78,7 @@ if ( count _loadplayers > 0 ) then {
 
 ((findDisplay 5251) displayCtrl 201) ctrlAddEventHandler [ "mouseButtonDblClick" , { exit_on_load = 1; load_loadout = 1; } ];
 
-while { dialog && (alive player) && edit_loadout == 0 } do {
+while { dialog && (alive player) && edit_loadout isEqualTo 0 } do {
 
     if ( load_loadout > 0 ) then {
         private _loaded_loadout = _loadouts_data select (lbCurSel 201);
@@ -96,7 +96,7 @@ while { dialog && (alive player) && edit_loadout == 0 } do {
             hint format [ localize "STR_HINT_LOADOUT_LOADED", _loaded_loadout param [0]];
         };
 
-        if ( exit_on_load == 1 ) then {
+        if ( exit_on_load isEqualTo 1 ) then {
             closeDialog 0;
         };
         load_loadout = 0;

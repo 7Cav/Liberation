@@ -1,4 +1,4 @@
-// TODO Split this in an added action to the vehicles and add the dorecycle == 1 part in a button action
+// TODO Split this in an added action to the vehicles and add the dorecycle isEqualTo 1 part in a button action
 params ["_vehToRecycle"];
 
 if (_vehToRecycle getVariable ["KP_liberation_preplaced", false]) exitWith {hint localize "STR_PREPLACED_ERROR";};
@@ -75,14 +75,14 @@ ctrlSetText [131, format ["%1", _price_s]];
 ctrlSetText [132, format ["%1", _price_a]];
 ctrlSetText [133, format ["%1", _price_f]];
 
-waitUntil {sleep 0.1; !dialog || !alive player || dorecycle != 0};
+waitUntil {sleep 0.1; !dialog || !alive player || dorecycle isNotEqualTo 0};
 
 if (dialog) then {closeDialog 0};
 
-if (dorecycle == 1 && !(isnull _vehToRecycle) && alive _vehToRecycle) then {
+if (dorecycle isEqualTo 1 && !(isnull _vehToRecycle) && alive _vehToRecycle) then {
     if (!(KP_liberation_recycle_building_near) && ((_price_s + _price_a + _price_f) > 0)) exitWith {hint localize "STR_NORECBUILDING_ERROR";};
 
-    private _storage_areas = (([] call KPLIB_fnc_getNearestFob) nearobjects (GRLIB_fob_range * 1.2)) select {(_x getVariable ["KP_liberation_storage_type",-1]) == 0};
+    private _storage_areas = (([] call KPLIB_fnc_getNearestFob) nearobjects (GRLIB_fob_range * 1.2)) select {(_x getVariable ["KP_liberation_storage_type",-1]) isEqualTo 0};
     private _crateSum = (ceil (_price_s / 100)) + (ceil (_price_a / 100)) + (ceil (_price_f / 100));
     private _spaceSum = 0;
 

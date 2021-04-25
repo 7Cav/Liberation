@@ -325,16 +325,16 @@ if (!isDedicated && hasInterface) then {
     _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
 
     _param = localize "STR_A3_ReviveMode";
-    _value = if (bis_reviveParam_mode == 1) then {localize "STR_A3_EnabledForAllPlayers";} else {localize "STR_A3_Disabled";};
+    _value = if (bis_reviveParam_mode isEqualTo 1) then {localize "STR_A3_EnabledForAllPlayers";} else {localize "STR_A3_Disabled";};
     _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
 
-    if (bis_reviveParam_mode == 1) then {
+    if (bis_reviveParam_mode isEqualTo 1) then {
         _param = localize "STR_A3_ReviveDuration";
         _value = str bis_reviveParam_duration;
         _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
 
         _param = localize "STR_A3_RequiredTrait";
-        _value = if (bis_reviveParam_requiredTrait == 1) then {localize "STR_A3_Medic";} else {localize "STR_A3_None";};
+        _value = if (bis_reviveParam_requiredTrait isEqualTo 1) then {localize "STR_A3_Medic";} else {localize "STR_A3_None";};
         _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
 
         _param = localize "STR_A3_RequiredTrait_MedicSpeedMultiplier";
@@ -387,7 +387,7 @@ if (!isDedicated && hasInterface) then {
     _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
 
     _param = localize "STR_PARAM_RESPAWN_COOLDOWN";
-    _value = if (KP_liberation_respawn_cooldown == 0) then {localize "STR_PARAMS_DISABLED";} else {str (KP_liberation_respawn_cooldown / 60);};
+    _value = if (KP_liberation_respawn_cooldown isEqualTo 0) then {localize "STR_PARAMS_DISABLED";} else {str (KP_liberation_respawn_cooldown / 60);};
     _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
 
     _param = localize "STR_PARAMS_MOBILEARSENAL";
@@ -423,11 +423,11 @@ if (!isDedicated && hasInterface) then {
     _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
 
     _param = localize "STR_PARAM_ALLOW_ENEMIES_IN_IMMOBILE";
-    _value = if (KP_liberation_allowEnemiesInImmobile == 0) then {localize "STR_PARAMS_DISABLED";} else {KP_liberation_allowEnemiesInImmobile;};
+    _value = if (KP_liberation_allowEnemiesInImmobile isEqualTo 0) then {localize "STR_PARAMS_DISABLED";} else {KP_liberation_allowEnemiesInImmobile;};
     _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
 
     _param = localize "STR_PARAM_DELAY_DESPAWN_MAX";
-    _value = if (KP_liberation_delayDespawnMax == 0) then {localize "STR_PARAMS_DISABLED";} else {KP_liberation_delayDespawnMax;};
+    _value = if (KP_liberation_delayDespawnMax isEqualTo 0) then {localize "STR_PARAMS_DISABLED";} else {KP_liberation_delayDespawnMax;};
     _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
 
     _param = localize "STR_PARAM_COMMANDERZEUS";
@@ -484,7 +484,7 @@ if (!isDedicated && hasInterface) then {
     _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
 
     _param = localize "STR_RESTART_PARAM";
-    _value = if (KP_liberation_restart == 0) then {localize "STR_PARAMS_DISABLED";} else {KP_liberation_restart;};
+    _value = if (KP_liberation_restart isEqualTo 0) then {localize "STR_PARAMS_DISABLED";} else {KP_liberation_restart;};
     _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
 
     player createDiaryRecord ["parameters", ["Active", _text]];

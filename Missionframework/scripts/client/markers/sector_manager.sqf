@@ -22,7 +22,7 @@ uiSleep 1;
 while {true} do {
     waitUntil {
         uiSleep 1;
-        count blufor_sectors != _sector_count
+        count blufor_sectors isNotEqualTo _sector_count
     };
 
     {_x setMarkerColorLocal GRLIB_color_enemy;} forEach (sectors_allSectors - blufor_sectors);

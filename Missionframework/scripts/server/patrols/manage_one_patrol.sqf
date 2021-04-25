@@ -4,7 +4,7 @@ private [ "_headless_client" ];
 waitUntil { !isNil "blufor_sectors" };
 waitUntil { !isNil "combat_readiness" };
 
-while { GRLIB_endgame == 0 } do {
+while { GRLIB_endgame isEqualTo 0 } do {
     waitUntil { sleep 0.3; count blufor_sectors >= 3; };
     waitUntil { sleep 0.3; combat_readiness >= (_minimum_readiness / GRLIB_difficulty_modifier); };
 
@@ -17,9 +17,9 @@ while { GRLIB_endgame == 0 } do {
     _grp = grpNull;
 
     _spawn_marker = "";
-    while { _spawn_marker == "" } do {
+    while { _spawn_marker isEqualTo "" } do {
         _spawn_marker = [2000,5000,true] call KPLIB_fnc_getOpforSpawnPoint;
-        if ( _spawn_marker == "" ) then {
+        if ( _spawn_marker isEqualTo "" ) then {
             sleep (150 + (random 150));
         };
     };
@@ -59,14 +59,14 @@ while { GRLIB_endgame == 0 } do {
 
     while { _patrol_continue } do {
         sleep 60;
-        if ( count (units _grp) == 0  ) then {
+        if ( count (units _grp) isEqualTo 0  ) then {
             _patrol_continue = false;
         } else {
             if ( time - _started_time > 900 ) then {
-                if ( [ getpos (leader _grp) , 4000 , GRLIB_side_friendly ] call KPLIB_fnc_getUnitsCount == 0 ) then {
+                if ( [ getpos (leader _grp) , 4000 , GRLIB_side_friendly ] call KPLIB_fnc_getUnitsCount isEqualTo 0 ) then {
                     _patrol_continue = false;
                     {
-                        if ( vehicle _x != _x ) then {
+                        if ( !isNull objectParent _x ) then {
                             [(vehicle _x)] call KPLIB_fnc_cleanOpforVehicle;
                         };
                         deleteVehicle _x;

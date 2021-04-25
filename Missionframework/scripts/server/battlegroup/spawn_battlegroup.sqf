@@ -4,7 +4,7 @@ params [
     ["_infOnly", false, [false]]
 ];
 
-if (GRLIB_endgame == 1) exitWith {};
+if (GRLIB_endgame isEqualTo 1) exitWith {};
 
 _spawn_marker = [[2000, 1000] select _infOnly, 3000, false, markerPos _spawn_marker] call KPLIB_fnc_getOpforSpawnPoint;
 

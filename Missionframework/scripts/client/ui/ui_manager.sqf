@@ -55,7 +55,7 @@ while {true} do {
     _overlayVisible = !isNull _overlay;
 
     // Player is at FOB
-    if (_currentFob != "" || {_visibleMap}) then {
+    if (_currentFob isNotEqualTo "" || {_visibleMap}) then {
         _showResources = true;
 
         private _nearestFob = player getVariable "KPLIB_fobPos";
@@ -108,11 +108,11 @@ while {true} do {
         [
             _overlay,
             _showResources,
-            _uiticks % 5 == 0,  // update values
+            _uiticks % 5 isEqualTo 0,  // update values
             _currentFob         // area title
         ] call KPLIB_fnc_overlayUpdateResources;
 
-        if (_uiticks % 25 == 0) then {
+        if (_uiticks % 25 isEqualTo 0) then {
 
             if (!isNil "active_sectors" && ([] call KPLIB_fnc_getOpforCap >= GRLIB_sector_cap)) then {
 
@@ -136,7 +136,7 @@ while {true} do {
             };
 
             _nearest_active_sector = [GRLIB_sector_size] call KPLIB_fnc_getNearestSector;
-            if ( _nearest_active_sector != "" ) then {
+            if ( _nearest_active_sector isNotEqualTo "" ) then {
                 _zone_size = GRLIB_capture_size;
                 if ( _nearest_active_sector in sectors_bigtown ) then {
                     _zone_size = GRLIB_capture_size * 1.4;
@@ -144,9 +144,9 @@ while {true} do {
 
                 "zone_capture" setmarkerposlocal (markerpos _nearest_active_sector);
                 _colorzone = "ColorGrey";
-                if ( [ markerpos _nearest_active_sector, _zone_size ] call KPLIB_fnc_getSectorOwnership == GRLIB_side_friendly ) then { _colorzone = GRLIB_color_friendly };
-                if ( [ markerpos _nearest_active_sector, _zone_size ] call KPLIB_fnc_getSectorOwnership == GRLIB_side_enemy ) then { _colorzone = GRLIB_color_enemy };
-                if ( [ markerpos _nearest_active_sector, _zone_size ] call KPLIB_fnc_getSectorOwnership == GRLIB_side_resistance ) then { _colorzone = "ColorCivilian" };
+                if ( [ markerpos _nearest_active_sector, _zone_size ] call KPLIB_fnc_getSectorOwnership isEqualTo GRLIB_side_friendly ) then { _colorzone = GRLIB_color_friendly };
+                if ( [ markerpos _nearest_active_sector, _zone_size ] call KPLIB_fnc_getSectorOwnership isEqualTo GRLIB_side_enemy ) then { _colorzone = GRLIB_color_enemy };
+                if ( [ markerpos _nearest_active_sector, _zone_size ] call KPLIB_fnc_getSectorOwnership isEqualTo GRLIB_side_resistance ) then { _colorzone = "ColorCivilian" };
                 "zone_capture" setmarkercolorlocal _colorzone;
 
                 _ratio = [_nearest_active_sector] call KPLIB_fnc_getBluforRatio;

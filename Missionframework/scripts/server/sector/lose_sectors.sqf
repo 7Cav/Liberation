@@ -5,7 +5,7 @@ sleep 5;
 
 attack_in_progress = false;
 
-while { GRLIB_endgame == 0 } do {
+while { GRLIB_endgame isEqualTo 0 } do {
 
     {
         _ownership = [ markerpos _x ] call KPLIB_fnc_getSectorOwnership;

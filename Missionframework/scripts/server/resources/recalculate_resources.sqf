@@ -27,12 +27,12 @@ while {true} do {
 
     {
         private _fob_buildings = _x nearobjects GRLIB_fob_range;
-        private _storage_areas = _fob_buildings select {(_x getVariable ["KP_liberation_storage_type",-1]) == 0};
-        private _heliSlots = {(typeOf _x) == KP_liberation_heli_slot_building;} count _fob_buildings;
-        private _planeSlots = {(typeOf _x) == KP_liberation_plane_slot_building;} count _fob_buildings;
-        private _hasAirBuilding = {(typeOf _x) == KP_liberation_air_vehicle_building;} count _fob_buildings;
+        private _storage_areas = _fob_buildings select {(_x getVariable ["KP_liberation_storage_type",-1]) isEqualTo 0};
+        private _heliSlots = _fob_buildings findIf {(typeOf _x) == KP_liberation_heli_slot_building;};
+        private _planeSlots = _fob_buildings findIf {(typeOf _x) == KP_liberation_plane_slot_building;};
+        private _hasAirBuilding = _fob_buildings findIf {(typeOf _x) == KP_liberation_air_vehicle_building;};
         if (_hasAirBuilding > 0) then {_hasAirBuilding = true;} else {_hasAirBuilding = false;};
-        private _hasRecBuilding = {(typeOf _x) == KP_liberation_recycle_building;} count _fob_buildings;
+        private _hasRecBuilding = _fob_buildings findIf {(typeOf _x) == KP_liberation_recycle_building;};
         if (_hasRecBuilding > 0) then {_hasRecBuilding = true;} else {_hasRecBuilding = false;};
 
         private _supplyValue = 0;

@@ -56,7 +56,7 @@ while {(alive _hvt) && _time_remaining > 0} do {
     if !(_player_near) then {
         _time_remaining = _time_remaining - 1;
     };
-    if ((KP_liberation_civinfo_debug > 0) && ((_time_remaining % 60) == 0)) then {[format ["civinfo_task.sqf -> Task will despawn in %1 minutes", round (_time_remaining / 60)], "CIVINFO"] remoteExecCall ["KPLIB_fnc_log", 2];};
+    if ((KP_liberation_civinfo_debug > 0) && ((_time_remaining % 60) isEqualTo 0)) then {[format ["civinfo_task.sqf -> Task will despawn in %1 minutes", round (_time_remaining / 60)], "CIVINFO"] remoteExecCall ["KPLIB_fnc_log", 2];};
 };
 
 if (KP_liberation_civinfo_debug > 0) then {[format ["civinfo_task.sqf -> loop exited on: %1", debug_source], "CIVINFO"] remoteExecCall ["KPLIB_fnc_log", 2];};

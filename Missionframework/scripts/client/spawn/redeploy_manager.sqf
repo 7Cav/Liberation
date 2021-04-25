@@ -31,7 +31,7 @@ KP_liberation_respawn_mobile_done = false;
 while {true} do {
     waitUntil {
         sleep 0.2;
-        (GRLIB_force_redeploy || (player distance (markerPos GRLIB_respawn_marker) < 50)) && vehicle player == player && alive player && !dialog && howtoplay == 0
+        (GRLIB_force_redeploy || (player distance (markerPos GRLIB_respawn_marker) < 50)) && isNull objectParent player && alive player && !dialog && howtoplay isEqualTo 0
     };
 
     private _backpack = backpack player;
@@ -75,7 +75,7 @@ while {true} do {
         private _counter = 0;
         if (!isNil "_saved_loadouts") then {
             {
-                if (_counter % 2 == 0) then {
+                if (_counter % 2 isEqualTo 0) then {
                     _loadouts_data pushback _x;
                 };
                 _counter = _counter + 1;
@@ -87,7 +87,7 @@ while {true} do {
     {lbAdd [203, _x param [0]]} forEach _loadouts_data;
     lbSetCurSel [203, 0];
 
-    while {dialog && alive player && deploy == 0} do {
+    while {dialog && alive player && deploy isEqualTo 0} do {
         // ARRAY - [[NAME, POSITION(, OBJECT)], ...]
         KPLIB_respawnPositionsList = [[_basenamestr, getposATL startbase]];
 
@@ -151,7 +151,7 @@ while {true} do {
             ctrlMapAnimClear (DEPLOY_DISPLAY displayCtrl 251);
             private _transition_map_pos = getpos respawn_object;
             private _fullscreen_map_offset = 4000;
-            if(fullmap % 2 == 1) then {
+            if(fullmap % 2 isEqualTo 1) then {
                 _transition_map_pos = [(_transition_map_pos select 0) - _fullscreen_map_offset,  (_transition_map_pos select 1) + (_fullscreen_map_offset * 0.75), 0];
             };
             (DEPLOY_DISPLAY displayCtrl 251) ctrlMapAnimAdd [0, 0.3,_transition_map_pos];
@@ -165,7 +165,7 @@ while {true} do {
 
         if (_old_fullmap != fullmap) then {
             _old_fullmap = fullmap;
-            if (fullmap % 2 == 1) then {
+            if (fullmap % 2 isEqualTo 1) then {
                 (DEPLOY_DISPLAY displayCtrl 251) ctrlSetPosition [ (_frame_pos select 0) + (_frame_pos select 2), (_frame_pos select 1), (0.6 * safezoneW), (_frame_pos select 3)];
             } else {
                 (DEPLOY_DISPLAY displayCtrl 251) ctrlSetPosition _standard_map_pos;
@@ -176,11 +176,11 @@ while {true} do {
         uiSleep 0.1;
     };
 
-    if (dialog && deploy == 1) then {
+    if (dialog && deploy isEqualTo 1) then {
         private _idxchoice = lbCurSel DEPLOY_LIST_IDC;
         _spawn_str = (KPLIB_respawnPositionsList select _idxchoice) select 0;
 
-        if (count (KPLIB_respawnPositionsList select _idxchoice) == 3) then {
+        if (count (KPLIB_respawnPositionsList select _idxchoice) isEqualTo 3) then {
             private _truck = (KPLIB_respawnPositionsList select _idxchoice) select 2;
             player setposATL (_truck getPos [5 + (random 3), random 360]);
             KP_liberation_respawn_mobile_done = true;
@@ -209,7 +209,7 @@ while {true} do {
         closeDialog 0;
     };
 
-    if (alive player && deploy == 1) then {
+    if (alive player && deploy isEqualTo 1) then {
         [_spawn_str] spawn spawn_camera;
         if (KP_liberation_respawn_mobile_done) then {
             KP_liberation_respawn_time = time + KP_liberation_respawn_cooldown;

@@ -5,7 +5,7 @@ GRLIB_buildoverlay_cfg = configFile >> "cfgVehicles";
 
 ["build_overlay", "onEachFrame", {
 
-    if ( build_confirmed == 1 ) then {
+    if ( build_confirmed isEqualTo 1 ) then {
         if ( count GRLIB_conflicting_objects > 0 ) then {
             {
                 if ( alive _x ) then {

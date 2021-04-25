@@ -43,6 +43,15 @@ isNil {
 
     // Process KP object init
     [_unit] call KPLIB_fnc_addObjectInit;
+
+    //Reduce AI capabilities of civilians in hopes of gaining frames.
+    if ((side _unit) == civilian) then {
+	    _unit disableAI "TARGET";
+	    _unit disableAI "WEAPONAIM";
+    	_unit disableAI "AIMINGERROR";
+	    _unit disableAI "MINEDETECTION";
+	    _unit disableAI "RADIOPROTOCOL";
+    };
 };
 
 _unit

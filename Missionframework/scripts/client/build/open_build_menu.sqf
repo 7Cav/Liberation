@@ -36,7 +36,7 @@ localize "STR_BUILD8"
 _nearfob = [] call KPLIB_fnc_getNearestFob;
 _actual_fob = KP_liberation_fob_resources select {((_x select 0) distance _nearfob) < GRLIB_fob_range};
 
-while {dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
+while {dialog && alive player && (dobuild isEqualTo 0 || buildtype isEqualTo 1)} do {
     _build_list = KPLIB_buildList select buildtype;
 
     if (_oldbuildtype != buildtype || synchro_done) then {
@@ -114,18 +114,18 @@ while {dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
     _selected_item = lbCurSel 110;
     _affordable = false;
     _squad_full = false;
-    if ((buildtype == 1) && (count (units group player) >= GRLIB_max_squad_size)) then {
+    if ((buildtype isEqualTo 1) && (count (units group player) >= GRLIB_max_squad_size)) then {
         _squad_full = true;
     };
     _linked = false;
     _linked_unlocked = true;
     _base_link = "";
-    if (dobuild == 0 && _selected_item != -1 && (_selected_item < (count _build_list))) then {
+    if (dobuild isEqualTo 0 && _selected_item != -1 && (_selected_item < (count _build_list))) then {
         _build_item = _build_list select _selected_item;
         if (
-            ((_build_item select 1 == 0 ) || ((_build_item select 1) <= ((_actual_fob select 0) select 1))) &&
-            ((_build_item select 2 == 0 ) || ((_build_item select 2) <= ((_actual_fob select 0) select 2))) &&
-            ((_build_item select 3 == 0 ) || ((_build_item select 3) <= ((_actual_fob select 0) select 3)))
+            ((_build_item select 1 isEqualTo 0 ) || ((_build_item select 1) <= ((_actual_fob select 0) select 1))) &&
+            ((_build_item select 2 isEqualTo 0 ) || ((_build_item select 2) <= ((_actual_fob select 0) select 2))) &&
+            ((_build_item select 3 isEqualTo 0 ) || ((_build_item select 3) <= ((_actual_fob select 0) select 3)))
         ) then {
             if !((_build_item select 0) isEqualType []) then {
                 if ((toLower (_build_item select 0)) in KPLIB_b_air_classes && !([_build_item select 0] call KPLIB_fnc_isClassUAV)) then {
@@ -157,7 +157,7 @@ while {dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
     _affordable_crew = _affordable;
     if ( unitcap >= ([] call KPLIB_fnc_getLocalCap)) then {
         _affordable_crew = false;
-        if (buildtype == 1 || buildtype == 8) then {
+        if (buildtype isEqualTo 1 || buildtype isEqualTo 8) then {
             _affordable = false;
         };
     };
@@ -193,7 +193,7 @@ while {dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
 
     buildindex = _selected_item;
 
-    if(buildtype == 1 && dobuild != 0) then {
+    if(buildtype isEqualTo 1 && dobuild isNotEqualTo 0) then {
         ctrlEnable [120, false];
         ctrlEnable [121, false];
         sleep 1;
@@ -203,4 +203,4 @@ while {dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
     sleep 0.1;
 };
 
-if (!alive player || dobuild != 0) then { closeDialog 0 };
+if (!alive player || dobuild isNotEqualTo 0) then { closeDialog 0 };

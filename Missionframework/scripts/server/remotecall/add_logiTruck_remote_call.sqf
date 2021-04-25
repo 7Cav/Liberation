@@ -4,9 +4,9 @@ params ["_index", "_nearfob", "_clientID", "_supplies", "_ammo", "_fuel"];
 
 logiError = 0;
 
-private _storage_areas = (_nearfob nearobjects GRLIB_fob_range) select {(_x getVariable ["KP_liberation_storage_type",-1]) == 0};
+private _storage_areas = (_nearfob nearobjects GRLIB_fob_range) select {(_x getVariable ["KP_liberation_storage_type",-1]) isEqualTo 0};
 
-if ((count _storage_areas) == 0) exitWith {(localize "STR_LOGISTIC_CANTAFFORD") remoteExec ["hint",_clientID]; logiError = 1; _clientID publicVariableClient "logiError";};
+if ((count _storage_areas) isEqualTo 0) exitWith {(localize "STR_LOGISTIC_CANTAFFORD") remoteExec ["hint",_clientID]; logiError = 1; _clientID publicVariableClient "logiError";};
 
 private _price_s = 100;
 private _price_a = 0;
@@ -79,7 +79,7 @@ if ((_price_s > _supplies) || (_price_a > _ammo) || (_price_f > _fuel)) exitWith
         _i = _i + 1;
     } forEach attachedObjects (_x);
 
-    if ((_price_s == 0) && (_price_a == 0) && (_price_f == 0)) exitWith {};
+    if ((_price_s isEqualTo 0) && (_price_a isEqualTo 0) && (_price_f isEqualTo 0)) exitWith {};
 
 } forEach _storage_areas;
 

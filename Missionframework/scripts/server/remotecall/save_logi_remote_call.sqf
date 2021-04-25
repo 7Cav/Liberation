@@ -9,9 +9,9 @@ if ((_ress_a isEqualTo [0,0,0]) && (_ress_b isEqualTo [0,0,0])) then {
 };
 
 if (
-    (((_ress_a select 0) != 0) && ((_ress_b select 0) != 0))
-    || (((_ress_a select 1) != 0) && ((_ress_b select 1) != 0))
-    || (((_ress_a select 2) != 0) && ((_ress_b select 2) != 0))
+    (((_ress_a select 0) isNotEqualTo 0) && ((_ress_b select 0) isNotEqualTo 0))
+    || (((_ress_a select 1) isNotEqualTo 0) && ((_ress_b select 1) isNotEqualTo 0))
+    || (((_ress_a select 2) isNotEqualTo 0) && ((_ress_b select 2) isNotEqualTo 0))
 ) then {
     logiError = 1;
 };
@@ -27,7 +27,7 @@ if (_dest_a isEqualTo _dest_b) then {
     ) exitWith {logiError = 1;}
 } forEach KP_liberation_logistics;
 
-if (logiError == 1) exitWith {(localize "STR_LOGISTIC_SAVE_ERROR") remoteExec ["hint",_clientID]; _clientID publicVariableClient "logiError";};
+if (logiError isEqualTo 1) exitWith {(localize "STR_LOGISTIC_SAVE_ERROR") remoteExec ["hint",_clientID]; _clientID publicVariableClient "logiError";};
 
 private _time = ceil (((ceil ((_ress_a select 0) / 100)) + (ceil ((_ress_a select 1) / 100)) + (ceil ((_ress_a select 2) / 100))) / 3);
 

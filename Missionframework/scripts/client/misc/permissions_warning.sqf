@@ -4,8 +4,8 @@ if ( GRLIB_permissions_param ) then {
 
     sleep 5;
 
-    while { count GRLIB_permissions == 0 } do {
-        hint localize "STR_PERMISSION_WARNING";
+    while { count GRLIB_permissions isEqualTo 0 } do {
+        hintSilent localize "STR_PERMISSION_WARNING";
         sleep 5;
     };
 

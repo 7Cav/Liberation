@@ -20,12 +20,12 @@ sleep 2;
 
 waitUntil {sleep 5;
     _nearestfob = [getpos _informant] call KPLIB_fnc_getNearestFob;
-    if (count _nearestfob == 3) then {
+    if (count _nearestfob isEqualTo 3) then {
         if ((_informant distance _nearestfob) < 30) then {
             _is_near_fob = true;
         };
     };
-    !alive _informant || (_is_near_fob && (vehicle _informant == _informant))
+    !alive _informant || (_is_near_fob && (isNull objectParent _informant))
 };
 
 if (alive _informant) then {

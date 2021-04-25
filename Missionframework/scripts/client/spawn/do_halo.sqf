@@ -17,7 +17,7 @@ _backpackcontents = [];
 "spawn_marker" setMarkerTextLocal (localize "STR_HALO_PARAM");
 
 waitUntil { dialog };
-while { dialog && alive player && dojump == 0 } do {
+while { dialog && alive player && dojump isEqualTo 0 } do {
     "spawn_marker" setMarkerPosLocal halo_position;
 
     sleep 0.1;
@@ -43,7 +43,7 @@ if ( dojump > 0 ) then {
     playSound "parasound";
     sleep 2;
     _backpack = backpack player;
-    if ( _backpack != "" && _backpack != "B_Parachute" ) then {
+    if ( _backpack isNotEqualTo "" && _backpack != "B_Parachute" ) then {
         _backpackcontents = backpackItems player;
         removeBackpack player;
         sleep 0.1;
@@ -55,7 +55,7 @@ if ( dojump > 0 ) then {
     sleep 4;
     halojumping = false;
     waitUntil { !alive player || isTouchingGround player };
-    if ( _backpack != "" && _backpack != "B_Parachute" ) then {
+    if ( _backpack isNotEqualTo "" && _backpack != "B_Parachute" ) then {
         sleep 2;
         player addBackpack _backpack;
         clearAllItemsFromBackpack player;

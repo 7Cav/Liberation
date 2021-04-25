@@ -21,4 +21,4 @@ params [
 
 if (_class isEqualTo "") exitWith {["Empty string given"] call BIS_fnc_error; false};
 
-(getNumber (configFile >> "CfgVehicles" >> _class >> "isUav")) == 1
+(getNumber (configFile >> "CfgVehicles" >> _class >> "isUav")) isEqualTo 1

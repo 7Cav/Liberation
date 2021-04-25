@@ -19,10 +19,10 @@ dostartgame = 0;
 howtoplay = 0;
 private _dialog = createDialog "liberation_menu";
 waitUntil { dialog };
-waitUntil { dostartgame == 1 || howtoplay == 1 || !dialog };
+waitUntil { dostartgame isEqualTo 1 || howtoplay isEqualTo 1 || !dialog };
 
 closeDialog 0;
-if ( howtoplay == 0 ) then {
+if ( howtoplay isEqualTo 0 ) then {
     cinematic_camera_started = false;
 };
 introDone = true;

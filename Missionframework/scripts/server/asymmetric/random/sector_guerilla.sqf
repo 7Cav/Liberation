@@ -50,7 +50,7 @@ if (_incDir < 23) then {
 private _spawnedGroups = [];
 private _grp = [_startpos] call KPLIB_fnc_spawnGuerillaGroup;
 
-while {(count (waypoints _grp)) != 0} do {deleteWaypoint ((waypoints _grp) select 0);};
+while {(count (waypoints _grp)) isNotEqualTo 0} do {deleteWaypoint ((waypoints _grp) select 0);};
 {_x doFollow (leader _grp)} forEach (units _grp);
 
 private _waypoint = _grp addWaypoint [markerpos _sector, 100];

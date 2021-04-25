@@ -44,7 +44,7 @@ private _idx = 2;
         private _nextplayer = _x;
 
         private _displayname = "";
-        if(count (squadParams _nextplayer) != 0) then {
+        if(count (squadParams _nextplayer) isNotEqualTo 0) then {
             _displayname = "[" + ((squadParams _nextplayer select 0) select 0) + "] ";
         };
         _displayname = _displayname + name _nextplayer;
@@ -69,7 +69,7 @@ _idx = _idx + 1;
     private _nextplayer = _x;
     private _idx = _nextplayer select 2;
 
-    if (_idx % 2 == 0) then {
+    if (_idx % 2 isEqualTo 0) then {
 
         private _control = (findDisplay 5118) ctrlCreate ["RscBackground", -1, (findDisplay 5118) displayCtrl 9969];
         _control ctrlSetPosition [0, (_idx * 0.025) * safezoneH, 0.595 * safeZoneW, 0.025  * safezoneH];
@@ -118,7 +118,7 @@ while {dialog && alive player} do {
             if (_x select 2 == permission_playerid) exitWith {_player_uid = _x select 0; _player_name = _x select 1;};
         } foreach _players_array;
 
-        if (_player_uid != "") then {
+        if (_player_uid isNotEqualTo "") then {
 
             private _player_idx = -1;
             private _player_uids = [];
@@ -129,10 +129,10 @@ while {dialog && alive player} do {
 
             _player_idx = _player_uids find _player_uid;
 
-            if (permission_toset == 666) then {
+            if (permission_toset isEqualTo 666) then {
                 _player_permissions = [true, true, true, true, true, true];
             };
-            if (permission_toset == 999) then {
+            if (permission_toset isEqualTo 999) then {
                 _player_permissions = [false, false, false, false, false, false];
             };
 
@@ -192,11 +192,11 @@ while {dialog && alive player} do {
 
     } foreach _players_array;
 
-    if (save_changes == 1) then {
+    if (save_changes isEqualTo 1) then {
         GRLIB_permissions = +_modify_permissions;
         publicVariable "GRLIB_permissions";
         closeDialog 0;
     };
 
-    waitUntil {!dialog || !(alive player) || permission_playerid != -1 || permission_toset != -1 || save_changes != 0};
+    waitUntil {!dialog || !(alive player) || permission_playerid != -1 || permission_toset != -1 || save_changes isNotEqualTo 0};
 };

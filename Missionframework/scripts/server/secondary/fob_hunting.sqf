@@ -2,7 +2,7 @@
 _defenders_amount = (15 * (sqrt (GRLIB_unitcap))) min 15;
 
 _spawn_marker = [2000,999999,false] call KPLIB_fnc_getOpforSpawnPoint;
-if (_spawn_marker == "") exitWith {["Could not find position for fob hunting mission", "ERROR"] call KPLIB_fnc_log;};
+if (_spawn_marker isEqualTo "") exitWith {["Could not find position for fob hunting mission", "ERROR"] call KPLIB_fnc_log;};
 
 used_positions pushBack _spawn_marker;
 _base_position = markerpos _spawn_marker;
@@ -99,7 +99,7 @@ for [{_idx=0}, {_idx < _sentryMax}, {_idx=_idx+1}] do {
     [opfor_sentry, _base_sentry_pos, _grpsentry, "PRIVATE", 0.5] call KPLIB_fnc_createManagedUnit;
 };
 
-while {(count (waypoints _grpsentry)) != 0} do {deleteWaypoint ((waypoints _grpsentry) select 0);};
+while {(count (waypoints _grpsentry)) isNotEqualTo 0} do {deleteWaypoint ((waypoints _grpsentry) select 0);};
 private _waypoint = [];
 {
     _waypoint = _grpsentry addWaypoint [[((_base_position select 0) + (_x select 0)), ((_base_position select 1) + (_x select 1)), 0], -1];

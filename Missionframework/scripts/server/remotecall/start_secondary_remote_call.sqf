@@ -14,9 +14,9 @@ GRLIB_secondary_starting = true; publicVariable "GRLIB_secondary_starting";
 
 resources_intel = resources_intel - ( GRLIB_secondary_missions_costs select _mission_index );
 
-if (_mission_index == 0) then {[] spawn fob_hunting;};
-if (_mission_index == 1) then {[] spawn convoy_hijack;};
-if (_mission_index == 2) then {[] spawn search_and_rescue;};
+if (_mission_index isEqualTo 0) then {[] spawn fob_hunting;};
+if (_mission_index isEqualTo 1) then {[] spawn convoy_hijack;};
+if (_mission_index isEqualTo 2) then {[] spawn search_and_rescue;};
 
 GRLIB_secondary_starting = false; publicVariable "GRLIB_secondary_starting";
 

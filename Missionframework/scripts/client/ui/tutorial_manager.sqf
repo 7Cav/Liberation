@@ -32,7 +32,7 @@ _current_page = 0;
 _old_page = -99;
 
 while { true } do {
-    waitUntil { sleep 0.3; howtoplay == 1 };
+    waitUntil { sleep 0.3; howtoplay isEqualTo 1 };
     waitUntil { !dialog };
     sleep 0.1;
 
@@ -49,7 +49,7 @@ while { true } do {
 
     lbSetCurSel [ 513, 0 ];
 
-    while { howtoplay == 1 && alive player && dialog } do {
+    while { howtoplay isEqualTo 1 && alive player && dialog } do {
         _current_page = lbCurSel 513;
         if ( _current_page != _old_page ) then {
             ctrlSetText [ 514, _tutorial_titles select _current_page ];

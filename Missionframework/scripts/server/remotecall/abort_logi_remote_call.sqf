@@ -6,7 +6,7 @@ private ["_time","_nextState"];
 
 logiError = 0;
 
-if ((((KP_liberation_logistics select _index) select 7) == 0) || (((KP_liberation_logistics select _index) select 7) == 5) || (((KP_liberation_logistics select _index) select 7) == 6)) exitWith {logiError = 1;(localize "STR_LOGISTIC_STANDBY_ERROR") remoteExec ["hint",_clientID]; _clientID publicVariableClient "logiError";};
+if ((((KP_liberation_logistics select _index) select 7) isEqualTo 0) || (((KP_liberation_logistics select _index) select 7) isEqualTo 5) || (((KP_liberation_logistics select _index) select 7) isEqualTo 6)) exitWith {logiError = 1;(localize "STR_LOGISTIC_STANDBY_ERROR") remoteExec ["hint",_clientID]; _clientID publicVariableClient "logiError";};
 
 switch ((KP_liberation_logistics select _index) select 7) do {
     case 1;

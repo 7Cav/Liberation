@@ -4,9 +4,9 @@ if ( isNil "reinforcements_sector_under_attack" ) then { reinforcements_sector_u
 
 while { count (units _grp) > 0 } do {
 
-    if ( reinforcements_sector_under_attack != "" ) then {
+    if ( reinforcements_sector_under_attack isNotEqualTo "" ) then {
 
-        while {(count (waypoints _grp)) != 0} do {deleteWaypoint ((waypoints _grp) select 0);};
+        while {(count (waypoints _grp)) isNotEqualTo 0} do {deleteWaypoint ((waypoints _grp) select 0);};
         {_x doFollow leader _grp} foreach units _grp;
 
         _waypoint = _grp addWaypoint [markerpos reinforcements_sector_under_attack, 50];
@@ -28,7 +28,7 @@ while { count (units _grp) > 0 } do {
         sleep 300;
     };
 
-    if ( reinforcements_sector_under_attack == "" ) then {
+    if ( reinforcements_sector_under_attack isEqualTo "" ) then {
         private _sectors_patrol = [];
         private _patrol_startpos = getpos (leader _grp);
         {
@@ -37,7 +37,7 @@ while { count (units _grp) > 0 } do {
             };
         } foreach (sectors_allSectors - blufor_sectors);
 
-        while {(count (waypoints _grp)) != 0} do {deleteWaypoint ((waypoints _grp) select 0);};
+        while {(count (waypoints _grp)) isNotEqualTo 0} do {deleteWaypoint ((waypoints _grp) select 0);};
         {_x doFollow leader _grp} foreach units _grp;
 
         {
@@ -56,5 +56,5 @@ while { count (units _grp) > 0 } do {
         _waypoint setWaypointType "CYCLE";
     };
 
-    waitUntil { sleep 5;(count (units _grp) == 0) || (reinforcements_sector_under_attack != "") };
+    waitUntil { sleep 5;(count (units _grp) isEqualTo 0) || (reinforcements_sector_under_attack isNotEqualTo "") };
 };

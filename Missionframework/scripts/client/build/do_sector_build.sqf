@@ -10,9 +10,9 @@ if (((_this select 3) select 0) == KP_liberation_small_storage_building) then {
 
     _sectorpos = markerPos ([100] call KPLIB_fnc_getNearestSector);
 
-    _idactcancel = player addAction ["<t color='#B0FF00'>" + localize "STR_CANCEL" + "</t> <img size='2' image='res\ui_cancel.paa'/>",{build_confirmed = 3;},"",-725,false,true,"","build_confirmed == 1"];
-    _idactplace = player addAction ["<t color='#B0FF00'>" + localize "STR_PLACEMENT" + "</t> <img size='2' image='res\ui_confirm.paa'/>",{build_confirmed = 2;},"",-775,false,true,"","build_invalid == 0 && build_confirmed == 1"];
-    _idactvector = player addAction ["<t color='#B0FF00'>" + localize "STR_VECACTION" + "</t>",{KP_vector = !KP_vector;},"",-800,false,false,"","build_confirmed == 1"];
+    _idactcancel = player addAction ["<t color='#B0FF00'>" + localize "STR_CANCEL" + "</t> <img size='2' image='res\ui_cancel.paa'/>",{build_confirmed = 3;},"",-725,false,true,"","build_confirmed isEqualTo 1"];
+    _idactplace = player addAction ["<t color='#B0FF00'>" + localize "STR_PLACEMENT" + "</t> <img size='2' image='res\ui_confirm.paa'/>",{build_confirmed = 2;},"",-775,false,true,"","build_invalid isEqualTo 0 && build_confirmed isEqualTo 1"];
+    _idactvector = player addAction ["<t color='#B0FF00'>" + localize "STR_VECACTION" + "</t>",{KP_vector = !KP_vector;},"",-800,false,false,"","build_confirmed isEqualTo 1"];
 
     _ghost_spot = (markerPos "ghost_spot") findEmptyPosition [0,100];
 
@@ -29,7 +29,7 @@ if (((_this select 3) select 0) == KP_liberation_small_storage_building) then {
         _building setObjectTextureGlobal [_i, '#(rgb,8,8,3)color(0,1,0,0.8)'];
     };
 
-    while {build_confirmed == 1 && alive player} do {
+    while {build_confirmed isEqualTo 1 && alive player} do {
         _truedir = 90 - (getdir player);
         _truepos = [((getpos player) select 0) + (_dist * (cos _truedir)), ((getpos player) select 1) + (_dist * (sin _truedir)),0];
 
@@ -54,7 +54,7 @@ if (((_this select 3) select 0) == KP_liberation_small_storage_building) then {
                 _building setVectorUp surfaceNormal position _building;
             };
 
-            if (build_invalid == 1) then {
+            if (build_invalid isEqualTo 1) then {
                 GRLIB_ui_notif = "";
             };
 
@@ -66,11 +66,11 @@ if (((_this select 3) select 0) == KP_liberation_small_storage_building) then {
 
     GRLIB_ui_notif = "";
 
-    if (!alive player || build_confirmed == 3) then {
+    if (!alive player || build_confirmed isEqualTo 3) then {
         deleteVehicle _building;
     };
 
-    if (build_confirmed == 2) then {
+    if (build_confirmed isEqualTo 2) then {
         _vehpos = getpos _building;
         _vehdir = getdir _building;
         deleteVehicle _building;

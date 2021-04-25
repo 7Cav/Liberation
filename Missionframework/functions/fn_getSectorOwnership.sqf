@@ -28,12 +28,12 @@ private _blufor = [_pos, _radius, GRLIB_side_friendly] call KPLIB_fnc_getUnitsCo
 private _opfor = [_pos, _radius, GRLIB_side_enemy] call KPLIB_fnc_getUnitsCount;
 private _ratio = 0;
 
-if (_blufor + _opfor != 0) then {
+if (_blufor + _opfor isNotEqualTo 0) then {
     _ratio = _blufor / (_blufor + _opfor);
 };
 
 if (_blufor > 0 && {(_opfor <= _capCount && _ratio > _capRatioMin) || _ratio > _capRatio}) exitWith {GRLIB_side_friendly};
-if (_blufor == 0 && _opfor > _capCount) exitWith {GRLIB_side_enemy};
-if (_blufor == 0 && _opfor <= _capCount) exitWith {GRLIB_side_civilian};
+if (_blufor isEqualTo 0 && _opfor > _capCount) exitWith {GRLIB_side_enemy};
+if (_blufor isEqualTo 0 && _opfor <= _capCount) exitWith {GRLIB_side_civilian};
 
 GRLIB_side_resistance

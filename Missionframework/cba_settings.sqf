@@ -1,8 +1,8 @@
 // ACE Advanced Ballistics
-force force ace_advanced_ballistics_ammoTemperatureEnabled = false;
-force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = false;
+force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
+force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
 force force ace_advanced_ballistics_bulletTraceEnabled = false;
-force force ace_advanced_ballistics_enabled = false;
+force force ace_advanced_ballistics_enabled = true;
 force force ace_advanced_ballistics_muzzleVelocityVariationEnabled = false;
 force force ace_advanced_ballistics_simulationInterval = 0.05;
 
@@ -11,8 +11,8 @@ force force ace_advanced_fatigue_enabled = true;
 force ace_advanced_fatigue_enableStaminaBar = true;
 force ace_advanced_fatigue_fadeStaminaBar = true;
 force force ace_advanced_fatigue_loadFactor = 1;
-force force ace_advanced_fatigue_performanceFactor = 1.40374;
-force force ace_advanced_fatigue_recoveryFactor = 3.03773;
+force force ace_advanced_fatigue_performanceFactor = 2;
+force force ace_advanced_fatigue_recoveryFactor = 4;
 force force ace_advanced_fatigue_swayFactor = 1;
 force force ace_advanced_fatigue_terrainGradientFactor = 1;
 
@@ -128,18 +128,18 @@ force force ace_cargo_enable = true;
 force force ace_cargo_loadTimeCoefficient = 0.2;
 force force ace_cargo_paradropTimeCoefficent = 0;
 force force ace_rearm_distance = 20;
-force force ace_rearm_level = 1;
-force force ace_rearm_supply = 0;
-force ace_refuel_hoseLength = 15;
-force force ace_refuel_rate = 1;
-force force ace_repair_addSpareParts = true;
-force force ace_repair_autoShutOffEngineWhenStartingRepair = false;
+force force ace_rearm_level = 2;
+force force ace_rearm_supply = 1;
+force ace_refuel_hoseLength = 20;
+force force ace_refuel_rate = 2;
+force force ace_repair_addSpareParts = false;
+force force ace_repair_autoShutOffEngineWhenStartingRepair = true;
 force force ace_repair_consumeItem_toolKit = 0;
 force force ace_repair_displayTextOnRepair = true;
 force force ace_repair_engineerSetting_fullRepair = 2;
 force force ace_repair_engineerSetting_repair = 1;
 force force ace_repair_engineerSetting_wheel = 0;
-force force ace_repair_fullRepairLocation = 0;
+force force ace_repair_fullRepairLocation = 3;
 force force ace_repair_fullRepairRequiredItems = ["ToolKit"];
 force force ace_repair_miscRepairRequiredItems = ["ToolKit"];
 force force ace_repair_repairDamageThreshold = 0.800653;
@@ -178,7 +178,7 @@ ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 force force ace_medical_ai_enabledFor = 0;
-force force ace_medical_AIDamageThreshold = 0.4;
+force force ace_medical_AIDamageThreshold = 0.3;
 force force ace_medical_bleedingCoefficient = 0.8;
 force force ace_medical_blood_bloodLifetime = 900;
 force force ace_medical_blood_enabledFor = 2;
@@ -273,9 +273,9 @@ force force ace_pylons_enabledForZeus = true;
 force force ace_pylons_enabledFromAmmoTrucks = true;
 force force ace_pylons_rearmNewPylons = true;
 force force ace_pylons_requireEngineer = false;
-force force ace_pylons_requireToolkit = true;
-force force ace_pylons_searchDistance = 15;
-force force ace_pylons_timePerPylon = 5;
+force force ace_pylons_requireToolkit = false;
+force force ace_pylons_searchDistance = 20;
+force force ace_pylons_timePerPylon = 2;
 
 // ACE Quick Mount
 force ace_quickmount_distance = 5;
@@ -304,8 +304,8 @@ force force ace_scopes_zeroReferenceTemperature = 20;
 // ACE Spectator
 force force ace_spectator_enableAI = false;
 ace_spectator_maxFollowDistance = 5;
-force force ace_spectator_restrictModes = 2;
-force force ace_spectator_restrictVisions = 1;
+force force ace_spectator_restrictModes = 1;
+force force ace_spectator_restrictVisions = 0;
 
 // ACE Switch Units
 force force ace_switchunits_enableSafeZone = true;
@@ -315,6 +315,12 @@ force force ace_switchunits_switchToCivilian = false;
 force force ace_switchunits_switchToEast = false;
 force force ace_switchunits_switchToIndependent = false;
 force force ace_switchunits_switchToWest = false;
+
+// ACE Trenches
+force ace_trenches_bigEnvelopeDigDuration = 15;
+force ace_trenches_bigEnvelopeRemoveDuration = 8;
+force ace_trenches_smallEnvelopeDigDuration = 10;
+force ace_trenches_smallEnvelopeRemoveDuration = 5;
 
 // ACE Uncategorized
 force force ace_fastroping_requireRopeItems = false;
@@ -653,21 +659,21 @@ Achilles_var_moduleTreeHelmet = false;
 Achilles_var_moduleTreeSearchPatch = false;
 
 // ACRE2
-acre_sys_core_automaticAntennaDirection = false;
+acre_sys_core_automaticAntennaDirection = true;
 acre_sys_core_defaultRadioVolume = 0.8;
 force force acre_sys_core_fullDuplex = false;
 force force acre_sys_core_ignoreAntennaDirection = true;
-force force acre_sys_core_interference = false;
+force force acre_sys_core_interference = true;
 acre_sys_core_postmixGlobalVolume = 1;
 acre_sys_core_premixGlobalVolume = 1;
 force force acre_sys_core_revealToAI = 1;
 acre_sys_core_spectatorVolume = 1;
-force force acre_sys_core_terrainLoss = 0.0;
+force force acre_sys_core_terrainLoss = 0.4;
 force acre_sys_core_ts3ChannelName = "";
 force acre_sys_core_ts3ChannelPassword = "";
-acre_sys_core_ts3ChannelSwitch = true;
+acre_sys_core_ts3ChannelSwitch = false;
 acre_sys_core_unmuteClients = true;
-force force acre_sys_signal_signalModel = 0;
+force force acre_sys_signal_signalModel = 2;
 
 // ACRE2 UI
 acre_sys_gui_volumeColorScale = [[1,1,0,0.5],[1,0.83,0,0.5],[1,0.65,0,0.5],[1,0.44,0,0.5],[1,0,0,0.5]];
@@ -749,3 +755,38 @@ force force usaf_serviceMenu_setting_replaceSources = false;
 
 // A3TI
 force force A3TI_ALLOW_VANILLA_TI = false;
+force A3TI_ACE_JAVELIN = true;
+force A3TI_ALLOW_TANK_DRIVER = true;
+force A3TI_ALLOW_VANILLA_TI = true;
+force A3TI_ENABLE_ZEUS = true;
+force A3TI_HD_VISION_FIGHTER = true;
+force A3TI_HD_VISION_LANDVEH = true;
+force A3TI_HD_VISION_SHIP = false;
+force A3TI_HD_VISION_UAV = true;
+force A3TI_REMOVE_FILMGRAIN_RHS = true;
+
+// BettIR
+force force BettIR_ViewDistance = 800;
+
+// LAMBS Main
+force lambs_main_combatShareRange = 200;
+force lambs_main_debug_Drawing = false;
+force lambs_main_debug_FSM = false;
+force lambs_main_debug_FSM_civ = false;
+force lambs_main_debug_functions = false;
+force lambs_main_debug_RenderExpectedDestination = false;
+lambs_main_disableAICallouts = false;
+lambs_main_disableAIDodge = false;
+lambs_main_disableAIFleeing = false;
+lambs_main_disableAIGestures = false;
+lambs_main_disablePlayerGroupSuppression = false;
+force lambs_main_indoorMove = 0.25;
+force lambs_main_maxRevealValue = 0.5;
+force lambs_main_minFriendlySuppressionDistance = 5;
+force lambs_main_minSuppressionRange = 25;
+force lambs_main_radioBackpack = 2000;
+lambs_main_radioDisabled = false;
+force lambs_main_radioEast = 500;
+force lambs_main_radioGuer = 500;
+force lambs_main_radioShout = 150.165;
+force lambs_main_radioWest = 500;

@@ -7,7 +7,7 @@ sectors_timer = false;
 
 ["Production management started", "PRODUCTION"] call KPLIB_fnc_log;
 private _start = 0;
-while {GRLIB_endgame == 0} do {
+while {GRLIB_endgame isEqualTo 0} do {
 
     recalculate_sectors = false;
 
@@ -30,7 +30,7 @@ while {GRLIB_endgame == 0} do {
             private _time = _x select 8;
 
             private _storage = nearestObjects [(markerPos (_x select 1)), [KP_liberation_small_storage_building], 100];
-            _storage = _storage select {(_x getVariable ["KP_liberation_storage_type",-1]) == 1};
+            _storage = _storage select {(_x getVariable ["KP_liberation_storage_type",-1]) isEqualTo 1};
             if ((count _storage) > 0) then {
                 _storage = (_storage select 0);
                 _storageArray = [(getPosATL _storage),(getDir _storage),(vectorUpVisual _storage)];
@@ -40,7 +40,7 @@ while {GRLIB_endgame == 0} do {
                     if ((_time - 1) < 1) then {
                         _time = KP_liberation_production_interval;
 
-                        if (((count (attachedObjects _storage)) < 12) && !((_x select 7) == 3)) then {
+                        if (((count (attachedObjects _storage)) < 12) && !((_x select 7) isEqualTo 3)) then {
                             private _crateType = KP_liberation_supply_crate;
                             switch (_x select 7) do {
                                 case 1: {_crateType = KP_liberation_ammo_crate; stats_ammo_produced = stats_ammo_produced + 100;};

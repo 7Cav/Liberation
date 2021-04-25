@@ -30,7 +30,7 @@ if (vehicle player isKindOf "LandVehicle" || vehicle player isKindOf "Ship") the
     setViewDistance KPPLM_viewVeh;
     setObjectViewDistance KPPLM_viewVeh;
     1 fadeSound KPPLM_soundVeh;
-    if (difficultyOption "thirdPersonView" == 1) then {
+    if (difficultyOption "thirdPersonView" isEqualTo 1) then {
         if (KPPLM_tpv > 1) then {player switchCamera "EXTERNAL";};
     };
 };
@@ -40,8 +40,8 @@ if (vehicle player isKindOf "Air") then {
     setViewDistance KPPLM_viewAir;
     setObjectViewDistance KPPLM_viewAir;
     1 fadeSound KPPLM_soundVeh;
-    if (difficultyOption "thirdPersonView" == 1) then {
-        if (KPPLM_tpv == 1 || KPPLM_tpv == 3) then {player switchCamera "EXTERNAL";};
+    if (difficultyOption "thirdPersonView" isEqualTo 1) then {
+        if (KPPLM_tpv isEqualTo 1 || KPPLM_tpv isEqualTo 3) then {player switchCamera "EXTERNAL";};
     };
 };
 

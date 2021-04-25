@@ -4,7 +4,7 @@ if ((!_force_surrender) && ((random 100) > GRLIB_surrender_chance)) exitWith {};
 
 if ((_unit isKindOf "Man") && (alive _unit) && (side group _unit == GRLIB_side_enemy)) then {
 
-    if (vehicle _unit != _unit) then {deleteVehicle _unit};
+    if (!isNull objectParent _unit) then {deleteVehicle _unit};
 
     sleep (random 5);
 
@@ -22,8 +22,8 @@ if ((_unit isKindOf "Man") && (alive _unit) && (side group _unit == GRLIB_side_e
         _unit removeItem "NVGoggles_INDEP";
         _unit setUnitPos "UP";
         sleep 1;
-        private _grp = createGroup [GRLIB_side_civilian, true];
-        [_unit] joinSilent _grp;
+        //private _grp = createGroup [GRLIB_side_civilian, true];
+        //[_unit] joinSilent _grp;
         if (KP_liberation_ace) then {
             ["ace_captives_setSurrendered", [_unit, true], _unit] call CBA_fnc_targetEvent;
         } else {

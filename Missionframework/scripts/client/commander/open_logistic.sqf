@@ -58,47 +58,47 @@ while {dialog && (alive player)} do {
     ctrlEnable [758080, false];
     ctrlEnable [758081, false];
 
-    if (addLogiGroup == 1) then {
+    if (addLogiGroup isEqualTo 1) then {
         addLogiGroup = 0;
         [_selectedGroup] remoteExec ["add_logiGroup_remote_call",2];
         waitUntil {sleep 0.5; _logi_count != (count KP_liberation_logistics)};
     };
 
-    if (deleteLogiGroup == 1) then {
+    if (deleteLogiGroup isEqualTo 1) then {
         deleteLogiGroup = 0;
         [_selectedGroup] remoteExec ["del_logiGroup_remote_call",2];
         lbSetCurSel [75802,-1];
         waitUntil {sleep 0.5; _logi_count != (count KP_liberation_logistics)};
     };
 
-    if (buyLogiTruck == 1) then {
+    if (buyLogiTruck isEqualTo 1) then {
         buyLogiTruck = 0;
         _tempvariable = _selectedGroup select 1;
         [_listselect, _nearfob, clientOwner, KP_liberation_supplies, KP_liberation_ammo, KP_liberation_fuel] remoteExec ["add_logiTruck_remote_call",2];
-        waitUntil {sleep 0.5; (_tempvariable != ((KP_liberation_logistics select _listselect) select 1)) || (logiError == 1)};
+        waitUntil {sleep 0.5; (_tempvariable != ((KP_liberation_logistics select _listselect) select 1)) || (logiError isEqualTo 1)};
     };
 
-    if (sellLogiTruck == 1) then {
+    if (sellLogiTruck isEqualTo 1) then {
         sellLogiTruck = 0;
         _tempvariable = _selectedGroup select 1;
         [_listselect, _nearfob, clientOwner] remoteExec ["del_logiTruck_remote_call",2];
-        waitUntil {sleep 0.5; (_tempvariable != ((KP_liberation_logistics select _listselect) select 1)) || (logiError == 1)};
+        waitUntil {sleep 0.5; (_tempvariable != ((KP_liberation_logistics select _listselect) select 1)) || (logiError isEqualTo 1)};
     };
 
-    if (saveConvoySettings == 1) then {
+    if (saveConvoySettings isEqualTo 1) then {
         saveConvoySettings = 0;
         if (((lbCurSel 758024) != -1) && ((lbCurSel 758029) != -1)) then {
             [_listselect, ((_logi_destinations select lbCurSel 758024) select 1), [parseNumber ctrlText 758025,parseNumber ctrlText 758026,parseNumber ctrlText 758027], ((_logi_destinations select lbCurSel 758029) select 1), [parseNumber ctrlText 758030,parseNumber ctrlText 758031,parseNumber ctrlText 758032], clientOwner] remoteExec ["save_logi_remote_call",2];
-            waitUntil {sleep 0.5; (!(_selectedGroup isEqualTo (KP_liberation_logistics select _listselect))) || (logiError == 1)};
+            waitUntil {sleep 0.5; (!(_selectedGroup isEqualTo (KP_liberation_logistics select _listselect))) || (logiError isEqualTo 1)};
         } else {
             hint localize "STR_LOGISTIC_SAVE_ERROR";
         };
     };
 
-    if (convoyStandby == 1) then {
+    if (convoyStandby isEqualTo 1) then {
         convoyStandby = 0;
         [_listselect, clientOwner] remoteExec ["abort_logi_remote_call",2];
-        waitUntil {sleep 0.5; (!(_selectedGroup isEqualTo (KP_liberation_logistics select _listselect))) || (logiError == 1)};
+        waitUntil {sleep 0.5; (!(_selectedGroup isEqualTo (KP_liberation_logistics select _listselect))) || (logiError isEqualTo 1)};
     };
 
     logiError = 0;
@@ -124,7 +124,7 @@ while {dialog && (alive player)} do {
 
         _selectedGroup = +(KP_liberation_logistics select _listselect);
 
-        if ((_selectedGroup select 7) == 0) then {
+        if ((_selectedGroup select 7) isEqualTo 0) then {
             ctrlEnable [758021, true];
 
             if ((_selectedGroup select 1) <= 0) then {
@@ -218,12 +218,12 @@ while {dialog && (alive player)} do {
         !dialog
         || !(alive player)
         || (lbCurSel 75802) != _listselect
-        || addLogiGroup != 0
-        || deleteLogiGroup != 0
-        || buyLogiTruck != 0
-        || sellLogiTruck != 0
-        || saveConvoySettings != 0
-        || convoyStandby != 0
+        || addLogiGroup isNotEqualTo 0
+        || deleteLogiGroup isNotEqualTo 0
+        || buyLogiTruck isNotEqualTo 0
+        || sellLogiTruck isNotEqualTo 0
+        || saveConvoySettings isNotEqualTo 0
+        || convoyStandby isNotEqualTo 0
     };
 };
 
