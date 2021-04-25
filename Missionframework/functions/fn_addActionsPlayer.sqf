@@ -371,7 +371,7 @@ _player addAction [
 ];
 
 _player addAction [
-    ["<t color='#e0000f'>", "HEAL", "</t><img size='2' image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_revive_ca.paa'/>"] joinString "",
+    ["<t color='#e0000f'>", "-- HEAL", "</t><img size='2' image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_revive_ca.paa'/>"] joinString "",
     "scripts\client\actions\fn_heal.sqf",
     nil,
     0,

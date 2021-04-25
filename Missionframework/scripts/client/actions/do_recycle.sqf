@@ -11,14 +11,14 @@ private _suppMulti = 0.5;
 private _ammoMulti = 0.5;
 private _fuelMulti = 0.5;
 // changed slingload object ot placeholders -- allowing recycling.
-if !(
+if (
     ((toLower _type) in KPLIB_b_buildings_classes) ||
     ((toLower _type) in KPLIB_storageBuildings) ||
     ((toLower _type) in KPLIB_upgradeBuildings) ||
     (_type in KP_liberation_ace_crates) ||
-    (_type == "Placeholder_B_Slingload_01_Repair_F") ||
-    (_type == "Placeholder_B_Slingload_01_Fuel_F") ||
-    (_type == "Placeholder_B_Slingload_01_Ammo_F")
+    (_type == "B_Slingload_01_Repair_F") ||
+    (_type == "B_Slingload_01_Fuel_F") ||
+    (_type == "B_Slingload_01_Ammo_F")
 ) then {
     private _currentAmmo = 0;
     private _allAmmo = 0;
