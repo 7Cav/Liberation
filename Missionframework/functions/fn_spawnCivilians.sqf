@@ -33,6 +33,33 @@ if (_sector in sectors_bigtown) then {
 };
 _amount = _amount * (sqrt (GRLIB_unitcap));
 
+// Civs will run scared if in danger of being shot.
+civScared = { _this select 0 addEventHandler ["FiredNear", {
+	_civ = _this select 0;
+
+	//Remove the eventHandler to prevent spamming
+	_civ removeAllEventHandlers "FiredNear";
+
+	switch( round(random 2) ) do {
+		case 0:{_civ switchMove "ApanPercMstpSnonWnonDnon_G01";  };
+		case 1:{_civ playMoveNow "ApanPknlMstpSnonWnonDnon_G01"; };
+		case 2:{_civ playMoveNow "ApanPpneMstpSnonWnonDnon_G01"; };
+		default{_civ playMoveNow "ApanPknlMstpSnonWnonDnon_G01"; };
+	};
+
+	_civ setSpeedMode "FULL";
+	(group _civ) setBehaviour "CARELESS";
+	_civ enableFatigue false;
+
+	_nH= nearestBuilding (getPos _civ);
+
+	if (!isNil "_nH") then {
+	_HP = _nH buildingPos - 1; // Finds list of all available building positions in the selected building
+	_HP = selectRandom _HP; // Picks a building position from the list of building positions
+	_civ doMove _HP; // Orders the civilian to move to the building position
+	};}];
+};
+
 // Spawn civilians
 private _grp = grpNull;
 for "_i" from 1 to _amount do {
@@ -48,5 +75,9 @@ for "_i" from 1 to _amount do {
 
     [_grp] call add_civ_waypoints;
 };
+
+{
+    [_x] call civScared;
+} forEach _civs;
 
 _civs

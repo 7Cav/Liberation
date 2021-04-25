@@ -159,7 +159,18 @@ GRLIB_ignore_colisions_when_building = [
     "B_Mortar_01_F",                                                    // Mk6 Mortar
     "ACE_friesAnchorBar",                                               // ACE FRIES
     "ACE_friesGantryReverse",                                           // ACE FRIES
-    "ACE_friesGantry"                                                   // ACE FRIES
+    "ACE_friesGantry",                                                  // ACE FRIES
+    "Land_RoadBarrier_01_F",
+    "Land_ConcreteWall_01_l_4m_F",
+    "Land_ConcreteWall_01_l_8m_F",
+    "Land_GuardTower_01_F",
+    "Land_Rail_ConcreteRamp_F",
+    "Land_MedicalTent_01_NATO_generic_inner_F",
+    "Land_MedicalTent_01_floor_light_F",
+    "Land_Cargo20_EMP_F",
+    "Land_Obstacle_Ramp_F",
+    "Land_WoodenWindBreak_01_F",
+    "Land_RoadCone_01_F"
 ];
 
 /*

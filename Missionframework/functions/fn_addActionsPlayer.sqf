@@ -370,4 +370,26 @@ _player addAction [
     "
 ];
 
+_player addAction [
+    ["<t color='#e0000f'>", "HEAL", "</t><img size='2' image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_revive_ca.paa'/>"] joinString "",
+    "scripts\client\actions\fn_heal.sqf",
+    nil,
+    0,
+    false,
+    true,
+    "",
+    "
+        isNull (objectParent _originalTarget)
+        && {alive _originalTarget}
+        && {
+            _originalTarget getVariable ['KPLIB_fobDist', 99999] < 20
+            || {_originalTarget getVariable ['KPLIB_isNearArsenal', false]}
+            || {_originalTarget getVariable ['KPLIB_isNearMobRespawn', false]}
+            || {_originalTarget getVariable ['KPLIB_isNearStart', false]}
+        }
+        && {build_confirmed isEqualTo 0}
+    "
+];
+
+
 true
