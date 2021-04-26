@@ -152,7 +152,7 @@ force force ace_magazinerepack_timePerBeltLink = 1;
 force force ace_magazinerepack_timePerMagazine = 2;
 
 // ACE Map
-force force ace_map_BFT_Enabled = false;
+force force ace_map_BFT_Enabled = true;
 force force ace_map_BFT_HideAiGroups = true;
 force force ace_map_BFT_Interval = 10;
 force force ace_map_BFT_ShowPlayerNames = false;
@@ -668,7 +668,7 @@ acre_sys_core_postmixGlobalVolume = 1;
 acre_sys_core_premixGlobalVolume = 1;
 force force acre_sys_core_revealToAI = 1;
 acre_sys_core_spectatorVolume = 1;
-force force acre_sys_core_terrainLoss = 0.4;
+force force acre_sys_core_terrainLoss = 0.05;
 force acre_sys_core_ts3ChannelName = "";
 force acre_sys_core_ts3ChannelPassword = "";
 acre_sys_core_ts3ChannelSwitch = false;
