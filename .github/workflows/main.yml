@@ -29,7 +29,6 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          ref: develop
           name: PBO-Files
           path: _tools/build/pbo
 
