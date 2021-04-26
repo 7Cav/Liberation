@@ -152,7 +152,7 @@ force force ace_magazinerepack_timePerBeltLink = 1;
 force force ace_magazinerepack_timePerMagazine = 2;
 
 // ACE Map
-force force ace_map_BFT_Enabled = true;
+force force ace_map_BFT_Enabled = false;
 force force ace_map_BFT_HideAiGroups = true;
 force force ace_map_BFT_Interval = 10;
 force force ace_map_BFT_ShowPlayerNames = false;
