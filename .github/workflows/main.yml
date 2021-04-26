@@ -10,7 +10,7 @@ jobs:
   artifacts:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@master
 
       - uses: docker://node:10-alpine
         name: Setup Node
@@ -23,7 +23,7 @@ jobs:
         working-directory: _tools
         run: npx gulp
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@master
         with:
           name: PBO-Files
           path: _tools/build/pbo
