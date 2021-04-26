@@ -3,14 +3,14 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - develop
   pull_request: ~
 
 jobs:
   artifacts:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@develop
 
       - uses: docker://node:10-alpine
         name: Setup Node
@@ -23,7 +23,7 @@ jobs:
         working-directory: _tools
         run: npx gulp
 
-      - uses: actions/upload-artifact@master
+      - uses: actions/upload-artifact@release
         with:
           name: PBO-Files
           path: _tools/build/pbo
