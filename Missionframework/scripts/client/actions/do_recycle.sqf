@@ -16,9 +16,9 @@ if (
     ((toLower _type) in KPLIB_storageBuildings) ||
     ((toLower _type) in KPLIB_upgradeBuildings) ||
     (_type in KP_liberation_ace_crates) ||
-    (_type == "B_Slingload_01_Repair_F") ||
-    (_type == "B_Slingload_01_Fuel_F") ||
-    (_type == "B_Slingload_01_Ammo_F")
+    (_type == "Land_Pod_Heli_Transport_04_repair_F") ||
+    (_type == "Land_Pod_Heli_Transport_04_fuel_F") ||
+    (_type == "Land_Pod_Heli_Transport_04_ammo_F")
 ) then {
     private _currentAmmo = 0;
     private _allAmmo = 0;
