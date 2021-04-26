@@ -10,6 +10,7 @@
 * Added: Pilot detection script, This disables Halo Jumping if player is in the Heli-Pilot Slot.
 * Added: Whitelist for 7cav MP Staff to allow spectating as a scrollwheel option.
 * Added: More variety in FOB building assets.
+* Added: Workflows for github.
 * Removed: AH64D Requirement of being unlocked to purchase.
 * Removed: Check for Recycle on Fuel, Ammo and Repair Huron containers (Still Inprogress)
 * Tweaked: Cost of standard HMMWV are adjusted to allow less burden on supplies when spawned for large player counts.
