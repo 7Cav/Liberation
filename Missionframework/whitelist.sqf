@@ -14,6 +14,7 @@ GRLIB_whitelisted_steamids = [
     "76561197963459537", // Sweetwater.I
     "76561197997124640", // Liber.N
     "76561197993187376", // Sypolt.R
+	"76561198099828056", // Whitsel.M    - S3
 	// TODO - Add Whitsel and Moraru and others missed
 	"76561198007243124", // Kleinman.H   - REO
 	"76561198081516483", //	Ryan.B       - RCSM
