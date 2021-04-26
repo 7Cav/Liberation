@@ -252,7 +252,7 @@ class Mission
 				condition="true";
 				timeout[]={1.5,1.5,1.5};
 				interuptable=1;
-				effectMusic="CUP_A10G_Mission_03";
+				effectMusic="LeadTrack01_F_EPA";
 			};
 			id=331;
 			type="EmptyDetector";
@@ -285,7 +285,7 @@ class Mission
 				condition="GRLIB_endgame == 1";
 				timeout[]={17,17,17};
 				interuptable=1;
-				effectMusic="CUP_A10G_Mission_03_outro";
+				effectMusic="LeadTrack02b_F_EPA";
 			};
 			id=333;
 			type="EmptyDetector";

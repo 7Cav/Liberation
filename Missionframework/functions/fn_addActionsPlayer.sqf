@@ -390,6 +390,20 @@ _player addAction [
         && {build_confirmed isEqualTo 0}
     "
 ];
-
+// Add Spectate ability if near fob
+if ((getPlayerUID player) in MP_whitelisted_steamids) then {
+    _player addAction [
+      ["<t color='#e0000f'>", "-- SPECTATE", "</t>"] joinString "",
+      {[true,false,true] call ace_spectator_fnc_setSpectator;},
+      nil,
+      -900,
+      false,
+      true,
+      "",
+      "
+        alive _originalTarget
+    "
+  ];
+};
 
 true

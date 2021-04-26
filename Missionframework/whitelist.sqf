@@ -11,11 +11,10 @@ GRLIB_whitelisted_tags = [
 // For example: "76561198016642627"
 // To know that information: https://steamid.io/
 GRLIB_whitelisted_steamids = [
-    "76561197963459537", // Sweetwater.I
+	"76561197963459537", // Sweetwater.I -This shouldnt be here
     "76561197997124640", // Liber.N
     "76561197993187376", // Sypolt.R
 	"76561198099828056", // Whitsel.M    - S3
-	// TODO - Add Whitsel and Moraru and others missed
 	"76561198007243124", // Kleinman.H   - REO
 	"76561198081516483", //	Ryan.B       - RCSM
 	"76561197976646388", //	Baeder.S     - ROO
@@ -48,11 +47,22 @@ GRLIB_whitelisted_steamids = [
 	"76561198021516465", // Ronnings.P   - S3
 	"76561198050361032", // Presjack.J   - S3
 	"76561198149329790", // Mazinski.H   - S3
-	"76561198043140265" // Centeno.JP   - S3
+	"76561198043140265"  // Centeno.JP   - S3
 ];
 
 // Allowed individual player names. Note that this method is not very secure contrary to SteamIDs.
 // For exemple: "Zbug"
 GRLIB_whitelisted_names = [
 
+];
+//MP stuffs
+MP_whitelisted_steamids = [
+	"76561198057951824", // Mitsuma.R    - MP 1IC
+	"76561198028446303", // Jay.M        - MP 2IC
+	"76561198019973923", // Velasquez.J  - MP
+	"76561198014921178", // Rogers.S     - MP
+	"76561198968070623", // Connelly.M   - MP
+	"76561198103184850", // Davidson.J   - MP
+	"76561197963550741", // Boyd.M       - MP
+	"76561198086223942"  // Cass.A       - MP
 ];
