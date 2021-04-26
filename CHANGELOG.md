@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.86.7a-7cav-0.1 (2021-04-25)
+## 0.96.7a-7cav-0.1 (2021-04-25)
 * Added: Additional Vehicles to Blufor preset.
 * Added: Heal Script addaction when near FOB, Mobile FOB or Arsenal Box.
 * Added: Advanced Towing Script (Scroll Wheel option)
