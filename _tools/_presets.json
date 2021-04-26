@@ -250,15 +250,15 @@
         "workshopId": ""
     },
     {
-        "sourceFolder": "kp_liberation.Takistan",
-        "missionName": "kp_liberation_afrf",
-        "map": "Takistan",
+        "sourceFolder": "kp_liberation.Altis",
+        "missionName": "kp_liberation_7cav",
+        "map": "Altis",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_preset_blufor": 8,
-            "KP_liberation_preset_opfor": 3,
-            "KP_liberation_preset_resistance": 3,
-            "KP_liberation_preset_civilians": 2,
+            "KP_liberation_preset_blufor": 6,
+            "KP_liberation_preset_opfor": 2,
+            "KP_liberation_preset_resistance": 2,
+            "KP_liberation_preset_civilians": 0,
             "KP_liberation_arsenal": 0
         },
         "workshopId": ""

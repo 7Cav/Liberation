@@ -31,6 +31,7 @@
 * Fixed: Changed Tent Hanger object (Was for Air Asset capacity) to Disel Ground Power unit since FIRAWS sees a vanilla Tent Hanger as a unlimited resupply point.
 * Fixed: Added Stringtable values for Helojump and localizations that were erroring out on RPT.
 
+
 ## 0.96.7a (2020-09-12)
 * Added: Contact DLC static weapon backpacks to default blacklist.
 * Added: Czech translation. Thanks to [MJVEVERUSKA](https://github.com/MJVEVERUSKA)

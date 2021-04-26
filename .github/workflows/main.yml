@@ -4,13 +4,17 @@ on:
   push:
     branches:
       - develop
-  pull_request: ~
+  pull_request:
+    branches:
+      - develop
 
 jobs:
   artifacts:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
+        with:
+        ref: develop
 
       - uses: docker://node:10-alpine
         name: Setup Node
@@ -23,8 +27,9 @@ jobs:
         working-directory: _tools
         run: npx gulp
 
-      - uses: actions/upload-artifact@master
+      - uses: actions/upload-artifact@v2
         with:
+          ref: develop
           name: PBO-Files
           path: _tools/build/pbo
 
