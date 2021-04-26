@@ -35,7 +35,7 @@ clearWeaponCargoGlobal _container;
     _components = _weapon call KPLIB_fnc_getWeaponComponents;
     private _weaponNonPreset = _components select 0;
 
-    if (_weaponNonPreset == "") then {
+    if (_weaponNonPreset isEqualTo "") then {
         _weaponNonPreset = _weapon;
     };
 
@@ -83,7 +83,7 @@ clearWeaponCargoGlobal _container;
         };
 
         _magazine params [["_magazineClass", ""], ["_magazineAmmoCount", 0]];
-        if (_magazineClass != "") then {
+        if (_magazineClass isNotEqualTo "") then {
             if (toLower _magazineClass in KP_liberation_allowed_items) then {
                 _container addMagazineAmmoCargo [_magazineClass, 1, _magazineAmmoCount];
             } else {
@@ -92,7 +92,7 @@ clearWeaponCargoGlobal _container;
         };
 
         _magazineGL params [["_magazineGLClass", ""], ["_magazineGLAmmoCount", 0]];
-        if (_magazineGLClass != "") then {
+        if (_magazineGLClass isNotEqualTo "") then {
             if (toLower _magazineGLClass in KP_liberation_allowed_items) then {
                 _container addMagazineAmmoCargo [_magazineGLClass, 1, _magazineGLAmmoCount];
             } else {

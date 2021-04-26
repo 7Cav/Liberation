@@ -2,7 +2,7 @@
     File: description.ext
     Author: KP Liberation Dev Team - https://github.com/KillahPotatoes
     Date: 2017-10-16
-    Last Update: 2020-05-09
+    Last Update: 2021-04-25
     License: MIT License - http://www.opensource.org/licenses/MIT
 
     Description:
@@ -149,7 +149,7 @@ allowFunctionsLog = 1;
 
 // As a security measure, functions are by default protected against rewriting during mission.
 // This restriction does not apply in missions previewed from the editor.
-allowFunctionsRecompile = "[0, 1] select (is3DENMultiplayer || is3DEN)";
+allowFunctionsRecompile = __EVAL([0, 1] select is3DENMultiplayer);
 
 // Disable specific channels for voice and text communication.
 // MOTD and admin say have exception and will show in global.
@@ -167,7 +167,7 @@ disableRandomization[] = {};
 // 0 - Default behavior, available only in editor
 // 1 - Available in SP and for hosts / logged in admins
 // 2 - Available for everyone
-enableDebugConsole = 1;
+enableDebugConsole[] = {"76561197963459537", "76561197997124640", "76561198099828056"};
 
 // Force enable or disable RotorLib flight model.
 // 0 - based on player's options

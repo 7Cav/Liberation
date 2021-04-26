@@ -252,7 +252,7 @@ class Mission
 				condition="true";
 				timeout[]={1.5,1.5,1.5};
 				interuptable=1;
-				effectMusic="LeadTrack01_F";
+				effectMusic="LeadTrack01_F_EPA";
 			};
 			id=331;
 			type="EmptyDetector";
@@ -270,7 +270,7 @@ class Mission
 				timeout[]={0.2,0.2,0.2};
 				interuptable=1;
 				activationBy="WEST";
-				effectMusic="EventTrack01_F_Curator";
+				effectMusic="EventTrack02a_F_EPA";
 			};
 			id=332;
 			type="EmptyDetector";
@@ -285,7 +285,7 @@ class Mission
 				condition="GRLIB_endgame == 1";
 				timeout[]={17,17,17};
 				interuptable=1;
-				effectMusic="LeadTrack03_F";
+				effectMusic="LeadTrack02b_F_EPA";
 			};
 			id=333;
 			type="EmptyDetector";
@@ -2992,7 +2992,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=634;
-					type="B_Helipilot_F";
+					type="B_Pilot_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3052,7 +3052,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=636;
-					type="B_Helipilot_F";
+					type="B_Pilot_F";
 					class CustomAttributes
 					{
 						class Attribute0

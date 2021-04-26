@@ -23,8 +23,8 @@ switch (_fac) do {
             stats_fuel_spent = stats_fuel_spent + _price_f;
 
             private _storage = nearestObjects [(markerPos (_x select 1)), [KP_liberation_small_storage_building], 100];
-            _storage = _storage select {(_x getVariable ["KP_liberation_storage_type",-1]) == 1};
-            if ((count _storage) == 0) exitWith {};
+            _storage = _storage select {(_x getVariable ["KP_liberation_storage_type",-1]) isEqualTo 1};
+            if ((count _storage) isEqualTo 0) exitWith {};
             _storage = (_storage select 0);
             private _storedCrates = (attachedObjects _storage);
             reverse _storedCrates;

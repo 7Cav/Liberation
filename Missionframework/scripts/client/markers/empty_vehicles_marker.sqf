@@ -23,12 +23,12 @@ while { true } do {
 
     _markedveh = [];
     {
-        if (alive _x && (toLower (typeof _x)) in _vehtomark && (count (crew _x)) == 0 && (_x distance2d startbase) > 500) then {
+        if (alive _x && (toLower (typeof _x)) in _vehtomark && (count (crew _x)) isEqualTo 0 && (_x distance2d startbase) > 500) then {
             _markedveh pushback _x;
         };
     } foreach vehicles;
 
-    if ( count _markedveh != count _vehmarkers ) then {
+    if ( count _markedveh isNotEqualTo count _vehmarkers ) then {
         { deleteMarkerLocal _x; } foreach _vehmarkers;
         _vehmarkers = [];
 

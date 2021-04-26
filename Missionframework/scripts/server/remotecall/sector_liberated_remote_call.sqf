@@ -43,7 +43,7 @@ if (_liberated_sector in sectors_factory) then {
 
 [_liberated_sector] spawn F_cr_liberatedSector;
 
-if ((random 100) <= KP_liberation_cr_wounded_chance || (count blufor_sectors) == 1) then {
+if ((random 100) <= KP_liberation_cr_wounded_chance || (count blufor_sectors) isEqualTo 1) then {
     [_liberated_sector] spawn civrep_wounded_civs;
 };
 
@@ -58,7 +58,7 @@ sleep 1;
 
 sleep 45;
 
-if (GRLIB_endgame == 0) then {
+if (GRLIB_endgame isEqualTo 0) then {
     if (
         !(_liberated_sector in sectors_tower)
         && {

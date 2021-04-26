@@ -8,7 +8,7 @@ private _markers = [];
 private _markers_mobilespawns = [];
 
 while {true} do {
-    if (count _markers != count GRLIB_all_fobs) then {
+    if (count _markers isNotEqualTo count GRLIB_all_fobs) then {
         {deleteMarkerLocal _x;} forEach _markers;
         _markers = [];
 
@@ -26,7 +26,7 @@ while {true} do {
     if (KP_liberation_mobilerespawn) then {
         private _respawn_trucks = [] call KPLIB_fnc_getMobileRespawns;
 
-        if (count _markers_mobilespawns != count _respawn_trucks) then {
+        if (count _markers_mobilespawns isNotEqualTo count _respawn_trucks) then {
             {deleteMarkerLocal _x;} forEach _markers_mobilespawns;
             _markers_mobilespawns = [];
 
@@ -38,7 +38,7 @@ while {true} do {
             };
         };
 
-        if (count _respawn_trucks == count _markers_mobilespawns) then {
+        if (count _respawn_trucks isEqualTo count _markers_mobilespawns) then {
             for "_idx" from 0 to ((count _markers_mobilespawns) - 1) do {
                 (_markers_mobilespawns select _idx) setMarkerPosLocal getPos (_respawn_trucks select _idx);
                 (_markers_mobilespawns select _idx) setMarkerTextLocal format ["%1 %2", localize "STR_RESPAWN_TRUCK", mapGridPosition (_respawn_trucks select _idx)];

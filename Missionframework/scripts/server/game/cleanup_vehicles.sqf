@@ -13,10 +13,10 @@ while { GRLIB_cleanup_vehicles > 0 } do {
         _reset_ticker = true;
         _nextvehicle = _x;
         _nearestfob = [ getpos _nextvehicle ] call KPLIB_fnc_getNearestFob;
-        if ( count _nearestfob == 3 ) then {
+        if ( count _nearestfob isEqualTo 3 ) then {
             if ( ( _nextvehicle distance _nearestfob > ( 1.2 * GRLIB_fob_range ) ) && ( _nextvehicle distance startbase > ( 1.2 * GRLIB_fob_range ) ) ) then {
                 if ((toLower (typeof _nextvehicle)) in _cleanup_classnames) then {
-                    if ( count ( crew _nextvehicle ) == 0 ) then {
+                    if ( count ( crew _nextvehicle ) isEqualTo 0 ) then {
                         _nextvehicle setVariable [ "GRLIB_empty_vehicle_ticker", ( _nextvehicle getVariable [ "GRLIB_empty_vehicle_ticker", 0 ] ) + 1 ];
                         _reset_ticker = false;
                     };

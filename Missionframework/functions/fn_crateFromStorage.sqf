@@ -65,7 +65,7 @@ _i = 0;
 
 // Update sector resources
 if (_update) then {
-    if ((_storage getVariable ["KP_liberation_storage_type", -1]) == 1) then {
+    if ((_storage getVariable ["KP_liberation_storage_type", -1]) isEqualTo 1) then {
         recalculate_sectors = true;
         publicVariable "recalculate_sectors";
     };

@@ -49,7 +49,7 @@ if ((_price_s > 0) || (_price_a > 0) || (_price_f > 0)) then {
             _space = _space - 1;
         };
 
-        if ((_price_s == 0) && (_price_a == 0) && (_price_f == 0)) exitWith {};
+        if ((_price_s isEqualTo 0) && (_price_a isEqualTo 0) && (_price_f isEqualTo 0)) exitWith {};
     } forEach _storage_areas;
 };
 please_recalculate = true;

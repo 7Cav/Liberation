@@ -40,7 +40,7 @@ private _attachments = [];
 // get first parent without attachments
 private _baseWeapon = "";
 while {isClass _config && {getNumber (_config >> "scope") > 0}} do { // Some preset weapons are scope = 1
-    if (count (_config >> "LinkedItems") == 0) exitWith {
+    if (count (_config >> "LinkedItems") isEqualTo 0) exitWith {
         _baseWeapon = configName _config;
     };
 

@@ -11,8 +11,8 @@ while { true } do {
     if ([5] call KPLIB_fnc_hasPermission) then {
 
         _detected_vehicles = ((getpos player) nearEntities [["Tank","APC","IFV","Car"], veh_action_distance]) select {
-            (count crew _x) == 0 &&
-            ((locked _x == 0 || locked _x == 1)) &&
+            (count crew _x) isEqualTo 0 &&
+            ((locked _x isEqualTo 0 || locked _x isEqualTo 1)) &&
             (_x distance startbase > 1000)
         };
 
@@ -26,7 +26,7 @@ while { true } do {
             } foreach _unflippable_vehicles;
 
             if ( !_next_vehicle_already_in_list ) then {
-                _idact_next = _next_vehicle addAction [ "<t color='#FFFF00'>" + localize "STR_UNFLIP" + "</t> <img size='2' image='res\ui_flipveh.paa'/>", "scripts\client\actions\do_unflip.sqf", "", -950, true, true, "", "build_confirmed == 0 && (_this distance _target < veh_action_distance) && (vehicle player == player)"];
+                _idact_next = _next_vehicle addAction [ "<t color='#FFFF00'>" + localize "STR_UNFLIP" + "</t> <img size='2' image='res\ui_flipveh.paa'/>", "scripts\client\actions\do_unflip.sqf", "", -950, true, true, "", "build_confirmed isEqualTo 0 && (_this distance _target < veh_action_distance) && (isNull objectParent player)"];
                 _unflippable_vehicles pushback [ _next_vehicle, _idact_next ] ;
             };
         } foreach _detected_vehicles;

@@ -41,10 +41,18 @@ if (_spawnPos isEqualTo zeroPos) exitWith {
 
 // Spawn units of squad
 private _corrected_amount = round ((count _classnames) * ([] call KPLIB_fnc_getOpforFactor));
+
+/* Alternate method of spawning AI.
+private _grp = [_spawnPos, GRLIB_side_enemy, _classnames] call BIS_fnc_spawnGroup;
+{ _x addMPEventHandler ["MPKilled", {_this spawn kill_manager}]} forEach (units _grp);
+_grp deleteGroupWhenEmpty true;
+*/
+
 private _grp = createGroup [GRLIB_side_enemy, true];
+
 {
     if (_forEachIndex < _corrected_amount) then {
-        [_x, _spawnPos, _grp] call KPLIB_fnc_createManagedUnit;
+        [_x, _spawnPos, _grp, "PRIVATE", 10] call KPLIB_fnc_createManagedUnit;
     };
 } forEach _classnames;
 

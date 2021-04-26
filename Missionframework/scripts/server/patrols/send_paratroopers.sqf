@@ -41,8 +41,8 @@ while {(count (units _para_group)) < 8} do {
 
 {removeBackpack _x; _x addBackPack "B_parachute"; _x moveInCargo _newvehicle;} forEach (units _para_group);
 
-while {(count (waypoints _pilot_group)) != 0} do {deleteWaypoint ((waypoints _pilot_group) select 0);};
-while {(count (waypoints _para_group)) != 0} do {deleteWaypoint ((waypoints _para_group) select 0);};
+while {(count (waypoints _pilot_group)) isNotEqualTo 0} do {deleteWaypoint ((waypoints _pilot_group) select 0);};
+while {(count (waypoints _para_group)) isNotEqualTo 0} do {deleteWaypoint ((waypoints _para_group) select 0);};
 sleep 0.2;
 {_x doFollow leader _pilot_group} forEach units _pilot_group;
 {_x doFollow leader _para_group} forEach units _para_group;
@@ -101,8 +101,8 @@ _newvehicle flyInHeight 100;
 _newvehicle flyInHeight 100;
 
 sleep 0.2;
-while {(count (waypoints _pilot_group)) != 0} do {deleteWaypoint ((waypoints _pilot_group) select 0);};
-while {(count (waypoints _para_group)) != 0} do {deleteWaypoint ((waypoints _para_group) select 0);};
+while {(count (waypoints _pilot_group)) isNotEqualTo 0} do {deleteWaypoint ((waypoints _pilot_group) select 0);};
+while {(count (waypoints _para_group)) isNotEqualTo 0} do {deleteWaypoint ((waypoints _para_group) select 0);};
 sleep 0.2;
 {_x doFollow leader _pilot_group} foreach units _pilot_group;
 {_x doFollow leader _para_group} foreach units _para_group;

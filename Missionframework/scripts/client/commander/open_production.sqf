@@ -29,7 +29,7 @@ while {dialog && (alive player)} do {
         lbSetCurSel [75802,0];
     };
 
-    if (saveSectorSetting == 1) then {
+    if (saveSectorSetting isEqualTo 1) then {
         saveSectorSetting = 0;
         [(_selectedSector select 1), new_production] remoteExec ["change_prod_remote_call",2];
         waitUntil {sleep 0.5; (!(_selectedSector isEqualTo (KP_liberation_production select _listselect)))};
@@ -60,7 +60,7 @@ while {dialog && (alive player)} do {
 
     ctrlSetText [75803,(_selectedSector select 0)];
 
-    if ((_selectedSector select 2) == 1) then {_sectorType = localize "STR_PRODUCTION_FACTORY";} else {_sectorType = localize "STR_PRODUCTION_CITY";};
+    if ((_selectedSector select 2) isEqualTo 1) then {_sectorType = localize "STR_PRODUCTION_FACTORY";} else {_sectorType = localize "STR_PRODUCTION_CITY";};
     ctrlSetText [75804, _sectorType];
 
     if ((count (_selectedSector select 3)) > 0) then {
@@ -83,7 +83,7 @@ while {dialog && (alive player)} do {
         };
 
         ctrlSetText [75805, _producing];
-        if ((_selectedSector select 7) == 3) then {
+        if ((_selectedSector select 7) isEqualTo 3) then {
             ((findDisplay 75801) displayCtrl 75805) ctrlSetTextColor _color_negative;
             ((findDisplay 75801) displayCtrl 75807) ctrlSetTextColor _color_negative;
         } else {
@@ -118,9 +118,9 @@ while {dialog && (alive player)} do {
     _ammoValue = ceil ((_selectedSector select 10) / 100);
     _fuelValue = ceil ((_selectedSector select 11) / 100);
 
-    if (_supplyValue == 1) then {_supplyValue = format [localize "STR_PRODUCTION_CRATE", _supplyValue];} else {_supplyValue = format [localize "STR_PRODUCTION_CRATES", _supplyValue];};
-    if (_ammoValue == 1) then {_ammoValue = format [localize "STR_PRODUCTION_CRATE", _ammoValue];} else {_ammoValue = format [localize "STR_PRODUCTION_CRATES", _ammoValue];};
-    if (_fuelValue == 1) then {_fuelValue = format [localize "STR_PRODUCTION_CRATE", _fuelValue];} else {_fuelValue = format [localize "STR_PRODUCTION_CRATES", _fuelValue];};
+    if (_supplyValue isEqualTo 1) then {_supplyValue = format [localize "STR_PRODUCTION_CRATE", _supplyValue];} else {_supplyValue = format [localize "STR_PRODUCTION_CRATES", _supplyValue];};
+    if (_ammoValue isEqualTo 1) then {_ammoValue = format [localize "STR_PRODUCTION_CRATE", _ammoValue];} else {_ammoValue = format [localize "STR_PRODUCTION_CRATES", _ammoValue];};
+    if (_fuelValue isEqualTo 1) then {_fuelValue = format [localize "STR_PRODUCTION_CRATE", _fuelValue];} else {_fuelValue = format [localize "STR_PRODUCTION_CRATES", _fuelValue];};
 
     ctrlSetText [758011, (str (_selectedSector select 9)) + " (" + _supplyValue + ")"];
     ctrlSetText [758012, (str (_selectedSector select 10)) + " (" + _ammoValue + ")"];
@@ -130,7 +130,7 @@ while {dialog && (alive player)} do {
     _mapdisplay ctrlMapAnimAdd [0.5, 0.2,(markerPos (_selectedSector select 1))];
     ctrlMapAnimCommit _mapdisplay;
 
-    waitUntil {!dialog || !(alive player) || (lbCurSel 75802) != _listselect || saveSectorSetting != 0};
+    waitUntil {!dialog || !(alive player) || (lbCurSel 75802) != _listselect || saveSectorSetting isNotEqualTo 0};
 };
 
 "spawn_marker" setMarkerPosLocal markers_reset;

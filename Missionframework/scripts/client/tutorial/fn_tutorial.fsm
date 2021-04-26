@@ -642,7 +642,7 @@ class FSM
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"!(" \n
                                          "    (((GRLIB_all_fobs select 0) nearObjects GRLIB_fob_range) select {" \n
-                                         "        (_x getVariable [""KP_liberation_storage_type"", -1]) == 0" \n
+                                         "        (_x getVariable [""KP_liberation_storage_type"", -1]) isEqualTo 0" \n
                                          "    }) isEqualTo []" \n
                                          ")"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
@@ -847,7 +847,7 @@ class FSM
                          "};" \n
                          "" \n
                          "private _civs = [];" \n
-                         "private _wounded_markers = allMapMarkers select {_x find ""wounded_marker_"" == 0};" \n
+                         "private _wounded_markers = allMapMarkers select {_x find ""wounded_marker_"" isEqualTo 0};" \n
                          "{" \n
                          "     _civs append (" \n
                          "        ((markerPos _x) nearEntities [""Man"", 25]) select {(damage _x) > 0.4}" \n
@@ -918,7 +918,7 @@ class FSM
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"!(" \n
                                          "    (((markerPos _factory) nearObjects GRLIB_fob_range) select {" \n
-                                         "        (_x getVariable [""KP_liberation_storage_type"", -1]) == 1" \n
+                                         "        (_x getVariable [""KP_liberation_storage_type"", -1]) isEqualTo 1" \n
                                          "    }) isEqualTo []" \n
                                          ")"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;

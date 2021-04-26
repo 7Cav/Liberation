@@ -2,7 +2,7 @@ private [ "_nearest_sector", "_leadingzero_hour", "_leadingzero_minute", "_start
 params [ "_spawn_str" ];
 
 _nearest_sector = [2000] call KPLIB_fnc_getNearestSector;
-if ( _nearest_sector != "" ) then { _nearest_sector = format ["%1 %2",localize "STR_SPAWN_NEAR", markertext _nearest_sector]; };
+if ( _nearest_sector isNotEqualTo "" ) then { _nearest_sector = format ["%1 %2",localize "STR_SPAWN_NEAR", markertext _nearest_sector]; };
 _leadingzero_hour = "";
 _leadingzero_minute = "";
 if ( (date select 3) < 10 ) then { _leadingzero_hour = "0" };

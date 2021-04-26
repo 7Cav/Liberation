@@ -1,6 +1,6 @@
 
 private _spawn_marker = [ 2000, 999999, false ] call KPLIB_fnc_getOpforSpawnPoint;
-if ( _spawn_marker == "" ) exitWith {["Could not find position for search and rescue mission", "ERROR"] call KPLIB_fnc_log;};
+if ( _spawn_marker isEqualTo "" ) exitWith {["Could not find position for search and rescue mission", "ERROR"] call KPLIB_fnc_log;};
 used_positions pushbackUnique _spawn_marker;
 
 private _helopos = (markerPos _spawn_marker) getPos [random 200, random 360];
@@ -43,7 +43,7 @@ private _patrolcorners = [
     [_x, _patrolcorners select 0, _grppatrol, "PRIVATE", 0.5] call KPLIB_fnc_createManagedUnit;
 } foreach ([] call KPLIB_fnc_getSquadComp);
 
-while {(count (waypoints _grppatrol)) != 0} do {deleteWaypoint ((waypoints _grppatrol) select 0);};
+while {(count (waypoints _grppatrol)) isNotEqualTo 0} do {deleteWaypoint ((waypoints _grppatrol) select 0);};
 {
     private _nextcorner = _x;
     _waypoint = _grppatrol addWaypoint [_nextcorner,0];
@@ -87,19 +87,19 @@ GRLIB_secondary_in_progress = 2; publicVariable "GRLIB_secondary_in_progress";
 
 waitUntil {
     sleep 5;
-    { ( alive _x ) && ( _x distance ( [ getpos _x ] call KPLIB_fnc_getNearestFob ) > 50 ) } count _pilotUnits == 0
+    _pilotUnits findIf { ( alive _x ) && ( _x distance ( [ getpos _x ] call KPLIB_fnc_getNearestFob ) > 50 ) }  isEqualTo -1
 };
 
 sleep 5;
 
-private _alive_crew_count = { alive _x } count _pilotUnits;
-if ( _alive_crew_count == 0 ) then {
+private _alive_crew_count = _pilotUnits findIf { alive _x };
+if ( _alive_crew_count isEqualTo -1 ) then {
     [7] remoteExec ["remote_call_intel"];
 } else {
     [8] remoteExec ["remote_call_intel"];
     private _grp = createGroup [GRLIB_side_friendly, true];
     { [_x ] joinSilent _grp; } foreach _pilotUnits;
-    while {(count (waypoints _grp)) != 0} do {deleteWaypoint ((waypoints _grp) select 0);};
+    while {(count (waypoints _grp)) isNotEqualTo 0} do {deleteWaypoint ((waypoints _grp) select 0);};
     {_x doFollow (leader _grp)} foreach units _grp;
     { [ _x ] spawn { sleep 600; deleteVehicle (_this select 0) } } foreach _pilotUnits;
 };

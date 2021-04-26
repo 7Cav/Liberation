@@ -58,7 +58,7 @@ if(count _data < 13) exitWith {
 _loadMagsAmmo = "ammo" in _options;
 _loadedMagazines = [];
 if(count _data > 13) then {
-    if(typeName(_data select 13)=="ARRAY") then {
+    if((_data select 13) isEqualType "ARRAY") then {
         _loadedMagazines = _data select 13;
     };
 };
@@ -80,8 +80,8 @@ _add = {
     _target = _this select 0;
     _item = _this select 1;
     _callback = _this select 2;
-    if(typename _item == "ARRAY") then {
-        if(_item select 0 != "") then {
+    if(_item isEqualType []) then {
+        if(_item select 0 isNotEqualTo "") then {
             if(_loadMagsAmmo) then {
                 _target addMagazine _item;
             } else {
@@ -89,7 +89,7 @@ _add = {
             };
         };
     } else {
-        if(_item != "") then {
+        if (_item isNotEqualTo "") then {
             _item call _callback;
         };
     };
@@ -128,10 +128,10 @@ private ["_assignedItems","_headgear","_goggles"];
 _assignedItems = assignedItems _target;
 _headgear = headgear _target;
 _goggles = goggles _target;
-if((_headgear != "") && !(_headgear in _assignedItems)) then {
+if((_headgear isNotEqualTo "") && !(_headgear in _assignedItems)) then {
     _assignedItems set [count _assignedItems, _headgear];
 };
-if((_goggles != "") && !(_goggles in _assignedItems)) then {
+if((_goggles isNotEqualTo "") && !(_goggles in _assignedItems)) then {
     _assignedItems set [count _assignedItems, _goggles];
 };
 // add asigned items that could not be added with assign item
@@ -150,15 +150,15 @@ _addWeapon = {
     clearAllItemsFromBackpack _target;
     _target removeWeapon ([] call _THIS(0));
     _weapon = _data select _THIS(1);
-    if(_weapon != "") then {
+    if (_weapon isNotEqualTo "") then {
         if(isClass(configFile>>"CfgWeapons">>_weapon)) then {
-            if (_currentWeapon == "") then {
+            if (_currentWeapon isEqualTo "") then {
                 _currentWeapon = _weapon;
             };
             if(count _loadedMagazines > 0) then {
                 _magazines = _loadedMagazines select _THIS(5); // get loaded magazines from saved loadout
-                if(typename _magazines != "ARRAY") then { // backwards compatibility, make sure _magazines is array
-                    if(_magazines=="") then {
+                if !(_magazines isEqualType "ARRAY") then { // backwards compatibility, make sure _magazines is array
+                    if(_magazines isEqualTo "") then {
                         _magazines = [];
                     } else {
                         _magazines = [_magazines];
@@ -245,7 +245,7 @@ if(_currentWeapon!="") then {
 } forEach _addOrder;
 
 // select weapon and firing mode
-if(vehicle _target == _target && _currentWeapon != "" && _currentMode != "") then {
+if(isNull objectParent _target && _currentWeapon isNotEqualTo "" && _currentMode isNotEqualTo "") then {
     _muzzles = 0;
     while { (_currentWeapon != currentMuzzle _target || _currentMode != currentWeaponMode _target ) && _muzzles < 100 } do {
         _target action ["SWITCHWEAPON", _target, _target, _muzzles];
@@ -258,7 +258,7 @@ if(vehicle _target == _target && _currentWeapon != "" && _currentMode != "") the
 } else {
     _currentMode = "";
 };
-if(_currentMode == "" && _currentWeapon != "") then {
+if(_currentMode isEqualTo "" && _currentWeapon isNotEqualTo "") then {
     _target selectWeapon _currentWeapon;
 };
 
@@ -266,7 +266,7 @@ clearAllItemsFromBackpack _target;
 
 // add uniform, add uniform items and fill uniform with item placeholders
 _outfit = _data select 7;
-if(_outfit != "") then {
+if(_outfit isNotEqualTo "") then {
     if(isClass(configFile>>"CfgWeapons">>_outfit)) then {
         _target forceAddUniform _outfit;
         _target addItem PLACEHOLDER_ITEM;
@@ -289,7 +289,7 @@ if(_outfit != "") then {
 
 // add vest, add vest items and fill vest with item placeholders
 _outfit = _data select 9;
-if(_outfit != "") then {
+if(_outfit isNotEqualTo "") then {
     if(isClass(configFile>>"CfgWeapons">>_outfit)) then {
         _target addVest _outfit;
         _target addItem PLACEHOLDER_ITEM;
@@ -313,7 +313,7 @@ if(_outfit != "") then {
 // add backpack and add backpack items
 removeBackpack _target;
 _outfit = _data select 11;
-if(_outfit != "") then {
+if(_outfit isNotEqualTo "") then {
     if(getNumber(configFile>>"CfgVehicles">>_outfit>>"isbackpack")==1) then {
         _target addBackpack _outfit;
         clearAllItemsFromBackpack _target;
@@ -336,7 +336,7 @@ for "_i" from 1 to _placeholderCount do {
 
 
 // make loadout visible fix?
-if(vehicle _target == _target) then {
+if(isNull objectParent _target) then {
     //_target switchMove (getArray(configFile>>"CfgMovesMaleSdr">>"States">>animationState player>>"ConnectTo") select 0);
     _target setPosATL (getPosATL _target);
 };

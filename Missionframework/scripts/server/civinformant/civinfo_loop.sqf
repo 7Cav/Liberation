@@ -1,4 +1,4 @@
-waitUntil {sleep 10; ({_x in sectors_capture || _x in sectors_bigtown} count blufor_sectors) > 0};
+waitUntil {sleep 10; (blufor_sectors findIf {_x in sectors_capture || _x in sectors_bigtown}) > 0};
 
 if (KP_liberation_civinfo_debug > 0) then {[format ["Loop spawned on: %1", debug_source], "CIVINFO"] remoteExecCall ["KPLIB_fnc_log", 2];};
 
@@ -9,13 +9,13 @@ while {true} do {
 
     waitUntil {
         sleep 10;
-        ({_x in sectors_capture || _x in sectors_bigtown} count blufor_sectors) > 0 &&
+        (blufor_sectors findIf {_x in sectors_capture || _x in sectors_bigtown}) > 0 &&
         KP_liberation_civ_rep >= 25
     };
 
     if (KP_liberation_civinfo_debug > 0) then {["Informant waitUntil passed", "CIVINFO"] remoteExecCall ["KPLIB_fnc_log", 2];};
 
-    if ((KP_liberation_civinfo_chance >= (random 100)) && GRLIB_endgame == 0) then {
+    if ((KP_liberation_civinfo_chance >= (random 100)) && GRLIB_endgame isEqualTo 0) then {
         private _sector = selectRandom (blufor_sectors select {_x in sectors_capture || _x in sectors_bigtown});
         private _house = (nearestObjects [[((markerPos _sector select 0) - 100 + (random 200)), ((markerPos _sector select 1) - 100 + (random 200))],["House", "Building"], 100]) select 0;
 
@@ -51,7 +51,7 @@ while {true} do {
                 _waiting_time = _waiting_time - 1;
             };
 
-            if ((KP_liberation_civinfo_debug > 0) && ((_waiting_time % 60) == 0)) then {[format ["Informant will despawn in %1 minutes", round (_waiting_time / 60)], "CIVINFO"] remoteExecCall ["KPLIB_fnc_log", 2];};
+            if ((KP_liberation_civinfo_debug > 0) && ((_waiting_time % 60) isEqualTo 0)) then {[format ["Informant will despawn in %1 minutes", round (_waiting_time / 60)], "CIVINFO"] remoteExecCall ["KPLIB_fnc_log", 2];};
         };
 
         if (_waiting_time > 0) then {

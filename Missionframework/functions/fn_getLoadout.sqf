@@ -66,7 +66,7 @@ if(count _this < 4) then {
 
 _saveMagsAmmo = "ammo" in _options;
 _isRepetitive = "repetitive" in _options;
-_isOnFoot = vehicle _target == _target;
+_isOnFoot = isNull objectParent _target;
 
 _currentWeapon = "";
 _currentMode = "";
@@ -116,7 +116,7 @@ _saveWeaponMagazines = {
         };
     };
 
-    if(_weapon != "") then {
+    if(_weapon isNotEqualTo "") then {
         [_weapon] call _saveMagazine;
         _muzzles = configFile>>"CfgWeapons">>_weapon>>"muzzles";
         if(isArray(_muzzles)) then {
@@ -175,10 +175,10 @@ _backPackItems = (backpackitems _target) + _backpacks;
 _assignedItems = assignedItems _target;
 _headgear = headgear _target;
 _goggles = goggles _target;
-if((_headgear != "") && !(_headgear in _assignedItems)) then {
+if((_headgear isNotEqualTo "") && !(_headgear in _assignedItems)) then {
     _assignedItems set [count _assignedItems, _headgear];
 };
-if((_goggles != "") && !(_goggles in _assignedItems)) then {
+if((_goggles isNotEqualTo "") && !(_goggles in _assignedItems)) then {
     _assignedItems set [count _assignedItems, _goggles];
 };
 
@@ -217,7 +217,7 @@ if(!_isRepetitive) then {
         if(currentWeapon _target==_x) then {
             _weaponHasChanged = true;
             _magazine = currentMagazine _target;
-            if(_magazine != "") then {
+            if(_magazine isNotEqualTo "") then {
                 if(_saveMagsAmmo) then {
                     _magazines set[count _magazines, [_magazine, _target ammo _x]];
                 } else {
@@ -231,7 +231,7 @@ if(!_isRepetitive) then {
     // select back originaly selected weapon and mode, only if weapon has changed
     if(_weaponHasChanged) then {
         if(_isOnFoot) then {
-            if(_currentWeapon != "" && _currentMode != "") then {
+            if(_currentWeapon isNotEqualTo "" && _currentMode isNotEqualTo "") then {
                 _muzzles = 0;
                 while{ (_currentWeapon != currentMuzzle _target || _currentMode != currentWeaponMode _target ) && _muzzles < 200 } do {
                     _target action ["SWITCHWEAPON", _target, _target, _muzzles];
@@ -251,8 +251,8 @@ if(!_isRepetitive) then {
         } else {
             _currentMode = "";
         };
-        if(_currentMode == "") then {
-            if(_currentWeapon=="") then {
+        if(_currentMode isEqualTo "") then {
+            if(_currentWeapon isEqualTo "") then {
                 _target action ["SWITCHWEAPON", _target, _target, 0];
             } else {
                 _target selectWeapon _currentWeapon;

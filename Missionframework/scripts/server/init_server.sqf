@@ -126,3 +126,8 @@ execVM "scripts\server\offloading\group_diag.sqf";
 if (KP_liberation_restart > 0) then {
     execVM "scripts\server\game\server_restart.sqf";
 };
+
+// Enable Advanced Towing
+missionNamespace setVariable ["SA_MAX_TOWED_CARGO", 99];
+missionNamespace setVariable ["SA_TOW_LOCKED_VEHICLES_ENABLED", true];
+execVM "scripts\server\custom\fn_advancedTowingInit.sqf";

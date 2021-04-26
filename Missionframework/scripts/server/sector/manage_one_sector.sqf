@@ -243,7 +243,7 @@ if ((!(_sector in blufor_sectors)) && (([markerPos _sector, [_opforcount] call K
     // sector lifetime loop
     while {!_stopit} do {
         // sector was captured
-        if (([_sectorpos, _local_capture_size] call KPLIB_fnc_getSectorOwnership == GRLIB_side_friendly) && (GRLIB_endgame == 0)) then {
+        if (([_sectorpos, _local_capture_size] call KPLIB_fnc_getSectorOwnership == GRLIB_side_friendly) && (GRLIB_endgame isEqualTo 0)) then {
             if (isServer) then {
                 [_sector] spawn sector_liberated_remote_call;
             } else {
@@ -272,7 +272,7 @@ if ((!(_sector in blufor_sectors)) && (([markerPos _sector, [_opforcount] call K
                 };
             } forEach _managed_units;
         } else {
-            if (([_sectorpos, (([_opforcount] call KPLIB_fnc_getSectorRange) + 300), GRLIB_side_friendly] call KPLIB_fnc_getUnitsCount) == 0) then {
+            if (([_sectorpos, (([_opforcount] call KPLIB_fnc_getSectorRange) + 300), GRLIB_side_friendly] call KPLIB_fnc_getUnitsCount) isEqualTo 0) then {
                 _sector_despawn_tickets = _sector_despawn_tickets - 1;
             } else {
                 // start counting running minutes after ADDITIONAL_TICKETS_DELAY

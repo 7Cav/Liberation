@@ -2,7 +2,7 @@ dorepackage = 0;
 
 createDialog "liberation_repackage_fob";
 waitUntil {sleep 0.1; dialog};
-waitUntil {sleep 0.1; !dialog || !alive player || dorepackage != 0};
+waitUntil {sleep 0.1; !dialog || !alive player || dorepackage isNotEqualTo 0};
 
 if (dorepackage > 0) then {
     closeDialog 0;
@@ -27,12 +27,12 @@ if (dorepackage > 0) then {
         if (_spawnpos isEqualTo []) then {_spawnpos = zeropos;};
     };
 
-    if (dorepackage == 1) then {
+    if (dorepackage isEqualTo 1) then {
         private _fobbox = FOB_box_typename createVehicle _spawnpos;
         [_fobbox] call KPLIB_fnc_addObjectInit;
     };
 
-    if (dorepackage == 2) then {
+    if (dorepackage isEqualTo 2) then {
         private _fobTruck = FOB_truck_typename createVehicle _spawnpos;
         [_fobTruck] call KPLIB_fnc_addObjectInit;
     };

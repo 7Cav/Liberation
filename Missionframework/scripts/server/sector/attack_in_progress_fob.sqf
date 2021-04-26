@@ -43,7 +43,7 @@ waitUntil {
     [ _thispos ] call KPLIB_fnc_getSectorOwnership != GRLIB_side_resistance;
 };
 
-if ( GRLIB_endgame == 0 ) then {
+if ( GRLIB_endgame isEqualTo 0 ) then {
     if ( _attacktime <= 1 && ( [ _thispos ] call KPLIB_fnc_getSectorOwnership == GRLIB_side_enemy ) ) then {
         [_thispos, 2] remoteExec ["remote_call_fob"];
         sleep 3;

@@ -6,7 +6,7 @@ if (KP_liberation_asymmetric_debug > 0) then {[format ["Loop spawned on: %1", de
 
 KP_liberation_asymmetric_sectors = [];
 
-while {GRLIB_endgame == 0} do {
+while {GRLIB_endgame isEqualTo 0} do {
     private _sectors_to_remove = [];
 
     {
@@ -25,7 +25,7 @@ while {GRLIB_endgame == 0} do {
 
             {
                 if ((_x select 0) == _sector) exitWith {
-                    if ((((_x select 1) + 1800) < time) && (_units_at_sector == 0)) then {
+                    if ((((_x select 1) + 1800) < time) && (_units_at_sector isEqualTo 0)) then {
                         asymm_blocked_sectors = asymm_blocked_sectors - [_x];
                         if (KP_liberation_asymmetric_debug > 0) then {[format ["Sector %1 removed from blocked sectors", markerText (_x select 0)], "ASYMMETRIC"] call KPLIB_fnc_log;};
                     } else {

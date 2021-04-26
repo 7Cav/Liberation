@@ -5,6 +5,10 @@ if ( isNil "GRLIB_last_halo_jump" ) then { GRLIB_last_halo_jump = -6000; };
 if ( GRLIB_halo_param > 1 && ( GRLIB_last_halo_jump + ( GRLIB_halo_param * 60 ) ) >= time ) exitWith {
     hint format [ localize "STR_HALO_DENIED_COOLDOWN", ceil ( ( ( GRLIB_last_halo_jump + ( GRLIB_halo_param * 60 ) ) - time ) / 60 ) ];
 };
+// Check if pilot is in slot
+if (allPlayers findIf { typeOf _x in pilot_classname } > -1) exitWith {
+    hint format [ localize "STR_HALO_PILOT_ONLINE" ];
+};
 
 _dialog = createDialog "liberation_halo";
 dojump = 0;
@@ -17,7 +21,7 @@ _backpackcontents = [];
 "spawn_marker" setMarkerTextLocal (localize "STR_HALO_PARAM");
 
 waitUntil { dialog };
-while { dialog && alive player && dojump == 0 } do {
+while { dialog && alive player && dojump isEqualTo 0 } do {
     "spawn_marker" setMarkerPosLocal halo_position;
 
     sleep 0.1;
@@ -43,7 +47,7 @@ if ( dojump > 0 ) then {
     playSound "parasound";
     sleep 2;
     _backpack = backpack player;
-    if ( _backpack != "" && _backpack != "B_Parachute" ) then {
+    if ( _backpack isNotEqualTo "" && _backpack != "B_Parachute" ) then {
         _backpackcontents = backpackItems player;
         removeBackpack player;
         sleep 0.1;
@@ -55,7 +59,7 @@ if ( dojump > 0 ) then {
     sleep 4;
     halojumping = false;
     waitUntil { !alive player || isTouchingGround player };
-    if ( _backpack != "" && _backpack != "B_Parachute" ) then {
+    if ( _backpack isNotEqualTo "" && _backpack != "B_Parachute" ) then {
         sleep 2;
         player addBackpack _backpack;
         clearAllItemsFromBackpack player;

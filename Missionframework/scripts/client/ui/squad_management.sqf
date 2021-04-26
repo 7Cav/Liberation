@@ -26,7 +26,7 @@ _squad_camera camcommit 0;
 
 while { dialog && alive player } do {
 
-    if (  { alive _x } count (units group player) != _membercount ) then {
+    if (  (units group player) findIf { alive _x }  isNotEqualto -1 ) then {
 
         _membercount = { alive _x } count (units group player);
 
@@ -35,7 +35,7 @@ while { dialog && alive player } do {
             if ( alive _x ) then {
                 _unitname =  format ["%1. ", [ _x ] call KPLIB_fnc_getUnitPositionId];
                 if(isPlayer _x) then {
-                    if ( count (squadParams _x ) != 0) then {
+                    if ( count (squadParams _x ) isNotEqualTo 0) then {
                         _unitname = "[" + ((squadParams _x select 0) select 0) + "] ";
                     };
                 };
@@ -63,11 +63,11 @@ while { dialog && alive player } do {
     };
 
     if ( !(isNull _selectedmember) ) then {
-        if ( _memberselection != lbCurSel 101 || _resupplied || ( ( vehicle _selectedmember == _selectedmember && _isvehicle ) || ( vehicle _selectedmember != _selectedmember && !_isvehicle ) ) ) then {
+        if ( _memberselection != lbCurSel 101 || _resupplied || ( ( isNull objectParent _selectedmember && _isvehicle ) || ( !isNull objectParent _selectedmember && !_isvehicle ) ) ) then {
             _memberselection = lbCurSel 101;
             _resupplied = false;
 
-            if (vehicle _selectedmember == _selectedmember) then {
+            if (isNull objectParent _selectedmember) then {
                 _targetobject attachTo [ _selectedmember, [0, 10, 0.05], "neck" ];
                 _squad_camera attachTo [ _selectedmember, [0, 0.25, 0.05], "neck" ];
                 _isvehicle = false;
@@ -80,7 +80,7 @@ while { dialog && alive player } do {
 
             _unitname = format ["%1. ", [ _selectedmember ] call KPLIB_fnc_getUnitPositionId];
             if(isPlayer _selectedmember) then {
-                if ( count (squadParams _selectedmember ) != 0) then {
+                if ( count (squadParams _selectedmember ) isNotEqualTo 0) then {
                     _unitname = "[" + ((squadParams _selectedmember select 0) select 0) + "] ";
                 };
             };
@@ -97,7 +97,7 @@ while { dialog && alive player } do {
 
             ctrlSetText [ 204, format ["%1 %2m", localize 'STR_DISTANCE', round (player distance _selectedmember) ] ];
 
-            if ( primaryWeapon _selectedmember != "") then {
+            if ( primaryWeapon _selectedmember isNotEqualTo "") then {
                 ctrlSetText [ 205, format ["%1: %2", localize 'STR_PRIMARY_WEAPON', getText (_cfgWeapons >> (primaryWeapon _selectedmember) >> "displayName") ] ];
 
                 _primary_mags = 0;
@@ -112,7 +112,7 @@ while { dialog && alive player } do {
                 ctrlSetText [ 206, format ["%1: %2", localize 'STR_AMMO', 0 ] ];
             };
 
-            if ( secondaryWeapon _selectedmember != "") then {
+            if ( secondaryWeapon _selectedmember isNotEqualTo "") then {
                 ctrlSetText [ 207, format ["%1: %2", localize 'STR_SECONDARY_WEAPON', getText (_cfgWeapons >> (secondaryWeapon _selectedmember) >> "displayName") ] ];
 
                 _secondary_mags = 0;
@@ -127,7 +127,7 @@ while { dialog && alive player } do {
                 ctrlSetText [ 208, format ["%1: %2", localize 'STR_AMMO', 0 ] ];
             };
 
-            if ( vehicle _selectedmember == _selectedmember ) then {
+            if ( isNull objectParent _selectedmember ) then {
                 ctrlSetText [ 209, "" ];
             } else {
                 _vehstring = localize 'STR_PASSENGER';
@@ -147,7 +147,7 @@ while { dialog && alive player } do {
     if ( GRLIB_squadaction == -1 ) then {
         ctrlEnable [ 213, false ];
         ctrlEnable [ 214, false ];
-        if ( !(isPlayer _selectedmember) && (vehicle _selectedmember == _selectedmember) ) then {
+        if ( !(isPlayer _selectedmember) && (isNull objectParent _selectedmember) ) then {
             ctrlEnable [ 210, true ];
             if ( leader group player == player ) then {
                 ctrlEnable [ 211, true ];
@@ -166,19 +166,19 @@ while { dialog && alive player } do {
         ctrlEnable [ 214, true ];
     };
 
-    if( GRLIB_squadconfirm == 0 ) then {
+    if( GRLIB_squadconfirm isEqualTo 0 ) then {
         GRLIB_squadconfirm = -1;
         GRLIB_squadaction = -1;
     };
 
-    if ( GRLIB_squadconfirm == 1 ) then {
+    if ( GRLIB_squadconfirm isEqualTo 1 ) then {
         GRLIB_squadconfirm = -1;
 
-        if ( GRLIB_squadaction == 1 ) then {
+        if ( GRLIB_squadaction isEqualTo 1 ) then {
 
             _nearfob = [ getpos _selectedmember ] call KPLIB_fnc_getNearestFob;
             _fobdistance = 9999;
-            if ( count _nearfob == 3 ) then {
+            if ( count _nearfob isEqualTo 3 ) then {
                 _fobdistance = _selectedmember distance _nearfob;
             };
 
@@ -199,17 +199,17 @@ while { dialog && alive player } do {
             };
         };
 
-        if (GRLIB_squadaction == 2) then {
+        if (GRLIB_squadaction isEqualTo 2) then {
             deleteVehicle _selectedmember;
             _resupplied = true;
             hint localize 'STR_REMOVE_OK';
         };
 
-        if (GRLIB_squadaction == 3) then {
+        if (GRLIB_squadaction isEqualTo 3) then {
 
             closeDialog 0;
 
-            if ( primaryWeapon player == "" && secondaryWeapon player == "" ) then {
+            if ( primaryWeapon player isEqualTo "" && secondaryWeapon player isEqualTo "" ) then {
                 [ _selectedmember, player ] call KPLIB_fnc_swapInventory;
             };
 

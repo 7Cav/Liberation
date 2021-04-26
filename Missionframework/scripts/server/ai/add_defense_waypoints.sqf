@@ -7,7 +7,7 @@ private _waypoint = [];
 if (vehicle (leader _grp) == (leader _grp)) then {_is_infantry = true;};
 
 sleep 5;
-while {(count (waypoints _grp)) != 0} do {deleteWaypoint ((waypoints _grp) select 0);};
+while {(count (waypoints _grp)) isNotEqualTo 0} do {deleteWaypoint ((waypoints _grp) select 0);};
 sleep 1;
 {_x doFollow leader _grp} foreach units _grp;
 sleep 1;
@@ -49,11 +49,11 @@ _grp setCurrentWaypoint [_grp, 0];
 
 waitUntil {
     sleep 10;
-    ({alive _x} count (units _grp) == 0) || !(isNull ((leader _grp) findNearestEnemy (leader _grp)))
+    ((units _grp) findIf {alive _x} isEqualTo -1) || !(isNull ((leader _grp) findNearestEnemy (leader _grp)))
 };
 
-if ({alive _x} count (units _grp) > 0) then {
-    while {(count (waypoints _grp)) != 0} do {deleteWaypoint ((waypoints _grp) select 0)};
+if (((units _grp) findIf {alive _x}) > 0) then {
+    while {(count (waypoints _grp)) isNotEqualTo 0} do {deleteWaypoint ((waypoints _grp) select 0)};
     sleep 1;
     {_x doFollow leader _grp} foreach units _grp;
     sleep 1;

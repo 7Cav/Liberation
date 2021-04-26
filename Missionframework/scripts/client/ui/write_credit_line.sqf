@@ -13,7 +13,7 @@ while {dialog && (_caretPosition <= count _linearray)} do {
         _currentline pushback (_linearray select (count _currentline));
     };
     _caretcharacter = "";
-    if ((_caretPosition % 2 == 0) && (_caretPosition != count _linearray)) then {_caretcharacter = "_"};
+    if ((_caretPosition % 2 isEqualTo 0) && (_caretPosition != count _linearray)) then {_caretcharacter = "_"};
     ctrlSetText [_control, format ["%1%2", toString _currentline, _caretcharacter]];
     _caretPosition = _caretPosition + 1;
     sleep 0.04;

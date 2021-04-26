@@ -16,7 +16,7 @@ private _startpos = getPos (leader _grp);
 private _waypoint = [];
 while {((getPos (leader _grp)) distance _startpos) < 100} do {
 
-    while {!((waypoints _grp) isEqualTo [])} do {deleteWaypoint ((waypoints _grp) select 0);};
+    while {((waypoints _grp) isNotEqualTo [])} do {deleteWaypoint ((waypoints _grp) select 0);};
     {_x doFollow leader _grp} forEach units _grp;
 
     _startpos = getPos (leader _grp);
@@ -48,6 +48,6 @@ waitUntil {
 sleep (5 + (random 5));
 reset_battlegroups_ai = false;
 
-if (!((units _grp) isEqualTo []) && (GRLIB_endgame == 0)) then {
+if (((units _grp) isNotEqualTo []) && (GRLIB_endgame isEqualTo 0)) then {
     [_grp] spawn battlegroup_ai;
 };

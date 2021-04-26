@@ -40,7 +40,7 @@ while { cinematic_camera_started } do {
                 };
             };
 
-            if ( GRLIB_endgame == 0 ) then {
+            if ( GRLIB_endgame isEqualTo 0 ) then {
                 _activeplayers = (allPlayers select {alive _x && (_x distance (markerPos GRLIB_respawn_marker)) > 100});
                 if ( count _activeplayers > 0 ) then {
                     for [ {_idx=0},{_idx < 3},{_idx=_idx+1} ] do {
@@ -58,10 +58,10 @@ while { cinematic_camera_started } do {
         if ( first_camera_round ) then {
             _camtarget = startbase;
         } else {
-            if (count (_nearentities select {alive _x && isPlayer _x}) != 0) then {
+            if (count (_nearentities select {alive _x && isPlayer _x}) isNotEqualTo 0) then {
                 _camtarget = selectRandom (_nearentities select {alive _x && isPlayer _x});
             } else {
-                if (count (_nearentities select { alive _x }) != 0) then {
+                if (count (_nearentities select { alive _x }) isNotEqualTo 0) then {
                     _camtarget = selectRandom (_nearentities select {alive _x});
                 };
             };
@@ -236,7 +236,7 @@ while { cinematic_camera_started } do {
         if ( first_camera_round ) then {
             _cinematic_camera camcommit 18;
         } else {
-            if ( howtoplay == 0 ) then {
+            if ( howtoplay isEqualTo 0 ) then {
                 _cinematic_camera camcommit 10;
             } else {
                 _cinematic_camera camcommit 20;
@@ -245,7 +245,7 @@ while { cinematic_camera_started } do {
         first_camera_round = false;
 
         if ( !isNil "showcaminfo" ) then {
-            if ( showcaminfo && howtoplay == 0 ) then {
+            if ( showcaminfo && howtoplay isEqualTo 0 ) then {
                 private _unitname = "";
                 if ( isPlayer _camtarget ) then { _unitname = name _camtarget };
                 private _nearest_sector = "";
@@ -253,7 +253,7 @@ while { cinematic_camera_started } do {
                     _nearest_sector = "BEGIN OF OPERATION";
                 } else {
                     _nearest_sector = [300, _position ] call KPLIB_fnc_getNearestSector;
-                    if ( _nearest_sector != "" ) then {
+                    if ( _nearest_sector isNotEqualTo "" ) then {
                         _nearest_sector = markertext _nearest_sector;
                     } else {
                         _nearfobs = GRLIB_all_fobs select {_x distance _position < 300};

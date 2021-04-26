@@ -24,7 +24,7 @@ params [
 // Get tier and civilian reputation depending values
 private _tier = [] call KPLIB_fnc_getResistanceTier;
 private _cr_multi = [] call KPLIB_fnc_crGetMulti;
-if (_amount == 0) then {_amount = (6 + (round (random _cr_multi)) + (round (random _tier)));};
+if (_amount isEqualTo 0) then {_amount = (6 + (round (random _cr_multi)) + (round (random _tier)));};
 private _weapons = missionNamespace getVariable ("KP_liberation_guerilla_weapons_" + str _tier);
 private _uniforms = missionNamespace getVariable ("KP_liberation_guerilla_uniforms_" + str _tier);
 private _vests = missionNamespace getVariable ("KP_liberation_guerilla_vests_" + str _tier);

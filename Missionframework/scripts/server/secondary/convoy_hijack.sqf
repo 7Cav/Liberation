@@ -4,7 +4,7 @@ private _load_box_fnc = compileFinal preprocessFileLineNumbers "scripts\client\a
 while { count _convoy_destinations_markers < 3 } do { _convoy_destinations_markers pushback ([2000,999999,false] call KPLIB_fnc_getOpforSpawnPoint); };
 
 private _couldnt_spawn = false;
-{ if ( _x == "" ) exitWith { _couldnt_spawn = true; }; } foreach _convoy_destinations_markers;
+{ if ( _x isEqualTo "" ) exitWith { _couldnt_spawn = true; }; } foreach _convoy_destinations_markers;
 if ( _couldnt_spawn ) exitWith {["Could not find enough map positions for convoy hijack mission", "ERROR"] call KPLIB_fnc_log;};
 
 private _convoy_destinations = [];
@@ -22,7 +22,7 @@ private _boxes_amount = 0;
     if ( _x select 0 == opfor_ammobox_transport ) exitWith { _boxes_amount = (count _x) - 2 };
 } foreach KPLIB_transportConfigs;
 
-if ( _boxes_amount == 0 ) exitWith {["Opfor ammobox truck classname doesn't allow for ammobox transport, correct your preset and/or transport config", "ERROR"] call KPLIB_fnc_log;};
+if ( _boxes_amount isEqualTo 0 ) exitWith {["Opfor ammobox truck classname doesn't allow for ammobox transport, correct your preset and/or transport config", "ERROR"] call KPLIB_fnc_log;};
 
 GRLIB_secondary_in_progress = 1; publicVariable "GRLIB_secondary_in_progress";
 
@@ -56,7 +56,7 @@ _convoy_group setBehaviour "SAFE";
 _convoy_group setCombatMode "GREEN";
 _convoy_group setSpeedMode "LIMITED";
 
-while {(count (waypoints _convoy_group)) != 0} do {deleteWaypoint ((waypoints _convoy_group) select 0);};
+while {(count (waypoints _convoy_group)) isNotEqualTo 0} do {deleteWaypoint ((waypoints _convoy_group) select 0);};
 {_x doFollow leader _convoy_group} foreach units _convoy_group;
 
 _waypoint = _convoy_group addWaypoint [_convoy_destinations select 1, 0];
@@ -124,7 +124,7 @@ while { _mission_in_progress } do {
             private _troop_driver_group = createGroup [GRLIB_side_enemy, true];
             [ driver _troop_vehicle ] joinSilent _troop_driver_group;
             sleep 1;
-            while {(count (waypoints _troop_driver_group)) != 0} do {deleteWaypoint ((waypoints _troop_driver_group) select 0);};
+            while {(count (waypoints _troop_driver_group)) isNotEqualTo 0} do {deleteWaypoint ((waypoints _troop_driver_group) select 0);};
             _waypoint = _troop_driver_group addWaypoint [getpos _troop_vehicle, 0];
             _waypoint setWaypointType "MOVE";
             sleep 3;

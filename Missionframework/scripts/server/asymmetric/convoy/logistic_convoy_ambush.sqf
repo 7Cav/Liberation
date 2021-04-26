@@ -100,7 +100,7 @@ if (KP_liberation_asymmetric_debug > 0) then {[format ["Logistic convoy %1 ambus
 
 private _waitingTime = KP_liberation_convoy_ambush_duration;
 
-while {(({alive _x} count (units _grp)) > 0) && (_waitingTime > 0)} do {
+while {(((units _grp) findIf {alive _x}) > 0) && (_waitingTime > 0)} do {
     uiSleep 1;
     private _player_near = false;
     {
@@ -115,7 +115,7 @@ if (KP_liberation_asymmetric_debug > 0) then {[format ["Logistic convoy %1 ambus
 
 KP_liberation_convoy_ambush_inProgress = false;
 
-if ((_waitingTime <= 0) && (({alive _x} count (units _grp)) > 0)) then {
+if ((_waitingTime <= 0) && (((units _grp) findIf {alive _x}) > 0)) then {
     [2] remoteExec ["asymm_notifications"];
     private _gain = 0;
     {

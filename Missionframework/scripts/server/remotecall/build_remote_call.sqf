@@ -71,11 +71,11 @@ if ((_price_s > 0) || (_price_a > 0) || (_price_f > 0)) then {
             _i = _i + 1;
         } forEach attachedObjects (_x);
 
-        if ((_price_s == 0) && (_price_a == 0) && (_price_f == 0)) exitWith {};
+        if ((_price_s isEqualTo 0) && (_price_a isEqualTo 0) && (_price_f isEqualTo 0)) exitWith {};
 
     } forEach _storage_areas;
 
-    if ( _localtype == 8 ) then {
+    if ( _localtype isEqualTo 8 ) then {
         stats_blufor_soldiers_recruited = stats_blufor_soldiers_recruited + 10;
     } else {
         if ( _typename isKindOf "Man" ) then {

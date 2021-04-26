@@ -46,10 +46,10 @@
 <Project name="Liberation">
     <Package name="Liberation">
         <Key ID="STR_MISSION_TITLE">
-            <Original>CTI 34 KP Liberation v0.96.7a</Original>
+            <Original>Liberation v0.96.7a-7Cav-0.1</Original>
         </Key>
         <Key ID="STR_MISSION_VERSION">
-            <Original>v0.96.7a</Original>
+            <Original>v0.96.7a-7Cav-0.1</Original>
         </Key>
         <Key ID="STR_Deploy_OnPoint">
             <Original>Deploy</Original>
@@ -2811,6 +2811,9 @@
             <Portuguese>Não é possível executar o salto em queda livre, o tempo de espera é de %1 minuto(s).</Portuguese>
             <Korean>지금은 공수 낙하를 할 수 없습니다. %1 분 후 가능합니다.</Korean>
             <Czech>Nemůžete použít HALO skok, musíte počkat %1 minut</Czech>
+        </Key>
+        <Key ID="STR_HALO_PILOT_ONLINE">
+            <Original>Can't perform HALO jump, There is a pilot logged in on the server.</Original>
         </Key>
         <Key ID="STR_HALO_ACTION">
             <Original>-- HALO JUMP</Original>

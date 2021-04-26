@@ -16,7 +16,7 @@ while { true } do {
 	waitUntil { sleep 0.2; show_teammates };
 	while { show_teammates } do {
 
-		if ( _ticks == 0 ) then {
+		if ( _ticks isEqualTo 0 ) then {
 
 			{
 				private _nextmarker = _x select 0;
@@ -34,7 +34,7 @@ while { true } do {
 			};
 
 			{
-				if ( vehicle _x == _x ) then {
+				if ( isNull objectParent _x ) then {
 					_marked_players pushbackUnique _x;
 				} else {
 					_marked_vehicles pushbackUnique (vehicle _x);
@@ -43,7 +43,7 @@ while { true } do {
 
 			{
 				if ( alive _x && !(isPlayer _x) ) then {
-					if ( vehicle _x == _x ) then {
+					if ( isNull objectParent _x ) then {
 						_marked_squadmates pushbackUnique _x;
 					} else {
 						_marked_vehicles pushbackUnique (vehicle _x);
@@ -53,21 +53,21 @@ while { true } do {
 
 			private _stuff_to_unmark = [];
 			{
-				if ( (vehicle _x != _x) || !(alive _x) ) then {
+				if ( (!isNull objectParent _x) || !(alive _x) ) then {
 					_stuff_to_unmark pushback _x;
 					_marked_players = _marked_players - [_x];
 				};
 			} foreach _marked_players;
 
 			{
-				if ( (vehicle _x != _x) || !(alive _x) ) then {
+				if ( (!isNull objectParent _x) || !(alive _x) ) then {
 					_stuff_to_unmark pushback _x;
 					_marked_squadmates = _marked_squadmates - [_x];
 				};
 			} foreach _marked_squadmates;
 
 			{
-				if ( (count (crew _x) == 0) || !(alive _x) ) then {
+				if ( (count (crew _x) isEqualTo 0) || !(alive _x) ) then {
 					_stuff_to_unmark pushback _x;
 					_marked_vehicles = _marked_vehicles - [_x];
 				};
@@ -75,7 +75,7 @@ while { true } do {
 
 			{
 				private _nextmarker = _x getVariable [ "spotmarker", "" ];
-				if ( _nextmarker != "" ) then {
+				if ( _nextmarker isNotEqualTo "" ) then {
 					deleteMarkerLocal _nextmarker;
 					_x setVariable [ "spotmarker", "" ];
 				};
@@ -84,13 +84,13 @@ while { true } do {
 			{
 				private _nextplayer = _x;
 				private _marker = _nextplayer getVariable [ "spotmarker", "" ];
-				if ( _marker == "" ) then {
+				if ( _marker isEqualTo "" ) then {
 					_marker = ( createMarkerLocal [ format [ "playermarker%1", (allUnits find _x) * (time % 1000) * (floor (random 100)) ], getpos _nextplayer ] );
 					_marker_objs pushback [ _marker, _nextplayer ];
 					_nextplayer setVariable [ "spotmarker", _marker ];
 
 					private _playername = "";
-					if( count (squadParams _nextplayer) != 0 ) then {
+					if( count (squadParams _nextplayer) isNotEqualTo 0 ) then {
 						_playername = "[" + ((squadParams _nextplayer select 0) select 0) + "] ";
 					};
 					_playername = _playername + (name _nextplayer);
@@ -101,7 +101,7 @@ while { true } do {
 				};
 
 				private _markertype = "mil_start";
-				if ( _nextplayer getVariable [ "FAR_isUnconscious", 0 ] == 1 ) then {
+				if ( _nextplayer getVariable [ "FAR_isUnconscious", 0 ] isEqualTo 1 ) then {
 					_markertype = "MinefieldAP";
 				};
 				_marker setMarkerTypeLocal _markertype;
@@ -111,7 +111,7 @@ while { true } do {
 				private _nextai = _x;
 				private _marker = _nextai getVariable [ "spotmarker", "" ];
 
-				if ( _marker == "" ) then {
+				if ( _marker isEqualTo "" ) then {
 					_marker = ( createMarkerLocal [ format [ "squadaimarker%1", (allUnits find _x) * (time % 1000) * (floor (random 10000)) ], getpos _nextai ] );
 					_marker_objs pushback [ _marker, _nextai ];
 					_nextai setVariable [ "spotmarker", _marker ];
@@ -126,7 +126,7 @@ while { true } do {
 			{
 				private _nextvehicle = _x;
 				private _marker = _nextvehicle getVariable [ "spotmarker", "" ];
-				if ( _marker == "" ) then {
+				if ( _marker isEqualTo "" ) then {
 					_marker = ( createMarkerLocal [ format [ "vehiclemarker%1", (vehicles find _x) * (time % 1000) * (floor (random 10000)) ], getpos _nextvehicle ] );
 					_marker_objs pushback [ _marker, _nextvehicle ];
 					_nextvehicle setVariable [ "spotmarker", _marker ];
@@ -159,11 +159,11 @@ while { true } do {
 		{
 			private _nextunit = _x;
 			private _marker = _nextunit getVariable [ "spotmarker", "" ];
-			if ( _marker != "" ) then {
+			if ( _marker isNotEqualTo "" ) then {
 				_marker setMarkerPosLocal (getPos _nextunit);
 				private _mrkdir = getDir _nextunit;
 				if ( isPlayer _nextunit ) then {
-					if (  _nextunit getVariable [ "FAR_isUnconscious", 0 ] == 1 ) then {
+					if (  _nextunit getVariable [ "FAR_isUnconscious", 0 ] isEqualTo 1 ) then {
 						_mrkdir = 0;
 					};
 				};
@@ -182,7 +182,7 @@ while { true } do {
 	{
 		private _nextunit = _x;
 		private _marker =  _nextunit getVariable [ "spotmarker", "" ];
-		if ( _marker != "" ) then {
+		if ( _marker isNotEqualTo "" ) then {
 			deleteMarkerLocal _marker;
 			_nextunit setVariable [ "spotmarker", "" ];
 		};

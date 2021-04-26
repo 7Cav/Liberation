@@ -50,7 +50,7 @@ waitUntil { !isNil "GRLIB_nametag_units" };
 
 				_screenpos = worldToScreen _grouppos;
 
-				if (count _screenpos != 0) then {
+				if (count _screenpos isNotEqualTo 0) then {
 					if ( (abs (((worldToScreen _grouppos) select 0) - 0.5) < 0.06) && (abs (((worldToScreen _grouppos) select 1) - 0.5) < 0.08)) then {
 						_alpha = 1;
 						_textalpha = 1;
@@ -105,7 +105,7 @@ waitUntil { !isNil "GRLIB_nametag_units" };
 			};
 
 			_drawicon = soldier_icon;
-			if ( _nextunit getVariable [ "FAR_isUnconscious", 0 ] == 1 ) then {
+			if ( _nextunit getVariable [ "FAR_isUnconscious", 0 ] isEqualTo 1 ) then {
 				_drawicon = wounded_icon;
 			} else {
 				if ( _nextunit == [] call KPLIB_fnc_getCommander ) then {
@@ -122,7 +122,7 @@ waitUntil { !isNil "GRLIB_nametag_units" };
 			};
 
 			_displayname = "";
-			if(count (squadParams _nextunit) != 0) then {
+			if(count (squadParams _nextunit) isNotEqualTo 0) then {
 				_displayname = "[" + ((squadParams _nextunit select 0) select 0) + "] ";
 			};
 			_displayname = _displayname + ( name _nextunit );

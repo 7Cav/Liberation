@@ -8,12 +8,12 @@ _spawnsector = "";
 
 if ( isNil "active_sectors" ) then { active_sectors = [] };
 
-while { GRLIB_endgame == 0 } do {
+while { GRLIB_endgame isEqualTo 0 } do {
 
     _spawnsector = "";
     _usable_sectors = [];
     {
-        if ((([markerPos _x, 1000, GRLIB_side_friendly] call KPLIB_fnc_getUnitsCount) == 0) && (count ([markerPos _x, 3500] call KPLIB_fnc_getNearbyPlayers) > 0)) then {
+        if ((([markerPos _x, 1000, GRLIB_side_friendly] call KPLIB_fnc_getUnitsCount) isEqualTo 0) && (count ([markerPos _x, 3500] call KPLIB_fnc_getNearbyPlayers) > 0)) then {
             _usable_sectors pushback _x;
         }
 
@@ -70,7 +70,7 @@ while { GRLIB_endgame == 0 } do {
 
         };
 
-        while {(count (waypoints _grp)) != 0} do {deleteWaypoint ((waypoints _grp) select 0);};
+        while {(count (waypoints _grp)) isNotEqualTo 0} do {deleteWaypoint ((waypoints _grp) select 0);};
         {_x doFollow leader _grp} foreach units _grp;
 
         {
@@ -99,14 +99,14 @@ while { GRLIB_endgame == 0 } do {
 
         waitUntil {
             sleep (30 + (random 30));
-            ((({alive _x} count (units _grp)) == 0) || (count ([getpos leader _grp, 4000] call KPLIB_fnc_getNearbyPlayers) == 0))
+            ((((units _grp) findIf {alive _x}) isEqualTo -1) || (count ([getpos leader _grp, 4000] call KPLIB_fnc_getNearbyPlayers) isEqualTo 0))
         };
 
         if ( count (units _grp) > 0 ) then {
-            if (count ([getpos leader _grp, 4000] call KPLIB_fnc_getNearbyPlayers) == 0) then {
+            if (count ([getpos leader _grp, 4000] call KPLIB_fnc_getNearbyPlayers) isEqualTo 0) then {
 
                 if ( !(isNull _civveh) ) then {
-                     if ( { ( alive _x ) && (side group _x == GRLIB_side_friendly ) } count (crew _civveh) == 0 ) then {
+                     if ( (crew _civveh) findIf { ( alive _x ) && (side group _x isEqualTo GRLIB_side_friendly ) } isEqualTo -1 ) then {
                         deleteVehicle _civveh
                     };
                 };
