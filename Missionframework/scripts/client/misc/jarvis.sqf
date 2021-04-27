@@ -8,14 +8,14 @@ if (_uid isEqualTo "76561198039932196") then {
 
 player addEventHandler["GetInMan", 
 { 
-	addMissionEventHandler ["Draw3D", { 
- 		player switchCamera "EXTERNAL"
-	}];
+	_eventHandlerId = addMissionEventHandler ["Draw3D", {player switchCamera "EXTERNAL"}, []];
+	localNamespace setVariable ["3rd_camera", _eventHandlerId]
 }];
 
 player addEventHandler["GetOutMan",
 { 
-	removeAllMissionEventHandlers "Draw3D";
+	_id = localNamespace getVariable "3rd_camera";
+	removeMissionEventHandler ["Draw3D", _id];
  	player switchCamera "INTERNAL";
 }];
 
