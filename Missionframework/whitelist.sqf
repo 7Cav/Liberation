@@ -64,5 +64,6 @@ MP_whitelisted_steamids = [
 	"76561198968070623", // Connelly.M   - MP
 	"76561198103184850", // Davidson.J   - MP
 	"76561197963550741", // Boyd.M       - MP
+    "76561197993187376", // Sypolt.R     - MP
 	"76561198086223942"  // Cass.A       - MP
 ];
