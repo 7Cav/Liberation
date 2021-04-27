@@ -21,7 +21,7 @@ class Params {
         title = $STR_PARAMS_UNITCAP;
         values[] = {0, 1, 2, 3, 4, 5};
         texts[] = {$STR_PARAMS_UNITCAP1, $STR_PARAMS_UNITCAP2, $STR_PARAMS_UNITCAP3, $STR_PARAMS_UNITCAP4, $STR_PARAMS_UNITCAP5, $STR_PARAMS_UNITCAP6};
-        default = 2;
+        default = 3;
     };
     class Difficulty {
         title = $STR_PARAMS_DIFFICULTY;
@@ -33,7 +33,7 @@ class Params {
         title = $STR_AGGRESSIVITY_PARAM;
         values[] = {0, 1, 2, 3, 4};
         texts[] = {$STR_AGGRESSIVITY_PARAM0, $STR_AGGRESSIVITY_PARAM1, $STR_AGGRESSIVITY_PARAM2, $STR_AGGRESSIVITY_PARAM3, $STR_AGGRESSIVITY_PARAM4};
-        default = 2;
+        default = 3;
     };
     class AdaptToPlayercount {
         title = $STR_PARAM_ADAPT_TO_PLAYERCOUNT;
@@ -45,13 +45,13 @@ class Params {
         title = $STR_PARAMS_CIVILIANS;
         values[] = {0, 1, 2, 3};
         texts[] = {$STR_PARAMS_CIVILIANS1, $STR_PARAMS_CIVILIANS2, $STR_PARAMS_CIVILIANS3, $STR_PARAMS_CIVILIANS4};
-        default = 2;
+        default = 3;
     };
     class FirstFob {
         title = $STR_PARAMS_FIRSTFOB;
         values[] = {1, 0};
         texts[] = {$STR_YES, $STR_NO};
-        default = 0;
+        default = 1;
     };
     class FirstFobVehicle {
         title = $STR_PARAMS_FIRSTFOBVEHICLE;
@@ -63,7 +63,7 @@ class Params {
         title = $STR_PARAM_FOBS_COUNT;
         values[] = {3, 5, 7, 10, 15, 20, 26};
         texts[] = {3, 5, 7, 10, 15, 20, 26};
-        default = 10;
+        default = 5;
     };
     class MaxSquadSize {
         title = $STR_PARAM_SQUAD_SIZE;
@@ -99,7 +99,7 @@ class Params {
         title = $STR_WEATHER_PARAM;
         values[] = {1, 2, 3};
         texts[] = {$STR_WEATHER_PARAM1, $STR_WEATHER_PARAM2, $STR_WEATHER_PARAM3};
-        default = 3;
+        default = 2;
     };
     class VanillaFog {
         title = $STR_FOG_PARAM;
@@ -261,13 +261,13 @@ class Params {
         title = $STR_PARAMS_AILOGISTICS;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED};
-        default = 1;
+        default = 0;
     };
     class CR_Building {
         title = $STR_PARAM_CR_BUILDING;
         values[] = {1, 0};
         texts[] = {$STR_PARAM_CR_DAMAGED, $STR_PARAM_CR_DESTROYED};
-        default = 0;
+        default = 1;
     };
     class HaloJump {
         title = $STR_HALO_PARAM;
@@ -285,7 +285,7 @@ class Params {
         title = $STR_PARAM_ALLOW_ENEMIES_IN_IMMOBILE;
         values[] = {0, 25, 50, 75, 100};
         text[] = {$STR_PARAMS_DISABLED, "25%", "50%", "75%", "100%"};
-        default = 50;
+        default = 25;
     };
     class DelayDespawnMax {
         title = $STR_PARAM_DELAY_DESPAWN_MAX;
@@ -303,7 +303,7 @@ class Params {
         title = $STR_PARAM_LIMITEDZEUS;
         values[] = {1, 0};
         texts[] = {$STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED};
-        default = 1;
+        default = 0;
     };
     class ZeusAddEnemies {
         title = $STR_PARAM_ZEUSADDENEMIES;
