@@ -104,12 +104,21 @@ KPLIB_objectInits = [
         ["gm_ge_army_kat1_454_cargo", "gm_ge_army_kat1_454_cargo_win"],
         {_this animateSource ["cover_unhide", 0, true];}
     ],
-
+    // empty boxes script
     [
         ["Box_T_NATO_Wps_F", "Box_T_NATO_WpsSpecial_F", "Box_NATO_Equip_F"],
-        {_this clearWeaponCargo;},
-        {_this clearMagazineCargo;},
-        {_this clearItemCargo;}
+        {
+        clearWeaponCargo _this; 
+        clearMagazineCargo _this;
+        clearItemCargo _this;
+        }
+    ],
+    // MH-60 ACE FRIES
+    [
+        ["RHS_CH_47F", "RHS_UH60M", "RHS_UH60M_MEV2", "rhsusf_CH53E_USMC", "RHS_UH1Y", "rhsusf_CH53E_USMC_GAU21"],
+        {
+        [_this] call ace_fastroping_fnc_equipFRIES;
+        }
     ],
 
     // Make sure a slingloaded object is local to the helicopter pilot (avoid desync and rope break)
