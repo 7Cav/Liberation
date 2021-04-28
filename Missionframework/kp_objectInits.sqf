@@ -105,6 +105,13 @@ KPLIB_objectInits = [
         {_this animateSource ["cover_unhide", 0, true];}
     ],
 
+    [
+        ["Box_T_NATO_Wps_F", "Box_T_NATO_WpsSpecial_F", "Box_NATO_Equip_F"],
+        {_this clearWeaponCargo;},
+        {_this clearMagazineCargo;},
+        {_this clearItemCargo;}
+    ],
+
     // Make sure a slingloaded object is local to the helicopter pilot (avoid desync and rope break)
     [
         ["Helicopter"],

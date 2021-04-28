@@ -29,6 +29,8 @@ class KPLIB {
         class getAdaptiveVehicle        {};
         class getBluforRatio            {};
         class getCommander              {};
+        class getMilitarypolice         {};
+        class getMissioncontroller      {};
         class getCrateHeight            {};
         class getFobName                {};
         class getFobResources           {};

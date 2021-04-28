@@ -22,7 +22,7 @@ FOB_truck_typename = "rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy";            // This 
 Arsenal_typename = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
 Respawn_truck_typename = "rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy";   // This is the mobile respawn (and medical) truck.
 huron_typename = "RHS_CH_47F";                                          // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
-crewman_classname = "rhsusf_army_ocp_combatcrewman";                    // This defines the crew for vehicles.
+crewman_classname = "B_crew_F";                                         // This defines the crew for vehicles.
 pilot_classname = "B_Helipilot_F";                                      // This defines the pilot for helicopters.
 KP_liberation_little_bird_classname = "RHS_MELB_MH6M";                  // These are the little birds which spawn on the Freedom or at Chimera base.
 KP_liberation_boat_classname = "B_Boat_Transport_01_F";                 // These are the boats which spawn at the stern of the Freedom.
@@ -293,6 +293,9 @@ support_vehicles = [
     ["ACE_Box_82mm_Mo_HE",25,20,0],
     ["ACE_Box_82mm_Mo_Smoke",25,15,0],
     ["ACE_Box_82mm_Mo_Illum",25,15,0],
+    ["Box_T_NATO_Wps_F",25,5,0],
+    ["Box_T_NATO_WpsSpecial_F",25,5,0],
+    ["Box_NATO_Equip_F",25,5,0],
     ["ACE_Wheel",10,0,0],
     ["ACE_Track",10,0,0],
     ["FlexibleTank_01_forest_F",10,0,200],                              // Movable Fuel Tank
