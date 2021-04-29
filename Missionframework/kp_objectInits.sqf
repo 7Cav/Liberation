@@ -120,28 +120,6 @@ KPLIB_objectInits = [
         [_this] call ace_fastroping_fnc_equipFRIES;
         }
     ],
-    // VEHICLE CAMOS ADD (DESERT VDV)
-    [
-        ["RHS_Mi24V_vdv", "RHS_Mi24P_vdv", "RHS_Mi8MTV3_vdv", "RHS_Mi8T_vdv"],
-        { [_this ["Camo #4",1]] call BIS_fnc_initVehicle;}
-    ],
-
-    [
-        ["rhs_9k79"],
-        { [_this ["Camo",1]] call BIS_fnc_initVehicle;}
-    ],
-
-    [
-        ["rhsgref_BRDM2_HQ_vdv", "rhsgref_BRDM2_vdv"],
-        { [_this ["Tri-color",1]] call BIS_fnc_initVehicle;}
-    ],
-
-    [
-        ["rhs_btr80_vdv", "rhs_btr80a_vdv", "rhs_bmp2e_vdv", "rhs_gaz66_vdv", "rhs_gaz66_ammo_vdv", "RHS_Ural_VDV_01", "RHS_Ural_Fuel_VDV_01", "RHS_Ural_Repair_VDV_01", "rhs_t90_tv", "rhs_t90saa_tv", "rhs_t90sm_tv", "rhs_2s3_at_tv", "RHS_Ural_Open_VDV_01", "rhs_zsu234_aa"],
-        { [_this ["Sand",1]] call BIS_fnc_initVehicle;}
-    ],
-    
-
     // Make sure a slingloaded object is local to the helicopter pilot (avoid desync and rope break)
     [
         ["Helicopter"],
