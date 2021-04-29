@@ -15,3 +15,17 @@ class End1 {
     description = $STR_COMMANDER_NOT_AUTHORIZED;
     pictureBackground = "";
 };
+
+class End2 {
+    title =	$STR_SORRY;
+    subtitle = "";
+    description = $STR_MP_NOT_AUTHORIZED;
+    pictureBackground = "";
+};
+
+class End3 {
+    title =	$STR_SORRY;
+    subtitle = "";
+    description = $STR_MC_NOT_AUTHORIZED;
+    pictureBackground = "";
+};
