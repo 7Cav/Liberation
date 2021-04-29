@@ -20,6 +20,7 @@
 * Added: Special Thanks RSC_Text Field for Developers that have worked on the missions.
 * Removed: Diesel Ground Power Unit as Fixed Wing Capcity modifier.
 * Removed: Fog (I swear I did it this time).
+* Removed: RHS Decals for Better frames.
 * Tweaked: Preset configuration for Difficulty
 * Tweaked: Fuel and Ammo Supply on Containers and Vehicles to be more realistic on size vs amount (Huron containers are double the amount, Trucks are kept the same, Vehicle ammo box and Flexible Fuel Container is reduced by half)
 * Tweaked: Fuel Rate to "Full Fuel" is doubled for faster refueling.
