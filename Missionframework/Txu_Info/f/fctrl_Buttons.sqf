@@ -11,7 +11,7 @@ waitUntil{ ctrlShown _diarySubList };
 
 _diaryEntry = _display displayCtrl 1013;
 
-if ( _diarySubList lbText ( lbCurSel _diarySubList ) == "DOWNLOADS & LINKS" )
+if ( _diarySubList lbText ( lbCurSel _diarySubList ) == "Website Links" )
 then
 {
 	if ( isNull ( _diaryEntry controlsGroupCtrl 10001 ) )
