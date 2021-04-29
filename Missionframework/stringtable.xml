@@ -3024,6 +3024,12 @@
             <Korean>사령관 슬롯을 사용할 권한이 없습니다.</Korean>
             <Czech>Nemáš oprávnění používat pozici Komandéra na tomto serveru.</Czech>
         </Key>
+        <Key ID="STR_MP_NOT_AUTHORIZED">
+            <Original>You are not authorized to use the Military Police slot on this server.</Original>
+        </Key>
+        <Key ID="STR_MC_NOT_AUTHORIZED">
+            <Original>You are not authorized to use the Mission Controller slot on this server.</Original>
+        </Key>
         <Key ID="STR_MAKE_RESPAWN_LOADOUT">
             <Original>Save respawn loadout</Original>
             <French>Equipement de respawn</French>

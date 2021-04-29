@@ -35,7 +35,7 @@ if (player isEqualTo ([] call KPLIB_fnc_getMissioncontroller) && !(serverCommand
 
     if (!_match) then {
         sleep 1;
-        endMission "END1";
+        endMission "END3";
     };
 };
 // add check for MP's
@@ -51,6 +51,6 @@ if (player isEqualTo ([] call KPLIB_fnc_getMilitarypolice) && !(serverCommandAva
 
     if (!_match) then {
         sleep 1;
-        endMission "END1";
+        endMission "END2";
     };
 };
