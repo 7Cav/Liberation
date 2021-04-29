@@ -933,9 +933,10 @@ GRLIB_arsenal_items = [
     "ACRE_PRC77",                                                   // AN/PRC-77
     "ACRE_SEM52SL",                                                 // SEM 52 SL
     "ACRE_SEM70",                                                   // SEM 70
-    "ACRE_VHF30108",                                                // VHF30108 GSM
-    "ACRE_VHF30108MAST",                                            // VHF30108 Mast
-    "ACRE_VHF30108SPIKE",                                           // VHF30108 GS
+
+    // CTAB Items
+    "ItemAndroid",
+    "ItemCtab",
 
     // TFAR Items
     "tf_anprc148jem",                                               // AN/PRC-148 JEM
