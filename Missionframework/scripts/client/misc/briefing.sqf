@@ -56,4 +56,93 @@ player createDiaryRecord ["serverrules",
 "
 ]
 ];
+player createDiarySubject ["radioinformation","Radio Information"];
+
+player createDiaryRecord ["radioinformation", ["Unit Callsigns",
+"
+<br/><font face=PuristaSemiBold' size='12'>Personnel</font>
+<br/>
+<font face='EtelkaMonospacePro' size='10'>
+<br/>Mission Controller             Godfather
+<br/>Sniper/Recon                   Longshot
+<br/>Forward Air Controller         Infidel
+<br/>Logistics/FOB Ops              Atlas 3/4
+<br/>Combat Medics                  Atlas 1/2
+<br/>Mechanized                     Viking
+<br/>Airborne/Air Assault           Misfit/Bandit
+<br/>Inf/Motorized                  Gunslinger
+<br/></font>
+<br/><font face=PuristaSemiBold' size='12'>Transport Aircraft</font>
+<br/>
+<font face='EtelkaMonospacePro' size='10'>
+<br/>CH-47F Chinook                 Grizzly
+<br/>UH-60M Black Hawk              Buffalo
+<br/>MH-6M Little Bird              Raven
+<br/>C-130J Super Hercules          Titan
+</font>
+<br/>
+<br/><font face=PuristaSemiBold' size='12'>Attack Aircraft</font>
+<br/>
+<font face='EtelkaMonospacePro' size='10'>
+<br/>AH-64D Apache Longbow          Raider
+<br/>AH-1Z Viper                    Viper
+<br/>UH-1Y                          Venom
+<br/>AH-6M Attack Little Bird       Sparrow
+<br/>A-10C Thunderbolt              Hog
+<br/>A-29 Super Tucano              Firefly
+<br/>F/A-181 Black Wasp             Eagle
+</font>
+<br/>
+<br/>
+<br/><font face=PuristaSemiBold' size='12'>Armor</font>
+<br/>
+<font face='EtelkaMonospacePro' size='10'>
+<br/>M1 Abrams                     Sabre
+<br/>Bradley IFV                   Banshee
+<br/>Stryker                       Sierra
+</font>
+<br/>
+"
+]];
+
+player createDiaryRecord ["radioinformation", ["Frequencies",
+"
+<font face='EtelkaMonospacePro' size='10'><br/>01 - Gunslinger Platoon Net</font>
+<br/>            Used to communicate between infantry squads in field
+<br/>
+<font face='EtelkaMonospacePro' size='10'><br/>02 - Aviation</font>
+<br/>            Used for air to air communications and CTAF/Air Traffic Control
+<br/>
+<font face='EtelkaMonospacePro' size='10'><br/>03 thru 09 - Other Platoon Nets</font>
+<br/>            Used whenever there is an MCC or multiple platoons, also utilized if a Platoon comes in for a Platoon FTX
+<br/>
+<font face='EtelkaMonospacePro' size='10'><br/>10 / 11 - IDF-1 and IDF-2</font>
+<br/>            Used to conduct indirect fire missions from artillery or mortars
+<br/>
+<font face='EtelkaMonospacePro' size='10'><br/>12 / 13 - CAS-1 and CAS-2</font>
+<br/>            Used to call in fixed-wing or attack rotary close air support
+<br/>
+<font face='EtelkaMonospacePro' size='10'><br/>14 - Ground-To-Air</font>
+<br/>            Used to conduct pick-up requests from logistical aviation units 
+<br/>
+<font face='EtelkaMonospacePro' size='10'><br/>15 - Logistics</font>
+<br/>            Used by ATLAS personnel to dispatch where needed. 
+<br/>
+<font face='EtelkaMonospacePro' size='10'><br/>16 - FARP Requests</font>
+<br/>            Used to communicate with ATLAS personnel when you are inbound to a FARP.
+<br/>
+<font face='EtelkaMonospacePro' size='10'><br/>17 - Convoy</font>
+<br/>            Used when conducting a convoy 
+<br/>
+<font face='EtelkaMonospacePro' size='10'><br/>18 - Zeus</font>
+<br/>            Used to communicate with a Zeus if required 
+<br/>
+<font face='EtelkaMonospacePro' size='10'><br/>19 - CAG</font>
+<br/>            Classified 
+<br/>
+<font face='EtelkaMonospacePro' size='10'><br/>20 - Command</font>
+<br/>            Used to coordinate across different platoons or other big picture items 
+<br/>
+"
+]];
 };
