@@ -205,8 +205,8 @@ GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy
 GRLIB_fob_range = 200;                                                  // Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;                                             // Altitude in metres for the HALO jump.
 GRLIB_secondary_missions_costs = [24, 16, 8];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
-GRLIB_secondary_objective_impact = 0.6;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
-GRLIB_recycling_percentage = 0.6;                                       // Percentage of resources you get back from recycling.
+GRLIB_secondary_objective_impact = 0.4;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
+GRLIB_recycling_percentage = 0.4;                                       // Percentage of resources you get back from recycling.
 KP_liberation_production_interval = 25;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
 GRLIB_sector_size = 1000;                                               // Range to activate a sector.
@@ -235,7 +235,7 @@ KP_liberation_cr_wounded_gain = 2;                                      // Civil
 
 KP_liberation_civinfo_min = 5400;                                       // Civil Informant minimum spawn time. (seconds)
 KP_liberation_civinfo_max = 10800;                                      // Civil Informant maximum spawn time. (seconds)
-KP_liberation_civinfo_chance = 75;                                      // Civil Informant spawn chance. (0-100)
+KP_liberation_civinfo_chance = 35;                                      // Civil Informant spawn chance. (0-100)
 KP_liberation_civinfo_intel = 8;                                        // Civil Informant intel amount.
 KP_liberation_civinfo_duration = 1200;                                  // Civil Informant staytime until despawning. (seconds)
 KP_liberation_civinfo_task_chance = 65;                                 // Chance (0-100) that the delivered informant will spawn a time critical task.
@@ -247,7 +247,7 @@ KP_liberation_convoy_ambush_duration = 1200;                            // Durat
 KP_liberation_resistance_tier2 = 30;                                    // At which strength (0-100) the guerilla forces will be at tier 2?
 KP_liberation_resistance_tier3 = 70;                                    // At which strength (0-100) the guerilla forces will be at tier 3?
 KP_liberation_resistance_at_chance = 20;                                // Chance that a guerilla unit has a RPG. (tier 2 and 3)
-KP_liberation_resistance_sector_chance = 45;                            // Chance that a guerilla squad will join an ongoing sector attack.
+KP_liberation_resistance_sector_chance = 35;                            // Chance that a guerilla squad will join an ongoing sector attack.
 KP_liberation_resistance_ambush_chance = 65;                            // Chance that some guerilla units will spawn in blufor sectors for an ambush, if reputation is low.
 
 // Array of worldName values.
