@@ -14,7 +14,7 @@ class RscTitles {
         idd = -1;
         movingEnable = false;
         controls[]= {
-            GenericLabelShadow, GenericLabel2
+            GenericLabelShadow, GenericLabel2, GenericLabel3
         };
         class GenericLabel2 {
             idc = -1;
@@ -28,11 +28,26 @@ class RscTitles {
             w = 0.4 * safezoneW;
             y = 0.65 * safezoneH + safezoneY;
             h = 0.1 * safezoneH;
-            text = "[GREUH] and the Killah Potatoes present";
+            text = "[GREUH] KP and =7Cav= S3 Department presents";
             shadow = 1;
         };
         class GenericLabelShadow: GenericLabel2 {
             shadow = 2;
+        };
+        class GenericLabel3 {
+            idc = -1;
+            type =  CT_STATIC ;
+            style = ST_CENTER;
+            colorText[] = COLOR_WHITE;
+            colorBackground[] = COLOR_NOALPHA;
+            font = FontM;
+            sizeEx = 0.025 * safezoneH;
+            x = 0.3 * safezoneW + safezoneX;
+            w = 0.4 * safezoneW;
+            y = 0.70 * safezoneH + safezoneY;
+            h = 0.1 * safezoneH;
+            text = "Special Thanks to Sweetwater.I and Liber.N";
+            shadow = 1;
         };
     };
     class intro2 {

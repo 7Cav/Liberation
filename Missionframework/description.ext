@@ -231,8 +231,8 @@ class CfgDiscordRichPresence {
 class CfgFunctions {
     #include "CfgFunctions.hpp"
     #include "KP\KPPLM\KPPLM_functions.hpp"
+    #include "Txu_Info\cfgfunctions.hpp"
 };
-
 class CfgRespawnTemplates {
 
 };
@@ -249,3 +249,5 @@ class CfgTaskDescriptions {
 #include "KP\KPGUI\KPGUI_defines.hpp"
 #include "KP\KPPLM\ui\KPPLM_dialog.hpp"
 
+//#include "7cav\CfgBaseDefines.hpp"
+#include "Txu_Info\CfgControls.hpp"
