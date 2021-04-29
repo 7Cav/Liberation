@@ -5,9 +5,9 @@
 * Added: Blufor Preset for Desert Missions
 * Added: Opfor Preset for Desert Missions
 * Added: Arsenal Preset for Blacklist
-* Added: Map - Diary features with link to Website/Enlist/Discord and Teamspeak.
+* Added: Map - Diary features with clickable link to Website/Enlist/Discord and Teamspeak.
 * Added: Server Rules on Map Screen Diary entry.
-* Added: ACRE2 Radio Channels Guide --Sypolt.R
+* Added: ACRE2 Radio Channels Guide --Addition by: Sypolt.R
 * Added: Map Support for Chernarus
 * Added: Map Support for Sahrani
 * Added: Map Support for Takistan
@@ -17,6 +17,7 @@
 * Added: Military Police Slot.
 * Added: Zeus Module for both MP and Mission controller slots.
 * Added: Missile Trolly as Fixed Wing Capcity modifier.
+* Added: Special Thanks RSC_Text Field for Developers that have worked on the missions.
 * Removed: Diesel Ground Power Unit as Fixed Wing Capcity modifier.
 * Removed: Fog (I swear I did it this time).
 * Tweaked: Preset configuration for Difficulty
