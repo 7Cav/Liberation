@@ -65,6 +65,7 @@ execVM "scripts\client\spawn\redeploy_manager.sqf";
 execVM "scripts\client\ui\ui_manager.sqf";
 execVM "scripts\client\ui\tutorial_manager.sqf";
 execVM "scripts\client\markers\update_production_sites.sqf";
+execVM "scripts\client\misc\briefing.sqf";
 execVM "scripts\client\misc\jarvis.sqf";
 
 player addMPEventHandler ["MPKilled", {_this spawn kill_manager;}];
@@ -93,6 +94,20 @@ execVM "scripts\client\ui\intro.sqf";
 
 // Commander init
 if (player isEqualTo ([] call KPLIB_fnc_getCommander)) then {
+    // Start tutorial
+    if (KP_liberation_tutorial) then {
+        [] call KPLIB_fnc_tutorial;
+    };
+    // Request Zeus if enabled
+    if (KP_liberation_commander_zeus) then {
+        [] spawn {
+            sleep 5;
+            [] call KPLIB_fnc_requestZeus;
+        };
+    };
+};
+
+if (player isEqualTo ([] call KPLIB_fnc_getMissioncontroller)) then {
     // Start tutorial
     if (KP_liberation_tutorial) then {
         [] call KPLIB_fnc_tutorial;

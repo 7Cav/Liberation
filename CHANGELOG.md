@@ -1,5 +1,43 @@
 # Changelog
 
+## 0.96.7a-7cav-0.2 (2021-04-28)
+* Added: Cleanup Script to clear ruins and dropped weapons/ammo/items.
+* Added: Blufor Preset for Desert Missions
+* Added: Opfor Preset for Desert Missions
+* Added: Arsenal Preset for Blacklist
+* Added: Map - Diary features with clickable link to Website/Enlist/Discord and Teamspeak.
+* Added: Server Rules on Map Screen Diary entry.
+* Added: ACRE2 Radio Channels Guide --Addition by: Sypolt.R
+* Added: Map Support for Chernarus
+* Added: Map Support for Sahrani
+* Added: Map Support for Takistan
+* Added: ACE FRIES (Fast Roping) to RHS_MH60 Variants, CH53 Variants, CH47 Variants, MH6 Variants.
+* Added: Custom Graphic with 7th Cavalry Logo to Menu / Intro on mission load.
+* Added: Mission Controller Slot.
+* Added: Military Police Slot.
+* Added: Zeus Module for both MP and Mission controller slots.
+* Added: Missile Trolly as Fixed Wing Capcity modifier.
+* Added: Special Thanks RSC_Text Field for Developers that have worked on the missions.
+* Removed: Diesel Ground Power Unit as Fixed Wing Capcity modifier.
+* Removed: Fog (I swear I did it this time).
+* Tweaked: Preset configuration for Difficulty
+* Tweaked: Fuel and Ammo Supply on Containers and Vehicles to be more realistic on size vs amount (Huron containers are double the amount, Trucks are kept the same, Vehicle ammo box and Flexible Fuel Container is reduced by half)
+* Tweaked: Fuel Rate to "Full Fuel" is doubled for faster refueling.
+* Tweaked: Ordinance to Pylon / Vehicle time is reduced for faster rearming.
+* Fixed: FOB not deployed automatically on mission wipe/start.
+* Fixed: AA Capabilites when at low Enemy Alert Level was too high.
+* Fixed: Ctab / Android items being removed from inventory if pulled from arsenal.
+* Fixed: Unable to spawn empty ammo/supply crates from build menu.
+* Fixed: Ammo Values based on Caliber causing A10 Rearming to be 1 box per GAU-8 Round.
+* Fixed: Intro/Menu buttons hard to see.
+* Fixed: ACE Radio Channel Name Presets not configured *(Altis Only Right Now - Wait for 0.3 Update)
+* Fixed: No Default Permissions for mission wipe/starts.
+* Fixed: Errors from Zen Mod causing scripts to not function.
+* Fixed: No Zeus Camera for MP's
+* Fixed: AI will hit spawn cap when players are in area that has 3 or more objectives within 2km.
+* Fixed: Helicopter/Fixed Wing Capacity -1/-1E8 or showing excessive counts.
+* Fixed: RHS_AFRF too heavily armored to kill with RHS Weapons.
+
 ## 0.96.7a-7cav-0.1 (2021-04-25)
 * Added: Additional Vehicles to Blufor preset.
 * Added: Heal Script addaction when near FOB, Mobile FOB or Arsenal Box.

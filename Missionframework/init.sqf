@@ -62,3 +62,6 @@ if (isServer) then {
     KPLIB_initServer = true;
     publicVariable "KPLIB_initServer";
 };
+
+// Disable RHS Decals, Save some Frames.
+RHSDecalsOff = true;

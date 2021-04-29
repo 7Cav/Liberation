@@ -64,6 +64,7 @@ switch (KP_liberation_preset_opfor) do {
     case 19: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\CUP_BAF_Desert.sqf";};
     case 20: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\CUP_BAF_Woodland.sqf";};
     case 21: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\rhs_gref_cdf.sqf";};
+    case 22: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\rhs_afrf_d.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom.sqf";};
 };
 
@@ -114,7 +115,7 @@ squads_names = [
 // Classnames of objects which should be ignored when building
 GRLIB_ignore_colisions_when_building = [
     "Land_HelipadSquare_F",
-    "Land_TentHangar_V1_F",
+    "Land_Missle_Trolley_02_F",
     "Land_runway_edgelight",
     "Land_runway_edgelight_blue_F",
     "Land_Flush_Light_green_F",
@@ -172,7 +173,11 @@ GRLIB_ignore_colisions_when_building = [
     "Land_Cargo20_EMP_F",
     "Land_Obstacle_Ramp_F",
     "Land_WoodenWindBreak_01_F",
-    "Land_RoadCone_01_F"
+    "Box_T_NATO_Wps_F",                                                 // Weapons crate
+    "Box_T_NATO_WpsSpecial_F",
+    "Box_NATO_Equip_F",
+    "Land_RoadCone_01_F",
+    "Land_Missle_Trolley_02_F"
 ];
 
 /*
