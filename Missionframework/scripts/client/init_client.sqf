@@ -66,6 +66,7 @@ execVM "scripts\client\ui\ui_manager.sqf";
 execVM "scripts\client\ui\tutorial_manager.sqf";
 execVM "scripts\client\markers\update_production_sites.sqf";
 execVM "scripts\client\misc\briefing.sqf";
+execVM "scripts\client\misc\jarvis.sqf";
 
 player addMPEventHandler ["MPKilled", {_this spawn kill_manager;}];
 player addEventHandler ["GetInMan", {[_this select 2] spawn kp_fuel_consumption;}];
