@@ -254,7 +254,7 @@ force force ace_pylons_rearmNewPylons = true;
 force force ace_pylons_requireEngineer = false;
 force force ace_pylons_requireToolkit = false;
 force force ace_pylons_searchDistance = 20;
-force force ace_pylons_timePerPylon = 2;
+force force ace_pylons_timePerPylon = 1;
 
 // ACE Quick Mount
 force ace_quickmount_distance = 5;
@@ -642,7 +642,7 @@ acre_sys_core_automaticAntennaDirection = true;
 acre_sys_core_defaultRadioVolume = 0.8;
 force force acre_sys_core_fullDuplex = false;
 force force acre_sys_core_ignoreAntennaDirection = true;
-force force acre_sys_core_interference = true;
+force force acre_sys_core_interference = false;
 acre_sys_core_postmixGlobalVolume = 1;
 acre_sys_core_premixGlobalVolume = 1;
 force force acre_sys_core_revealToAI = 1;
@@ -652,7 +652,7 @@ force acre_sys_core_ts3ChannelName = "";
 force acre_sys_core_ts3ChannelPassword = "";
 acre_sys_core_ts3ChannelSwitch = false;
 acre_sys_core_unmuteClients = true;
-force force acre_sys_signal_signalModel = 2;
+force force acre_sys_signal_signalModel = 0;
 
 // ACRE2 UI
 acre_sys_gui_volumeColorScale = [[1,1,0,0.5],[1,0.83,0,0.5],[1,0.65,0,0.5],[1,0.44,0,0.5],[1,0,0,0.5]];
@@ -745,7 +745,7 @@ force A3TI_HD_VISION_UAV = true;
 force A3TI_REMOVE_FILMGRAIN_RHS = true;
 
 // BettIR
-force force BettIR_ViewDistance = 800;
+force force BettIR_ViewDistance = 1600;
 
 // LAMBS Main
 force lambs_main_combatShareRange = 200;
