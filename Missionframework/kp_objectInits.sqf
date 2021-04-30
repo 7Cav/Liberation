@@ -104,6 +104,91 @@ KPLIB_objectInits = [
         ["gm_ge_army_kat1_454_cargo", "gm_ge_army_kat1_454_cargo_win"],
         {_this animateSource ["cover_unhide", 0, true];}
     ],
+    // empty boxes script
+    [
+        ["Box_T_NATO_Wps_F", "Box_T_NATO_WpsSpecial_F", "Box_NATO_Equip_F"],
+        {
+        clearWeaponCargo _this; 
+        clearMagazineCargo _this;
+        clearItemCargo _this;
+        }
+    ],
+    // MH-60 ACE FRIES
+    [
+        ["RHS_CH_47F", "RHS_UH60M", "RHS_UH60M_MEV2", "rhsusf_CH53E_USMC", "RHS_UH1Y", "rhsusf_CH53E_USMC_GAU21"],
+        {
+        [_this] call ace_fastroping_fnc_equipFRIES;
+        }
+    ],
+
+    //AMMO Supply Changes
+    [
+        ["Box_NATO_AmmoVeh_F"],
+        {[_this, 600] call ace_rearm_fnc_setSupplyCount;}
+    ],
+    [
+        ["rhsusf_m113d_usarmy_supply"],
+        {[_this, 1000] call ace_rearm_fnc_setSupplyCount;}
+    ],
+    [
+        ["B_Slingload_01_Ammo_F"],
+        {[_this, 9000] call ace_rearm_fnc_setSupplyCount;}
+    ],
+    //FUEL Supply Changes 
+    [
+        ["B_Slingload_01_Fuel_F"],
+        {[_this, 40000] call ace_refuel_fnc_setFuel;}
+    ],
+    [
+        ["FlexibleTank_01_forest_F", "FlexibleTank_01_sand_F"],
+        {[_this, 800] call ace_refuel_fnc_setFuel;}
+    ],
+    [
+        ["rhsusf_M978A4_BKIT_usarmy_d", "rhsusf_M978A4_usarmy_d", "rhsusf_M978A4_usarmy_wd", "rhsusf_M978A4_BKIT_usarmy_wd"],
+        {[_this, 15000] call ace_refuel_fnc_setFuel;}
+    ],
+    //Remove Vest from RHS_AFRF Units. --Might break immersion idk.
+    [
+        [
+            "rhs_msv_emr_officer",
+            "rhs_msv_emr_sergeant",
+            "rhs_msv_emr_efreitor",
+            "rhs_msv_emr_rifleman",
+            "rhs_msv_emr_LAT",
+            "rhs_msv_emr_grenadier",
+            "rhs_msv_emr_arifleman",
+            "rhs_msv_emr_machinegunner",
+            "rhs_msv_emr_marksman",
+            "rhs_msv_emr_at",
+            "rhs_msv_emr_aa",
+            "rhs_msv_emr_medic",
+            "rhs_msv_emr_engineer", 
+            "rhs_msv_emr_RShG2"
+        ],
+        {removeVest _this;}
+    ],
+    [
+        [
+            "rhs_vdv_des_officer_armored",
+            "rhs_vdv_des_sergeant",
+            "rhs_vdv_des_junior_sergeant",
+            "rhs_vdv_des_rifleman_lite",
+            "rhs_vdv_des_rifleman",
+            "rhs_vdv_des_LAT",
+            "rhs_vdv_des_grenadier",
+            "rhs_vdv_des_arifleman_rpk",
+            "rhs_vdv_des_machinegunner",
+            "rhs_vdv_des_rifleman_asval",
+            "rhs_vdv_des_marksman_asval",
+            "rhs_vdv_des_marksman",
+            "rhs_vdv_des_at",
+            "rhs_vdv_des_aa",
+            "rhs_vdv_des_medic",
+            "rhs_vdv_des_engineer",
+            "rhs_vdv_des_efreitor"
+        ],
+        {removeVest _this;}
+    ],
 
     // Make sure a slingloaded object is local to the helicopter pilot (avoid desync and rope break)
     [

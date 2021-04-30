@@ -46,10 +46,10 @@
 <Project name="Liberation">
     <Package name="Liberation">
         <Key ID="STR_MISSION_TITLE">
-            <Original>Liberation v0.96.7a-7Cav-0.1</Original>
+            <Original>Liberation v0.96.7a-7Cav-0.2</Original>
         </Key>
         <Key ID="STR_MISSION_VERSION">
-            <Original>v0.96.7a-7Cav-0.1</Original>
+            <Original>v0.96.7a-7Cav-0.2</Original>
         </Key>
         <Key ID="STR_Deploy_OnPoint">
             <Original>Deploy</Original>
@@ -3024,6 +3024,12 @@
             <Korean>사령관 슬롯을 사용할 권한이 없습니다.</Korean>
             <Czech>Nemáš oprávnění používat pozici Komandéra na tomto serveru.</Czech>
         </Key>
+        <Key ID="STR_MP_NOT_AUTHORIZED">
+            <Original>You are not authorized to use the Military Police slot on this server.</Original>
+        </Key>
+        <Key ID="STR_MC_NOT_AUTHORIZED">
+            <Original>You are not authorized to use the Mission Controller slot on this server.</Original>
+        </Key>
         <Key ID="STR_MAKE_RESPAWN_LOADOUT">
             <Original>Save respawn loadout</Original>
             <French>Equipement de respawn</French>
@@ -3852,7 +3858,7 @@
             <Czech>Helipad</Czech>
         </Key>
         <Key ID="STR_PLANE_SLOT">
-            <Original>Tent Hangar</Original>
+            <Original>Fixed Wing Trolly</Original>
             <German>Zelthangar</German>
             <Spanish>Hangar de aviones</Spanish>
             <Russian>Ангар</Russian>

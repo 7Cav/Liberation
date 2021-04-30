@@ -154,8 +154,8 @@
         "configFile": "kp_liberation_config.sqf",
         "variables": {
             "KP_liberation_preset_blufor": 6,
-            "KP_liberation_preset_opfor": 2,
-            "KP_liberation_preset_resistance": 0,
+            "KP_liberation_preset_opfor": 21,
+            "KP_liberation_preset_resistance": 9,
             "KP_liberation_preset_civilians": 0,
             "KP_liberation_arsenal": 0
         },
@@ -183,9 +183,9 @@
         "configFile": "kp_liberation_config.sqf",
         "variables": {
             "KP_liberation_preset_blufor": 7,
-            "KP_liberation_preset_opfor": 3,
-            "KP_liberation_preset_resistance": 3,
-            "KP_liberation_preset_civilians": 2,
+            "KP_liberation_preset_opfor": 22,
+            "KP_liberation_preset_resistance": 9,
+            "KP_liberation_preset_civilians": 0,
             "KP_liberation_arsenal": 0
         },
         "workshopId": "878715681"
@@ -246,20 +246,6 @@
             "KP_liberation_preset_resistance": 5,
             "KP_liberation_preset_civilians": 4,
             "KP_liberation_arsenal": 5
-        },
-        "workshopId": ""
-    },
-    {
-        "sourceFolder": "kp_liberation.Takistan",
-        "missionName": "kp_liberation",
-        "map": "Takistan",
-        "configFile": "kp_liberation_config.sqf",
-        "variables": {
-            "KP_liberation_preset_blufor": 7,
-            "KP_liberation_preset_opfor": 2,
-            "KP_liberation_preset_resistance": 2,
-            "KP_liberation_preset_civilians": 0,
-            "KP_liberation_arsenal": 0
         },
         "workshopId": ""
     }

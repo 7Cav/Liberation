@@ -520,6 +520,8 @@ KP_liberation_allowed_items_extension = [
     "BWA3_RGW90_Used",
     "BWA3_RGW90",
     "ItemRadioAcreFlagged",
+    "ItemAndroid",
+    "ItemCtab",
     "rhs_acc_ekp8_18b",
     "rhs_acc_ekp8_18c",
     "rhs_acc_ekp8_18d",

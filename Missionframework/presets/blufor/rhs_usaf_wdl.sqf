@@ -22,7 +22,7 @@ FOB_truck_typename = "rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy";            // This 
 Arsenal_typename = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
 Respawn_truck_typename = "rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy";   // This is the mobile respawn (and medical) truck.
 huron_typename = "RHS_CH_47F";                                          // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
-crewman_classname = "rhsusf_army_ocp_combatcrewman";                    // This defines the crew for vehicles.
+crewman_classname = "B_crew_F";                                         // This defines the crew for vehicles.
 pilot_classname = "B_Helipilot_F";                                      // This defines the pilot for helicopters.
 KP_liberation_little_bird_classname = "RHS_MELB_MH6M";                  // These are the little birds which spawn on the Freedom or at Chimera base.
 KP_liberation_boat_classname = "B_Boat_Transport_01_F";                 // These are the boats which spawn at the stern of the Freedom.
@@ -32,7 +32,7 @@ KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";     // A lar
 KP_liberation_recycle_building = "Land_RepairDepot_01_tan_F";           // The building defined to unlock FOB recycling functionality.
 KP_liberation_air_vehicle_building = "B_Radar_System_01_F";             // The building defined to unlock FOB air vehicle functionality.
 KP_liberation_heli_slot_building = "Land_HelipadSquare_F";              // The helipad used to increase the GLOBAL rotary-wing cap.
-KP_liberation_plane_slot_building = "Land_DieselGroundPowerUnit_01_F";  // The hangar used to increase the GLOBAL fixed-wing cap.
+KP_liberation_plane_slot_building = "Land_Missle_Trolley_02_F";         // The hangar used to increase the GLOBAL fixed-wing cap.
 KP_liberation_supply_crate = "CargoNet_01_box_F";                       // This defines the supply crates, as in resources.
 KP_liberation_ammo_crate = "B_CargoNet_01_ammo_F";                      // This defines the ammunition crates.
 KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This defines the fuel crates.
@@ -104,7 +104,7 @@ light_vehicles = [
     ["rhsusf_M977A4_BKIT_M2_usarmy_wd",125,40,75],                      // M977A4 BKIT (HMG)
     ["rhsusf_M1117_W",150,50,50],                                       // M1117 ASV
     ["B_UGV_01_F",150,0,50],                                            // UGV Stomper
-    ["B_UGV_01_rcws_F",150,40,50],                                      // UGV Stomper (RCWS)
+    ["B_UGV_01_rcws_F",250,40,50],                                      // UGV Stomper (RCWS)
     ["B_Boat_Transport_01_F",100,0,25],                                 // Assault Boat
     ["B_Boat_Armed_01_minigun_F",200,80,75],                            // Speedboat Minigun
     ["rhsusf_mkvsoc",250,200,100],                                      // Mk.V SOCOM
@@ -137,23 +137,23 @@ air_vehicles = [
     ["RHS_UH1Y_GS",225,200,125],                                        // UH-1Y (Ground Suppression)
     ["rhs_uh1h_hidf_gunship",250,300,125],                              // UH-1H Gunship (Vietnam)
     ["RHS_AH1Z",500,500,200],                                           // AH-1Z (Multi-Role)
-    ["RHS_AH64D_wd",750,750,250],                                       // AH-64D (Multi-Role)
-    ["RHS_AH64D_noradar_wd ",700,750,250],                              // AH-64D (No Radar)
+    ["RHS_AH64D_wd",750,550,250],                                       // AH-64D (Multi-Role)
+    ["RHS_AH64D_noradar_wd ",500,550,250],                              // AH-64D (No Radar)
     ["RHS_UH60M2",250,0,150],                                           // UH-60M (Unarmed)
     ["RHS_UH60M",250,80,150],                                           // UH-60M
     ["RHS_UH60M_MEV2",300,0,150],                                       // UH-60M MEV2
     ["RHS_CH_47F_10",275,80,175],                                       // CH-47 Chinook (Armed)
-    ["rhsusf_CH53E_USMC",300,0,175],                                    // CH-53E Super Stallion
-    ["rhsusf_CH53E_USMC_GAU21",300,100,175],                            // CH-53E Super Stallion (GAU-21)
+    ["rhsusf_CH53E_USMC",350,0,225],                                    // CH-53E Super Stallion
+    ["rhsusf_CH53E_USMC_GAU21",350,125,225],                            // CH-53E Super Stallion (GAU-21)
     ["USAF_C130J",200,0,250],                                           // C-130J Super Hercules
     ["USAF_C130J_Cargo",200,0,250],                                     // C-130J Super Hercules (Cargo)
     ["USAF_C17",500,0,400],                                             // C-17 Globemaster III
     ["usaf_kc135",600,0,2500],                                          // KC-135 Stratotanker
-    ["B_UAV_02_dynamicLoadout_F",400,300,200],                          // MQ-4A Greyhawk
-    ["B_T_UAV_03_dynamicLoadout_F",450,500,250],                        // MQ-12 Falcon
+    ["B_UAV_02_dynamicLoadout_F",600,300,200],                          // MQ-4A Greyhawk
+    ["B_T_UAV_03_dynamicLoadout_F",650,500,250],                        // MQ-12 Falcon
     ["B_UAV_05_F",500,500,200],                                         // UCAV Sentinel
     ["USAF_RQ4A",500,0,200],                                            // RQ-4A Global Hawk
-    ["USAF_MQ9",500,750,200],                                           // MQ-9 Reaper
+    ["USAF_MQ9",800,750,300],                                           // MQ-9 Reaper
     ["RHS_A10",1000,1000,400],                                          // RHS A-10A    
     ["FIR_A10C",1500,1000,400],                                         // A-10C (CAS)
     ["USAF_A10",1500,1000,400],                                         // A-10C Thunderbolt II
@@ -293,10 +293,13 @@ support_vehicles = [
     ["ACE_Box_82mm_Mo_HE",25,20,0],
     ["ACE_Box_82mm_Mo_Smoke",25,15,0],
     ["ACE_Box_82mm_Mo_Illum",25,15,0],
+    ["Box_T_NATO_Wps_F",25,5,0],
+    ["Box_T_NATO_WpsSpecial_F",25,5,0],
+    ["Box_NATO_Equip_F",25,5,0],
     ["ACE_Wheel",10,0,0],
     ["ACE_Track",10,0,0],
-    ["FlexibleTank_01_forest_F",10,0,200],                              // Movable Fuel Tank
-    ["Box_NATO_AmmoVeh_F",10,200,0],                                    // Vehicle Ammo Box
+    ["FlexibleTank_01_forest_F",10,0,100],                              // Movable Fuel Tank
+    ["Box_NATO_AmmoVeh_F",10,150,0],                                    // Vehicle Ammo Box
     ["ACE_ConcertinaWireCoil",15,0,0],                                  // Pesky concertina wire
     ["USAF_missileCart_W_AGM114",50,150,0],                             // Missile Cart (AGM-114)
     ["USAF_missileCart_AGMMix",50,150,0],                               // Missile Cart (AGM-65 Mix)
@@ -312,12 +315,12 @@ support_vehicles = [
     ["USAF_missileCart_GBU39",50,150,0],                                // Missile Cart (GBU39)
     ["USAF_missileCart_Mk82",50,150,0],                                 // Missile Cart (Mk82)
     ["B_APC_Tracked_01_CRV_F",500,250,350],                             // CRV-6e Bobcat
-    ["rhsusf_M977A4_REPAIR_BKIT_usarmy_wd",325,0,75],                   // M977A4 Repair
-    ["rhsusf_M978A4_BKIT_usarmy_wd",125,0,275],                         // M978A4 Fuel
-    ["rhsusf_M977A4_AMMO_BKIT_usarmy_wd",125,200,75],                   // M977A4 Ammo
-    ["B_Slingload_01_Repair_F",275,0,0],                                // Huron Repair
-    ["B_Slingload_01_Fuel_F",75,0,200],                                 // Huron Fuel
-    ["B_Slingload_01_Ammo_F",75,200,0]                                  // Huron Ammo
+    ["rhsusf_M977A4_REPAIR_BKIT_usarmy_wd",325,0,100],                   // M977A4 Repair
+    ["rhsusf_M978A4_BKIT_usarmy_wd",125,0,300],                         // M978A4 Fuel
+    ["rhsusf_M977A4_AMMO_BKIT_usarmy_wd",125,250,100],                   // M977A4 Ammo
+    ["B_Slingload_01_Repair_F",300,0,0],                                // Huron Repair
+    ["B_Slingload_01_Fuel_F",75,0,800],                                 // Huron Fuel
+    ["B_Slingload_01_Ammo_F",75,800,0]                                  // Huron Ammo
 ];
 
 /*
