@@ -14,6 +14,11 @@ private _permissibleVehicles = [
 private _permissionIdx = _permissibleVehicles findIf {_vehicleClass in (_x select 0)};
 if (_permissionIdx isEqualTo -1) exitWith {};
 
+if (typeof player != pilot_classname) && (_permissionIdx isEqualTo 2) exitWith {
+    moveOut player;
+    hintSilent "You must be in a pilot slot to fly"
+};
+
 if !([_permissionIdx] call KPLIB_fnc_hasPermission) exitWith {
     moveOut player;
     hint localize (_permissibleVehicles select _permissionIdx select 1);
