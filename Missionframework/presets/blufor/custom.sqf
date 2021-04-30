@@ -28,6 +28,7 @@ Respawn_truck_typename = "B_Truck_01_medical_F";                        // This 
 huron_typename = "B_Heli_Transport_03_unarmed_F";                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 crewman_classname = "B_crew_F";                                         // This defines the crew for vehicles.
 pilot_classname = "B_Helipilot_F";                                      // This defines the pilot for helicopters.
+fixed_wing_classname = "B_Pilot_F";                                     // This defines the pilot for fixed wing aircraft.
 KP_liberation_little_bird_classname = "B_Heli_Light_01_F";              // These are the little birds which spawn on the Freedom or at Chimera base.
 KP_liberation_boat_classname = "B_Boat_Transport_01_F";                 // These are the boats which spawn at the stern of the Freedom.
 KP_liberation_truck_classname = "B_Truck_01_transport_F";               // These are the trucks which are used in the logistic convoy system.
