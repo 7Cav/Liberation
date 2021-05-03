@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1765;
+		nextID=1780;
 	};
 	class Camera
 	{
-		pos[]={14504.364,23.814053,5878.4932};
-		dir[]={-0.51793033,-0.79652762,0.31191662};
-		up[]={-0.68234259,0.6046021,0.41093174};
-		aside[]={0.51590395,-1.4901161e-008,0.85664648};
+		pos[]={27497.664,31.547796,5532.8262};
+		dir[]={-0.89418703,-0.4442293,0.055587243};
+		up[]={-0.44337347,0.89591318,0.027562363};
+		aside[]={0.062045354,1.8626451e-009,0.99807346};
 	};
 };
 binarizationWanted=0;
@@ -9412,16 +9412,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={27476.391,23.538576,5532.3096};
+				position[]={27476.391,23.539001,5532.3101};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="littlebird_2";
+				name="blackhawk_0";
 			};
 			id=5830;
 			type="Land_ClutterCutter_small_F";
+			atlOffset=0.00042533875;
 			class CustomAttributes
 			{
 				class Attribute0

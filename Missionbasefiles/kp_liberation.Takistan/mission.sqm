@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=97;
+		nextID=117;
 	};
 	class Camera
 	{
-		pos[]={1704.0762,1022.6871,185.97742};
-		dir[]={-0.87828904,-0.47353292,-0.067912497};
-		up[]={-0.47221971,0.88070118,-0.03651493};
-		aside[]={-0.077102505,-2.0132638e-006,0.99712533};
+		pos[]={2926.3203,376.89334,242.39986};
+		dir[]={-0.9314785,-0.3229202,0.16754229};
+		up[]={-0.31782004,0.94642621,0.057165358};
+		aside[]={0.17702627,-3.7252903e-009,0.98420614};
 	};
 };
 binarizationWanted=0;
@@ -6306,7 +6306,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.2;
-						init="call{this setFlagTexture ""res\splash_libe2.paa"";}";
+						init="call{this setFlagTexture ""res\flag_00_ca.paa"";}";
 					};
 					id=881;
 					type="Flag_White_F";
@@ -10402,7 +10402,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="littlebird_1";
+				name="blackhawk_0";
 			};
 			id=877;
 			type="Land_ClutterCutter_small_F";
