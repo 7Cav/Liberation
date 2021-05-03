@@ -10,6 +10,9 @@
 * Fixed: Made GUNSLINGER groups infantry, modified one group to VIKING for mechanized
 * Fixed: Reordered mission.sqm after group changes
 * Tweaked: Changed names of groups for consistency with cav standards
+* Tweaked: Changed one Raven spawn to be a Buffalo instead
+* Added: Cav Flag :cav_dab:
+* Fixed: Moved flag at takistan op base to prevent grizzly losing MRTR when using Advanced Flight Model
 
 ## 0.96.7a-7cav-0.2 (2021-04-28)
 * Added: Cleanup Script to clear ruins and dropped weapons/ammo/items.
