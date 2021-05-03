@@ -14101,8 +14101,8 @@ class Mission
 							class Attributes
 							{
 								rank="LIEUTENANT";
-								init="call{this setGroupId [""SABER-1""];}";
-								description="Tank Commander@SABER-1";
+								init="call{this setGroupId [""SABRE-1""];}";
+								description="Tank Commander@SABRE-1";
 								isPlayable=1;
 								class Inventory
 								{
@@ -18214,7 +18214,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="SABER";
+							value="SABRE";
 						};
 					};
 				};
