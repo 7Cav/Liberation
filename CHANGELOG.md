@@ -1,7 +1,7 @@
 # Changelog
 
 ## 0.96.7a-7cav-0.3
-* Added: Rules Splash Screen on Mission Start(WIP)
+* Added: Rules Splash Screen on Mission Start
 * Tweaked: Platoon Staff now have own groups for BFT Readability.
 * Tweaked: Changed Buffalo-2 to 2 seperate groups for 2 Ravens
 * Tweaked: Made Infidel-1 its own group and added an observer

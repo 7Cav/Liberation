@@ -26,9 +26,9 @@ class liberation_menu {
         colorBackground[] = COLOR_NOALPHA;
         font = FontM;
         sizeEx = 0.1 * safezoneH;
-        x = 0.61 * safezoneW + safezoneX;
-        w = 0.25 * safezoneW;
-        y = 0.25 * safezoneH + safezoneY;
+        x = 0.66 * safezoneW + safezoneX;
+        w = 0.26 * safezoneW;
+        y = 0.27 * safezoneH + safezoneY;
         h = 0.43 * safezoneH;
         text = "res\serverRules.paa";
     };
