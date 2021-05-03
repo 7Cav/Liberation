@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.96.7a-7cav-0.3
+* Added: Rules Splash Screen on Mission Start(WIP)
+* Tweaked: Platoon Staff now have own groups for BFT Readability.
+* Tweaked: Changed Buffalo-2 to 2 seperate groups for 2 Ravens
+* Tweaked: Made Infidel-1 its own group and added an observer
+* Fixed: Changed Raider-1 from helipilot model to helicrew to prevent CAS locking out HALO jump
+* Tweaked: Changed second SABER group to BANSHEE
+* Fixed: Made GUNSLINGER groups infantry, modified one group to VIKING for mechanized
+* Fixed: Reordered mission.sqm after group changes
+* Tweaked: Changed names of groups for consistency with cav standards
+
 ## 0.96.7a-7cav-0.2 (2021-04-28)
 * Added: Cleanup Script to clear ruins and dropped weapons/ammo/items.
 * Added: Blufor Preset for Desert Missions
