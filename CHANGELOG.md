@@ -14,6 +14,7 @@
 * Added: Cav Flag :cav_dab:
 * Fixed: Moved flag at takistan op base to prevent grizzly losing MRTR when using Advanced Flight Model
 * Tweaked: Changed Killah Potatoes flag to Cav Flag
+* Tweaked: Blacklisted meme stuff from arsenal
 
 ## 0.96.7a-7cav-0.2 (2021-04-28)
 * Added: Cleanup Script to clear ruins and dropped weapons/ammo/items.
