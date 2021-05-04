@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.96.7a-7cav-0.3 (2021-05-03)
+* Added: Block for non-pilots entering buildable air vehicles (You must be in pilot spot to pilot a vehicle)
+* Tweaked: CBA_Settings for ACE_Medical to be more forgiving due to infrequent support assets (Less fractures, Less instant bleedouts).
+* Tweaked: ACRE Radios to ARCADE Mode, So I maintain sanity when someone tells me that ACRE is broken cause they can't comprehend 20km range LOS.
+* Tweaked: ACE_Settings so ballistics is disabled. Mainly so people stop telling me its the reason the server runs slow.
+* Fixed: Issue with mission default parameters that caused CUP Maps to think a bullet hole is a destroyed building and thus tanking civ reputation.
+* Fixed: Parameter setting that adjusts the AI count to Player Count, which sound great until you have 350 units and 10 SFPS.
+* Fixed: Unit Cap settings to allow for less overhead until Tact 2 is configured properly.
+* Removed: Errant Kill_Report -> Will be added in future update.
+
 ## 0.96.7a-7cav-0.2 (2021-04-28)
 * Added: Cleanup Script to clear ruins and dropped weapons/ammo/items.
 * Added: Blufor Preset for Desert Missions

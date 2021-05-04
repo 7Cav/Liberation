@@ -124,7 +124,6 @@ opfor_battlegroup_vehicles_low_intensity = [
     "RHS_Ural_Open_MSV_01",                                             // Ural-4320 Transport
     "rhs_btr80_msv",                                                    // BTR-80
     "rhs_btr80a_msv",                                                   // BTR-80A
-    "rhs_zsu234_aa",                                                    // ZSU-23-4V
     "rhsgref_mi24g_CAS",                                                // Mi-24P (AT)                                               // Mi-24V (AT)
     "rhsgref_cdf_reg_Mi8amt"                                              // Mi-8MT (Cargo)
 ];

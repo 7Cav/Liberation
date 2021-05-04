@@ -2,7 +2,7 @@
 force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
 force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
 force force ace_advanced_ballistics_bulletTraceEnabled = false;
-force force ace_advanced_ballistics_enabled = true;
+force force ace_advanced_ballistics_enabled = false;
 force force ace_advanced_ballistics_muzzleVelocityVariationEnabled = false;
 force force ace_advanced_ballistics_simulationInterval = 0.05;
 
@@ -157,22 +157,22 @@ ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 force force ace_medical_ai_enabledFor = 0;
-force force ace_medical_AIDamageThreshold = 0.3;
-force force ace_medical_bleedingCoefficient = 0.8;
+force force ace_medical_AIDamageThreshold = 0.07;
+force force ace_medical_bleedingCoefficient = 0.25;
 force force ace_medical_blood_bloodLifetime = 900;
 force force ace_medical_blood_enabledFor = 2;
-force force ace_medical_blood_maxBloodObjects = 100;
+force force ace_medical_blood_maxBloodObjects = 50;
 force force ace_medical_fatalDamageSource = 1;
 force force ace_medical_feedback_bloodVolumeEffectType = 0;
 force force ace_medical_feedback_painEffectType = 0;
-force force ace_medical_fractureChance = 0.65;
+force force ace_medical_fractureChance = 0.25;
 force force ace_medical_fractures = 1;
 force force ace_medical_gui_maxDistance = 3.4;
 force force ace_medical_ivFlowRate = 1.2;
 force force ace_medical_limping = 1;
-force force ace_medical_painCoefficient = 0.8;
+force force ace_medical_painCoefficient = 0.5;
 force force ace_medical_playerDamageThreshold = 10;
-force force ace_medical_spontaneousWakeUpChance = 0.2;
+force force ace_medical_spontaneousWakeUpChance = 0.85;
 force force ace_medical_spontaneousWakeUpEpinephrineBoost = 1.4;
 force force ace_medical_statemachine_AIUnconsciousness = false;
 force force ace_medical_statemachine_cardiacArrestTime = 270;
@@ -232,6 +232,7 @@ force force ace_nightvision_effectScaling = 0.6;
 force force ace_nightvision_fogScaling = 1;
 force force ace_nightvision_noiseScaling = 0.5;
 force force ace_nightvision_shutterEffects = false;
+
 // ACE Overheating
 ace_overheating_displayTextOnJam = true;
 force force ace_overheating_enabled = true;
@@ -283,7 +284,7 @@ force force ace_scopes_zeroReferenceTemperature = 20;
 // ACE Spectator
 force force ace_spectator_enableAI = false;
 ace_spectator_maxFollowDistance = 5;
-force force ace_spectator_restrictModes = 1;
+force force ace_spectator_restrictModes = 0;
 force force ace_spectator_restrictVisions = 0;
 
 // ACE Switch Units
@@ -745,7 +746,7 @@ force A3TI_HD_VISION_UAV = true;
 force A3TI_REMOVE_FILMGRAIN_RHS = true;
 
 // BettIR
-force force BettIR_ViewDistance = 1600;
+force force BettIR_ViewDistance = 3600;
 
 // LAMBS Main
 force lambs_main_combatShareRange = 200;
