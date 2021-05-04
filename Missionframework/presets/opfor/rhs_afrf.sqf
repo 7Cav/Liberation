@@ -67,7 +67,6 @@ opfor_vehicles = [
     "rhs_bmp2k_msv",                                                    // BMP-2K
     "rhs_brm1k_msv",                                                    // BRM-1K
     "rhs_zsu234_aa",                                                    // ZSU-23-4V
-    "rhs_zsu234_aa",                                                    // ZSU-23-4V
     "rhs_t80",                                                          // T80
     "rhs_t80",                                                          // T80
     "rhs_t90a_tv",                                                      // T90A
@@ -93,7 +92,6 @@ opfor_battlegroup_vehicles = [
     "rhs_bmp2k_msv",                                                    // BMP-2K
     "rhs_brm1k_msv",                                                    // BRM-1K
     "rhs_zsu234_aa",                                                    // ZSU-23-4V
-    "rhs_zsu234_aa",                                                    // ZSU-23-4V
     "rhs_t80",                                                          // T80
     "rhs_t80",                                                          // T80
     "rhs_t90a_tv",                                                      // T90A
@@ -111,7 +109,6 @@ opfor_battlegroup_vehicles_low_intensity = [
     "RHS_Ural_Open_MSV_01",                                             // Ural-4320 Transport
     "rhs_btr80_msv",                                                    // BTR-80
     "rhs_btr80a_msv",                                                   // BTR-80A
-    "rhs_zsu234_aa",                                                    // ZSU-23-4V
     "RHS_Mi24P_AT_vvsc",                                                // Mi-24P (AT)
     "RHS_Mi24V_AT_vvsc",                                                // Mi-24V (AT)
     "RHS_Mi8mt_Cargo_vvsc"                                              // Mi-8MT (Cargo)

@@ -67,8 +67,6 @@ opfor_vehicles = [
     "rhs_tigr_sts_3camo_vdv",                                                 // GAZ-233014 (Armed)
     "rhs_btr80_vdv",                                                    // BMP-2D                                                   // BMP-2K
     "rhs_btr80a_vdv",                                                    // BRM-1K
-    "rhs_zsu234_aa",                                                    // ZSU-23-4V
-    "rhs_zsu234_aa",                                                    // ZSU-23-4V
     "rhs_t90_tv"                                                          // T80                                                   // T90SA (2016)
 ];
 
@@ -92,8 +90,6 @@ opfor_battlegroup_vehicles = [
     "rhs_bmp2e_vdv",                                                    // BMP-2D
     "rhs_bmp2e_vdv",                                                    // BMP-2K
     "rhs_bmp2e_vdv",                                                    // BRM-1K
-    "rhs_zsu234_aa",                                                    // ZSU-23-4V
-    "rhs_zsu234_aa",                                                    // ZSU-23-4V
     "rhs_t90_tv",                                                          // T80
     "rhs_t90saa_tv",                                                          // T80
     "rhs_t90sm_tv",
