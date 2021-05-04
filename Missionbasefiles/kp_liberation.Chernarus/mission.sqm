@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=4672;
+		nextID=4673;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1770;
+		nextID=1791;
 	};
 	class Camera
 	{
-		pos[]={15141.578,62.926807,132.87503};
-		dir[]={0.72265345,-0.54231268,0.42881605};
-		up[]={0.4664335,0.84012341,0.27677143};
-		aside[]={0.51036483,2.8762734e-006,-0.86009759};
+		pos[]={15212.855,37.480312,212.57338};
+		dir[]={0.82601088,-0.26309374,-0.49848545};
+		up[]={0.22525394,0.96477026,-0.13593744};
+		aside[]={-0.51668823,7.4505806e-009,-0.85617363};
 	};
 };
 binarizationWanted=0;
@@ -363,7 +363,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=263;
+		items=264;
 		class Item0
 		{
 			dataType="Marker";
@@ -28345,7 +28345,7 @@ class Mission
 							};
 							id=6520;
 							type="B_soldier_AR_F";
-							atlOffset=1.7166138e-005;
+							atlOffset=0.00010108948;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -30661,7 +30661,7 @@ class Mission
 							};
 							id=6547;
 							type="B_crew_F";
-							atlOffset=1.5258789e-005;
+							atlOffset=4.7683716e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33260,6 +33260,23 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item263
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15222.884,22.434387,204.63499};
+				angles[]={0,2.2513175,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="blackwasp_0";
+			};
+			id=4672;
+			type="Land_ClutterCutter_small_F";
+			atlOffset=174.909;
 		};
 	};
 };

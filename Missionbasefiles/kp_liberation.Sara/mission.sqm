@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3678;
+		nextID=3679;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=479;
+		nextID=500;
 	};
 	class Camera
 	{
-		pos[]={3976.8032,119.98584,11756.243};
-		dir[]={0.35427523,-0.4056237,0.84259033};
-		up[]={0.15721676,0.91404021,0.37391642};
-		aside[]={0.92183083,0,-0.38759267};
+		pos[]={4037.0708,51.234665,11896.406};
+		dir[]={0.79804367,-0.46990541,0.37725702};
+		up[]={0.42483172,0.88271594,0.20082936};
+		aside[]={0.42738095,6.9849193e-009,-0.90407658};
 	};
 };
 binarizationWanted=0;
@@ -304,7 +304,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=299;
+		items=300;
 		class Item0
 		{
 			dataType="Object";
@@ -17137,7 +17137,6 @@ class Mission
 							};
 							id=6527;
 							type="B_Soldier_GL_F";
-							atlOffset=9.5367432e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -19890,6 +19889,7 @@ class Mission
 							};
 							id=6539;
 							type="B_crew_F";
+							atlOffset=-9.5367432e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -19979,7 +19979,7 @@ class Mission
 							};
 							id=6540;
 							type="B_crew_F";
-							atlOffset=0.10519505;
+							atlOffset=0.105196;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -20207,6 +20207,7 @@ class Mission
 					{
 					};
 					id=6538;
+					atlOffset=-9.5367432e-007;
 				};
 				class Item9
 				{
@@ -21431,7 +21432,7 @@ class Mission
 							};
 							id=6555;
 							type="B_helicrew_F";
-							atlOffset=0.10898209;
+							atlOffset=0.10898304;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -23123,6 +23124,23 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item299
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4058.1541,23.843433,11904.746};
+				angles[]={0,1.4325837,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="blackwasp_0";
+			};
+			id=3678;
+			type="Land_ClutterCutter_small_F";
+			atlOffset=64.317001;
 		};
 	};
 };
