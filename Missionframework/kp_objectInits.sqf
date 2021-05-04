@@ -24,10 +24,10 @@
 */
 
 KPLIB_objectInits = [
-    // Set KP logo on white flag
+    // Set CAV logo on white flag
     [
         ["Flag_White_F"],
-        {_this setFlagTexture "res\flag_kp_co.paa";}
+        {_this setFlagTexture "res\flag_00_ca.paa";}
     ],
 
     // Add helipads to zeus, as they can't be recycled after built
@@ -115,7 +115,7 @@ KPLIB_objectInits = [
     ],
     // MH-60 ACE FRIES
     [
-        ["RHS_CH_47F", "RHS_UH60M", "RHS_UH60M_MEV2", "rhsusf_CH53E_USMC", "RHS_UH1Y", "rhsusf_CH53E_USMC_GAU21"],
+        ["RHS_CH_47F", "RHS_UH60M", "RHS_UH60M_d", "RHS_UH60M_MEV2", "rhsusf_CH53E_USMC", "RHS_UH1Y", "rhsusf_CH53E_USMC_GAU21"],
         {
         [_this] call ace_fastroping_fnc_equipFRIES;
         }

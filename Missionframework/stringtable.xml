@@ -3780,17 +3780,17 @@
 
         <!-- Added or changed in v0.95 -->
         <Key ID="STR_INDIV_FLAG">
-            <Original>Killah Potatoes flag</Original>
-            <German>Killah Potatoes Flagge</German>
-            <Spanish>Bandera de Killah Potatoes</Spanish>
-            <Russian>Флаг Killah Potatoes</Russian>
-            <Italian>Bandiera dei Killah Potatoes</Italian>
-            <Chinesesimp>Killah Potatoes旗</Chinesesimp>
-            <Chinese>Killah Potatoes旗</Chinese>
-            <Turkish>Killah Potatoes bayrağı</Turkish>
-            <Portuguese>Bandeira da Killah Potatoes</Portuguese>
-            <Korean>Killah Potatoes 깃발</Korean>
-            <Czech>Killah Potatoes vlajka</Czech>
+            <Original>7th Cavalry flag</Original>
+            <German>7th Cavalry Flagge</German>
+            <Spanish>Bandera de 7th Cavalry</Spanish>
+            <Russian>Флаг 7th Cavalry</Russian>
+            <Italian>Bandiera dei 7th Cavalry</Italian>
+            <Chinesesimp>7th Cavalry旗</Chinesesimp>
+            <Chinese>7th Cavalry旗</Chinese>
+            <Turkish>7th Cavalry bayrağı</Turkish>
+            <Portuguese>Bandeira da 7th Cavalry</Portuguese>
+            <Korean>7th Cavalry 깃발</Korean>
+            <Czech>7th Cavalry vlajka</Czech>
         </Key>
         <Key ID="STR_SMALL_STORAGE">
             <Original>Small storage area</Original>
