@@ -1,20 +1,14 @@
 # Changelog
 
-## 0.96.7a-7cav-0.3
-* Added: Rules Splash Screen on Mission Start
-* Tweaked: Platoon Staff now have own groups for BFT Readability.
-* Tweaked: Changed Buffalo-2 to 2 seperate groups for 2 Ravens
-* Tweaked: Made Infidel-1 its own group and added an observer
-* Fixed: Changed Raider-1 from helipilot model to helicrew to prevent CAS locking out HALO jump
-* Tweaked: Changed second SABER group to BANSHEE
-* Fixed: Made GUNSLINGER groups infantry, modified one group to VIKING for mechanized
-* Fixed: Reordered mission.sqm after group changes
-* Tweaked: Changed names of groups for consistency with cav standards
-* Tweaked: Changed one Raven spawn to be a Buffalo instead
-* Added: Cav Flag :cav_dab:
-* Fixed: Moved flag at takistan op base to prevent grizzly losing MRTR when using Advanced Flight Model
-* Tweaked: Changed Killah Potatoes flag to Cav Flag
-* Tweaked: Blacklisted meme stuff from arsenal
+## 0.96.7a-7cav-0.3 (2021-05-03)
+* Added: Block for non-pilots entering buildable air vehicles (You must be in pilot spot to pilot a vehicle)
+* Tweaked: CBA_Settings for ACE_Medical to be more forgiving due to infrequent support assets (Less fractures, Less instant bleedouts).
+* Tweaked: ACRE Radios to ARCADE Mode, So I maintain sanity when someone tells me that ACRE is broken cause they can't comprehend 20km range LOS.
+* Tweaked: ACE_Settings so ballistics is disabled. Mainly so people stop telling me its the reason the server runs slow.
+* Fixed: Issue with mission default parameters that caused CUP Maps to think a bullet hole is a destroyed building and thus tanking civ reputation.
+* Fixed: Parameter setting that adjusts the AI count to Player Count, which sound great until you have 350 units and 10 SFPS.
+* Fixed: Unit Cap settings to allow for less overhead until Tact 2 is configured properly.
+* Removed: Errant Kill_Report -> Will be added in future update.
 
 ## 0.96.7a-7cav-0.2 (2021-04-28)
 * Added: Cleanup Script to clear ruins and dropped weapons/ammo/items.
