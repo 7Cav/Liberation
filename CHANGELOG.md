@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.96.7a-7cav-0.4
+* Added: Rules Splash Screen on Mission Start (thanks to Fox.S for the hard work on the graphic)
+* Tweaked: Platoon Staff now have own groups for BFT Readability on Takistan/Altis/Chernarus/Sahrani
+* Tweaked: Changed Buffalo-2 to 2 seperate groups for 2 Ravens on Takistan/Altis/Chernarus/Sahrani
+* Tweaked: Made Infidel-1 its own group and added an observer on Takistan/Altis/Chernarus/Sahrani
+* Fixed: Changed Raider-1 from helipilot model to helicrew to prevent CAS locking out HALO jump on Takistan/Altis/Chernarus/Sahrani
+* Tweaked: Changed second SABER group to BANSHEE on Takistan/Altis/Chernarus/Sahrani
+* Fixed: Made GUNSLINGER groups infantry, modified one group to VIKING for mechanized on Takistan/Altis/Chernarus/Sahrani
+* Fixed: Reordered mission.sqm after group changes on Takistan/Altis/Chernarus/Sahrani
+* Tweaked: Changed names of groups for consistency with cav standards on Takistan/Altis/Chernarus/Sahrani
+* Tweaked: Changed one Raven spawn to be a Buffalo instead on Takistan/Altis/Chernarus/Sahrani
+* Added: Cav Flag to operation base on Takistan/Altis/Chernarus/Sahrani :cav_dab:
+* Fixed: Moved flag at takistan operation base to prevent grizzly losing rotors when using Advanced Flight Model
+* Tweaked: Changed Killah Potatoes flag to Cav Flag in build menu, so now cav flag is buildable
+* Tweaked: Blacklisted meme stuff from arsenal
+* Tweaked: FRIES init to include Desert variant of UH-60M
+
 ## 0.96.7a-7cav-0.3 (2021-05-03)
 * Added: Block for non-pilots entering buildable air vehicles (You must be in pilot spot to pilot a vehicle)
 * Tweaked: CBA_Settings for ACE_Medical to be more forgiving due to infrequent support assets (Less fractures, Less instant bleedouts).

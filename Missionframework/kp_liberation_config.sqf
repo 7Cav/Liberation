@@ -967,6 +967,7 @@ KP_liberation_allowed_items_extension = [
     "M_Titan_AT",
     "30Rnd_556x45_Stanag",
     "30Rnd_556x45_Stanag_red",
+    "ACE_MX2A",
     "UK3CB_BAF_Javelin_Launcher"
 ];
 
