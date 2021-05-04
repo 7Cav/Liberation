@@ -953,7 +953,6 @@ KP_liberation_allowed_items_extension = [
     "rhsusf_acc_g33_xps3_tan_flip",
     "sma_spitfire_03_rds_low_ard_red",
     "UK3CB_BAF_AT4_CS_AP_Mag",
-    "ACE_MX2A",
     "SmokeShell",
     "SmokeShellRed",
     "SmokeShellGreen",
