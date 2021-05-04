@@ -27,6 +27,7 @@ pilot_classname = "B_Helipilot_F";                                      // This 
 fixed_wing_classname = "B_Pilot_F";                                     // This defines the pilot for fixed wing aircraft.
 KP_liberation_little_bird_classname = "RHS_MELB_MH6M";                  // These are the little birds which spawn on the Freedom or at Chimera base.
 KP_liberation_blackhawk_classname = "RHS_UH60M_d";                      // These are the blackhawks which spawn at the Freedom or at Chimera base.
+KP_liberation_black_wasp_classname = "B_Plane_Fighter_01_F";            // These are the F/A-181 Black Wasp IIs that spawn at the freedom or Chimera base. 
 KP_liberation_boat_classname = "B_Boat_Transport_01_F";                 // These are the boats which spawn at the stern of the Freedom.
 KP_liberation_truck_classname = "rhsusf_M977A4_BKIT_usarmy_d";          // These are the trucks which are used in the logistic convoy system.
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources.
