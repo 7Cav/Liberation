@@ -1,21 +1,5 @@
 # Changelog
 
-## 0.96.7a-7cav-0.4
-* Added: Rules Splash Screen on Mission Start
-* Tweaked: Platoon Staff now have own groups for BFT Readability
-* Tweaked: Changed Buffalo-2 to 2 seperate groups for 2 Ravens
-* Tweaked: Made Infidel-1 its own group and added an observer
-* Fixed: Changed Raider-1 from helipilot model to helicrew to prevent CAS locking out HALO jump
-* Tweaked: Changed second SABER group to BANSHEE
-* Fixed: Made GUNSLINGER groups infantry, modified one group to VIKING for mechanized
-* Fixed: Reordered mission.sqm after group changes
-* Tweaked: Changed names of groups for consistency with cav standards
-* Tweaked: Changed one Raven spawn to be a Buffalo instead
-* Added: Cav Flag :cav_dab:
-* Fixed: Moved flag at takistan op base to prevent grizzly losing rotors when using Advanced Flight Model
-* Tweaked: Changed Killah Potatoes flag to Cav Flag
-* Tweaked: Blacklisted meme stuff from arsenal
-
 ## 0.96.7a-7cav-0.3 (2021-05-03)
 * Added: Block for non-pilots entering buildable air vehicles (You must be in pilot spot to pilot a vehicle)
 * Tweaked: CBA_Settings for ACE_Medical to be more forgiving due to infrequent support assets (Less fractures, Less instant bleedouts).
