@@ -954,6 +954,20 @@ KP_liberation_allowed_items_extension = [
     "sma_spitfire_03_rds_low_ard_red",
     "UK3CB_BAF_AT4_CS_AP_Mag",
     "ACE_MX2A",
+    "SmokeShell",
+    "SmokeShellRed",
+    "SmokeShellGreen",
+    "SmokeShellYellow",
+    "SmokeShellPurple",
+    "SmokeShellBlue",
+    "SmokeShellOrange",
+    "GrenadeHand",
+    "F_40mm_White",
+    "M_Titan_AA",
+    "M_Titan_AP",
+    "M_Titan_AT",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag_red",
     "UK3CB_BAF_Javelin_Launcher"
 ];
 
