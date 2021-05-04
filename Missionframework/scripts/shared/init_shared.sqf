@@ -1,5 +1,4 @@
 kill_manager = compileFinal preprocessFileLineNumbers "scripts\shared\kill_manager.sqf";
-kill_report = compileFinal preprocessFileLineNumbers "scripts\shared\kill_report.sqf";
 build_remote_call = compileFinal preprocessFileLineNumbers "scripts\server\remotecall\build_remote_call.sqf";
 build_fob_remote_call = compileFinal preprocessFileLineNumbers "scripts\server\remotecall\build_fob_remote_call.sqf";
 cancel_build_remote_call = compileFinal preprocessFileLineNumbers "scripts\server\remotecall\cancel_build_remote_call.sqf";

@@ -2,7 +2,7 @@
 force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
 force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
 force force ace_advanced_ballistics_bulletTraceEnabled = false;
-force force ace_advanced_ballistics_enabled = true;
+force force ace_advanced_ballistics_enabled = false;
 force force ace_advanced_ballistics_muzzleVelocityVariationEnabled = false;
 force force ace_advanced_ballistics_simulationInterval = 0.05;
 
@@ -232,6 +232,7 @@ force force ace_nightvision_effectScaling = 0.6;
 force force ace_nightvision_fogScaling = 1;
 force force ace_nightvision_noiseScaling = 0.5;
 force force ace_nightvision_shutterEffects = false;
+
 // ACE Overheating
 ace_overheating_displayTextOnJam = true;
 force force ace_overheating_enabled = true;
@@ -283,7 +284,7 @@ force force ace_scopes_zeroReferenceTemperature = 20;
 // ACE Spectator
 force force ace_spectator_enableAI = false;
 ace_spectator_maxFollowDistance = 5;
-force force ace_spectator_restrictModes = 1;
+force force ace_spectator_restrictModes = 0;
 force force ace_spectator_restrictVisions = 0;
 
 // ACE Switch Units
@@ -745,7 +746,7 @@ force A3TI_HD_VISION_UAV = true;
 force A3TI_REMOVE_FILMGRAIN_RHS = true;
 
 // BettIR
-force force BettIR_ViewDistance = 1600;
+force force BettIR_ViewDistance = 3600;
 
 // LAMBS Main
 force lambs_main_combatShareRange = 200;
