@@ -16,6 +16,7 @@
 * Tweaked: Changed Killah Potatoes flag to Cav Flag in build menu, so now cav flag is buildable
 * Tweaked: Blacklisted meme stuff from arsenal
 * Tweaked: FRIES init to include Desert variant of UH-60M
+* Added: F/A-181 Black Wasp II spawns to carriers on Altis/Chernarus/Sahrani
 
 ## 0.96.7a-7cav-0.3 (2021-05-03)
 * Added: Block for non-pilots entering buildable air vehicles (You must be in pilot spot to pilot a vehicle)
