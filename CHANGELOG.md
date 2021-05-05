@@ -21,6 +21,7 @@
 * Added: Map support for Tanoa
 * Added: Map support for Chernarus(Winter)
 * Added: Ported mission to Everon
+* Added: Teamkills, EPW kills, Civilian kills, and Civilian vehicle kills will now announce the killer's name in chat
 
 ## 0.96.7a-7cav-0.3 (2021-05-03)
 * Added: Block for non-pilots entering buildable air vehicles (You must be in pilot spot to pilot a vehicle)
