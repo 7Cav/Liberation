@@ -86,6 +86,7 @@ class KPLIB {
         class spawnRegularSquad         {};
         class spawnVehicle              {};
         class swapInventory             {};
+        class getServerMetrics          {};
     };
     class functions_curator {
         file = "functions\curator";
