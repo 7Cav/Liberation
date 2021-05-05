@@ -1,4 +1,4 @@
-while {true} do { 
-    5 setFog [0, 0, 0];
-    sleep 30;
-};
+_handle = [
+    {
+        5 setFog [0, 0, 0];
+    }, 30, []] call CBA_fnc_addPerFrameHandler;
