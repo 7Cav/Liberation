@@ -20,6 +20,7 @@
 * Added: F/A-181 Black Wasp II spawns to carriers to give early fixed wing CAS
 * Added: Map support for Tanoa
 * Added: Map support for Chernarus(Winter)
+* Added: Ported mission to Everon
 
 ## 0.96.7a-7cav-0.3 (2021-05-03)
 * Added: Block for non-pilots entering buildable air vehicles (You must be in pilot spot to pilot a vehicle)
