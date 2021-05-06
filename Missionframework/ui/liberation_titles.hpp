@@ -46,7 +46,7 @@ class RscTitles {
             w = 0.4 * safezoneW;
             y = 0.70 * safezoneH + safezoneY;
             h = 0.1 * safezoneH;
-            text = "Special Thanks to Sweetwater.I and Liber.N";
+            text = "Special Thanks to Sweetwater.I, Liber.N and Sypolt.R";
             shadow = 1;
         };
     };
