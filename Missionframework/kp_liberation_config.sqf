@@ -841,7 +841,9 @@ blacklisted_from_arsenal = [
     "I_E_UavTerminal",
     "V_RebreatherIA",
     "V_RebreatherIR",
-    "V_RebreatherB"
+    "V_RebreatherB",
+    "rhs_VG40TB",
+    "rhs_rpg7_TBG7V_mag"
 ];
 
 // Items which should be added as allowed Items, when they get blacklisted, even if they are not in the blacklisted_from_arsenal array
