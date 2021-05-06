@@ -406,7 +406,7 @@ GRLIB_arsenal_backpacks = [
     "vn_b_pack_trp_03_02",
     "vn_b_pack_trp_03",
     "vn_b_pack_trp_04_02",
-    "vn_b_pack_trp_04",
+    "vn_b_pack_trp_04"
 
     // TFAR Backpacks
     "tf_anarc164",                                      // AN/ARC-164
