@@ -4,7 +4,8 @@ waitUntil {!isNil "GRLIB_permissions"};
 waitUntil {!isNil "save_is_loaded"};
 waitUntil {save_is_loaded};
 
-while {true} do {
+_handle = [
+    {
 
     private _default_permissions = [];
     {if ((_x select 0) == "Default") exitWith {_default_permissions = (_x select 2);}} foreach GRLIB_permissions;
@@ -25,6 +26,4 @@ while {true} do {
         };
     };
 
-    sleep 10;
-
-};
+    }, 10, []] call CBA_fnc_addPerFrameHandler;
