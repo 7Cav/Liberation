@@ -7,7 +7,12 @@ uiSleep 3;
 private _markers = [];
 private _markers_mobilespawns = [];
 
-while {true} do {
+_handle = [
+    {
+
+     params ["_args"];
+    _args params ["_markers", "_markers_mobilespawns"];
+
     if (count _markers isNotEqualTo count GRLIB_all_fobs) then {
         {deleteMarkerLocal _x;} forEach _markers;
         _markers = [];
@@ -46,5 +51,4 @@ while {true} do {
         };
     };
 
-    sleep 5;
-};
+    }, 5, [_markers, _markers_mobilespawns]] call CBA_fnc_addPerFrameHandler;
