@@ -248,5 +248,20 @@
             "KP_liberation_arsenal": 5
         },
         "workshopId": ""
+    },
+    {
+        "sourceFolder": "kp_liberation.Cam_Lau_Nam",
+        "missionName": "kp_liberation_nam",
+        "map": "Cam_Lau_Nam",
+        "mapDisplay": "Cam Lau Nam",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor": 12,
+            "KP_liberation_preset_opfor": 9,
+            "KP_liberation_preset_resistance": 5,
+            "KP_liberation_preset_civilians": 4,
+            "KP_liberation_arsenal": 5
+        },
+        "workshopId": ""
     }
 ]
