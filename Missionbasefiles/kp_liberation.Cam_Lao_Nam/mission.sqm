@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=180;
+		nextID=189;
 	};
 	class Camera
 	{
-		pos[]={1915.9174,36.755657,3139.7246};
-		dir[]={-0.67317247,-0.65891701,-0.33570287};
-		up[]={-0.58967131,0.75220627,-0.29406181};
-		aside[]={-0.44627956,2.3598841e-007,0.89490879};
+		pos[]={2200.5378,645.72424,2908.1038};
+		dir[]={0.73418784,-0.34773102,0.58317894};
+		up[]={0.27230299,0.93758589,0.21629511};
+		aside[]={0.62199175,1.7110142e-007,-0.78305209};
 	};
 };
 binarizationWanted=0;
@@ -37,6 +37,9 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"A3_Modules_F",
 	"A3_Characters_F",
+	"ace_explosives",
+	"ace_gforces",
+	"ace_parachute",
 	"modules_f_vietnam",
 	"structures_f_vietnam_c"
 };
@@ -44,7 +47,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=10;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -89,12 +92,26 @@ class AddonsMetaData
 		};
 		class Item6
 		{
+			className="ace_explosives";
+			name="ACE3 - Explosives";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item7
+		{
+			className="ace_parachute";
+			name="ACE3 - Parachute";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item8
+		{
 			className="modules_f_vietnam";
 			name="modules_f_vietnam";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item9
 		{
 			className="structures_f_vietnam_c";
 			name="structures_f_vietnam_c";
@@ -125,6 +142,25 @@ class CustomAttributes
 		name="Scenario";
 		class Attribute0
 		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="EnableDebugConsole";
 			expression="true";
 			class Value
@@ -142,7 +178,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=1;
+		nAttributes=2;
 	};
 };
 class Mission
@@ -170,7 +206,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=17;
+		items=16;
 		class Item0
 		{
 			dataType="Layer";
@@ -4542,7 +4578,7 @@ class Mission
 						class Attribute0
 						{
 							property="groupID";
-							expression="_this setGroupID [_value];";
+							expression="[_this, _value] call CBA_fnc_setCallsign";
 							class Value
 							{
 								class data
@@ -5062,7 +5098,7 @@ class Mission
 						class Attribute0
 						{
 							property="groupID";
-							expression="_this setGroupID [_value];";
+							expression="[_this, _value] call CBA_fnc_setCallsign";
 							class Value
 							{
 								class data
@@ -5582,7 +5618,7 @@ class Mission
 						class Attribute0
 						{
 							property="groupID";
-							expression="_this setGroupID [_value];";
+							expression="[_this, _value] call CBA_fnc_setCallsign";
 							class Value
 							{
 								class data
@@ -5902,7 +5938,7 @@ class Mission
 						class Attribute0
 						{
 							property="groupID";
-							expression="_this setGroupID [_value];";
+							expression="[_this, _value] call CBA_fnc_setCallsign";
 							class Value
 							{
 								class data
@@ -6085,7 +6121,7 @@ class Mission
 						class Attribute0
 						{
 							property="groupID";
-							expression="_this setGroupID [_value];";
+							expression="[_this, _value] call CBA_fnc_setCallsign";
 							class Value
 							{
 								class data
@@ -6243,7 +6279,7 @@ class Mission
 						class Attribute0
 						{
 							property="groupID";
-							expression="_this setGroupID [_value];";
+							expression="[_this, _value] call CBA_fnc_setCallsign";
 							class Value
 							{
 								class data
@@ -6340,7 +6376,7 @@ class Mission
 						class Attribute0
 						{
 							property="groupID";
-							expression="_this setGroupID [_value];";
+							expression="[_this, _value] call CBA_fnc_setCallsign";
 							class Value
 							{
 								class data
@@ -6869,7 +6905,7 @@ class Mission
 						class Attribute0
 						{
 							property="groupID";
-							expression="_this setGroupID [_value];";
+							expression="[_this, _value] call CBA_fnc_setCallsign";
 							class Value
 							{
 								class data
@@ -7389,7 +7425,7 @@ class Mission
 						class Attribute0
 						{
 							property="groupID";
-							expression="_this setGroupID [_value];";
+							expression="[_this, _value] call CBA_fnc_setCallsign";
 							class Value
 							{
 								class data
@@ -7671,7 +7707,7 @@ class Mission
 						class Attribute0
 						{
 							property="groupID";
-							expression="_this setGroupID [_value];";
+							expression="[_this, _value] call CBA_fnc_setCallsign";
 							class Value
 							{
 								class data
@@ -7950,7 +7986,7 @@ class Mission
 						class Attribute0
 						{
 							property="groupID";
-							expression="_this setGroupID [_value];";
+							expression="[_this, _value] call CBA_fnc_setCallsign";
 							class Value
 							{
 								class data
@@ -8043,287 +8079,6 @@ class Mission
 		};
 		class Item11
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={6605.0791,4.96,657.57898};
-			};
-			id=443;
-			type="vn_module_advanced_revive";
-			atlOffset=67.408661;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="vn_module_revive_revive_requirement";
-					expression="_this setVariable ['revive_requirement',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="vn_module_revive_revive_item";
-					expression="_this setVariable ['revive_item',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[""FirstAidKit"",""Medikit"",""vn_b_item_firstaidkit"",""vn_o_item_firstaidkit"",""vn_b_item_medikit_01""]";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="vn_module_revive_bleedout_affects_actions";
-					expression="_this setVariable ['bleedout_affects_actions',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="vn_module_revive_revive_item_remove";
-					expression="_this setVariable ['revive_item_remove',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="vn_module_revive_bleedout_time";
-					expression="_this setVariable ['bleedout_time',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=300;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="vn_module_revive_bandage_item";
-					expression="_this setVariable ['bandage_item',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[""FirstAidKit"",""vn_b_item_firstaidkit"",""vn_o_item_firstaidkit""]";
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="vn_module_revive_revive_delay";
-					expression="_this setVariable ['revive_delay',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=5;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="vn_module_revive_medic_boost";
-					expression="_this setVariable ['medic_boost',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="vn_module_revive_grenade_chance";
-					expression="_this setVariable ['grenade_chance',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=75;
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="vn_module_revive_bandage_item_remove";
-					expression="_this setVariable ['bandage_item_remove',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="vn_module_revive_time_to_respawn_action";
-					expression="_this setVariable ['time_to_respawn_action',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=75;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="vn_module_revive_withstand_percentage";
-					expression="_this setVariable ['withstand_percentage',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=80;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="vn_module_revive_downed_icon_distance";
-					expression="_this setVariable ['downed_icon_distance',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=50;
-						};
-					};
-				};
-				class Attribute13
-				{
-					property="vn_module_revive_move_chance";
-					expression="_this setVariable ['move_chance',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=75;
-						};
-					};
-				};
-				nAttributes=14;
-			};
-		};
-		class Item12
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -8339,7 +8094,7 @@ class Mission
 			type="Land_vn_b_helipad_01";
 			atlOffset=0.0071239471;
 		};
-		class Item13
+		class Item12
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8356,7 +8111,7 @@ class Mission
 			type="Land_vn_b_helipad_01";
 			atlOffset=0.0071239471;
 		};
-		class Item14
+		class Item13
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8373,7 +8128,7 @@ class Mission
 			type="Land_vn_b_helipad_01";
 			atlOffset=0.0071239471;
 		};
-		class Item15
+		class Item14
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8390,7 +8145,7 @@ class Mission
 			type="Land_vn_b_helipad_01";
 			atlOffset=0.0071239471;
 		};
-		class Item16
+		class Item15
 		{
 			dataType="Object";
 			class PositionInfo
