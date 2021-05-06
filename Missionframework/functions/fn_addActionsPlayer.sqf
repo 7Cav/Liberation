@@ -406,9 +406,4 @@ if ((getPlayerUID player) in MP_whitelisted_steamids) then {
   ];
 };
 
-//Server metrics
-_player addAction [
-    ["<t color='#e0000f'>", "-- SERVER STATS", "</t>"] joinString "",
-    {[owner player] call KPLIB_fnc_getServerMetrics;}, [], 0, false, true];
-
 true
