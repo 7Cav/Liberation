@@ -250,10 +250,10 @@
         "workshopId": ""
     },
     {
-        "sourceFolder": "kp_liberation.Cam_Lau_Nam",
+        "sourceFolder": "kp_liberation.Cam_Lao_Nam",
         "missionName": "kp_liberation_nam",
-        "map": "Cam_Lau_Nam",
-        "mapDisplay": "Cam Lau Nam",
+        "map": "Cam_Lao_Nam",
+        "mapDisplay": "Cam Lao Nam",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
             "KP_liberation_preset_blufor": 31,
