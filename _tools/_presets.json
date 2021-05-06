@@ -261,7 +261,7 @@
         "KP_liberation_preset_resistance": 10,
         "KP_liberation_preset_civilians": 7,
         "KP_liberation_arsenal": 17
-    };
+    },
     {
         "sourceFolder": "kp_liberation.Eden",
         "missionName": "kp_liberation",
