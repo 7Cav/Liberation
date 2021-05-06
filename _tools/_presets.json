@@ -250,18 +250,18 @@
         "workshopId": ""
     },
     {
-    "sourceFolder": "kp_liberation.Cam_Lao_Nam",
-    "missionName": "kp_liberation_nam",
-    "map": "Cam_Lao_Nam",
-    "mapDisplay": "Cam Lao Nam",
-    "configFile": "kp_liberation_config.sqf",
-    "variables": {
-        "KP_liberation_preset_blufor": 31,
-        "KP_liberation_preset_opfor": 23,
-        "KP_liberation_preset_resistance": 10,
-        "KP_liberation_preset_civilians": 7,
-        "KP_liberation_arsenal": 17
-    },
+        "sourceFolder": "kp_liberation.Cam_Lao_Nam",
+        "missionName": "kp_liberation_nam",
+        "map": "Cam_Lao_Nam",
+        "mapDisplay": "Cam Lao Nam",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor": 31,
+            "KP_liberation_preset_opfor": 23,
+            "KP_liberation_preset_resistance": 10,
+            "KP_liberation_preset_civilians": 7,
+            "KP_liberation_arsenal": 17
+        },
         "workshopId": ""
     }
 ]
