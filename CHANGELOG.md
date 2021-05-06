@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.96.7a-7cav-0.4
+* Fixed: Changed Raider-1 from helipilot model to helicrew to prevent CAS locking out HALO jump
+* Fixed: Made GUNSLINGER groups infantry, modified one group to VIKING for mechanized
+* Fixed: Reordered mission.sqm after group changes
+* Fixed: Moved flag at Takistan operation base to prevent grizzly losing rotors when using Advanced Flight Model
+* Added: FRIES functionality to UH-60M Desert variant
+* Added: F/A-181 Black Wasp II spawns to carriers to give early fixed wing CAS
+* Added: Map support for Tanoa
+* Added: Map support for Chernarus(Winter)
+* Added: Ported mission to Everon
+* Added: Teamkills, EPW kills, Civilian kills, and Civilian vehicle kills will now announce the killer's name in chat
+* Added: UH-60M to operation base spawn
+* Added: Cav Flag to operation base
+* Added: Rules Splash Screen on Mission Start (thanks to Fox.S for the hard work on the graphic)
+* Tweaked: Platoon Staff now have own groups for BFT Readability
+* Tweaked: Changed Buffalo-2 to Raven-1 and Raven-2
+* Tweaked: Made Infidel-1 its own group and added an observer
+* Tweaked: Changed second SABER group to BANSHEE
+* Tweaked: Changed names of groups for consistency with cav standards
+* Removed: Removed one little bird spawn from operation base
+* Tweaked: Changed Killah Potatoes flag to Cav Flag in build menu
+* Tweaked: Blacklisted meme stuff from arsenal
+* Tweaked: Broke abandoned blufor vehicle markers out of map marker parameter to allow visibility without enabling all map markers
+
 ## 0.96.7a-7cav-0.3 (2021-05-03)
 * Added: Block for non-pilots entering buildable air vehicles (You must be in pilot spot to pilot a vehicle)
 * Tweaked: CBA_Settings for ACE_Medical to be more forgiving due to infrequent support assets (Less fractures, Less instant bleedouts).

@@ -785,16 +785,16 @@ SA_Find_Nearby_Tow_Vehicles = {
 
 if(!isDedicated) then {
 	[] spawn {
-		while {true} do {
-			if(!isNull player && isPlayer player) then {
+		_handle = [
+    	{
+        	if(!isNull player && isPlayer player) then {
 				if!( player getVariable ["SA_Tow_Actions_Loaded",false] ) then {
 					[] call SA_Add_Player_Tow_Actions;
 					player setVariable ["SA_Tow_Actions_Loaded",true];
 				};
 			};
 			missionNamespace setVariable ["SA_Nearby_Tow_Vehicles", (call SA_Find_Nearby_Tow_Vehicles)];
-			sleep 2;
-		};
+    	}, 30, []] call CBA_fnc_addPerFrameHandler;
 	};
 };
 
