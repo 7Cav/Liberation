@@ -848,12 +848,6 @@ blacklisted_from_arsenal = [
 
 // Items which should be added as allowed Items, when they get blacklisted, even if they are not in the blacklisted_from_arsenal array
 KP_liberation_allowed_items_extension = [
-    "ACE_Chemlight_Shield_Blue",
-    "ACE_Chemlight_Shield_Green",
-    "ACE_Chemlight_Shield_Orange",
-    "ACE_Chemlight_Shield_Red",
-    "ACE_Chemlight_Shield_White",
-    "ACE_Chemlight_Shield_Yellow",
     "ACE_launch_NLAW_Used_F",
     "ACE_PreloadedMissileDummy_CUP",
     "ACE_PreloadedMissileDummy_Igla_CUP",
@@ -955,21 +949,10 @@ KP_liberation_allowed_items_extension = [
     "rhsusf_acc_g33_xps3_tan_flip",
     "sma_spitfire_03_rds_low_ard_red",
     "UK3CB_BAF_AT4_CS_AP_Mag",
-    "SmokeShell",
-    "SmokeShellRed",
-    "SmokeShellGreen",
-    "SmokeShellYellow",
-    "SmokeShellPurple",
-    "SmokeShellBlue",
-    "SmokeShellOrange",
     "GrenadeHand",
     "F_40mm_White",
-    "M_Titan_AA",
-    "M_Titan_AP",
-    "M_Titan_AT",
     "30Rnd_556x45_Stanag",
     "30Rnd_556x45_Stanag_red",
-    "ACE_MX2A",
     "UK3CB_BAF_Javelin_Launcher"
 ];
 

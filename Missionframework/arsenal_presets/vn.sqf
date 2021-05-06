@@ -157,7 +157,6 @@ GRLIB_arsenal_magazines = [
 ];
 
 GRLIB_arsenal_items = [
-    "FirstAidKit",
     "G_Aviator",
     "G_Bandanna_aviator",
     "G_Bandanna_blk",
@@ -167,7 +166,6 @@ GRLIB_arsenal_items = [
     "ItemMap",
     "ItemRadio",
     "ItemWatch",
-    "Medikit",
     "MineDetector",
     "Toolkit",
     "vn_anpvs2_binoc",
@@ -364,10 +362,27 @@ GRLIB_arsenal_items = [
     "vn_m19_binocs_grey",
     "vn_m19_binocs_grn",
     "vn_mk21_binocs",
-    "vn_o_item_firstaidkit",
-    "vn_o_item_map",
-    "vn_o_item_radio_m252",
     "ACRE_PRC77",
+    "ACE_salineIV_500",
+    "ACE_salineIV_250",
+    "ACE_salineIV",
+    "ACE_morphine",
+    "ACE_personalAidKit",
+    "ACE_epinephrine",
+    "ACE_CableTie",
+    "ACE_bodyBag",
+    "ACE_packingBandage",
+    "ACE_elasticBandage",
+    "ACE_fieldDressing",
+    "ACE_tourniquet",
+    "ACE_surgicalKit",
+    "ACE_splint",
+    "ACE_M26_Clacker",
+    "ACE_Flashlight_MX991",
+    "ACE_EntrenchingTool",
+    "ACE_EarPlugs",
+    "ACE_DefusalKit",
+
 
     //TFAR Items
     "tf_anprc148jem",                                   // AN/PRC148 JEM
