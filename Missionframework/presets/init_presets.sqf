@@ -180,7 +180,34 @@ GRLIB_ignore_colisions_when_building = [
     "Box_T_NATO_WpsSpecial_F",
     "Box_NATO_Equip_F",
     "Land_RoadCone_01_F",
-    "Land_Missle_Trolley_02_F"
+    "Land_Missle_Trolley_02_F",
+    "ACE_friesAnchorBar",                                               // ACE FRIES
+    "ACE_friesGantryReverse",                                           // ACE FRIES
+    "ACE_friesGantry",                                                  // ACE FRIES
+    "vn_b_army_static_m60_high",                                        // M60 (High)
+    "vn_b_army_static_m60_low",                                         // M60 (Low)
+    "vn_b_army_static_m1919a4_high",                                    // M-1919A4 .30cal (High)
+    "vn_b_army_static_m1919a4_low",                                     // M-1919A4 .30cal (Low)
+    "vn_b_army_static_m1919a6",                                         // M-1919A6 .30cal
+    "vn_b_army_static_m2_high",                                         // M-2HB .50cal (High)
+    "vn_b_army_static_m2_low",                                          // M-2HB .50cal (Low)
+    "vn_b_army_static_mortar_m2",                                       // M2 60mm Mortar
+    "vn_b_army_static_mortar_m29",                                      // M29 81mm Mortar
+    "Land_vn_b_foxhole_01",
+    "Land_vn_b_gunpit_01",
+    "Land_vn_b_mortarpit_01",
+    "Land_vn_bagbunker_01_small_green_f",
+    "Land_vn_bagbunker_small_f",
+    "vn_flag_101stab",
+    "vn_flag_1stcav",
+    "vn_flag_25thid",
+    "vn_flag_arvn",
+    "vn_flag_aus",
+    "vn_flag_nz",
+    "vn_flag_sog",
+    "vn_flag_usa",
+    "vn_flag_usarmy",
+    "vn_flag_usmc"
 ];
 
 /*

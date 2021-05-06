@@ -256,11 +256,11 @@
         "mapDisplay": "Cam Lau Nam",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_preset_blufor": 12,
-            "KP_liberation_preset_opfor": 9,
-            "KP_liberation_preset_resistance": 5,
-            "KP_liberation_preset_civilians": 4,
-            "KP_liberation_arsenal": 5
+            "KP_liberation_preset_blufor": 31,
+            "KP_liberation_preset_opfor": 23,
+            "KP_liberation_preset_resistance": 10,
+            "KP_liberation_preset_civilians": 7,
+            "KP_liberation_arsenal": 17
         },
         "workshopId": ""
     }
