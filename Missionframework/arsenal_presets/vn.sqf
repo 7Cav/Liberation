@@ -367,6 +367,7 @@ GRLIB_arsenal_items = [
     "vn_o_item_firstaidkit",
     "vn_o_item_map",
     "vn_o_item_radio_m252",
+    "ACRE_PRC77"
 
     //TFAR Items
     "tf_anprc148jem",                                   // AN/PRC148 JEM
