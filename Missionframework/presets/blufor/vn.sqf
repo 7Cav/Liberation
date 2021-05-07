@@ -103,7 +103,7 @@ air_vehicles = [
     ["vn_b_air_ch34_04_04",225,300,100],                                // UH-34 Stinger (FAC)
     ["vn_b_air_ch34_04_01",225,300,100],                                // UH-34 Stinger (FFAR)
     ["vn_b_air_uh1d_02_01",260,0,150],                                  // UH-1C Iroquois (MedEvac)
-    ["vn_b_air_uh1c_03_01",500,400,200],                                // UH-1C Iroquois ()
+    ["vn_b_air_uh1c_03_01",500,400,200]                                // UH-1C Iroquois ()
     //["vn_b_air_ah1g_02",500,400,200],                                     // AH-1G Cobra (APERS)
     //["vn_b_air_ah1g_03",500,400,200],                                     // AH-1G Cobra (AT)
     //["vn_b_air_ah1g_04",500,400,200],                                     // AH-1G Cobra (CAS)
