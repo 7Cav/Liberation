@@ -86,6 +86,7 @@ light_vehicles = [
 
 heavy_vehicles = [
 // M42A1 Duster ["vn_b_armor_m42",300,100,150] not playable
+    ["vn_b_armor_m41_01_01", 300, 100, 150]                             // M41A3 Walker Bulldog
 ];
 
 air_vehicles = [
@@ -103,11 +104,11 @@ air_vehicles = [
     ["vn_b_air_ch34_04_01",225,300,100],                                // UH-34 Stinger (FFAR)
     ["vn_b_air_uh1d_02_01",260,0,150],                                  // UH-1C Iroquois (MedEvac)
     ["vn_b_air_uh1c_03_01",500,400,200],                                // UH-1C Iroquois ()
-    ["vn_b_air_ah1g_02",500,400,200],                                     // AH-1G Cobra (APERS)
-    ["vn_b_air_ah1g_03",500,400,200],                                     // AH-1G Cobra (AT)
-    ["vn_b_air_ah1g_04",500,400,200],                                     // AH-1G Cobra (CAS)
-    ["vn_b_air_ah1g_05",500,400,200],                                     // AH-1G Cobra (FAC)
-    ["vn_b_air_ah1g_01",500,400,200]                                      // AH-1G Cobra (FFAR)
+    //["vn_b_air_ah1g_02",500,400,200],                                     // AH-1G Cobra (APERS)
+    //["vn_b_air_ah1g_03",500,400,200],                                     // AH-1G Cobra (AT)
+    //["vn_b_air_ah1g_04",500,400,200],                                     // AH-1G Cobra (CAS)
+    //["vn_b_air_ah1g_05",500,400,200],                                     // AH-1G Cobra (FAC)
+    //["vn_b_air_ah1g_01",500,400,200]                                      // AH-1G Cobra (FFAR)
     //["vn_b_air_uh1d_01_01",250,0,150],                                  // UH-1D Iroquois (Slick) not appearing in the list atm not sure if playable
     //["B_Plane_CAS_01_dynamicLoadout_F",1000,800,400],                   // A-164 Wipeout (CAS)/ Too modern
     //["B_Plane_Fighter_01_F",1500,1750,450]                              // F/A-181 Black Wasp II Too modern
