@@ -70,7 +70,7 @@ if (isServer) then {
 
         //Check for teamkill and announce
         if (isPlayer _killer) then {
-            _killer globalChat format ["%1 just teamkilled %2! Check your fire!", name _killer, name _unit];
+            [west, "HQ"] sideChat format ["%1 teamkilled %2! Check your fire!", name _killer, name _unit];
         };
 
     };
@@ -90,7 +90,7 @@ if (isServer) then {
                 // POW checker and announce kill
                 private _opforGun = currentWeapon _unit;
                 if (_opforGun isEqualto "") then {
-                    _killer globalChat format ["%1 just killed a surrendered enemy! Check your fire!", name _killer];
+                    [west, "HQ"] sideChat format ["%1 just killed a surrendered enemy! Check your fire!", name _killer];
                 };
                 stats_opfor_killed_by_players = stats_opfor_killed_by_players + 1;
             };
@@ -124,7 +124,7 @@ if (isServer) then {
 
                 // Killed by a player then announce
                 if (isplayer _killer) then {
-                    _killer globalChat format ["%1 just killed an allied resistance fighter! Check your fire!", name _killer];
+                    [west, "HQ"] sideChat format ["%1 just killed an allied resistance fighter! Check your fire!", name _killer];
                     stats_resistance_teamkills_by_players = stats_resistance_teamkills_by_players + 1;
                 };
             };
@@ -143,7 +143,7 @@ if (isServer) then {
 
             // Killed by a player then announce
             if (isPlayer _killer) then {
-                _killer globalChat format ["%1 just killed a civilian! Check your fire!", name _killer];
+                [west, "HQ"] sideChat format ["%1 just killed a civilian! Check your fire!", name _killer];
                 stats_civilians_killed_by_players = stats_civilians_killed_by_players + 1;
             };
         };
@@ -163,7 +163,7 @@ if (isServer) then {
 
                 // Destroyed by player then announce
                 if (isplayer _killer) then {
-                    _killer globalChat format ["%1 just destroyed a civilian vehicle! Check your fire!", name _killer];
+                    [west, "HQ"] sideChat format ["%1 just destroyed a civilian vehicle! Check your fire!", name _killer];
                     stats_civilian_vehicles_killed_by_players = stats_civilian_vehicles_killed_by_players + 1;
                 };
             } else {
