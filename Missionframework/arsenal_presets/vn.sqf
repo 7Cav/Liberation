@@ -383,17 +383,7 @@ GRLIB_arsenal_items = [
     "ACE_Flashlight_MX991",
     "ACE_EntrenchingTool",
     "ACE_EarPlugs",
-    "ACE_DefusalKit",
-
-
-    //TFAR Items
-    "tf_anprc148jem",                                   // AN/PRC148 JEM
-    "tf_anprc152",                                      // AN/PRC152
-    "tf_anprc154_1",                                    // AN/PRC154
-    "tf_fadak",                                         // FADAK
-    "tf_microdagr",                                     // MicroDAGR Radio Programmer
-    "tf_pnr1000a_1",                                    // PNR1000A
-    "tf_rf7800str"                                      // PF7800STR
+    "ACE_DefusalKit"
 ];
 
 GRLIB_arsenal_backpacks = [
@@ -423,21 +413,5 @@ GRLIB_arsenal_backpacks = [
     "vn_b_pack_trp_03_02",
     "vn_b_pack_trp_03",
     "vn_b_pack_trp_04_02",
-    "vn_b_pack_trp_04",
-
-    // TFAR Backpacks
-    "tf_anarc164",                                      // AN/ARC-164
-    "tf_anarc210",                                      // AN/ARC-210
-    "tf_anprc155_coyote",                               // AN/PRC 155 Coyote
-    "tf_anprc155",                                      // AN/PRC 155
-    "tf_bussole",                                       // Assault Pack Bussole
-    "tf_mr3000_multicam",                               // MR3000 Multicam
-    "tf_mr3000",                                        // MR3000
-    "tf_mr6000l",                                       // MR6000L
-    "tf_rt1523g_big",                                   // RT-1523G (ASIP) Big
-    "tf_rt1523g_black",                                 // RT-1523G (ASIP) Black
-    "tf_rt1523g_fabric",                                // RT-1523G (ASIP) Fabric
-    "tf_rt1523g_green",                                 // RT-1523G (ASIP) Green
-    "tf_rt1523g_sage",                                  // RT-1523G (ASIP) Sage
-    "tf_rt1523g"                                        // RT-1523G (ASIP)
+    "vn_b_pack_trp_04"
 ];
