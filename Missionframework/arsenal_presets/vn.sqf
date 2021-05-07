@@ -172,6 +172,8 @@ GRLIB_arsenal_items = [
     "vn_b_acc_goggles_01",
     "vn_b_acc_ms22001_01",
     "vn_b_acc_ms22001_02",
+    "vn_b_acc_m17_01",
+    "vn_b_acc_m17_02",
     "vn_b_bandana_01",
     "vn_b_bandana_02",
     "vn_b_bandana_03",
