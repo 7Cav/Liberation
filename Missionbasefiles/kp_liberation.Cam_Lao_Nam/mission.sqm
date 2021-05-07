@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=682;
+		nextID=686;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=234;
+		nextID=252;
 	};
 	class Camera
 	{
-		pos[]={1897.9103,14.475749,3136.541};
-		dir[]={-0.63399893,-0.54304099,-0.55059224};
-		up[]={-0.41000935,0.83970618,-0.35606995};
-		aside[]={-0.65569627,0,0.75502473};
+		pos[]={2033.5424,106.26627,3974.3318};
+		dir[]={0.1206866,-0.54514122,0.82970631};
+		up[]={0.078477219,0.8382917,0.53952342};
+		aside[]={0.98965704,-1.0982767e-006,-0.1439479};
 	};
 };
 binarizationWanted=0;
@@ -43,13 +43,14 @@ addons[]=
 	"ace_gforces",
 	"ace_parachute",
 	"modules_f_vietnam",
-	"structures_f_vietnam_c"
+	"structures_f_vietnam_c",
+	"wheeled_f_vietnam_c"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=12;
+		items=13;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -131,6 +132,13 @@ class AddonsMetaData
 		{
 			className="structures_f_vietnam_c";
 			name="structures_f_vietnam_c";
+			author="Savage Game Design";
+			url="https://www.arma3.com";
+		};
+		class Item12
+		{
+			className="wheeled_f_vietnam_c";
+			name="wheeled_f_vietnam_c";
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
@@ -222,14 +230,14 @@ class Mission
 	};
 	class Entities
 	{
-		items=16;
+		items=19;
 		class Item0
 		{
 			dataType="Layer";
 			name="Startbase - USS Freedom";
 			class Entities
 			{
-				items=16;
+				items=17;
 				class Item0
 				{
 					dataType="Marker";
@@ -406,14 +414,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2057.2053,28.948647,4095.4727};
-						angles[]={0.0060001095,6.2285919,6.2611909};
+						position[]={2057.2051,28.94865,4095.4729};
+						angles[]={0.0060039326,6.2285914,6.2611938};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
-						name="littlebird_2";
+						name="blackhawk_0";
 					};
 					id=76;
 					type="Land_ClutterCutter_small_F";
@@ -622,9 +630,49 @@ class Mission
 					id=473;
 					atlOffset=2.752284;
 				};
+				class Item16
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2068.6851,28.453691,4191.0542};
+						angles[]={6.2711778,0.36760125,6.2671809};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						name="blackwasp_0";
+					};
+					id=682;
+					type="Land_ClutterCutter_small_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
 			};
 			id=86;
-			atlOffset=17.639969;
+			atlOffset=10.020706;
 		};
 		class Item1
 		{
@@ -11103,6 +11151,129 @@ class Mission
 			};
 			id=471;
 			type="Land_vn_b_helipad_01";
+		};
+		class Item16
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2096.0698,30.26045,4170.251};
+				angles[]={0.0060001095,4.9059114,0.0060001095};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+			};
+			id=683;
+			type="vn_b_wheeled_m54_repair_airport";
+			atlOffset=-0.00029754639;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[""ToolKit""],[10]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item17
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2094.6672,30.345974,4166.0425};
+				angles[]={0.0060001095,4.8744602,0.011995304};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+			};
+			id=684;
+			type="vn_b_wheeled_m54_fuel_airport";
+			atlOffset=-0.00068473816;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item18
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2093.6333,30.448364,4161.2729};
+				angles[]={0.010000736,4.8887892,6.2731848};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="LOCKED";
+			};
+			id=685;
+			type="vn_b_wheeled_m54_ammo_airport";
+			atlOffset=-0.00026321411;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
