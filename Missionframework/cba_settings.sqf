@@ -61,8 +61,8 @@ ace_parachute_hideAltimeter = true;
 // ACE Cook off
 force ace_cookoff_ammoCookoffDuration = 1;
 force force ace_cookoff_enable = 0;
-force force ace_cookoff_enableAmmobox = false;
-force force ace_cookoff_enableAmmoCookoff = false;
+force force ace_cookoff_enableAmmobox = true;
+force force ace_cookoff_enableAmmoCookoff = true;
 force ace_cookoff_probabilityCoef = 1;
 
 // ACE Crew Served Weapons
