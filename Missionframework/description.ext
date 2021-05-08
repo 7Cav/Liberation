@@ -167,8 +167,8 @@ disableRandomization[] = {};
 // 0 - Default behavior, available only in editor
 // 1 - Available in SP and for hosts / logged in admins
 // 2 - Available for everyone
-// array - Liber,Sweetwater,Whitsel
-enableDebugConsole[] = {"76561197963459537", "76561197997124640", "76561198099828056"};
+// array - Liber,Sweetwater,Whitsel,Sypolt
+enableDebugConsole[] = {"76561197963459537", "76561197997124640", "76561198099828056", "76561197993187376"};
 
 
 // Force enable or disable RotorLib flight model.

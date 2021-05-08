@@ -116,7 +116,7 @@ air_vehicles = [
     ["vn_b_air_ah1g_01",500,400,200],                                   // AH-1G Cobra (FFAR)
     ["vn_b_air_uh1d_01_01",250,0,150],                                  // UH-1D Iroquois (Slick) not appearing in the list atm not sure if playable
     ["vn_b_air_f4b_navy_at",1000,800,400],                              // F4B NAVY
-    ["vn_b_air_f4c_at",1500,1750,450]                                   // F4C USAF
+    ["vn_b_air_f4c_ehcas",1500,1750,450]                                // F4C USAF
     //["B_Plane_CAS_01_dynamicLoadout_F",1000,800,400],                 // A-164 Wipeout (CAS)/ Too modern
     //["B_Plane_Fighter_01_F",1500,1750,450]                            // F/A-181 Black Wasp II Too modern
 ];
