@@ -14,7 +14,7 @@ please_recalculate = true;
 waitUntil {time > 1};
 
 while {true} do {
-    waitUntil {sleep 0.5; please_recalculate};
+    waitUntil {sleep 1; please_recalculate};
     please_recalculate = false;
 
     private _local_fob_resources = [];

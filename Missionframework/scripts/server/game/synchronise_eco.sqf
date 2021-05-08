@@ -18,7 +18,7 @@ private _KP_liberation_logistics_old = [0];
 
 while {true} do {
 
-    waitUntil {sleep 1;
+    waitUntil {sleep 5;
         !(_KP_liberation_production_old isEqualTo KP_liberation_production)
         || !(_KP_liberation_logistics_old isEqualTo KP_liberation_logistics)
     };
@@ -32,7 +32,7 @@ while {true} do {
             };
         } forEach KP_liberation_production_markers;
     } forEach KP_liberation_production;
-    sleep 1;
+    sleep 5;
     sync_eco = [KP_liberation_production,KP_liberation_logistics,KP_liberation_production_markers];
     publicVariable "sync_eco";
 
