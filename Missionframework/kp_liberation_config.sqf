@@ -63,7 +63,9 @@ KP_liberation_medical_facilities = [
     "uns_mash_main",
     "uns_mash",
     "US_Tent_2",
-    "US_Tent_MASH"
+    "US_Tent_MASH",
+    "Land_vn_tent_mash_01_01",
+    "Land_vn_tent_mash_02_01"
 ];
 
 // Classnames of ACE3 crates (which have to be in the unit preset as well).

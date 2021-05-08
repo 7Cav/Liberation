@@ -208,7 +208,6 @@ buildings = [
     ["Land_vn_bagbunker_01_small_green_f",0,0,0],
     ["Land_vn_bagbunker_large_f",0,0,0],
     ["Land_vn_bagbunker_small_f",0,0,0],
-    ["Land_vn_bar_01",0,0,0],
     ["Land_vn_barracks_01_camo_f",0,0,0],
     ["Land_vn_barracks_01_dilapidated_f",0,0,0],
     ["Land_vn_barracks_01_grey_f",0,0,0],
