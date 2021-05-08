@@ -7,6 +7,9 @@
 * Fixed: Slots for Cam_Lao_Nam Map to be more appropriated for 7cav use.
 * Fixed: PRC343 Spawning on init.
 * Removed: That stupid buildable bar with questionable name
+* Tweaked: Moved startbase to inside the base
+* Tweaked: Added more hueys to start to support buffalo slots
+* Tweaked: Changed slot layout for 24 hour op
 
 ## 0.96.7a-7cav-0.4
 * Fixed: Changed Raider-1 from helipilot model to helicrew to prevent CAS locking out HALO jump
