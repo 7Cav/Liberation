@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=791;
+		nextID=795;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2113.0884,135.5197,4225.1924};
-		dir[]={0.3602795,-0.48448622,-0.79720914};
-		up[]={0.19953634,0.87477797,-0.44152513};
-		aside[]={-0.91129738,1.6076956e-007,-0.41184035};
+		pos[]={1893.7988,18.694551,3139.7908};
+		dir[]={-0.58027548,-0.62066621,-0.52736509};
+		up[]={-0.45934257,0.78404534,-0.41746008};
+		aside[]={-0.67258251,1.3865065e-007,0.74006045};
 	};
 };
 binarizationWanted=0;
@@ -3925,12 +3925,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={1869.9104,2.9513438,3134.8113};
-						angles[]={6.2771854,0.8817752,0.083802827};
+						position[]={1869.91,2.9513173,3134.811};
+						angles[]={6.2771816,0.8817752,0.083810709};
 					};
 					id=5;
 					type="ModuleCuratorSetAttributesObject_F";
-					atlOffset=-9.5367432e-007;
+					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4336,12 +4336,11 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={1873.7314,3.0517495,3137.7222};
-						angles[]={0.055941612,0.8817752,0.043971907};
+						position[]={1873.731,3.0517364,3137.7219};
+						angles[]={0.055937801,0.8817752,0.043964844};
 					};
 					id=7;
 					type="ModuleCuratorSetAttributesPlayer_F";
-					atlOffset=3.3378601e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8075,7 +8074,7 @@ class Mission
 							{
 								rank="CAPTAIN";
 								init="call{this setGroupId [""HITMAN-5""];}";
-								description="Platoon Sergeant@HITMAN-5";
+								description="Company XO@HITMAN-5";
 								isPlayable=1;
 								class Inventory
 								{
