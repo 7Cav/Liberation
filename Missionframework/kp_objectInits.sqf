@@ -237,7 +237,7 @@ KPLIB_objectInits = [
     //Test - Remove Radio Rack 103 to add prc-77
     [
         ["vn_b_air_f4c_ehcas", "vn_b_air_f4c_sead", "vn_b_air_f4c_lrbmb", "vn_b_air_f4b_navy_at", "vn_b_air_f4c_at"],
-        {[_this, ["ACRE_VRC103", "Upper Dash", "Dash", false, ["external"], [], "ACRE_PRC77", [], ["intercom_1"]], false, {}] call acre_api_fnc_addRackToVehicle;}
+        {[_this, ["ACRE_PRC77", "Upper Dash", "Dash", false, ["external"], [], "ACRE_PRC77", [], ["intercom_1"]], false, {}] call acre_api_fnc_addRackToVehicle;}
     ]
 ];
 
