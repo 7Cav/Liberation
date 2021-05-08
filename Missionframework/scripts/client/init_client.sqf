@@ -137,3 +137,6 @@ if (player isEqualTo ([] call KPLIB_fnc_getMissioncontroller1)) then {
         };
     };
 };
+
+// remove ACRE radios
+[player] call KPLIB_fnc_removeAcreRadios;
