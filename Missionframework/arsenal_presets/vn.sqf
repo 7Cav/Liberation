@@ -397,7 +397,7 @@ GRLIB_arsenal_items = [
     "ACE_DefusalKit",
     "ACE_HandFlare_Red",
     "ACE_HandFlare_White",
-    "ACE_HandFlare_Yellow",
+    "ACE_HandFlare_Yellow"
 ];
 
 GRLIB_arsenal_backpacks = [
