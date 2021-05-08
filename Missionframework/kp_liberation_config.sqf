@@ -202,7 +202,7 @@ GRLIB_color_friendly = "ColorBLUFOR";                                   // Frien
 GRLIB_color_enemy = "ColorOPFOR";                                       // Enemy sector marker color.
 GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy sector marker color (activated).
 
-GRLIB_fob_range = 200;                                                  // Build range around the main FOB building.
+GRLIB_fob_range = 150;                                                  // Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;                                             // Altitude in metres for the HALO jump.
 GRLIB_secondary_missions_costs = [24, 16, 8];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.4;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
@@ -843,7 +843,10 @@ blacklisted_from_arsenal = [
     "V_RebreatherIR",
     "V_RebreatherB",
     "rhs_VG40TB",
-    "rhs_rpg7_TBG7V_mag"
+    "rhs_rpg7_TBG7V_mag",
+    "FirstAidKit",                  //First Aid Kits Remove if not using ACE medical
+    "vn_b_item_firstaidkit",
+    "vn_o_item_firstaidkit"
 ];
 
 // Items which should be added as allowed Items, when they get blacklisted, even if they are not in the blacklisted_from_arsenal array

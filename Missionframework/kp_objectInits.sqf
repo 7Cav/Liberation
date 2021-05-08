@@ -213,5 +213,28 @@ KPLIB_objectInits = [
             _this allowFleeing 0;
         },
         true
+    ],
+    //add vn ammo trucks for rearm function
+    [
+        ["vn_b_wheeled_m54_ammo", "vn_b_wheeled_m54_ammo_airport"],
+        {[_this, 4000] call ace_rearm_fnc_setSupplyCount;}
+    ],
+    //add vn repair trucks to var for repairs function 
+    [
+        ["vn_b_wheeled_m54_repair", "vn_b_wheeled_m54_repair_airport"],
+        {_this setVariable ["ACE_isRepairVehicle", 1, true];}
+    ],
+    //add vn fuel trucks for refuel function 
+    [
+        ["vn_b_wheeled_m54_fuel", "vn_b_wheeled_m54_fuel_airport"],
+        {[_this, 20000] call ace_refuel_fnc_makeSource;}
+    ],
+    //add vn heli for ace medical function
+    [
+        ["vn_b_air_uh1d_01_07", "vn_b_air_uh1d_01_02", "vn_b_air_uh1d_01_01"],
+        {_this setVariable ["ace_medical_isMedicalVehicle", true, true];}
     ]
 ];
+
+
+
