@@ -31,6 +31,8 @@ class KPLIB {
         class getCommander              {};
         class getMilitarypolice         {};
         class getMissioncontroller      {};
+        class getMilitarypolice1        {};
+        class getMissioncontroller1     {};
         class getCrateHeight            {};
         class getFobName                {};
         class getFobResources           {};
