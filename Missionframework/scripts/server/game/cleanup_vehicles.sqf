@@ -32,6 +32,6 @@ while { GRLIB_cleanup_vehicles > 0 } do {
             deleteVehicle _nextvehicle;
         };
 
-        sleep 0.5;
+        sleep 1;
     } foreach vehicles;
 };
