@@ -57,5 +57,5 @@ while {true} do {
         _x addCuratorEditableObjects [_toAdd, true];
         _x removeCuratorEditableObjects [_toRemove, true];
     } forEach allCurators;
-    sleep 9;
+    sleep 60;
 };
