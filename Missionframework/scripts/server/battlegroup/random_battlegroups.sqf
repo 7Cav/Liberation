@@ -11,7 +11,7 @@ while {GRLIB_csat_aggressivity > 0.9 && GRLIB_endgame isEqualTo 0} do {
 
     if (!isNil "GRLIB_last_battlegroup_time") then {
         waitUntil {
-            sleep 5;
+            sleep 60;
             diag_tickTime > (GRLIB_last_battlegroup_time + (2100 / GRLIB_csat_aggressivity))
         };
     };
