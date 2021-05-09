@@ -34,11 +34,7 @@ private _myfpsmarker = createMarker [format ["fpsmarker%1", _sourcestr], [0, -50
 _myfpsmarker setMarkerType "mil_start";
 _myfpsmarker setMarkerSize [0.7, 0.7];
 
-_handle = [
-    {
-
-     params ["_args"];
-    _args params ["_myfpsmarker", "_sourcestr"];
+while {true} do {
 
     private _myfps = diag_fps;
     private _localgroups = {local _x} count allGroups;
@@ -51,4 +47,5 @@ _handle = [
 
     _myfpsmarker setMarkerText format ["%1: %2 fps, %3 local groups, %4 local units", _sourcestr, (round (_myfps * 100.0)) / 100.0, _localgroups, _localunits];
 
-    }, 5, [_myfpsmarker, _sourcestr]] call CBA_fnc_addPerFrameHandler;
+    sleep 5;
+};
