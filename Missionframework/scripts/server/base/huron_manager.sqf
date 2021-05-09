@@ -29,7 +29,7 @@ while {true} do {
     publicVariable "huron";
 
     // Wait until huron is destroyed to respawn it
-    waitUntil {sleep 5; !alive huron};
+    waitUntil {sleep 60; !alive huron};
     stats_spartan_respawns = stats_spartan_respawns + 1;
     sleep 10;
 
