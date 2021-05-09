@@ -210,4 +210,6 @@ while {deleteManagerPublic} do {
 	} else {
 		sleep _checkFrequencyDefault;
 	};
+
+	sleep 60;
 };
