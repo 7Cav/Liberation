@@ -14,4 +14,4 @@
         Missioncontroller [OBJECT]
 */
 
-missionNamespace getVariable ["Missioncontroller", objNull]
+missionNamespace getVariable ["Missioncontroller1", objNull]

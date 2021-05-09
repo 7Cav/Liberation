@@ -14,4 +14,4 @@
         Militarypolice [OBJECT]
 */
 
-missionNamespace getVariable ["Militarypolice", objNull]
+missionNamespace getVariable ["Militarypolice1", objNull]
