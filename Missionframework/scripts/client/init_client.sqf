@@ -123,3 +123,20 @@ if (player isEqualTo ([] call KPLIB_fnc_getMissioncontroller)) then {
         };
     };
 };
+
+if (player isEqualTo ([] call KPLIB_fnc_getMissioncontroller1)) then {
+    // Start tutorial
+    if (KP_liberation_tutorial) then {
+        [] call KPLIB_fnc_tutorial;
+    };
+    // Request Zeus if enabled
+    if (KP_liberation_commander_zeus) then {
+        [] spawn {
+            sleep 5;
+            [] call KPLIB_fnc_requestZeus;
+        };
+    };
+};
+
+// remove ACRE radios
+[player] call KPLIB_fnc_removeAcreRadios;

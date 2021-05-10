@@ -10,6 +10,7 @@ if (isNil "GRLIB_respawn_loadout") then {
     removeBackpack player;
     removeHeadgear player;
     removeGoggles player;
+    removeUniform player;
     player linkItem "ItemMap";
     player linkItem "ItemCompass";
     player linkItem "ItemWatch";

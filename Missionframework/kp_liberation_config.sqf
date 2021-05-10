@@ -63,7 +63,9 @@ KP_liberation_medical_facilities = [
     "uns_mash_main",
     "uns_mash",
     "US_Tent_2",
-    "US_Tent_MASH"
+    "US_Tent_MASH",
+    "Land_vn_tent_mash_01_01",
+    "Land_vn_tent_mash_02_01"
 ];
 
 // Classnames of ACE3 crates (which have to be in the unit preset as well).
@@ -202,7 +204,7 @@ GRLIB_color_friendly = "ColorBLUFOR";                                   // Frien
 GRLIB_color_enemy = "ColorOPFOR";                                       // Enemy sector marker color.
 GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy sector marker color (activated).
 
-GRLIB_fob_range = 200;                                                  // Build range around the main FOB building.
+GRLIB_fob_range = 150;                                                  // Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;                                             // Altitude in metres for the HALO jump.
 GRLIB_secondary_missions_costs = [24, 16, 8];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.4;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
@@ -229,7 +231,7 @@ KP_liberation_cr_kill_penalty = 3;                                      // Civil
 KP_liberation_cr_building_penalty = 3;                                  // Civil Reputation penalty for destroying/damaging a building.
 KP_liberation_cr_vehicle_penalty = 5;                                   // Civil Reputation penalty for stealing a civilian vehicle.
 KP_liberation_cr_resistance_penalty = 8;                                // Civil Reputation penalty for killing a friendly resistance soldier.
-KP_liberation_cr_sector_gain = 25;                                      // Civil Reputation gain for liberate a sector.
+KP_liberation_cr_sector_gain = 15;                                      // Civil Reputation gain for liberate a sector.
 KP_liberation_cr_wounded_chance = 65;                                   // Chance (0-100) that there are wounded civilians right after capturing a sector.
 KP_liberation_cr_wounded_gain = 2;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
 
@@ -843,7 +845,10 @@ blacklisted_from_arsenal = [
     "V_RebreatherIR",
     "V_RebreatherB",
     "rhs_VG40TB",
-    "rhs_rpg7_TBG7V_mag"
+    "rhs_rpg7_TBG7V_mag",
+    "FirstAidKit",                  //First Aid Kits Remove if not using ACE medical
+    "vn_b_item_firstaidkit",
+    "vn_o_item_firstaidkit"
 ];
 
 // Items which should be added as allowed Items, when they get blacklisted, even if they are not in the blacklisted_from_arsenal array

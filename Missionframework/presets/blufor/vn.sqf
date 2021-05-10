@@ -19,11 +19,14 @@ Arsenal_typename = "Land_vn_us_weapons_stack2";                         // This 
 Respawn_truck_typename = "vn_b_wheeled_m54_01_airport";                 // This is the mobile respawn (and medical) truck. (Not medical or optimal but at least less emersion breaking that HEMTT)
 huron_typename = "vn_b_air_ch34_01_01";                                 // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 crewman_classname = "vn_b_men_army_14";                                 // This defines the crew for vehicles.
-pilot_classname = "vn_b_men_aircrew_05";                                // This defines the pilot for helicopters.
+pilot_classname = "vn_b_men_aircrew_17";                                // This defines the pilot for helicopters.
+fixed_wing_classname = "vn_b_men_aircrew_05";                           // This defines the pilot for fixed wing aircraft.
+rotary_cas_classname = "vn_b_men_aircrew_01";                           // This defines the pilot for rotary cas aircraft.
+rotary_logistics_classname = "vn_b_men_aircrew_09";                     // This defines the pilot for rotary logistics.
 KP_liberation_little_bird_classname = "vn_b_air_oh6a_01";               // These are the little birds which spawn on the Freedom or at Chimera base.
 KP_liberation_blackhawk_classname = "vn_b_air_uh1d_02_02";              // These are the hueys which spawn at the Freedom or at Chimera base.
-KP_liberation_black_wasp_classname = "vn_b_air_f4c_cas";                // These are the phantoms that spawn at the freedom or Chimera base. 
-KP_liberation_boat_classname = "vn_c_boat_02_02";                       // These are the boats which spawn at the stern of the Freedom.
+KP_liberation_black_wasp_classname = "vn_b_air_f4c_ehcas";              // These are the phantoms that spawn at the freedom or Chimera base. 
+KP_liberation_boat_classname = "vn_b_boat_06_02";                       // These are the boats which spawn at the stern of the Freedom.
 KP_liberation_truck_classname = "vn_b_wheeled_m54_01";                  // These are the trucks which are used in the logistic convoy system.
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources. (Land_vn_hootch_01_wall)
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";     // A large storage area for resources. (Land_vn_barracks_04_wall)
@@ -113,7 +116,7 @@ air_vehicles = [
     ["vn_b_air_ah1g_01",500,400,200],                                   // AH-1G Cobra (FFAR)
     ["vn_b_air_uh1d_01_01",250,0,150],                                  // UH-1D Iroquois (Slick) not appearing in the list atm not sure if playable
     ["vn_b_air_f4b_navy_at",1000,800,400],                              // F4B NAVY
-    ["vn_b_air_f4c_at",1500,1750,450]                                   // F4C USAF
+    ["vn_b_air_f4c_ehcas",1500,1750,450]                                // F4C USAF
     //["B_Plane_CAS_01_dynamicLoadout_F",1000,800,400],                 // A-164 Wipeout (CAS)/ Too modern
     //["B_Plane_Fighter_01_F",1500,1750,450]                            // F/A-181 Black Wasp II Too modern
 ];
@@ -205,7 +208,6 @@ buildings = [
     ["Land_vn_bagbunker_01_small_green_f",0,0,0],
     ["Land_vn_bagbunker_large_f",0,0,0],
     ["Land_vn_bagbunker_small_f",0,0,0],
-    ["Land_vn_bar_01",0,0,0],
     ["Land_vn_barracks_01_camo_f",0,0,0],
     ["Land_vn_barracks_01_dilapidated_f",0,0,0],
     ["Land_vn_barracks_01_grey_f",0,0,0],
