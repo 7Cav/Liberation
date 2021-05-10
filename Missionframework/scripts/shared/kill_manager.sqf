@@ -70,7 +70,7 @@ if (isServer) then {
 
         //Check for teamkill and announce
         if (isPlayer _killer) then {
-            systemChat format ["%1 teamkilled %2! Check your fire!", name _killer, name _unit];
+            [7, [(name _killer), (name _unit)]] remoteExec ["KPLIB_fnc_crGlobalMsg"];
         };
 
     };
@@ -90,7 +90,7 @@ if (isServer) then {
                 // POW checker and announce kill
                 private _opforGun = currentWeapon _unit;
                 if (_opforGun isEqualto "") then {
-                    systemChat format ["%1 just killed a surrendered enemy! Check your fire!", name _killer];
+                    [6, [(name _killer)]] remoteExec ["KPLIB_fnc_crGlobalMsg"];
                 };
                 stats_opfor_killed_by_players = stats_opfor_killed_by_players + 1;
             };
@@ -117,14 +117,13 @@ if (isServer) then {
                 // Killed by BLUFOR
                 if (side _killer == GRLIB_side_friendly) then {
                     if (KP_liberation_asymmetric_debug > 0) then {[format ["Guerilla unit killed by: %1", name _killer], "ASYMMETRIC"] call KPLIB_fnc_log;};
-                    //[3, [(name _unit)]] remoteExec ["KPLIB_fnc_crGlobalMsg"];
                     stats_resistance_teamkills = stats_resistance_teamkills + 1;
                     [KP_liberation_cr_resistance_penalty, true] spawn F_cr_changeCR;
                 };
 
                 // Killed by a player then announce
                 if (isplayer _killer) then {
-                    systemChat format ["%1 just killed an allied resistance fighter! Check your fire!", name _killer];
+                    [3, [(name _killer)]] remoteExec ["KPLIB_fnc_crGlobalMsg"];
                     stats_resistance_teamkills_by_players = stats_resistance_teamkills_by_players + 1;
                 };
             };
@@ -137,13 +136,12 @@ if (isServer) then {
             // Killed by BLUFOR
             if (side _killer == GRLIB_side_friendly) then {
                 if (KP_liberation_civrep_debug > 0) then {[format ["Civilian killed by: %1", name _killer], "CIVREP"] call KPLIB_fnc_log;};
-                //[2, [(name _unit)]] remoteExec ["KPLIB_fnc_crGlobalMsg"];
                 [KP_liberation_cr_kill_penalty, true] spawn F_cr_changeCR;
             };
 
             // Killed by a player then announce
             if (isPlayer _killer) then {
-                systemChat format ["%1 just killed a civilian! Check your fire!", name _killer];
+                [2, [(name _killer)]] remoteExec ["KPLIB_fnc_crGlobalMsg"];
                 stats_civilians_killed_by_players = stats_civilians_killed_by_players + 1;
             };
         };
@@ -163,7 +161,7 @@ if (isServer) then {
 
                 // Destroyed by player then announce
                 if (isplayer _killer) then {
-                    systemChat format ["%1 just destroyed a civilian vehicle! Check your fire!", name _killer];
+                    [8, [(name _killer)]] remoteExec ["KPLIB_fnc_crGlobalMsg"];
                     stats_civilian_vehicles_killed_by_players = stats_civilian_vehicles_killed_by_players + 1;
                 };
             } else {

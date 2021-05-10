@@ -5590,18 +5590,44 @@
             <Korean>가장 가까운 AI</Korean>
             <Czech>Nahradit nejbližší AI</Czech>
         </Key>
+        <Key ID="STR_CR_EPWMSG">
+            <Original>%1 just killed a surrendered enemy! Check your fire!</Original>
+            <German>%1 hat gerade einen kapitulierten Soldaten getötet! Nicht schießen!</German>
+            <Spanish>%1 acaba de matar a un soldado rendido! No dispares!</Spanish>
+            <Russian>%1 только что убил сдавшегося врага! Проверь свой огонь!</Russian>
+            <Italian>%1 ha appena ucciso un soldato arreso! Non sparare!</Italian>
+            <Chinesesimp>%1 刚刚杀死了一个投降的士兵！ 别开枪！</Chinesesimp>
+            <Chinese>%1 剛剛殺死了一個投降的士兵！ 別開槍！</Chinese>
+            <Turkish>%1 teslim olmuş bir askeri öldürdü! Vurma!</Turkish>
+            <Portuguese>%1 acabou de matar um soldado que se rendeu! Não dispare!</Portuguese>
+            <Korean>%1 항복 한 군인을 죽였습니다! 쏘지 마세요!</Korean>
+            <Czech>%1 právě zabil odevzdaného vojáka! Nestřílej!</Czech>
+        </Key>
+        <Key ID="STR_CR_TKMSG">
+            <Original>%2 was teamkilled by %1</Original>
+            <German>%2 wurde von seinem Teamkollegen %1 getötet</German>
+            <Spanish>%2 fue asesinado por su compañero de equipo %1</Spanish>
+            <Russian>%2 был убит своим товарищем по команде %1</Russian>
+            <Italian>%2 è stato ucciso dal suo compagno di squadra %1</Italian>
+            <Chinesesimp>%2 被他的队友 %1 杀死</Chinesesimp>
+            <Chinese>%2 ％2被他的隊友 ％1 殺死 </Chinese>
+            <Turkish>%1 takım arkadaşı %1 tarafından öldürüldü</Turkish>
+            <Portuguese>%2 foi morto por seu companheiro de equipe %1</Portuguese>
+            <Korean>%2 2은 그의 팀원 %1 에 의해 살해되었습니다</Korean>
+            <Czech>%2 byl zabit svým týmovým kolegou %1</Czech>
+        </Key>
         <Key ID="STR_CR_KILLMSG">
-            <Original>A civilian named %1 was killed!</Original>
-            <German>Ein Zivilist mit Namen %1 wurde getötet!</German>
-            <Spanish>Un civil llamado %1 fue asesinado!</Spanish>
-            <Russian>Гражданский %1 был убит!</Russian>
-            <Italian>Un civile di nome %1 è stato ucciso!</Italian>
-            <Chinesesimp>一个名叫%1的平民被击杀了！</Chinesesimp>
-            <Chinese>一個名叫 %1 的平民被擊殺了！</Chinese>
-            <Turkish>%1 ismindeki sivil öldürüldü!</Turkish>
-            <Portuguese>Um civil de nome %1 foi morto!</Portuguese>
-            <Korean>민간인 %가 사망하였다!</Korean>
-            <Czech>Civilista jménem %1 byl zabit jednotkami BLUFOR!</Czech>
+            <Original>%1 just killed a civilan! Check your fire!</Original>
+            <German>%1 killed a civilian! Do not shoot!</German>
+            <Spanish>%1 mató a un civil! No dispares!</Spanish>
+            <Russian>%1 убил мирного жителя! Не стреляйте!</Russian>
+            <Italian>%1 ha ucciso un civile! Non sparare!</Italian>
+            <Chinesesimp>%1 杀死了一名平民！ 别开枪！</Chinesesimp>
+            <Chinese>%1 殺死了一名平民！ 別開槍！</Chinese>
+            <Turkish>%1 bir sivili öldürdü! Vurma!</Turkish>
+            <Portuguese>%1 matou um civil! Não dispare!</Portuguese>
+            <Korean>%1 이 (가) 민간인을 죽였습니다! 쏘지 마세요! </Korean>
+            <Czech>%1 zabil civilistu! Nestřílej!</Czech>
         </Key>
         <Key ID="STR_CR_VEHICLEMSG">
             <Original>A civilian's vehicle was seized!</Original>
@@ -6030,16 +6056,28 @@
             <Czech>Zbývá %1 minut na mobilní respawn.</Czech>
         </Key>
         <Key ID="STR_CR_RESISTANCE_KILLMSG">
-            <Original>An allied resistance fighter named %1 was killed!</Original>
-            <German>Ein verbündeter Widerstandskämpfer mit Namen %1 wurde getötet!</German>
-            <Spanish>Un aliado de la resistencia llamado %1 ha sido asesinado!</Spanish>
-            <Russian>Союзный боец сопротивления %1 был убит!</Russian>
-            <Italian>Un'alleato della resistenza di nome %1 è stato ucciso!</Italian>
-            <Chinesesimp>一位名叫%1的友军抵抗军战士阵亡了！</Chinesesimp>
-            <Chinese>一名叫做 %1 的友軍抵抗軍戰士陣亡了！</Chinese>
-            <Portuguese>Um aliado das forças de resistência de nome %1 foi morto!</Portuguese>
-            <Korean>% 라고 하는 아군에 협조한 민병대가 전사하였다.</Korean>
-            <Czech>Spojenecký bojovník domobrany %1 byl zabit!</Czech>
+            <Original>%1 killed an allied resistance fighter!</Original>
+            <German>%1 hat einen alliierten Widerstandskämpfer getötet!</German>
+            <Spanish>%1 mató a un guerrero de la resistencia aliado!</Spanish>
+            <Russian>%1 убил бойца союзного сопротивления!</Russian>
+            <Italian>%1 ha ucciso un combattente della resistenza alleata!</Italian>
+            <Chinesesimp>%1 杀死了一个盟军抵抗战士！</Chinesesimp>
+            <Chinese>%1 殺死了一個盟軍抵抗戰士！ </Chinese>
+            <Portuguese>%1 matou um lutador da resistência aliada!</Portuguese>
+            <Korean>%1 아군 저항군을 죽였습니다!</Korean>
+            <Czech>%1 zabil spojeneckého odbojáře!</Czech>
+        </Key>
+        <Key ID="STR_CR_CIVVEH_MSG">
+            <Original>%1 destroyed a civilian vehicle!</Original>
+            <German>%1 hat ein Zivilfahrzeug zerstört!</German>
+            <Spanish>%1 destruyó un vehículo civil!</Spanish>
+            <Russian>%1 уничтожил гражданский автомобиль!</Russian>
+            <Italian>%1 ha distrutto un veicolo civile!</Italian>
+            <Chinesesimp>%1 摧毁了一辆民用车辆！</Chinesesimp>
+            <Chinese>%1 摧毀了一輛民用車輛！</Chinese>
+            <Portuguese>%1 destruiu um veículo civil!</Portuguese>
+            <Korean>%1 민간 차량을 파괴했습니다!</Korean>
+            <Czech>%1 zničil civilní vozidlo!</Czech>
         </Key>
         <Key ID="STR_PARAMS_DEBUG_SAVE">
             <Original>Gamedata saving</Original>
