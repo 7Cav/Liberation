@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1545;
+	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=844;
+		nextID=849;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=412;
+		nextID=502;
 	};
 	class Camera
 	{
-		pos[]={1830.053,64.326889,3093.2563};
-		dir[]={0.55918127,-0.70722491,0.43286476};
-		up[]={0.55932128,0.70688629,0.43297437};
-		aside[]={0.61219406,8.3040504e-008,-0.79084003};
+		pos[]={2663.198,1312.4445,3216.6003};
+		dir[]={0.77919942,-0.58939773,-0.21335326};
+		up[]={0.56848693,0.80782962,-0.15565708};
+		aside[]={-0.2640976,1.2369128e-007,-0.96452653};
 	};
 };
 binarizationWanted=0;
@@ -213,7 +213,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=30;
+		items=31;
 		class Item0
 		{
 			dataType="Layer";
@@ -871,7 +871,7 @@ class Mission
 				};
 			};
 			id=86;
-			atlOffset=0.053281784;
+			atlOffset=0.058145523;
 		};
 		class Item1
 		{
@@ -4754,11 +4754,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={6636.3013,4.96,656.7688};
+				position[]={6636.3008,4.9604797,656.76898};
 			};
 			id=112;
 			type="vn_module_qol";
-			atlOffset=73.06974;
+			atlOffset=73.07;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12417,7 +12417,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1883.4143,1.7115669,3100.981};
+								position[]={1883.4139,1.7115346,3100.981};
 							};
 							side="West";
 							flags=7;
@@ -12484,7 +12484,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1885.1393,1.850909,3100.739};
+								position[]={1885.139,1.8508822,3100.739};
 							};
 							side="West";
 							flags=5;
@@ -12750,7 +12750,7 @@ class Mission
 				};
 			};
 			id=837;
-			atlOffset=-0.052392721;
+			atlOffset=-0.052385569;
 		};
 		class Item27
 		{
@@ -12820,16 +12820,88 @@ class Mission
 			id=843;
 			atlOffset=-6.8664551e-005;
 		};
+		class Item30
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2105.616,28.319147,4161.6538};
+				angles[]={6.2731848,0,6.2711945};
+			};
+			id=845;
+			type="vn_module_masterarm";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="vn_module_masterarm_ammo_vehicles";
+					expression="_this setVariable ['ammo_vehicles',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="vn_module_masterarm_repair_vehicles";
+					expression="_this setVariable ['repair_vehicles',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[]";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="vn_module_masterarm_fuel_vehicles";
+					expression="_this setVariable ['fuel_vehicles',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=8;
+			nextID=11;
 		};
 		class Links
 		{
-			items=8;
+			items=11;
 			class Item0
 			{
 				linkID=0;
@@ -12905,6 +12977,36 @@ class Mission
 				linkID=7;
 				item0=818;
 				item1=813;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item8
+			{
+				linkID=8;
+				item0=845;
+				item1=685;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item9
+			{
+				linkID=9;
+				item0=845;
+				item1=684;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item10
+			{
+				linkID=10;
+				item0=845;
+				item1=683;
 				class CustomData
 				{
 					type="Sync";
