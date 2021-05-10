@@ -69,7 +69,7 @@ if (isServer) then {
         if (!isNull objectParent _unit) then {moveOut _unit;};
 
         //Check for teamkill and announce
-        if (isPlayer _killer) then {
+        if (isPlayer _killer && _killer isNotEqualto _killer) then {
             [7, [(name _killer), (name _unit)]] remoteExec ["KPLIB_fnc_crGlobalMsg"];
         };
 
