@@ -1,3 +1,5 @@
+//Set default radio to PRC-77
+["ACRE_PRC77"] call acre_api_fnc_setItemRadioReplacement;
 
 /*
  * Below, we simply name all the channels for each radio, to matching names. This will make the radios
