@@ -4,11 +4,14 @@
 * Added: CDLC Master Arm functionality to operation base
 * Added: Additional start vehicles including PT boats and more Hueys on Cam Lao Nam
 * Added: Server rules billboard to base on Cam Lao Nam
+* Added: Snake bite script
 * Fixed: Further adjust slots to cav standards on Cam Lao Nam
 * Fixed: Messages diplaying for teamkills/civilian kills/resistance kills/epw kills
 * Fixed: 343s being given on respawn on Cam Lao Nam
 * Fixed: Multiple performance enhancements to various systems
 * Fixed: Changed models for pilots on Cam Lao Nam to prevent futuristic underwear display
+* Fixed: Air vehicle build list to include all US Army air vehicles and Navy/Air Force variants of F4
+* Fixed: No vehicles being locked behind military bases
 
 ## 0.96.7a-7cav-0.5 (24HR OP)
 * Added: Ace Rearm,Repair,Medical to applicable supply vehicles for SOGPF CDLC.

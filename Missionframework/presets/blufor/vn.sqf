@@ -55,7 +55,6 @@ infantry_units = [
     ["vn_b_men_army_10",30,0,0],                                        // Marksman
     ["vn_b_men_army_11",40,0,0],                                        // Sharpshooter
     ["vn_b_men_army_12",50,10,0],                                       // AT Specialist (Is called grenadier 2 but has not grenadelauncher and a LAW
-    ["B_soldier_AA_F",50,10,0],                                         // AA Specialist (Won't be any for VN)
     ["vn_b_men_army_03",30,0,0],                                        // Combat Life Saver
     ["vn_b_men_army_04",30,0,0],                                        // Engineer
     ["vn_b_men_army_05",30,0,0],                                        // Explosives Specialist
@@ -74,18 +73,19 @@ infantry_units = [
 light_vehicles = [
     ["vn_c_bicycle_01",10,0,0],                                         // Bicycle
     ["vn_b_wheeled_m151_01",75,0,50],                                   // M151A1 Transport
+    ["vn_b_wheeled_m151_02",75,0,50],                                   // M151A1 Transport (Covered)
     ["vn_i_wheeled_m151_mg_01",75,35,50],                               // M151A1 M1919
     ["vn_b_wheeled_m151_mg_02",75,40,50],                               // M151A1 M2
     ["vn_b_wheeled_m151_mg_03",75,50,50],                               // M151A1 Patrol
     ["vn_b_wheeled_m151_mg_04",95,30,60],                               // M151A1 Armoured
     ["vn_b_wheeled_m54_mg_01",100,60,50],                               // M54 Gun Truck (3x M2HB)
-    ["vn_b_wheeled_m54_mg_03",100,80,50],                               // M54 Gun Truck (Minigun)
-    ["vn_b_wheeled_m54_mg_02",100,120,50],                              // M54 (M45 Quad)
+    ["vn_b_wheeled_m54_mg_03",100,100,50],                              // M54 Gun Truck (Minigun)
+    ["vn_b_wheeled_m54_mg_02",100,120,50],                              // M54 AA Truck (M45 Quad)
     ["vn_b_wheeled_m54_01",125,0,75],                                   // M54 Transport
     ["vn_b_wheeled_m54_02",125,0,75],                                   // M54 Transport (Covered)
     ["vn_c_boat_01_00",25,0,25],                                        // Boat
     ["vn_c_boat_02_00",35,0,25],                                        // Long Boat
-    ["B_Boat_Transport_01_F",50,0,25],                                  // Assault Boat
+    ["vn_b_boat_06_01",200,120,75].                                     // PTF Nasty (40mm)
     ["vn_b_boat_05_01",200,120,75]                                      // PTF Nasty (Mortar)
 ];
 
@@ -103,22 +103,69 @@ air_vehicles = [
     ["vn_b_air_oh6a_05",200,200,100],                                   // OH-6A Cayuse (Gunship/AT)
     ["vn_b_air_oh6a_07",200,200,100],                                   // OH-6A Cayuse (Gunship/FAC)
     ["vn_b_air_ch34_03_01",225,20,125],                                 // UH-34D Seahorse (M60 x2)
+    ["vn_b_air_ch34_01_01",225,20,125],                                 // UH-34D Seahorse (M60)
     ["vn_b_air_ch34_04_03",225,300,100],                                // UH-34 Stinger (APERS)
     ["vn_b_air_ch34_04_02",225,300,100],                                // UH-34 Stinger (CAS)
     ["vn_b_air_ch34_04_04",225,300,100],                                // UH-34 Stinger (FAC)
     ["vn_b_air_ch34_04_01",225,300,100],                                // UH-34 Stinger (FFAR)
-    ["vn_b_air_uh1d_02_01",260,0,150],                                  // UH-1C Iroquois (MedEvac)
-    ["vn_b_air_uh1c_03_01",500,400,200],                                // UH-1C Iroquois ()
+    ["vn_b_air_uh1b_07_02",260,0,150],                                  // UH-1B Iroquois Slick (Air Cav)
+    ["vn_b_air_uh1b_07_01",260,0,150],                                  // UH-1B Iroquois Slick (Army)
+    ["vn_b_air_uh1c_06_02",300,200,150],                                // UH-1C Iroquois ARA (Air Cav)
+    ["vn_b_air_uh1c_06_01",300,200,150],                                // UH-1C Iroquois ARA (Army)
+    ["vn_b_air_uh1c_04_02",300,200,150],                                // UH-1C Iroquois Frog (Air Cav)
+    ["vn_b_air_uh1c_04_01",300,200,150],                                // UH-1C Iroquois Frog (Army)
+    ["vn_b_air_uh1c_02_02",300,200,150],                                // UH-1C Iroquois Gunship (Air Cav)
+    ["vn_b_air_uh1c_02_01",300,200,150],                                // UH-1C Iroquois Gunship (Army)
+    ["vn_b_air_uh1c_05_02",300,200,150],                                // UH-1C Iroquois Heavy Hog (Air Cav)
+    ["vn_b_air_uh1c_05_01",300,200,150],                                // UH-1C Iroquois Heavy Hog (Army)
+    ["vn_b_air_uh1c_05_02",300,200,150],                                // UH-1C Iroquois Heavy Hog (Air Cav)
+    ["vn_b_air_uh1c_01_02",300,200,150],                                // UH-1C Iroquois Hog (Air Cav)
+    ["vn_b_air_uh1c_01_01",300,200,150],                                // UH-1C Iroquois Hog (Army)
+    ["vn_b_air_uh1d_01_02",400,0,150],                                  // UH-1D Iroquois Dust-off (Air Cav)
+    ["vn_b_air_uh1d_01_01",400,0,150],                                  // UH-1D Iroquois Dust-off (Army)
+    ["vn_b_air_uh1d_02_02",400,0,150],                                  // UH-1D Iroquois Slick (Air Cav)
+    ["vn_b_air_uh1d_02_01",400,0,150],                                  // UH-1D Iroquois Slick (Army)
     ["vn_b_air_ah1g_02",500,400,200],                                   // AH-1G Cobra (APERS)
     ["vn_b_air_ah1g_03",500,400,200],                                   // AH-1G Cobra (AT)
     ["vn_b_air_ah1g_04",500,400,200],                                   // AH-1G Cobra (CAS)
     ["vn_b_air_ah1g_05",500,400,200],                                   // AH-1G Cobra (FAC)
     ["vn_b_air_ah1g_01",500,400,200],                                   // AH-1G Cobra (FFAR)
-    ["vn_b_air_uh1d_01_01",250,0,150],                                  // UH-1D Iroquois (Slick) not appearing in the list atm not sure if playable
-    ["vn_b_air_f4b_navy_at",1000,800,400],                              // F4B NAVY
-    ["vn_b_air_f4c_ehcas",1500,1750,450]                                // F4C USAF
-    //["B_Plane_CAS_01_dynamicLoadout_F",1000,800,400],                 // A-164 Wipeout (CAS)/ Too modern
-    //["B_Plane_Fighter_01_F",1500,1750,450]                            // F/A-181 Black Wasp II Too modern
+    ["vn_b_air_ah1g_07",500,400,200],                                   // AH-1G Cobra (M195/APERS)
+    ["vn_b_air_ah1g_08",500,400,200],                                   // AH-1G Cobra (M195/AT)
+    ["vn_b_air_ah1g_09",500,400,200],                                   // AH-1G Cobra (M195/CAS)
+    ["vn_b_air_ah1g_10",500,400,200],                                   // AH-1G Cobra (M195/FAC)
+    ["vn_b_air_ah1g_06",500,400,200],                                   // AH-1G Cobra (M195/FFAR)
+    ["vn_b_air_f4b_navy_at",1000,800,400],                              // F4B NAVY (AT)
+    ["vn_b_air_f4b_navy_bmb",1000,800,400],                             // F4B NAVY (BMB)
+    ["vn_b_air_f4b_navy_cap",1000,800,400],                             // F4B NAVY (CAP)
+    ["vn_b_air_f4b_navy_cas",1000,800,400],                             // F4B NAVY (CAS)
+    ["vn_b_air_f4b_navy_cbu",1000,800,400],                             // F4B NAVY (CBU)
+    ["vn_b_air_f4b_navy_ehcas",1000,800,400],                           // F4B NAVY (EHCAS)
+    ["vn_b_air_f4b_navy_gbu",1000,800,400],                             // F4B NAVY (GBU)
+    ["vn_b_air_f4b_navy_hbmb",1000,800,400],                            // F4B NAVY (HBMB)
+    ["vn_b_air_f4b_navy_hcas",1000,800,400],                            // F4B NAVY (HCAS)
+    ["vn_b_air_f4b_navy_lbmb",1000,800,400],                            // F4B NAVY (LBMB)
+    ["vn_b_air_f4b_navy_lrbmb",1000,800,400],                           // F4B NAVY (LRBMB)
+    ["vn_b_air_f4b_navy_mbmb",1000,800,400],                            // F4B NAVY (MBMB)
+    ["vn_b_air_f4b_navy_mr",1000,800,400],                              // F4B NAVY (MR)
+    ["vn_b_air_f4b_navy_sead",1000,800,400],                            // F4B NAVY (SEAD)
+    ["vn_b_air_f4b_navy_ucas",1000,800,400],                            // F4B NAVY (UCAS)
+    ["vn_b_air_f4c_at",1500,1750,450],                                  // F4C USAF (AT)
+    ["vn_b_air_f4c_bmb",1500,1750,450],                                 // F4C USAF (BMB)
+    ["vn_b_air_f4c_cap",1500,1750,450],                                 // F4C USAF (CAP)
+    ["vn_b_air_f4c_cas",1500,1750,450],                                 // F4C USAF (CAS)
+    ["vn_b_air_f4c_cbu",1500,1750,450],                                 // F4C USAF (CBU)
+    ["vn_b_air_f4c_chico",1500,1750,450],                               // F4C USAF (CHICO)
+    ["vn_b_air_f4c_EHCAS",1500,1750,450],                               // F4C USAF (EHCAS)
+    ["vn_b_air_f4c_gbu",1500,1750,450],                                 // F4C USAF (GBU)
+    ["vn_b_air_f4c_hbmb",1500,1750,450],                                // F4C USAF (HBMB)
+    ["vn_b_air_f4c_hcas",1500,1750,450],                                // F4C USAF (HCAS)
+    ["vn_b_air_f4c_lbmb",1500,1750,450],                                // F4C USAF (LBMB)
+    ["vn_b_air_f4c_lrbmb",1500,1750,450],                               // F4C USAF (LRBMB)
+    ["vn_b_air_f4c_mbmb",1500,1750,450],                                // F4C USAF (MBMB)
+    ["vn_b_air_f4c_mr",1500,1750,450],                                  // F4C USAF (MR)
+    ["vn_b_air_f4c_sead",1500,1750,450],                                // F4C USAF (SEAD)
+    ["vn_b_air_f4c_ucas",1500,1750,450]                                 // F4C USAF (UCAS)
 ];
 
 static_vehicles = [
@@ -435,4 +482,11 @@ blufor_squad_para = [
     Classnames below have to be unlocked by capturing military bases.
     Which base locks a vehicle is randomized on the first start of the campaign.
 */
-elite_vehicles = [];
+elite_vehicles = [
+    "vn_b_wheeled_m54_mg_03",
+    "vn_b_wheeled_m151_mg_04",
+    "vn_b_boat_05_01",
+    "vn_b_boat_06_01",
+    "vn_b_wheeled_m54_mg_01",
+    "vn_b_army_static_m101",
+];
