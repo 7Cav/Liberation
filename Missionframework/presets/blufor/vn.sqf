@@ -488,6 +488,5 @@ elite_vehicles = [
     "vn_b_wheeled_m151_mg_04",
     "vn_b_boat_05_01",
     "vn_b_boat_06_01",
-    "vn_b_wheeled_m54_mg_01",
     "vn_b_army_static_m101"
 ];
