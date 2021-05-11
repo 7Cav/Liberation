@@ -55,6 +55,7 @@ infantry_units = [
     ["vn_b_men_army_10",30,0,0],                                        // Marksman
     ["vn_b_men_army_11",40,0,0],                                        // Sharpshooter
     ["vn_b_men_army_12",50,10,0],                                       // AT Specialist (Is called grenadier 2 but has not grenadelauncher and a LAW
+    ["B_soldier_AA_F",50,10,0],                                         // AA Specialist (Won't be any for VN)
     ["vn_b_men_army_03",30,0,0],                                        // Combat Life Saver
     ["vn_b_men_army_04",30,0,0],                                        // Engineer
     ["vn_b_men_army_05",30,0,0],                                        // Explosives Specialist
