@@ -4,7 +4,6 @@
 * Added: CDLC Master Arm functionality to operation base
 * Added: Additional start vehicles including PT boats and more Hueys on Cam Lao Nam
 * Added: Server rules billboard to base on Cam Lao Nam
-* Added: Snake bite script
 * Fixed: Further adjust slots to cav standards on Cam Lao Nam
 * Fixed: Messages diplaying for teamkills/civilian kills/resistance kills/epw kills
 * Fixed: 343s being given on respawn on Cam Lao Nam
