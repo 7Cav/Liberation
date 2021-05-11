@@ -85,7 +85,7 @@ light_vehicles = [
     ["vn_b_wheeled_m54_02",125,0,75],                                   // M54 Transport (Covered)
     ["vn_c_boat_01_00",25,0,25],                                        // Boat
     ["vn_c_boat_02_00",35,0,25],                                        // Long Boat
-    ["vn_b_boat_06_01",200,120,75].                                     // PTF Nasty (40mm)
+    ["vn_b_boat_06_01",200,120,75],                                     // PTF Nasty (40mm)
     ["vn_b_boat_05_01",200,120,75]                                      // PTF Nasty (Mortar)
 ];
 
