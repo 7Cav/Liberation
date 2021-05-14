@@ -256,7 +256,7 @@ KP_liberation_resistance_ambush_chance = 65;                            // Chanc
 // When playing on this map, it'll create a clearance (remove terrain objects) in a 15m radius around the battlegroup/reinforcements spawnpoint.
 KP_liberation_battlegroup_clearance = [
     "song_bin_tanh",
-    "cam_lao_nam"
+    "Cam_Lao_Nam"
 ];
 
 /* Slot independent commander action access.
