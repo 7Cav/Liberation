@@ -31,7 +31,7 @@ KP_liberation_truck_classname = "vn_b_wheeled_m54_01";                  // These
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources. (Land_vn_hootch_01_wall)
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";     // A large storage area for resources. (Land_vn_barracks_04_wall)
 KP_liberation_recycle_building = "Land_vn_hootch_01_03";                // The building defined to unlock FOB recycling functionality.
-KP_liberation_air_vehicle_building = "Land_vn_tropo_reflector_01";      // The building defined to unlock FOB air vehicle functionality.
+KP_liberation_air_vehicle_building = "Land_vn_radar_small_f";           // The building defined to unlock FOB air vehicle functionality.
 KP_liberation_heli_slot_building = "Land_vn_b_helipad_01";              // The helipad used to increase the GLOBAL rotary-wing cap.
 KP_liberation_plane_slot_building = "Land_vn_usaf_hangar_02";           // The hangar used to increase the GLOBAL fixed-wing cap.
 KP_liberation_supply_crate = "Land_FoodSacks_01_cargo_brown_F";         // This defines the supply crates, as in resources.
@@ -90,7 +90,6 @@ light_vehicles = [
 ];
 
 heavy_vehicles = [
-// M42A1 Duster ["vn_b_armor_m42",300,100,150] not playable
     ["vn_b_armor_m41_01_01", 300, 100, 150]                             // M41A3 Walker Bulldog
 ];
 
@@ -399,54 +398,52 @@ support_vehicles = [
 
 // Light infantry squad.
 blufor_squad_inf_light = [
-    "vn_b_men_army_02",
-    "vn_b_men_army_15",
-    "vn_b_men_army_15",
-    "vn_b_men_army_12",
-    "vn_b_men_army_07",
-    "vn_b_men_army_06",
-    "vn_b_men_army_06",
-    "vn_b_men_army_10",
-    "vn_b_men_army_03",
-    "vn_b_men_army_04"
+    "vn_b_men_army_15",                                                 // Rifleman
+    "vn_b_men_army_15",                                                 // Rifleman
+    "vn_b_men_army_12",                                                 // Rifleman (AT)
+    "vn_b_men_army_07",                                                 // Grenadier
+    "vn_b_men_army_06",                                                 // Autorifleman
+    "vn_b_men_army_06",                                                 // Autorifleman
+    "vn_b_men_army_10",                                                 // Marksman
+    "vn_b_men_army_03",                                                 // Combat Life Saver
+    "vn_b_men_army_04"                                                  // Engineer
 ];
 
 // Heavy infantry squad.
 blufor_squad_inf = [
     "vn_b_men_army_02",
-    "vn_b_men_army_12",
-    "vn_b_men_army_12",
-    "vn_b_men_army_07",
-    "vn_b_men_army_06",
-    "vn_b_men_army_06",
-    "vn_b_men_army_06",
-    "vn_b_men_army_11",
-    "vn_b_men_army_03",
-    "vn_b_men_army_04"
+    "vn_b_men_army_12", // Rifleman (AT)
+    "vn_b_men_army_12", // Rifleman (AT)
+    "vn_b_men_army_07", // Grenadier
+    "vn_b_men_army_06", // Autorifleman
+    "vn_b_men_army_06", // Autorifleman
+    "vn_b_men_army_06", // Autorifleman
+    "vn_b_men_army_11", // Sharpshooter
+    "vn_b_men_army_03", // Combat Life Saver
+    "vn_b_men_army_04"  // Engineer
 ];
 
 // AT specialists squad.
 blufor_squad_at = [
-    "vn_b_men_army_02",
-    "vn_b_men_army_15",
-    "vn_b_men_army_15",
-    "B_soldier_AT_F",
-    "B_soldier_AT_F",
-    "B_soldier_AT_F",
+    "vn_b_men_army_15", // Rifleman
+    "vn_b_men_army_15", // Rifleman
+    "vn_b_men_army_12", // Rifleman (AT)
+    "vn_b_men_army_12", // Rifleman (AT)
+    "vn_b_men_army_12", // Rifleman (AT)
     "vn_b_men_army_03",
-    "vn_b_men_army_15"
+    "vn_b_men_army_15" // Rifleman
 ];
 
 // AA specialists squad. Never gonna be available in VN
 blufor_squad_aa = [
     "vn_b_men_army_02",
-    "vn_b_men_army_15",
-    "vn_b_men_army_15",
-    "B_soldier_AA_F",
-    "B_soldier_AA_F",
-    "B_soldier_AA_F",
-    "vn_b_men_army_03",
-    "vn_b_men_army_15"
+   "vn_b_men_army_15", // Rifleman
+    "vn_b_men_army_15", // Rifleman
+    "vn_b_men_army_12", // Rifleman (AT)
+    "vn_b_men_army_12", // Rifleman (AT)
+    "vn_b_men_army_12", // Rifleman (AT)
+    "vn_b_men_army_03", // Combat Life Saver
+    "vn_b_men_army_15" // Rifleman
 ];
 
 // Force recon squad.
