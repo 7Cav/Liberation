@@ -16,6 +16,7 @@
 * Tweaked: Increased supply crate value paramater
 * Tweaked: Further performance optimizations
 * Tweaked: Reenabled mobile arsenal buildable via build menu
+* Tweaked: Convert all .HPP files into .INC
 * Removed: Mousewheel earplugs option and CDLC gesture menu on Cam Lao Nam
 
 ## 0.96.7a-7cav-0.5.1
