@@ -10,8 +10,10 @@
 * Fixed: Implemented potential fix for bugged AOs on Cam Lao Nam
 * Fixed: 105MM Arty missing from build menu on Cam Lao Nam
 * Fixed: Ignored buildings wasn't enabling properly on Chernarus
+* Fixed: Incorrect variable name in manage_logistics.sqf
 * Tweaked: Blufor/Opfor/Civilian/Resistance presets on Cam Lao Nam
 * Tweaked: Increased supply crate value paramater
+* Tweaked: Further performance optimizations
 * Tweaked: Reenabled mobile arsenal buildable via build menu
 * Removed: Mousewheel earplugs option and CDLC gesture menu on Cam Lao Nam
 
