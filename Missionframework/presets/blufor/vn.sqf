@@ -85,7 +85,7 @@ light_vehicles = [
     ["vn_b_wheeled_m54_02",125,0,75],                                   // M54 Transport (Covered)
     ["vn_c_boat_01_00",25,0,25],                                        // Boat
     ["vn_c_boat_02_00",35,0,25],                                        // Long Boat
-    ["vn_b_boat_06_01",200,120,75].                                     // PTF Nasty (40mm)
+    ["vn_b_boat_06_01",200,120,75],                                     // PTF Nasty (40mm)
     ["vn_b_boat_05_01",200,120,75]                                      // PTF Nasty (Mortar)
 ];
 
@@ -178,7 +178,7 @@ static_vehicles = [
     ["vn_b_army_static_mortar_m2",40,80,0],                             // M2 60mm Mortar
     ["vn_b_army_static_mortar_m29",50,100,0],                           // M29 81mm Mortar
     ["vn_b_army_static_m45",50,100,0],                                  // M-45 Quadmount
-    ["vn_b_army_static_m101",80,100,0],                                 // M101 105mm Howitzer
+    ["vn_b_army_static_m101_02",80,100,0],                              // M101 105mm Howitzer
     ["vn_b_static_tow",80,100,0]                                        // BGM71 TOW
 ];
 
@@ -368,7 +368,8 @@ buildings = [
     ["vn_roadbarrier_small_f",0,0,0],
     ["vn_steeldrum_bbq_02",0,0,0],
     ["vn_steeldrum_half_02",0,0,0],
-    ["vn_steeldrum_trash_02",0,0,0]
+    ["vn_steeldrum_trash_02",0,0,0],
+    ["Land_vn_lampshabby_f",0,0,0]
 ];
 
 support_vehicles = [
@@ -485,5 +486,5 @@ elite_vehicles = [
     "vn_b_boat_05_01",
     "vn_b_boat_06_01",
     "vn_b_wheeled_m54_mg_01",
-    "vn_b_army_static_m101",
+    "vn_b_army_static_m101_02"
 ];
