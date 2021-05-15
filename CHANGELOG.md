@@ -3,6 +3,7 @@
 ## 0.96.7a-7cav-0.6
 * Added: Respawning UH-1D on 10 minute delay to Operation Base on Cam Lao Nam
 * Added: Buildable lamp to Cam Lao Nam
+* Added: Hostile fob templates to Cam Lao Nam
 * Fixed: Pilots not having engineer perms on Cam Lao Nam
 * Fixed: Airport Refuel/Repair/Rearm vehicles being airliftable - These are just for the master arm functionality at base not to be moved to fobs
 * Fixed: Vanilla FAKs not being converted to ACE bandages
