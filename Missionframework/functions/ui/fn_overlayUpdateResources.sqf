@@ -1,9 +1,9 @@
-#include "script_components.inc"
+#include "script_components.hpp"
 /*
     File: fn_overlayUpdateResources.sqf
     Author: KP Liberation Dev Team - https://github.com/KillahPotatoes
     Date: 2020-05-01
-    Last Update: 2021-5-11
+    Last Update: 2020-08-25
     License: MIT License - http://www.opensource.org/licenses/MIT
 
     Description:

@@ -70,7 +70,6 @@ execVM "scripts\client\markers\update_production_sites.sqf";
 execVM "scripts\client\misc\briefing.sqf";
 execVM "scripts\client\misc\jarvis.sqf";
 execVM "scripts\client\misc\acre_preset.sqf";
-execVM "scripts\client\misc\snake.sqf";
 
 player addMPEventHandler ["MPKilled", {_this spawn kill_manager;}];
 player addEventHandler ["GetInMan", {[_this select 2] spawn kp_fuel_consumption;}];

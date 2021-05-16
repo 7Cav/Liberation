@@ -56,7 +56,7 @@ while{true} do
         ["Restart timeout elapsed, attempting server shutdown.", "RESTART"] call KPLIB_fnc_log;
         sleep 5;
 
-        private _myPass = call compile preprocessFileLineNumbers "\userconfig\restart\myPass.inc";
+        private _myPass = call compile preprocessFileLineNumbers "\userconfig\restart\myPass.hpp";
         private _shutdownSuccess = _myPass serverCommand (["#restart", "#restartserver"] select ((productVersion select 6) isEqualTo "Windows"));
 
         if(_shutdownSuccess) then

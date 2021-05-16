@@ -88,10 +88,10 @@ if (isServer) then {
             // Killed by a player
             if (isplayer _killer) then {
                 // POW checker and announce kill
-                private _opforGun = currentWeapon _unit;
-                if (_opforGun isEqualto "") then {
-                    [6, [(name _killer)]] remoteExec ["KPLIB_fnc_crGlobalMsg"];
-                };
+                //private _opforGun = currentWeapon _unit;
+                //if (_opforGun isEqualto "") then {
+                    //[6, [(name _killer)]] remoteExec ["KPLIB_fnc_crGlobalMsg"];
+                //};
                 stats_opfor_killed_by_players = stats_opfor_killed_by_players + 1;
             };
         };
