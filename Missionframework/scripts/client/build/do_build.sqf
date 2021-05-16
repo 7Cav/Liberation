@@ -311,7 +311,9 @@ while { true } do {
 
                 [_vehicle] call KPLIB_fnc_addObjectInit;
 
-                [_vehicle] call KPLIB_fnc_clearCargo;
+                if (!(typeOf _vehicle in ignore_clearcargo_items)) then { 
+                    [_vehicle] call KPLIB_fnc_clearCargo;
+                };
 
                 if (buildtype isEqualTo 6 || buildtype isEqualTo 99 || (toLower _classname) in KPLIB_storageBuildings || _classname isEqualTo KP_liberation_recycle_building || _classname isEqualTo KP_liberation_air_vehicle_building) then {
                     if (KP_vector) then {
