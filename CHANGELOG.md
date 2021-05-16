@@ -1,6 +1,25 @@
 # Changelog
 
-## 0.96.7a-7cav-0.5.5
+## 0.96.7a-7cav-0.6
+* Added: Respawning UH-1D on 10 minute delay to Operation Base on Cam Lao Nam
+* Added: Buildable lamp to Cam Lao Nam
+* Added: Hostile fob templates to Cam Lao Nam
+* Fixed: Pilots not having engineer perms on Cam Lao Nam
+* Fixed: Airport Refuel/Repair/Rearm vehicles being airliftable - These are just for the master arm functionality at base not to be moved to fobs
+* Fixed: Vanilla FAKs not being converted to ACE bandages
+* Fixed: Missing M-14 scopes in arsenal on Cam Lao Nam
+* Fixed: Implemented potential fix for bugged AOs on Cam Lao Nam
+* Fixed: 105MM Arty missing from build menu on Cam Lao Nam
+* Fixed: Ignored buildings wasn't enabling properly on Chernarus
+* Fixed: Incorrect variable name in manage_logistics.sqf
+* Tweaked: Blufor/Opfor/Civilian/Resistance presets on Cam Lao Nam
+* Tweaked: Increased supply crate value paramater
+* Tweaked: Further performance optimizations
+* Tweaked: Reenabled mobile arsenal buildable via build menu
+* Tweaked: Convert all .HPP files into .INC
+* Removed: Mousewheel earplugs option and CDLC gesture menu on Cam Lao Nam
+
+## 0.96.7a-7cav-0.5.1
 * Added: CDLC Master Arm functionality to operation base
 * Added: Additional start vehicles including PT boats and more Hueys on Cam Lao Nam
 * Added: Server rules billboard to base on Cam Lao Nam

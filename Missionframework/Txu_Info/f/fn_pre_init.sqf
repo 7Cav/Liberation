@@ -1,7 +1,7 @@
 // AUTHOR	      :	Terox (terox_@hotmail.com)
 // MP MACHINE	  :	all
 // Called from	:	Description.ext\cfgfunctions class;
-// Called using	: #include "Txu_Info\cfgfunctions.hpp"
+// Called using	: #include "Txu_Info\cfgfunctions.inc"
 // Time Called	:	After description.ext, before mission.sqm (Pre-Init)
 // Description	:	Core scripting initialisation, precompiling all functions and declaring global vars
 //
