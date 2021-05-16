@@ -4,6 +4,7 @@
 * Added: Respawning UH-1D on 10 minute delay to Operation Base on Cam Lao Nam
 * Added: Buildable lamp to Cam Lao Nam
 * Added: Hostile fob templates to Cam Lao Nam
+* Added: Buildable ammo and medical crates
 * Fixed: Pilots not having engineer perms on Cam Lao Nam
 * Fixed: Airport Refuel/Repair/Rearm vehicles being airliftable - These are just for the master arm functionality at base not to be moved to fobs
 * Fixed: Vanilla FAKs not being converted to ACE bandages
@@ -17,6 +18,7 @@
 * Tweaked: Further performance optimizations
 * Tweaked: Reenabled mobile arsenal buildable via build menu
 * Tweaked: Convert all .HPP files into .INC
+* Tweaked: Lowered duration and probability of cookoff
 * Removed: Mousewheel earplugs option and CDLC gesture menu on Cam Lao Nam
 
 ## 0.96.7a-7cav-0.5.1
