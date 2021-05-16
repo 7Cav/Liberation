@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.96.7a-7cav-0.7
+* Tweaked: Increased cargo space in CH-34 on Cam Lao Nam
+
 ## 0.96.7a-7cav-0.6
 * Added: Respawning UH-1D on 10 minute delay to Operation Base on Cam Lao Nam
 * Added: Buildable lamp to Cam Lao Nam
