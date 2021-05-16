@@ -488,3 +488,8 @@ elite_vehicles = [
     "vn_b_wheeled_m54_mg_01",
     "vn_b_army_static_m101_02"
 ];
+
+ignore_clearcargo_items = [
+    "vn_b_ammobox_full_02",
+    "ACE_medicalSupplyCrate"
+];
