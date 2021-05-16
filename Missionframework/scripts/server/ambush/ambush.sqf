@@ -37,14 +37,6 @@ reverse _tree;
 _tree = _tree select 0;
 _tree = getPosATL _tree;
 
-_ambush_marker_name = format["%1",random 1000];
-
-_ambush_marker = createMarker[_ambush_marker_name, _tree];
-_ambush_marker setMarkerShape "ICON";
-_ambush_marker setMarkerType "hd_dot";
-_ambush_marker setMarkerColor "ColorRed";
-_ambush_marker setMarkerText "Ambush";
-
 _ambush_grp = createGroup [EAST, true];
 _squad = ([] call KPLIB_fnc_getSquadComp);
 
