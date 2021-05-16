@@ -2,7 +2,7 @@
 // AUTHOR       : Terox (terox_@hotmail.com)
 // MP MACHINE   : all
 // Called from  : Description.ext\cfgfunctions class;
-// Called using : #include "Txu_Info\cfgfunctions.hpp"
+// Called using : #include "Txu_Info\cfgfunctions.inc"
 // Time Called  : After mission.sqm (Post-Init)
 // Description  : Core scripting initialisation for post init functionality
 //
