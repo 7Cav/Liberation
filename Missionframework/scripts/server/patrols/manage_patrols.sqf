@@ -11,7 +11,7 @@ sleep 5;
 waitUntil { sleep 60; !isNil "blufor_sectors" };
 waitUntil { sleep 60; count blufor_sectors > 3 };
 
-if !(worldName in KP_liberation_battlegroup_clearance) then {
+if (worldName != "song_bin_tanh") then {
     {
         [_x, false] spawn manage_one_patrol;
         sleep 1;

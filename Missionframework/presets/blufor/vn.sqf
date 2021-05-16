@@ -31,7 +31,7 @@ KP_liberation_truck_classname = "vn_b_wheeled_m54_01";                  // These
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources. (Land_vn_hootch_01_wall)
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";     // A large storage area for resources. (Land_vn_barracks_04_wall)
 KP_liberation_recycle_building = "Land_vn_hootch_01_03";                // The building defined to unlock FOB recycling functionality.
-KP_liberation_air_vehicle_building = "Land_vn_radar_small_f";           // The building defined to unlock FOB air vehicle functionality.
+KP_liberation_air_vehicle_building = "Land_vn_tropo_reflector_01";      // The building defined to unlock FOB air vehicle functionality.
 KP_liberation_heli_slot_building = "Land_vn_b_helipad_01";              // The helipad used to increase the GLOBAL rotary-wing cap.
 KP_liberation_plane_slot_building = "Land_vn_usaf_hangar_02";           // The hangar used to increase the GLOBAL fixed-wing cap.
 KP_liberation_supply_crate = "Land_FoodSacks_01_cargo_brown_F";         // This defines the supply crates, as in resources.
@@ -91,6 +91,7 @@ light_vehicles = [
 ];
 
 heavy_vehicles = [
+// M42A1 Duster ["vn_b_armor_m42",300,100,150] not playable
     ["vn_b_armor_m41_01_01", 300, 100, 150]                             // M41A3 Walker Bulldog
 ];
 
@@ -179,7 +180,7 @@ static_vehicles = [
     ["vn_b_army_static_mortar_m2",40,80,0],                             // M2 60mm Mortar
     ["vn_b_army_static_mortar_m29",50,100,0],                           // M29 81mm Mortar
     ["vn_b_army_static_m45",50,100,0],                                  // M-45 Quadmount
-    ["vn_b_army_static_m101_02",80,100,0],                              // M101 105mm Howitzer
+    ["vn_b_army_static_m101",80,100,0],                                 // M101 105mm Howitzer
     ["vn_b_static_tow",80,100,0]                                        // BGM71 TOW
 ];
 
@@ -369,8 +370,7 @@ buildings = [
     ["vn_roadbarrier_small_f",0,0,0],
     ["vn_steeldrum_bbq_02",0,0,0],
     ["vn_steeldrum_half_02",0,0,0],
-    ["vn_steeldrum_trash_02",0,0,0],
-    ["Land_vn_lampshabby_f",0,0,0]
+    ["vn_steeldrum_trash_02",0,0,0]
 ];
 
 support_vehicles = [
@@ -400,52 +400,54 @@ support_vehicles = [
 
 // Light infantry squad.
 blufor_squad_inf_light = [
-    "vn_b_men_army_15",                                                 // Rifleman
-    "vn_b_men_army_15",                                                 // Rifleman
-    "vn_b_men_army_12",                                                 // Rifleman (AT)
-    "vn_b_men_army_07",                                                 // Grenadier
-    "vn_b_men_army_06",                                                 // Autorifleman
-    "vn_b_men_army_06",                                                 // Autorifleman
-    "vn_b_men_army_10",                                                 // Marksman
-    "vn_b_men_army_03",                                                 // Combat Life Saver
-    "vn_b_men_army_04"                                                  // Engineer
+    "vn_b_men_army_02",
+    "vn_b_men_army_15",
+    "vn_b_men_army_15",
+    "vn_b_men_army_12",
+    "vn_b_men_army_07",
+    "vn_b_men_army_06",
+    "vn_b_men_army_06",
+    "vn_b_men_army_10",
+    "vn_b_men_army_03",
+    "vn_b_men_army_04"
 ];
 
 // Heavy infantry squad.
 blufor_squad_inf = [
     "vn_b_men_army_02",
-    "vn_b_men_army_12", // Rifleman (AT)
-    "vn_b_men_army_12", // Rifleman (AT)
-    "vn_b_men_army_07", // Grenadier
-    "vn_b_men_army_06", // Autorifleman
-    "vn_b_men_army_06", // Autorifleman
-    "vn_b_men_army_06", // Autorifleman
-    "vn_b_men_army_11", // Sharpshooter
-    "vn_b_men_army_03", // Combat Life Saver
-    "vn_b_men_army_04"  // Engineer
+    "vn_b_men_army_12",
+    "vn_b_men_army_12",
+    "vn_b_men_army_07",
+    "vn_b_men_army_06",
+    "vn_b_men_army_06",
+    "vn_b_men_army_06",
+    "vn_b_men_army_11",
+    "vn_b_men_army_03",
+    "vn_b_men_army_04"
 ];
 
 // AT specialists squad.
 blufor_squad_at = [
-    "vn_b_men_army_15", // Rifleman
-    "vn_b_men_army_15", // Rifleman
-    "vn_b_men_army_12", // Rifleman (AT)
-    "vn_b_men_army_12", // Rifleman (AT)
-    "vn_b_men_army_12", // Rifleman (AT)
+    "vn_b_men_army_02",
+    "vn_b_men_army_15",
+    "vn_b_men_army_15",
+    "B_soldier_AT_F",
+    "B_soldier_AT_F",
+    "B_soldier_AT_F",
     "vn_b_men_army_03",
-    "vn_b_men_army_15" // Rifleman
+    "vn_b_men_army_15"
 ];
 
 // AA specialists squad. Never gonna be available in VN
 blufor_squad_aa = [
     "vn_b_men_army_02",
-   "vn_b_men_army_15", // Rifleman
-    "vn_b_men_army_15", // Rifleman
-    "vn_b_men_army_12", // Rifleman (AT)
-    "vn_b_men_army_12", // Rifleman (AT)
-    "vn_b_men_army_12", // Rifleman (AT)
-    "vn_b_men_army_03", // Combat Life Saver
-    "vn_b_men_army_15" // Rifleman
+    "vn_b_men_army_15",
+    "vn_b_men_army_15",
+    "B_soldier_AA_F",
+    "B_soldier_AA_F",
+    "B_soldier_AA_F",
+    "vn_b_men_army_03",
+    "vn_b_men_army_15"
 ];
 
 // Force recon squad.
@@ -486,6 +488,5 @@ elite_vehicles = [
     "vn_b_wheeled_m151_mg_04",
     "vn_b_boat_05_01",
     "vn_b_boat_06_01",
-    "vn_b_wheeled_m54_mg_01",
-    "vn_b_army_static_m101_02"
+    "vn_b_army_static_m101"
 ];

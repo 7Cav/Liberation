@@ -216,7 +216,7 @@ taskManagement_drawDist = 5000;
 */
 
 class CfgDebriefing {
-    #include "KPLIB_debriefs.inc"
+    #include "KPLIB_debriefs.hpp"
 };
 
 class CfgDiscordRichPresence {
@@ -231,25 +231,25 @@ class CfgDiscordRichPresence {
 };
 
 class CfgFunctions {
-    #include "CfgFunctions.inc"
-    #include "KP\KPPLM\KPPLM_functions.inc"
-    #include "Txu_Info\cfgfunctions.inc"
+    #include "CfgFunctions.hpp"
+    #include "KP\KPPLM\KPPLM_functions.hpp"
+    #include "Txu_Info\cfgfunctions.hpp"
 };
 class CfgRespawnTemplates {
 
 };
 
 class CfgTaskDescriptions {
-    #include "scripts\client\tutorial\CfgTaskDescriptions.inc"
+    #include "scripts\client\tutorial\CfgTaskDescriptions.hpp"
 };
 
-#include "ui\liberation_interface.inc"
-#include "ui\liberation_notifications.inc"
-#include "ui\mission_params.inc"
+#include "ui\liberation_interface.hpp"
+#include "ui\liberation_notifications.hpp"
+#include "ui\mission_params.hpp"
 
-#include "GREUH\UI\GREUH_interface.inc"
-#include "KP\KPGUI\KPGUI_defines.inc"
-#include "KP\KPPLM\ui\KPPLM_dialog.inc"
+#include "GREUH\UI\GREUH_interface.hpp"
+#include "KP\KPGUI\KPGUI_defines.hpp"
+#include "KP\KPPLM\ui\KPPLM_dialog.hpp"
 
-//#include "7cav\CfgBaseDefines.inc"
-#include "Txu_Info\CfgControls.inc"
+//#include "7cav\CfgBaseDefines.hpp"
+#include "Txu_Info\CfgControls.hpp"

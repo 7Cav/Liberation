@@ -1,7 +1,7 @@
 /*
     KP player menu dialog
 
-    File: KPPLM_dialog.inc
+    File: KPPLM_dialog.hpp
     Author: Wyqer - https://github.com/KillahPotatoes
     Date: 2018-08-03
     Last Update: 2018-11-10
