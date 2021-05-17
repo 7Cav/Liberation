@@ -375,6 +375,8 @@ buildings = [
 
 support_vehicles = [
     [Arsenal_typename,100,200,0],
+    ["vn_b_ammobox_full_02",0,0,0],
+    ["ACE_medicalSupplyCrate",0,0,0],
     [Respawn_truck_typename,200,0,100],
     [FOB_box_typename,300,500,0],
     [FOB_truck_typename,300,500,75],
@@ -489,4 +491,9 @@ elite_vehicles = [
     "vn_b_boat_05_01",
     "vn_b_boat_06_01",
     "vn_b_army_static_m101"
+];
+
+ignore_clearcargo_items = [
+    "vn_b_ammobox_full_02",
+    "ACE_medicalSupplyCrate"
 ];
