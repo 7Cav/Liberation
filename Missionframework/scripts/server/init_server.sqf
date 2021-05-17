@@ -65,7 +65,11 @@ execVM "scripts\server\resources\recalculate_timer_sector.sqf";
 execVM "scripts\server\resources\unit_cap.sqf";
 execVM "scripts\server\sector\lose_sectors.sqf";
 execVM "scripts\server\custom\cleanup.sqf";
-execVM "scripts\server\ambush\ambush_init.sqf";
+
+// Ambush script
+if (worldName isEqualTo "Cam_Lao_Nam") then {
+    execVM "scripts\server\ambush\ambush_init.sqf";
+};
 
 KPLIB_fsm_sectorMonitor = [] call KPLIB_fnc_sectorMonitor;
 if (KP_liberation_high_command) then {KPLIB_fsm_highcommand = [] call KPLIB_fnc_highcommand;};
