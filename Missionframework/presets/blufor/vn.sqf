@@ -180,7 +180,7 @@ static_vehicles = [
     ["vn_b_army_static_mortar_m2",40,80,0],                             // M2 60mm Mortar
     ["vn_b_army_static_mortar_m29",50,100,0],                           // M29 81mm Mortar
     ["vn_b_army_static_m45",50,100,0],                                  // M-45 Quadmount
-    ["vn_b_army_static_m101_02",80,100,0],                              // M101 105mm Howitzer
+    ["vn_b_army_static_m101",80,100,0],                              // M101 105mm Howitzer
     ["vn_b_static_tow",80,100,0]                                        // BGM71 TOW
 ];
 
@@ -490,7 +490,7 @@ elite_vehicles = [
     "vn_b_wheeled_m151_mg_04",
     "vn_b_boat_05_01",
     "vn_b_boat_06_01",
-    "vn_b_army_static_m101_02"
+    "vn_b_army_static_m101"
 ];
 
 ignore_clearcargo_items = [
