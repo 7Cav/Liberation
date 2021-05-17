@@ -3,7 +3,6 @@
 ## 0.96.7a-7cav-0.7
 * Tweaked: Increased ace cargo space to 40 for the CH-47 and UH-34
 * Fixed: Infantry being ejected from doorgunner/crew chief seats
-* Fixed: Limited snake script to vietnam
 
 ## 0.96.7a-7cav-0.6
 * Added: Respawning UH-1D on 10 minute delay to Operation Base on Cam Lao Nam
