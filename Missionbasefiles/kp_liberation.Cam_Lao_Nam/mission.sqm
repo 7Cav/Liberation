@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=552;
+		nextID=562;
 	};
 	class Camera
 	{
-		pos[]={2252.8367,61.939346,3951.4417};
-		dir[]={0.45004463,-0.54259205,0.7093181};
-		up[]={0.29072154,0.83995259,0.45820802};
-		aside[]={0.84442109,-5.3190161e-007,-0.53576094};
+		pos[]={2247.2825,56.594296,3961.3618};
+		dir[]={0.78419238,-0.40635312,0.4691982};
+		up[]={0.34882146,0.91363543,0.20870672};
+		aside[]={0.51349068,3.9041333e-007,-0.85820794};
 	};
 };
 binarizationWanted=0;
@@ -238,8 +238,8 @@ class Mission
 		year=2038;
 		month=6;
 		day=6;
-		hour=24;
-		minute=0;
+		hour=12;
+		minute=15;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
@@ -359,7 +359,7 @@ class Mission
 					};
 					id=74;
 					type="Land_ClutterCutter_small_F";
-					atlOffset=0.452425;
+					atlOffset=0.44529724;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -744,7 +744,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2075.9343,28.713787,4081.7722};
+						position[]={2075.9343,28.881647,4081.7722};
 						angles[]={0.012000273,0.0012453146,6.2671871};
 					};
 					side="Empty";
@@ -755,6 +755,7 @@ class Mission
 					};
 					id=788;
 					type="Land_ClutterCutter_small_F";
+					atlOffset=0.12073517;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -784,7 +785,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2062.5444,28.900412,4081.6086};
+						position[]={2062.5444,29.093275,4081.6086};
 						angles[]={0.0060001095,0.0012453146,6.2671871};
 					};
 					side="Empty";
@@ -795,7 +796,7 @@ class Mission
 					};
 					id=789;
 					type="Land_ClutterCutter_small_F";
-					atlOffset=-0.019226074;
+					atlOffset=0.12651443;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -863,7 +864,7 @@ class Mission
 				};
 			};
 			id=86;
-			atlOffset=0.49412537;
+			atlOffset=0.56332397;
 		};
 		class Item1
 		{
@@ -4756,7 +4757,7 @@ class Mission
 			};
 			id=467;
 			type="Land_vn_b_helipad_01";
-			atlOffset=-1.9073486e-006;
+			atlOffset=0.0071220398;
 		};
 		class Item10
 		{
@@ -4773,6 +4774,7 @@ class Mission
 			};
 			id=468;
 			type="Land_vn_b_helipad_01";
+			atlOffset=0.0071239471;
 		};
 		class Item11
 		{
@@ -4789,7 +4791,7 @@ class Mission
 			};
 			id=469;
 			type="Land_vn_b_helipad_01";
-			atlOffset=7.6293945e-006;
+			atlOffset=0.0071315765;
 		};
 		class Item12
 		{
@@ -4806,7 +4808,7 @@ class Mission
 			};
 			id=470;
 			type="Land_vn_b_helipad_01";
-			atlOffset=1.9073486e-006;
+			atlOffset=0.0071258545;
 		};
 		class Item13
 		{
@@ -4823,6 +4825,7 @@ class Mission
 			};
 			id=471;
 			type="Land_vn_b_helipad_01";
+			atlOffset=0.0071239471;
 		};
 		class Item14
 		{
@@ -5114,6 +5117,7 @@ class Mission
 			};
 			id=786;
 			type="Land_vn_b_helipad_01";
+			atlOffset=0.0071239471;
 		};
 		class Item18
 		{
@@ -5199,7 +5203,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3;
+							value=0;
 						};
 					};
 				};
@@ -5232,7 +5236,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5270,7 +5274,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5289,7 +5293,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5308,7 +5312,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5327,7 +5331,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5346,7 +5350,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5365,7 +5369,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5418,7 +5422,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5437,7 +5441,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5472,7 +5476,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5491,7 +5495,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5510,7 +5514,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5529,7 +5533,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5567,7 +5571,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5586,7 +5590,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5605,7 +5609,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5624,7 +5628,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5643,7 +5647,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5677,7 +5681,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5696,7 +5700,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5715,7 +5719,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5734,7 +5738,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5772,7 +5776,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5791,7 +5795,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5810,7 +5814,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5829,7 +5833,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5848,7 +5852,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5881,7 +5885,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5900,7 +5904,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5919,7 +5923,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5938,7 +5942,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -12959,7 +12963,7 @@ class Mission
 			};
 			id=838;
 			type="Land_vn_b_helipad_01";
-			atlOffset=0.039987564;
+			atlOffset=0.047111511;
 		};
 		class Item26
 		{
@@ -13089,7 +13093,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2294.9285,32.968155,3957.4849};
-				angles[]={0,0.38330209,-0};
+				angles[]={0,0.38330209,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13098,7 +13102,7 @@ class Mission
 			};
 			id=849;
 			type="vn_b_air_uh1d_02_02";
-			atlOffset=0.1271534;
+			atlOffset=0.12002945;
 		};
 		class Item30
 		{
