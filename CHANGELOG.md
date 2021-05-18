@@ -2,6 +2,8 @@
 
 ## 0.96.7a-7cav-0.7
 * Tweaked: Increased ace cargo space to 40 for the CH-47 and UH-34
+* Tweaked: Cleaned up all map SQMs
+* Tweaked: Adjusted permissions for adminlogged zeus
 * Fixed: Infantry being ejected from doorgunner/crew chief seats
 * Fixed: Missing helicopter helemts on Cam Lao Nam
 
