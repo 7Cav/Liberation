@@ -61,7 +61,7 @@ while {true} do {
 
     if (KP_liberation_guerilla_strength < 0) then {KP_liberation_guerilla_strength = 0;};
 
-    sleep 60;
+    sleep 10;
     sync_vars = [
         KP_liberation_fob_resources,
         KP_liberation_supplies_global,

@@ -25,7 +25,20 @@ if (count _harassablePlayers isEqualTo 0) exitwith {
 	ambush_in_progress = 0;
 };
 
-private _chosenPlayer = selectRandom _harassablePlayers; 
+private _chosenPlayer = selectRandom _harassablePlayers;
+
+_nearfob = [ getpos _chosenPlayer ] call KPLIB_fnc_getNearestFob;
+_nearfob = _chosenPlayer distance _nearfob;
+
+if (_nearfob < 500) exitwith {
+	ambush_in_progress = 0;
+};
+
+_nearBase = _chosenPlayer distance startbase;
+
+if (_nearBase < 1000) exitwith {
+	ambush_in_progress = 0;
+};
 
 _tree = nearestTerrainObjects [_chosenPlayer, ["Small Tree","Tree", "Bush"], 200];
 
@@ -40,7 +53,7 @@ _tree = getPosATL _tree;
 _ambush_grp = createGroup [EAST, true];
 _squad = ([] call KPLIB_fnc_getSquadComp);
 
-for "_x" from 1 to 4 do {	
+for "_x" from 1 to 8 do {	
 
 	_unitType = selectRandom _squad;
 	_unit = _ambush_grp createUnit [_unitType, _tree, [], 6, "FORM"];

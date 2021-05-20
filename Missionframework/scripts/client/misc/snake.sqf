@@ -14,7 +14,7 @@ if (isNil "vn_mf_snake_brain" || {isNull vn_mf_snake_brain}) then {
 		vn_mf_snake_brain = [_snake] spawn {
 			params ["_snake"];
 
-			private _chance = 0.5;
+			private _chance = 0.1;
 			private _frequency = 300;
 			private _extra_time = 300;
 			private _distance = 1;
@@ -36,7 +36,7 @@ if (isNil "vn_mf_snake_brain" || {isNull vn_mf_snake_brain}) then {
 				then
 				{
 					playSound "oof";
-					systemChat "A snake jsut bit you! OWWWWWWW";
+					systemChat "A snake bit you! OWWWWWWW";
 					// add posion to player
 					//["eatdrink", [-1,-1,"snake_bite"]] call para_c_fnc_call_on_server;
 					[player, 0.8, selectrandom ["LeftLeg","RightLeg"], "stab"] call ace_medical_fnc_addDamageToUnit; 
