@@ -53,7 +53,7 @@ _tree = getPosATL _tree;
 _ambush_grp = createGroup [EAST, true];
 _squad = ([] call KPLIB_fnc_getSquadComp);
 
-for "_x" from 1 to 4 do {	
+for "_x" from 1 to 8 do {	
 
 	_unitType = selectRandom _squad;
 	_unit = _ambush_grp createUnit [_unitType, _tree, [], 6, "FORM"];
