@@ -50,11 +50,9 @@ while { GRLIB_endgame isEqualTo 0 } do {
     _started_time = time;
     _patrol_continue = true;
 
-    if ( local _grp ) then {
-        _headless_client = [] call KPLIB_fnc_getLessLoadedHC;
-        if ( !isNull _headless_client ) then {
-            _grp setGroupOwner ( owner _headless_client );
-        };
+    _headless_client = [] call KPLIB_fnc_getLessLoadedHC;
+    if ( !isNull _headless_client ) then {
+        _grp setGroupOwner ( owner _headless_client );
     };
 
     while { _patrol_continue } do {
