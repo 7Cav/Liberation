@@ -78,9 +78,11 @@ if !(_spawn_marker isEqualTo "") then {
     stats_hostile_battlegroups = stats_hostile_battlegroups + 1;
 
     {
-        _headless_client = [] call KPLIB_fnc_getLessLoadedHC;
-        if (!isNull _headless_client) then {
-            _x setGroupOwner (owner _headless_client);
+        if (local _x) then {
+            _headless_client = [] call KPLIB_fnc_getLessLoadedHC;
+            if (!isNull _headless_client) then {
+                _x setGroupOwner (owner _headless_client);
+            };
         };
         sleep 1;
     } forEach _bg_groups;

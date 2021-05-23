@@ -32,7 +32,7 @@ while {true} do {
             };
         } forEach KP_liberation_production_markers;
     } forEach KP_liberation_production;
-    sleep 60;
+    sleep 10;
     sync_eco = [KP_liberation_production,KP_liberation_logistics,KP_liberation_production_markers];
     publicVariable "sync_eco";
 

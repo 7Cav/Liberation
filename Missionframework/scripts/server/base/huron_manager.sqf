@@ -23,6 +23,7 @@ while {true} do {
         huron setDamage 0;
         huron allowdamage true;
         [huron] call KPLIB_fnc_addObjectInit;
+        [huron, 40] call ace_cargo_fnc_setSpace;
     };
     [huron] call KPLIB_fnc_clearCargo;
     huron setVariable ["ace_medical_isMedicalVehicle", true, true];

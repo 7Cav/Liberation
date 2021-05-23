@@ -33,6 +33,7 @@ GRLIB_whitelisted_steamids = [
 	"76561197995041250", // Black.A      - SL 4/1/C/1-7
 	"76561198064095277", // Citarelli.D  - SL 4/2/C/1-7
 	"76561198000293318", // Wulf.C       - S3
+	"76561197962051582", // Broström.A   - S3
 	"76561198102939824", //	Geki.T       - S3
 	"76561198188757405", // Skeith.J     - S3
 	"76561198106455726", //	Colvin.M     - S3
@@ -49,7 +50,8 @@ GRLIB_whitelisted_steamids = [
 	"76561198021516465", // Ronnings.P   - S3
 	"76561198050361032", // Presjack.J   - S3
 	"76561198149329790", // Mazinski.H   - S3
-	"76561198043140265"  // Centeno.JP   - S3
+	"76561198043140265", // Centeno.JP   - S3
+    "76561198059485118"  // Lucander
 ];
 
 // Allowed individual player names. Note that this method is not very secure contrary to SteamIDs.

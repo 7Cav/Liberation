@@ -111,7 +111,7 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 28 = SFP (Woodland)
 29 = SFP (Desert)
 30 = LDF (Contact DLC) */
-KP_liberation_preset_blufor = 6;
+KP_liberation_preset_blufor = 31;
 
 /* OPFOR preset:
 0  = Custom (default vanilla CSAT)
@@ -135,7 +135,7 @@ KP_liberation_preset_blufor = 6;
 18 = CUP Chernarus Defense Force
 19 = CUP British Armed Forces (Desert)
 20 = CUP British Armed Forces (Woodland) */
-KP_liberation_preset_opfor = 2;
+KP_liberation_preset_opfor = 23;
 
 /* Resistance preset:
 0  = Custom (default vanilla FIA)
@@ -147,7 +147,7 @@ KP_liberation_preset_opfor = 2;
 6  = Unsung
 7  = CUP Takistani Locals
 8  = CUP National Party of Chernarus */
-KP_liberation_preset_resistance = 2;
+KP_liberation_preset_resistance = 10;
 
 /* Civilians preset:
 0  = Custom (default vanilla)
@@ -158,7 +158,7 @@ KP_liberation_preset_resistance = 2;
 5  = Unsung
 6  = CUP Takistani Civilians
 7  = CUP Chernarussian Civilians */
-KP_liberation_preset_civilians = 0;
+KP_liberation_preset_civilians = 7;
 
 /* Which arsenal preset should be used?
 0  = Use the default blacklist method (defined below)
@@ -178,15 +178,15 @@ KP_liberation_preset_civilians = 0;
 14 = CSAT Green Hex arsenal preset
 15 = AAF arsenal preset
 16 = LDF arsenal preset */
-KP_liberation_arsenal = 0;
+KP_liberation_arsenal = 17;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */
-KP_liberation_fuel_neutral = 120;
+KP_liberation_fuel_neutral = 600;
 // Time in minutes till a full tank depletes whilst the vehicle is driving below max speed.
-KP_liberation_fuel_normal = 60;
+KP_liberation_fuel_normal = 240;
 // Time in minutes till a full tank depletes whilst the vehicle is driving at max speed.
-KP_liberation_fuel_max = 30;
+KP_liberation_fuel_max = 120;
 
 /* - Gameplay constant settings.
 Name of the savegame namespace inside of the [ServerProfileName].vars.Arma3Profile file. */
@@ -287,7 +287,7 @@ KPLIB_radioTowerClassnames = [
 ];
 
 /* - Default arsenal blacklist method.
-Useless if you're using anything other than "kp_liberation_arsenal = 0;" above. A whitelisted arsenal is always more performance friendly then a blacklisted arsenal.
+Useless if you're using anything other than "kp_liberation_arsenal = 17;" above. A whitelisted arsenal is always more performance friendly then a blacklisted arsenal.
 REMEMBER: All static turret and UAV bags should be defined here, to stop players from exploiting free resources via the virtual arsenal.    */
 blacklisted_from_arsenal = [
     "B_AA_01_weapon_F",

@@ -38,7 +38,7 @@ active_sectors = []; publicVariable "active_sectors";
 execVM "scripts\server\base\startgame.sqf";
 execVM "scripts\server\base\huron_manager.sqf";
 execVM "scripts\server\base\startvehicle_spawn.sqf";
-[] call KPLIB_fnc_createSuppModules;
+//[] call KPLIB_fnc_createSuppModules;
 execVM "scripts\server\battlegroup\counter_battlegroup.sqf";
 execVM "scripts\server\battlegroup\random_battlegroups.sqf";
 execVM "scripts\server\battlegroup\readiness_increase.sqf";
@@ -65,6 +65,11 @@ execVM "scripts\server\resources\recalculate_timer_sector.sqf";
 execVM "scripts\server\resources\unit_cap.sqf";
 execVM "scripts\server\sector\lose_sectors.sqf";
 execVM "scripts\server\custom\cleanup.sqf";
+
+// Ambush script
+if (worldName isEqualTo "Cam_Lao_Nam") then {
+    execVM "scripts\server\ambush\ambush_init.sqf";
+};
 
 KPLIB_fsm_sectorMonitor = [] call KPLIB_fnc_sectorMonitor;
 if (KP_liberation_high_command) then {KPLIB_fsm_highcommand = [] call KPLIB_fnc_highcommand;};

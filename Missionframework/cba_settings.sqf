@@ -59,11 +59,11 @@ force force ace_noradio_enabled = true;
 ace_parachute_hideAltimeter = true;
 
 // ACE Cook off
-force ace_cookoff_ammoCookoffDuration = 1;
+force ace_cookoff_ammoCookoffDuration = 0.3;
 force force ace_cookoff_enable = 0;
 force force ace_cookoff_enableAmmobox = true;
 force force ace_cookoff_enableAmmoCookoff = true;
-force ace_cookoff_probabilityCoef = 1;
+force ace_cookoff_probabilityCoef = 0.3;
 
 // ACE Crew Served Weapons
 force force ace_csw_ammoHandling = 2;
@@ -203,7 +203,7 @@ force force ace_medical_treatment_locationEpinephrine = 0;
 force force ace_medical_treatment_locationPAK = 0;
 force force ace_medical_treatment_locationsBoostTraining = true;
 force force ace_medical_treatment_locationSurgicalKit = 0;
-force force ace_medical_treatment_medicEpinephrine = 1;
+force force ace_medical_treatment_medicEpinephrine = 0;
 force force ace_medical_treatment_medicIV = 1;
 force force ace_medical_treatment_medicPAK = 2;
 force force ace_medical_treatment_medicSurgicalKit = 1;
