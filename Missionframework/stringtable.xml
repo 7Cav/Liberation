@@ -46,7 +46,7 @@
 <Project name="Liberation">
     <Package name="Liberation">
         <Key ID="STR_MISSION_TITLE">
-            <Original> Liberation Cam Lao Nam v0.96.7a-7Cav-0.7.1</Original>
+            <Original>Liberation v0.96.7a-7Cav-0.7.1</Original>
         </Key>
         <Key ID="STR_MISSION_VERSION">
             <Original>v0.96.7a-7Cav-0.7.1</Original>
