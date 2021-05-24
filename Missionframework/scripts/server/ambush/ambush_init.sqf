@@ -1,5 +1,5 @@
 ambush_in_progress = 0;
-sleep 600;
+sleep 300;
 
 _handle = 
 
