@@ -2,6 +2,7 @@
 
 ## 0.96.7a-7cav-0.8
 * Fixed: Removed fire barrels from buildable due to bug with DLC
+* Fixed: Issue with UH-34/CH-47 cargo slot increase not persisting after server restart
 
 ## 0.96.7a-7cav-0.7.1
 * Fixed: Allow everyone to use epinephrine
