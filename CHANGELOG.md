@@ -7,8 +7,12 @@
 * Tweaked: Increased ace cargo space to 40 for the CH-47 and UH-34
 * Tweaked: Cleaned up all map SQMs
 * Tweaked: Adjusted permissions for adminlogged zeus
+* Tweaked: Reduced chance of snake bite
 * Fixed: Infantry being ejected from doorgunner/crew chief seats
 * Fixed: Missing helicopter helemts on Cam Lao Nam
+* Fixed: Missing rifle grenades on Cam Lao Nam
+* Fixed: Reduced refresh time on Production menu
+* Fixed: Removed AI support system not in use
 
 ## 0.96.7a-7cav-0.6
 * Added: Respawning UH-1D on 10 minute delay to Operation Base on Cam Lao Nam
