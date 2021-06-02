@@ -1,8 +1,5 @@
 # Changelog
 
-## 0.96.7a-7cav-0.8
-* Disable ACE cookoff
-
 ## 0.96.7a-7cav-0.7.1
 * Fixed: Allow everyone to use epinephrine
 
