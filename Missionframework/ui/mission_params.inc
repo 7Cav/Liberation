@@ -51,7 +51,7 @@ class Params {
         title = $STR_PARAMS_FIRSTFOB;
         values[] = {1, 0};
         texts[] = {$STR_YES, $STR_NO};
-        default = 1;
+        default = 0;
     };
     class FirstFobVehicle {
         title = $STR_PARAMS_FIRSTFOBVEHICLE;
@@ -99,7 +99,7 @@ class Params {
         title = $STR_WEATHER_PARAM;
         values[] = {1, 2, 3};
         texts[] = {$STR_WEATHER_PARAM1, $STR_WEATHER_PARAM2, $STR_WEATHER_PARAM3};
-        default = 2;
+        default = 1;
     };
     class VanillaFog {
         title = $STR_FOG_PARAM;
