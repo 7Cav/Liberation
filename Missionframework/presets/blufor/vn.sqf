@@ -366,9 +366,6 @@ buildings = [
     ["vn_flag_usarmy",0,0,0],
     ["vn_flag_usmc",0,0,0],
     ["vn_roadbarrier_small_f",0,0,0],
-    ["vn_steeldrum_bbq_02",0,0,0],
-    ["vn_steeldrum_half_02",0,0,0],
-    ["vn_steeldrum_trash_02",0,0,0],
     ["Land_vn_lampshabby_f",0,0,0]
 ];
 

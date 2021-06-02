@@ -1,6 +1,6 @@
 // ACE Advanced Ballistics
-force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
-force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
+force force ace_advanced_ballistics_ammoTemperatureEnabled = false;
+force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = false;
 force force ace_advanced_ballistics_bulletTraceEnabled = false;
 force force ace_advanced_ballistics_enabled = false;
 force force ace_advanced_ballistics_muzzleVelocityVariationEnabled = false;
@@ -59,11 +59,11 @@ force force ace_noradio_enabled = true;
 ace_parachute_hideAltimeter = true;
 
 // ACE Cook off
-force ace_cookoff_ammoCookoffDuration = 0.3;
+force ace_cookoff_ammoCookoffDuration = 0.1;
 force force ace_cookoff_enable = 0;
-force force ace_cookoff_enableAmmobox = true;
-force force ace_cookoff_enableAmmoCookoff = true;
-force ace_cookoff_probabilityCoef = 0.3;
+force force ace_cookoff_enableAmmobox = false;
+force force ace_cookoff_enableAmmoCookoff = false;
+force ace_cookoff_probabilityCoef = 0.1;
 
 // ACE Crew Served Weapons
 force force ace_csw_ammoHandling = 2;

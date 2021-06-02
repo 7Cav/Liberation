@@ -7,6 +7,7 @@ huron = objNull;
 private _savedHuron = vehicles select {(toLower (typeOf _x)) isEqualTo (toLower huron_typename)};
 if !(_savedHuron isEqualTo []) then {
     huron = _savedHuron select 0;
+    [huron, 40] call ace_cargo_fnc_setSpace;
 };
 
 while {true} do {
