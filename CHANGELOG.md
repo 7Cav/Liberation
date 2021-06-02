@@ -7,6 +7,7 @@
 * Tweaked: Reduced chance that enemy will surrender, please be less soi.
 * Tweaked: increased FOB build range to 200m.
 * Tweaked: increased civ kill penalty to 5%.
+* Tweaked: Default weather is sunny.
 
 ## 0.96.7a-7cav-0.7.1
 * Fixed: Allow everyone to use epinephrine
