@@ -72,6 +72,8 @@ GRLIB_arsenal_weapons = [
 ];
 
 GRLIB_arsenal_magazines = [
+    "vn_b_item_cigs_01",
+    "murshun_cigs_matches",
     "vn_40mm_m381_he_mag",
     "vn_40mm_m397_ab_mag",
     "vn_40mm_m406_he_mag",
