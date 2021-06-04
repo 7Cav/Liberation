@@ -7,6 +7,6 @@ _handle =
 	{
 
 		null = [] execVM "scripts\server\ambush\ambush.sqf";
-	}, 600, []
+	}, 300, []
 
 ] call CBA_fnc_addPerFrameHandler;
