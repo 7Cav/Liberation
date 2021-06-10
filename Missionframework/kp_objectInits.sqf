@@ -147,48 +147,6 @@ KPLIB_objectInits = [
         ["rhsusf_M978A4_BKIT_usarmy_d", "rhsusf_M978A4_usarmy_d", "rhsusf_M978A4_usarmy_wd", "rhsusf_M978A4_BKIT_usarmy_wd"],
         {[_this, 15000] call ace_refuel_fnc_setFuel;}
     ],
-    //Remove Vest from RHS_AFRF Units. --Might break immersion idk.
-    [
-        [
-            "rhs_msv_emr_officer",
-            "rhs_msv_emr_sergeant",
-            "rhs_msv_emr_efreitor",
-            "rhs_msv_emr_rifleman",
-            "rhs_msv_emr_LAT",
-            "rhs_msv_emr_grenadier",
-            "rhs_msv_emr_arifleman",
-            "rhs_msv_emr_machinegunner",
-            "rhs_msv_emr_marksman",
-            "rhs_msv_emr_at",
-            "rhs_msv_emr_aa",
-            "rhs_msv_emr_medic",
-            "rhs_msv_emr_engineer", 
-            "rhs_msv_emr_RShG2"
-        ],
-        {removeVest _this;}
-    ],
-    [
-        [
-            "rhs_vdv_des_officer_armored",
-            "rhs_vdv_des_sergeant",
-            "rhs_vdv_des_junior_sergeant",
-            "rhs_vdv_des_rifleman_lite",
-            "rhs_vdv_des_rifleman",
-            "rhs_vdv_des_LAT",
-            "rhs_vdv_des_grenadier",
-            "rhs_vdv_des_arifleman_rpk",
-            "rhs_vdv_des_machinegunner",
-            "rhs_vdv_des_rifleman_asval",
-            "rhs_vdv_des_marksman_asval",
-            "rhs_vdv_des_marksman",
-            "rhs_vdv_des_at",
-            "rhs_vdv_des_aa",
-            "rhs_vdv_des_medic",
-            "rhs_vdv_des_engineer",
-            "rhs_vdv_des_efreitor"
-        ],
-        {removeVest _this;}
-    ],
 
     // Make sure a slingloaded object is local to the helicopter pilot (avoid desync and rope break)
     [
@@ -240,6 +198,3 @@ KPLIB_objectInits = [
         {[_this, ["ACRE_PRC77", "Upper Dash", "Dash", false, ["external"], [], "ACRE_PRC77", [], ["intercom_1"]], false, {}] call acre_api_fnc_addRackToVehicle;}
     ]
 ];
-
-
-
