@@ -421,8 +421,6 @@ blufor_squad_para = [
 */
 elite_vehicles = [
     "rhsusf_mkvsoc",                                                    // Mk.V SOCOM
-    "rhsusf_m1a1aim_tuski_wd",                                          // M1A1SA (Tusk I)
-    "rhsusf_m1a2sep1tuskiiwd_usarmy",                                   // M1A2SEPv1 (Tusk II)
     "rhsusf_m109_usarmy",                                               // M109A6
     "B_UAV_02_dynamicLoadout_F",                                        // MQ-4A Greyhawk
     "B_T_UAV_03_dynamicLoadout_F",                                      // MQ-12 Falcon
@@ -435,14 +433,11 @@ elite_vehicles = [
     "USAF_F22_Heavy",                                                   // F-22A Raptor (Heavy)
     "USAF_F35A_STEALTH",                                                // F-35A Lightning II
     "USAF_F35A",                                                        // F-35A Lightning II (Heavy)
-    "FIR_A10C",                                                         // A-10C (CAS)
     "FIR_F15C",                                                         // F-15C Eagle
     "FIR_F15D",                                                         // F-15D Eagle
     "FIR_F15E",                                                         // F-15E Strike Eagle
     "JS_JC_FA18E",                                                      // F/A-18 E Super Hornet
     "JS_JC_FA18F",                                                      // F/A-18 F Super Hornet
-    "B_Plane_Fighter_01_F",                                             // F/A-181 Black Wasp II
-    "B_Plane_Fighter_01_Stealth_F",                                     // F/A-181 Black Wasp II (Stealth)
     "B_T_VTOL_01_armed_F",                                              // V-44 X Blackfish (Armed)
     "rhsusf_stryker_m1134_wd",                                          // M1134 Stryker (ATGM)
     "rhsusf_m1165a1_gmv_m134d_m240_socom_d"                             // SOCOM M134 Minigun Variant
