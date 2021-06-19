@@ -21,21 +21,23 @@ while {((getPos (leader _grp)) distance _startpos) < 100} do {
 
     _startpos = getPos (leader _grp);
 
-    _waypoint = _grp addWaypoint [_objPos, 100];
-    _waypoint setWaypointType "MOVE";
-    _waypoint setWaypointSpeed "NORMAL";
-    _waypoint setWaypointBehaviour "AWARE";
-    _waypoint setWaypointCombatMode "YELLOW";
-    _waypoint setWaypointCompletionRadius 30;
+    //_waypoint = _grp addWaypoint [_objPos, 100];
+    //_waypoint setWaypointType "MOVE";
+    //_waypoint setWaypointSpeed "NORMAL";
+    //_waypoint setWaypointBehaviour "AWARE";
+    //_waypoint setWaypointCombatMode "YELLOW";
+    //_waypoint setWaypointCompletionRadius 30;
 
-    _waypoint = _grp addWaypoint [_objPos, 100];
-    _waypoint setWaypointType "SAD";
-    _waypoint = _grp addWaypoint [_objPos, 100];
-    _waypoint setWaypointType "SAD";
-    _waypoint = _grp addWaypoint [_objPos, 100];
-    _waypoint setWaypointType "SAD";
-    _waypoint = _grp addWaypoint [_objPos, 100];
-    _waypoint setWaypointType "CYCLE";
+    //_waypoint = _grp addWaypoint [_objPos, 100];
+    //_waypoint setWaypointType "SAD";
+    //_waypoint = _grp addWaypoint [_objPos, 100];
+    //_waypoint setWaypointType "SAD";
+    //_waypoint = _grp addWaypoint [_objPos, 100];
+    //_waypoint setWaypointType "SAD";
+    //_waypoint = _grp addWaypoint [_objPos, 100];
+    //_waypoint setWaypointType "CYCLE";
+
+    [_grp, _objPos] spawn lambs_wp_fnc_taskAssault;
 
     sleep 90;
 };
