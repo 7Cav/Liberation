@@ -50,7 +50,7 @@ for "_i" from 1 to _amount do {
     _unit setDir (random 360);
     _unit setPos (_positions deleteAt (random (floor (count _positions) - 1)));
 
-    null = [_grp, _grp, 100] call lambs_wp_fnc_taskGarrison;
+    null = [_grp, _grp, 100, [], false, false, -1, false] call lambs_wp_fnc_taskGarrison;
     
     // Disable Liberation garrison AI
     //[_unit, _sector] spawn building_defence_ai;
