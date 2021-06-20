@@ -88,13 +88,7 @@ while { dialog && (alive player) && edit_loadout isEqualTo 0 } do {
             [player, [profileNamespace, _loaded_loadout]] call BIS_fnc_loadInventory;
         };
 
-        if (KP_liberation_arsenalUsePreset) then {
-            if ([_backpack] call KPLIB_fnc_checkGear) then {
-                hint format [ localize "STR_HINT_LOADOUT_LOADED", _loaded_loadout param [0]];
-            };
-        } else {
-            hint format [ localize "STR_HINT_LOADOUT_LOADED", _loaded_loadout param [0]];
-        };
+        hint format [ localize "STR_HINT_LOADOUT_LOADED", _loaded_loadout param [0]];
 
         if ( exit_on_load isEqualTo 1 ) then {
             closeDialog 0;
@@ -133,6 +127,6 @@ if ( edit_loadout > 0 ) then {
         uiSleep 5;
         private _arsenalDisplay = ["RSCDisplayArsenal", "ace_arsenal_display"] select (KP_liberation_ace && KP_liberation_arsenal_type);
         waitUntil {sleep 1; isNull (uinamespace getvariable [_arsenalDisplay, displayNull])};
-        [_backpack] call KPLIB_fnc_checkGear;
+        //[_backpack] call KPLIB_fnc_checkGear;
     };
 };
