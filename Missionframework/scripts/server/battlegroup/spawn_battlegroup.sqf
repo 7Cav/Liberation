@@ -32,7 +32,7 @@ if !(_spawn_marker isEqualTo "") then {
         // Create infantry groups with up to 8 units per squad
         private _grp = createGroup [GRLIB_side_enemy, true];
         for "_i" from 0 to (_target_size - 1) do {
-            if (_i > 0 && {(_i % 6) isEqualTo 0}) then {
+            if (_i > 0 && {(_i % 5) isEqualTo 0}) then {
                 _bg_groups pushBack _grp;
                 _grp = createGroup [GRLIB_side_enemy, true];
             };
