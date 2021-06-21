@@ -149,7 +149,8 @@ allowFunctionsLog = 1;
 
 // As a security measure, functions are by default protected against rewriting during mission.
 // This restriction does not apply in missions previewed from the editor.
-allowFunctionsRecompile = __EVAL([0, 1] select is3DENMultiplayer);
+//allowFunctionsRecompile = __EVAL([0, 1] select is3DENMultiplayer);
+allowFunctionsRecompile = 1;
 
 // Disable specific channels for voice and text communication.
 // MOTD and admin say have exception and will show in global.
@@ -234,6 +235,7 @@ class CfgFunctions {
     #include "CfgFunctions.inc"
     #include "KP\KPPLM\KPPLM_functions.inc"
     #include "Txu_Info\cfgfunctions.inc"
+    #include "vcom\cfgFunctions.hpp"
 };
 class CfgRespawnTemplates {
 
@@ -241,6 +243,28 @@ class CfgRespawnTemplates {
 
 class CfgTaskDescriptions {
     #include "scripts\client\tutorial\CfgTaskDescriptions.inc"
+};
+
+class CfgRemoteExec
+{
+	// List of script functions allowed to be sent from client via remoteExec
+	class Functions
+	{
+		mode = 2;
+		jip = 1;		
+		
+		class vcm_serverask { allowedTargets = 0;jip = 1; };
+		class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+		class SpawnScript { allowedTargets = 0;jip = 1; };
+		class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
+		class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };	
+	};
+	
+	
+};
+
+class Extended_PreInit_EventHandlers {
+	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_Functions\fn_CBASettings.sqf";
 };
 
 #include "ui\liberation_interface.inc"
