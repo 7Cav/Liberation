@@ -13,6 +13,7 @@ GRLIB_whitelisted_tags = [
 GRLIB_whitelisted_steamids = [
 	"76561197963459537", // Sweetwater.I -This shouldnt be here
     "76561197997124640", // Liber.N
+	"76561199181230059", // Liber.N
     "76561198039932196", // Jarvis
     "76561197993187376", // Sypolt.R
 	"76561198099828056", // Whitsel.M    - S3
