@@ -30,7 +30,7 @@ while { GRLIB_endgame isEqualTo 0 } do {
         _grp = createGroup [GRLIB_side_enemy, true];
         _squad = [] call KPLIB_fnc_getSquadComp;
         {
-            [_x, _sector_spawn_pos, _grp, "PRIVATE", 0.5] call KPLIB_fnc_createManagedUnit;
+            [_x, _sector_spawn_pos, _grp, "PRIVATE", 5] call KPLIB_fnc_createManagedUnit;
         } foreach _squad;
     } else {
 
