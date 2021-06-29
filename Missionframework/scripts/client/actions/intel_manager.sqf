@@ -7,8 +7,12 @@ private _near_intel = [];
 private _actionned_captive_units = [];
 private _actionned_intel_items = [];
 
-while {true} do {
-    if ([5] call KPLIB_fnc_hasPermission) then {
+[
+    {
+        params ["_args"];
+        _args params ["_near_people", "_near_intel", "_actionned_captive_units", "_actionned_intel_items"];
+
+        if ([5] call KPLIB_fnc_hasPermission) then {
         _near_people = (getPosATL player) nearEntities [["Man"], 5];
         _near_intel = (getPosATL player) nearEntities [KPLIB_intelObjectClasses, 5];
         {
@@ -38,7 +42,7 @@ while {true} do {
                 _actionned_intel_items = _actionned_intel_items - [_x];
             };
         } forEach _actionned_intel_items;
-    } else {
+        } else {
         {
             removeAllActions _x;
             _actionned_captive_units = _actionned_captive_units - [_x];
@@ -49,5 +53,7 @@ while {true} do {
             _actionned_intel_items = _actionned_intel_items - [_x];
         } forEach _actionned_intel_items;
     };
-    sleep 3;
-};
+
+    }, 3, [_near_people, _near_intel, _actionned_captive_units, _actionned_intel_items]
+
+] call CBA_fnc_addPerFrameHandler;
