@@ -23,8 +23,6 @@ vehicle_unlock_markers = _vehicle_unlock_markers;
 addMissionEventHandler ["Map", {
 	    params ["_mapIsOpened", "_mapIsForced"];
 
-        systemChat "Open Map";
-
         {_x setMarkerColorLocal GRLIB_color_enemy;} forEach (sectors_allSectors - blufor_sectors);
         {_x setMarkerColorLocal GRLIB_color_friendly;} forEach blufor_sectors;
 
