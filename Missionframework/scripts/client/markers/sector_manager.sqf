@@ -18,19 +18,20 @@ private _cfg = configFile >> "cfgVehicles";
 private _sector_count = -1;
 
 uiSleep 1;
+vehicle_unlock_markers = _vehicle_unlock_markers;
 
-while {true} do {
-    waitUntil {
-        uiSleep 1;
-        count blufor_sectors isNotEqualTo _sector_count
-    };
+addMissionEventHandler ["Map", {
+	    params ["_mapIsOpened", "_mapIsForced"];
 
-    {_x setMarkerColorLocal GRLIB_color_enemy;} forEach (sectors_allSectors - blufor_sectors);
-    {_x setMarkerColorLocal GRLIB_color_friendly;} forEach blufor_sectors;
+        systemChat "Open Map";
 
-    {
+        {_x setMarkerColorLocal GRLIB_color_enemy;} forEach (sectors_allSectors - blufor_sectors);
+        {_x setMarkerColorLocal GRLIB_color_friendly;} forEach blufor_sectors;
+
+        {
         _x params ["_marker", "_base"];
-        _marker setMarkerColorLocal ([GRLIB_color_enemy, GRLIB_color_friendly] select (_base in blufor_sectors));
-    } forEach _vehicle_unlock_markers;
-    _sector_count = count blufor_sectors;
-};
+            _marker setMarkerColorLocal ([GRLIB_color_enemy, GRLIB_color_friendly] select (_base in blufor_sectors));
+        } forEach vehicle_unlock_markers;
+
+    }
+];
