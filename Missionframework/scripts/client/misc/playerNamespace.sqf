@@ -20,8 +20,12 @@ private _fobPos = [0, 0, 0];
 private _fobDist = 99999;
 private _fobName = "";
 
-while {true} do {
-    // FOB distance, name and position
+[
+    {
+        params ["_args"];
+        _args params ["_fobPos", "_fobDist", "_fobName"];
+
+        // FOB distance, name and position
     if !(GRLIB_all_fobs isEqualTo []) then {
         _fobPos = [] call KPLIB_fnc_getNearestFob;
         _fobDist = player distance2d _fobPos;
@@ -63,7 +67,8 @@ while {true} do {
     player setVariable ["KPLIB_ownedZeusModule", getAssignedCuratorLogic player];
 
     // Update state in Discord rich presence
-    [] call KPLIB_fnc_setDiscordState;
+    //[] call KPLIB_fnc_setDiscordState;
 
-    sleep 1;
-};
+    }, 1, [_fobPos, _fobDist, _fobName]
+
+] call CBA_fnc_addPerFrameHandler;
