@@ -14,10 +14,12 @@ veh_action_distance = 10;
     KPLIB_o_allVeh_classes
 ];
 
-while {true} do {
-    waitUntil {sleep 2; player getVariable ['KPLIB_fobDist', 99999] < GRLIB_fob_range};
+[
+    {
+        params ["_args"];
+        _args params ["_recycleable_vehicles", "_recycleable_classnames"];
 
-    if ([4] call KPLIB_fnc_hasPermission) then {
+        if ([4] call KPLIB_fnc_hasPermission) then {
         private _detected_vehicles = (getPos player) nearObjects veh_action_detect_distance select {
             (((toLower (typeof _x)) in _recycleable_classnames && (({alive _x} count (crew _x)) == 0 || unitIsUAV _x) && (locked _x == 0 || locked _x == 1)) ||
             (toLower (typeOf _x)) in KPLIB_b_buildings_classes ||
@@ -68,5 +70,6 @@ while {true} do {
         } forEach _recycleable_vehicles;
     };
 
-    sleep 3;
-};
+    }, 3, [_recycleable_vehicles, _recycleable_classnames]
+
+] call CBA_fnc_addPerFrameHandler;
