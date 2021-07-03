@@ -6,9 +6,12 @@ private [ "_unflippable_vehicles", "_detected_vehicles", "_next_vehicle", "_next
 _unflippable_vehicles = [];
 veh_action_distance = 10;
 
-while { true } do {
+[
+    {
+        params ["_args"];
+        _args params ["_unflippable_vehicles"];
 
-    if ([5] call KPLIB_fnc_hasPermission) then {
+        if ([5] call KPLIB_fnc_hasPermission) then {
 
         _detected_vehicles = ((getpos player) nearEntities [["Tank","APC","IFV","Car"], veh_action_distance]) select {
             (count crew _x) isEqualTo 0 &&
@@ -54,5 +57,6 @@ while { true } do {
         } foreach _unflippable_vehicles;
     };
 
-    sleep 3;
-};
+    }, 3, [_unflippable_vehicles]
+
+] call CBA_fnc_addPerFrameHandler;
