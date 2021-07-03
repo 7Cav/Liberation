@@ -440,3 +440,7 @@ elite_vehicles = [
     "B_Plane_Fighter_01_Stealth_F",                                     // F/A-181 Black Wasp II (Stealth)
     "B_T_VTOL_01_armed_F"                                               // V-44 X Blackfish (Armed)
 ];
+
+ignore_clearcargo_items = [
+    "ACE_medicalSupplyCrate"
+];

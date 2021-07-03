@@ -442,3 +442,7 @@ elite_vehicles = [
     "rhsusf_stryker_m1134_wd",                                          // M1134 Stryker (ATGM)
     "rhsusf_m1165a1_gmv_m134d_m240_socom_d"                             // SOCOM M134 Minigun Variant
 ];
+
+ignore_clearcargo_items = [
+    "ACE_medicalSupplyCrate"
+];
