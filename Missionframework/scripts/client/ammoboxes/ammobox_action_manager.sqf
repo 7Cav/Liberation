@@ -10,9 +10,12 @@ _managed_trucks = [];
 _managed_boxes = [];
 _managed_areas = [];
 
-while {true} do {
+[
+    {
+        params ["_args"];
+        _args params ["_managed_trucks", "_managed_boxes", "_managed_areas"];
 
-    if ([5] call KPLIB_fnc_hasPermission) then {
+        if ([5] call KPLIB_fnc_hasPermission) then {
 
         _nearammoboxes = ((getpos player) nearEntities [KPLIB_crates, 10]);
         _neartransporttrucks = ((getpos player) nearEntities [KPLIB_transport_classes, 10]);
@@ -123,6 +126,6 @@ while {true} do {
 
     };
 
-    sleep 3;
+    }, 3, [_managed_trucks, _managed_boxes, _managed_areas]
 
-};
+] call CBA_fnc_addPerFrameHandler;
