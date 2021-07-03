@@ -33,4 +33,4 @@ civinfo_delivered = compileFinal preprocessFileLineNumbers "scripts\server\civin
 
 asymm_notifications = compileFinal preprocessFileLineNumbers "scripts\client\asymmetric\asymm_notifications.sqf";
 
-execVM "scripts\shared\diagnostics.sqf";
+//execVM "scripts\shared\diagnostics.sqf";
