@@ -171,9 +171,9 @@ force force ace_medical_gui_maxDistance = 3.4;
 force force ace_medical_ivFlowRate = 1.2;
 force force ace_medical_limping = 1;
 force force ace_medical_painCoefficient = 0.5;
-force force ace_medical_playerDamageThreshold = 15;
+force force ace_medical_playerDamageThreshold = 20;
 force force ace_medical_spontaneousWakeUpChance = 0.85;
-force force ace_medical_spontaneousWakeUpEpinephrineBoost = 1.4;
+force force ace_medical_spontaneousWakeUpEpinephrineBoost = 2.0;
 force force ace_medical_statemachine_AIUnconsciousness = false;
 force force ace_medical_statemachine_cardiacArrestTime = 270;
 force force ace_medical_statemachine_cardiacArrestBleedoutEnabled = false;
@@ -684,32 +684,6 @@ force cba_disposable_replaceDisposableLauncher = true;
 cba_events_repetitionMode = 1;
 cba_optics_usePipOptics = true;
 
-// cScripts Mission Settings
-force force cScripts_Settings_allowCustomInit = true;
-force force cScripts_Settings_allowCustomTagging = true;
-force force cScripts_Settings_allowInsigniaApplication = true;
-force force cScripts_Settings_curatorImmortality = true;
-force force cScripts_Settings_enable7cavZeusModules = true;
-force force cScripts_Settings_enableStartHint = true;
-force force cScripts_Settings_enforceEyewereBlacklist = true;
-force force cScripts_Settings_jumpSimulation = 1;
-force force cScripts_Settings_jumpSimulationGlasses = true;
-force force cScripts_Settings_jumpSimulationHat = true;
-force force cScripts_Settings_jumpSimulationNVG = true;
-force force cScripts_Settings_setAiSystemDifficulty = 1;
-force force cScripts_Settings_setCustomHintText = "";
-force force cScripts_Settings_setCustomHintTopic = "";
-force force cScripts_Settings_setFortifyBudget = 950;
-force force cScripts_Settings_setFortifyRestriction = 1;
-force force cScripts_Settings_setMissionType = 3;
-force force cScripts_Settings_setPlayerRank = true;
-force force cScripts_Settings_setRadio = true;
-force force cScripts_Settings_setStartupDelay = 30;
-force force cScripts_Settings_showDiaryRecords = true;
-force force cScripts_Settings_useCustomSupplyInventory = false;
-force force cScripts_Settings_useCustomVehicleInventory = true;
-force force cScripts_Settings_useCustomVehicleSettings = true;
-
 // STUI Settings
 STGI_Settings_Enabled = true;
 STGI_Settings_UnconsciousFadeEnabled = true;
@@ -771,3 +745,11 @@ force lambs_main_radioEast = 500;
 force lambs_main_radioGuer = 500;
 force lambs_main_radioShout = 150.165;
 force lambs_main_radioWest = 500;
+
+// VCOM
+Vcm_AISkills_East_AimingAccuracy = 0.10;
+Vcm_AISkills_General_AimingAccuracy = 0.10;
+Vcm_AISkills_Resistance_AimingAccuracy = 0.10;
+Vcm_AISkills_West_AimingAccuracy = 0.10;
+
+Vcm_DrivingActivated = true;
