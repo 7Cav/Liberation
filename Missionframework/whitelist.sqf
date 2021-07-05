@@ -55,7 +55,8 @@ GRLIB_whitelisted_steamids = [
     "76561198059485118", // Lucander
 	"76561198009849378", // SGT.Stewart.B
 	"76561198031348897", // Gibbs.K
-	"76561198044636421"  // Phoenix.G (Senpai)
+	"76561198044636421",  // Phoenix.G (Senpai)
+	"76561198030252880"
 ];
 
 // Allowed individual player names. Note that this method is not very secure contrary to SteamIDs.
