@@ -7,15 +7,15 @@
 */
 
 // Enemy infantry classes
-opfor_officer = "rhs_msv_emr_officer";                                  // Officer
+opfor_officer = "rhs_msv_emr_officer_armored";                          // Officer
 opfor_squad_leader = "rhs_msv_emr_sergeant";                            // Squad Leader
 opfor_team_leader = "rhs_msv_emr_efreitor";                             // Team Leader
 opfor_sentry = "rhs_msv_emr_rifleman";                                  // Rifleman (Lite)
 opfor_rifleman = "rhs_msv_emr_rifleman";                                // Rifleman
-opfor_rpg = "rhs_msv_emr_LAT";                                          // Rifleman (LAT)
+opfor_rpg = "rhs_msv_emr_at";                                           // Rifleman (LAT)
 opfor_grenadier = "rhs_msv_emr_grenadier";                              // Grenadier
 opfor_machinegunner = "rhs_msv_emr_arifleman";                          // Autorifleman
-opfor_heavygunner = "rhs_msv_emr_machinegunner";                        // Heavy Gunner
+opfor_heavygunner = "rhs_msv_emr_arifleman";                            // Heavy Gunner
 opfor_marksman = "rhs_msv_emr_marksman";                                // Marksman
 opfor_sharpshooter = "rhs_msv_emr_marksman";                            // Sharpshooter
 opfor_sniper = "rhs_msv_emr_marksman";                                  // Sniper
@@ -44,9 +44,9 @@ Therefore, adding the same value twice or three times means they are more likely
 Think of them like garrison or military police forces, which are more meant to control the local population instead of fighting enemy armies. */
 militia_squad = [
     "rhs_msv_emr_rifleman",                                             // Rifleman
+    "rhs_msv_emr_arifleman",                                            // Autorifleman
     "rhs_msv_emr_rifleman",                                             // Rifleman
-    "rhs_msv_emr_rifleman",                                             // Rifleman
-    "rhs_msv_emr_LAT",                                                  // Rifleman (AT)
+    "rhs_msv_emr_at",                                                   // Rifleman (AT)
     "rhs_msv_emr_arifleman",                                            // Autorifleman
     "rhs_msv_emr_marksman",                                             // Marksman
     "rhs_msv_emr_medic",                                                // Medic

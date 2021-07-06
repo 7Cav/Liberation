@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1811;
+		nextID=1874;
 	};
 	class Camera
 	{
-		pos[]={14014.683,68.703438,2803.1353};
-		dir[]={-0.42449084,-0.80017555,0.42385542};
-		up[]={-0.56623268,0.59976721,0.5653801};
-		aside[]={0.70661825,-2.1915184e-006,0.70768374};
+		pos[]={13944.522,52.649673,2814.6072};
+		dir[]={0.76534444,-0.64237714,0.039993782};
+		up[]={0.64150184,0.76638865,0.033522271};
+		aside[]={0.05218472,-1.8626451e-009,-0.99863744};
 	};
 };
 binarizationWanted=0;
@@ -43,6 +43,7 @@ addons[]=
 	"ace_interaction",
 	"ace_dragging",
 	"A3_Structures_F_Civ_Camping",
+	"emr_main",
 	"ace_logistics_wirecutter",
 	"A3_Structures_F_Research",
 	"A3_Structures_F_Ind_Shed",
@@ -81,7 +82,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=27;
+		items=28;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -147,122 +148,128 @@ class AddonsMetaData
 		};
 		class Item9
 		{
+			className="emr_main";
+			name="Enhanced Movement Rework";
+			author="Simplex Team";
+		};
+		class Item10
+		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item10
+		class Item11
 		{
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item11
+		class Item12
 		{
 			className="ace_concertina_wire";
 			name="ACE3 - Concertina Wire";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item12
+		class Item13
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item13
+		class Item14
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item14
+		class Item15
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item16
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item17
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item18
 		{
 			className="A3_Boat_F_Jets";
 			name="Arma 3 Jets - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item18
+		class Item19
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item19
+		class Item20
 		{
 			className="ace_vector";
 			name="ACE3 - Vector";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item20
+		class Item21
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item22
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item22
+		class Item23
 		{
 			className="rhsusf_c_troops";
 			name="RHSUSF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item23
+		class Item24
 		{
 			className="ace_compat_rhs_usf3";
 			name="ACE3 - RHS USF Compatibility";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item24
+		class Item25
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item25
+		class Item26
 		{
 			className="FIR_PilotCrewPack_US";
 			name="FIR_PilotCrewPack_US";
 		};
-		class Item26
+		class Item27
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
@@ -27611,8 +27618,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={13992.651,20.053087,2820.0076};
-								angles[]={0,2.3808486,0};
+								position[]={13992.651,20.053116,2820.0081};
+								angles[]={0,2.3808558,0};
 							};
 							side="West";
 							flags=5;
@@ -27656,6 +27663,25 @@ class Mission
 							{
 								class Attribute0
 								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute1
+								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -27673,7 +27699,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -27692,7 +27718,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 					};
@@ -28456,8 +28482,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={13990.045,19.855854,2817.9812};
-								angles[]={0,2.3808486,0};
+								position[]={13990.045,19.855839,2817.981};
+								angles[]={0,2.3808558,0};
 							};
 							side="West";
 							flags=5;
@@ -28497,10 +28523,28 @@ class Mission
 							};
 							id=4698;
 							type="B_Soldier_F";
-							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="speaker";
 									expression="_this setspeaker _value;";
@@ -28519,7 +28563,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -28538,7 +28582,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 					};
@@ -29300,8 +29344,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={13987.999,19.610939,2815.4563};
-								angles[]={0,2.3808486,0};
+								position[]={13988,19.610956,2815.4561};
+								angles[]={0,2.3808558,0};
 							};
 							side="West";
 							flags=5;
@@ -29345,6 +29389,25 @@ class Mission
 							{
 								class Attribute0
 								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute1
+								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -29362,7 +29425,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -29381,7 +29444,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 					};
@@ -29557,6 +29620,7 @@ class Mission
 							};
 							id=4711;
 							type="B_Soldier_TL_F";
+							atlOffset=3.2424927e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -30141,8 +30205,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={13985.634,19.394733,2813.4612};
-								angles[]={0,2.3808486,0};
+								position[]={13985.634,19.394714,2813.4609};
+								angles[]={0,2.3808558,0};
 							};
 							side="West";
 							flags=5;
@@ -30186,6 +30250,25 @@ class Mission
 							{
 								class Attribute0
 								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute1
+								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -30203,7 +30286,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -30222,7 +30305,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item9
@@ -30661,7 +30744,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={13987.979,19.900471,2819.6516};
+								position[]={13987.979,19.900446,2819.6521};
 								angles[]={0,2.3808558,0};
 							};
 							side="West";
@@ -30707,6 +30790,25 @@ class Mission
 							{
 								class Attribute0
 								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute1
+								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -30724,7 +30826,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -30743,7 +30845,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item1
@@ -30751,8 +30853,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={13987.159,19.824076,2818.927};
-								angles[]={0,2.3808486,0};
+								position[]={13987.16,19.824099,2818.927};
+								angles[]={0,2.3808558,0};
 							};
 							side="West";
 							flags=5;
@@ -30792,10 +30894,28 @@ class Mission
 							};
 							id=4726;
 							type="B_medic_F";
-							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="speaker";
 									expression="_this setspeaker _value;";
@@ -30814,7 +30934,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -30833,7 +30953,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item2
@@ -30841,8 +30961,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={13987.017,19.972008,2820.9133};
-								angles[]={0,2.3808486,0};
+								position[]={13987.017,19.971987,2820.9131};
+								angles[]={0,2.3808558,0};
 							};
 							side="West";
 							flags=5;
@@ -30882,9 +31002,29 @@ class Mission
 							};
 							id=4727;
 							type="B_medic_F";
+							atlOffset=-1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="speaker";
 									expression="_this setspeaker _value;";
@@ -30903,7 +31043,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -30922,7 +31062,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item3
@@ -30930,8 +31070,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={13985.968,19.872234,2820.0911};
-								angles[]={0,2.3808486,0};
+								position[]={13985.968,19.872232,2820.0911};
+								angles[]={0,2.3808558,0};
 							};
 							side="West";
 							flags=5;
@@ -30971,10 +31111,28 @@ class Mission
 							};
 							id=4728;
 							type="B_medic_F";
-							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="speaker";
 									expression="_this setspeaker _value;";
@@ -30993,7 +31151,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -31012,7 +31170,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 					};
@@ -33368,6 +33526,7 @@ class Mission
 							};
 							id=4757;
 							type="B_helicrew_F";
+							atlOffset=1.9073486e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33507,6 +33666,7 @@ class Mission
 					{
 					};
 					id=4756;
+					atlOffset=1.9073486e-005;
 					class CustomAttributes
 					{
 						class Attribute0
