@@ -751,5 +751,3 @@ Vcm_AISkills_East_AimingAccuracy = 0.10;
 Vcm_AISkills_General_AimingAccuracy = 0.10;
 Vcm_AISkills_Resistance_AimingAccuracy = 0.10;
 Vcm_AISkills_West_AimingAccuracy = 0.10;
-
-Vcm_DrivingActivated = true;
