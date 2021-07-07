@@ -43,7 +43,6 @@ addons[]=
 	"ace_interaction",
 	"ace_dragging",
 	"A3_Structures_F_Civ_Camping",
-	"emr_main",
 	"ace_logistics_wirecutter",
 	"A3_Structures_F_Research",
 	"A3_Structures_F_Ind_Shed",
