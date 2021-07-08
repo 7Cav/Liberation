@@ -39,13 +39,7 @@ if (!_clearedtobuildfob) then {
     FOB_build_in_progress = false;
     publicVariable "FOB_build_in_progress";
 } else {
-    if ( !_clearedtobuildsector ) then {
-        hint format [localize "STR_FOB_BUILDING_IMPOSSIBLE_SECTOR",floor _minsectordist,floor _distsector];
-        FOB_build_in_progress = false;
-        publicVariable "FOB_build_in_progress";
-    } else {
-        buildtype = 99;
-        dobuild = 1;
-        deleteVehicle (_this select 0);
-    };
+    buildtype = 99;
+    dobuild = 1;
+    deleteVehicle (_this select 0);
 };
