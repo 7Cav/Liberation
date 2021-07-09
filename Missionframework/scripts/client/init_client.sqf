@@ -52,7 +52,7 @@ execVM "scripts\client\commander\enforce_whitelist.sqf";
 execVM "scripts\client\markers\empty_vehicles_marker.sqf";
 execVM "scripts\client\markers\fob_markers.sqf";
 if (!KP_liberation_high_command && KP_liberation_mapmarkers) then {execVM "scripts\client\markers\group_icons.sqf";};
-execVM "scripts\client\markers\hostile_groups.sqf";
+//execVM "scripts\client\markers\hostile_groups.sqf";
 if (KP_liberation_mapmarkers) then {execVM "scripts\client\markers\huron_marker.sqf";} else {deleteMarkerLocal "huronmarker"};
 execVM "scripts\client\markers\sector_manager.sqf";
 //execVM "scripts\client\markers\spot_timer.sqf";
