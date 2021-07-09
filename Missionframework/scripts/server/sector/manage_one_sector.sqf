@@ -176,7 +176,10 @@ if ((!(_sector in blufor_sectors)) && (([markerPos _sector, [_opforcount] call K
 
     {
         _vehicle = [_sectorpos, _x] call KPLIB_fnc_spawnVehicle;
-        [group ((crew _vehicle) select 0),_sectorpos] spawn add_defense_waypoints;
+        //[group ((crew _vehicle) select 0),_sectorpos] spawn add_defense_waypoints;
+        _veh_grp = group ((crew _vehicle) select 0);
+        [_veh_grp, [_veh_grp], 1000, 4, [], true] call lambs_wp_fnc_taskPatrol;
+
         _managed_units pushback _vehicle;
         {_managed_units pushback _x;} foreach (crew _vehicle);
         sleep 0.25;
