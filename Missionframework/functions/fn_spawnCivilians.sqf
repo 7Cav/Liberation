@@ -73,11 +73,12 @@ for "_i" from 1 to _amount do {
         ] call KPLIB_fnc_createManagedUnit
     );
 
-    [_grp] call add_civ_waypoints;
+    //[_grp] call add_civ_waypoints;
+    [_grp, [_grp], 200, 4, [], true] call lambs_wp_fnc_taskPatrol;
 };
 
-{
-    [_x] call civScared;
-} forEach _civs;
+//{
+//    [_x] call civScared;
+//} forEach _civs;
 
 _civs
