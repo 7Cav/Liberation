@@ -145,3 +145,6 @@ if (KP_liberation_restart > 0) then {
 missionNamespace setVariable ["SA_MAX_TOWED_CARGO", 99];
 missionNamespace setVariable ["SA_TOW_LOCKED_VEHICLES_ENABLED", true];
 execVM "scripts\server\custom\fn_advancedTowingInit.sqf";
+
+// Enable Advanced Sling
+execVM "scripts\server\custom\fn_advancedSlingLoadingInit.sqf";
