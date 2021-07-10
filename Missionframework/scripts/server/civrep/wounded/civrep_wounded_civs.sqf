@@ -4,7 +4,7 @@ if (!(_sector in sectors_bigtown) && !(_sector in sectors_capture) && !(_sector 
 
 if (KP_liberation_civrep_debug > 0) then {[format ["civrep_wounded_civs.sqf -> Spawned for %1 on: %2", markerText _sector, debug_source], "CIVREP"] remoteExecCall ["KPLIB_fnc_log", 2];};
 
-private _count = 2 + (ceil (random 2));
+private _count = 1;
 private _grp = creategroup [GRLIB_side_civilian, true];
 private _civs = [];
 private _markers = [];
