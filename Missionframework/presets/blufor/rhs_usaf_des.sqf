@@ -29,7 +29,8 @@ rotary_cas_classname = "B_helicrew_F";                                  // This 
 rotary_logistics_classname = "B_soldier_repair_F";                      // This defines the pilot for rotary logistics.
 KP_liberation_little_bird_classname = "RHS_MELB_MH6M";                  // These are the little birds which spawn on the Freedom or at Chimera base.
 KP_liberation_blackhawk_classname = "RHS_UH60M_d";                      // These are the blackhawks which spawn at the Freedom or at Chimera base.
-KP_liberation_black_wasp_classname = "B_Plane_Fighter_01_F";            // These are the F/A-181 Black Wasp IIs that spawn at the freedom or Chimera base. 
+KP_liberation_black_wasp_classname = "B_Plane_Fighter_01_F";            // These are the F/A-181 Black Wasp IIs that spawn at the freedom or Chimera base.
+KP_liberation_a10_classname = "FIR_A10C_Blank";                         // A-10C
 KP_liberation_boat_classname = "B_Boat_Transport_01_F";                 // These are the boats which spawn at the stern of the Freedom.
 KP_liberation_truck_classname = "rhsusf_M977A4_BKIT_usarmy_d";          // These are the trucks which are used in the logistic convoy system.
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources.
@@ -284,6 +285,7 @@ support_vehicles = [
     [Respawn_truck_typename,200,0,100],
     [FOB_box_typename,300,500,0],
     [FOB_truck_typename,300,500,75],
+    ["FIR_Baseplate",100,100,100],
     [KP_liberation_small_storage_building,0,0,0],
     [KP_liberation_large_storage_building,0,0,0],
     [KP_liberation_recycle_building,250,0,0],

@@ -49,5 +49,6 @@ private _veh = objNull;
     ["littlebird_", KP_liberation_little_bird_classname],
     ["boat_", KP_liberation_boat_classname],
     ["blackhawk_", KP_liberation_blackhawk_classname],
-    ["blackwasp_", KP_liberation_black_wasp_classname]
+    ["blackwasp_", KP_liberation_black_wasp_classname],
+    ["a10_", KP_liberation_a10_classname]
 ];
