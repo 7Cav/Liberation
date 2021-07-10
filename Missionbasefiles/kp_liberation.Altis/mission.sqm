@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=7866;
+		nextID=7875;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1874;
+		nextID=1954;
 	};
 	class Camera
 	{
-		pos[]={14484.388,53.361343,5888.8457};
-		dir[]={0.0075728879,-0.99994999,-0.0065304665};
-		up[]={0.75726759,0.00999978,-0.65302837};
-		aside[]={-0.65306103,0,-0.75730544};
+		pos[]={27425.623,80.238899,5265.8052};
+		dir[]={0.07239718,-0.47261465,0.87829524};
+		up[]={0.038825724,0.88126832,0.47102004};
+		aside[]={0.99662483,-3.3614924e-008,-0.082151629};
 	};
 };
 binarizationWanted=0;
@@ -65,13 +65,18 @@ addons[]=
 	"ace_explosives",
 	"FIR_PilotCrewPack_US",
 	"ace_gforces",
-	"ace_parachute"
+	"ace_parachute",
+	"A3_Supplies_F_Heli_Slingload",
+	"ace_rearm",
+	"ace_cargo",
+	"ace_refuel",
+	"ace_repair"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=24;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -130,69 +135,110 @@ class AddonsMetaData
 		};
 		class Item8
 		{
+			className="emr_main";
+			name="Enhanced Movement Rework";
+			author="Simplex Team";
+		};
+		class Item9
+		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item9
+		class Item10
 		{
 			className="A3_Boat_F_Jets";
 			name="Arma 3 Jets - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item10
+		class Item11
 		{
 			className="ace_vector";
 			name="ACE3 - Vector";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item11
+		class Item12
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item13
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item13
+		class Item14
 		{
 			className="rhsusf_c_troops";
 			name="RHSUSF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item14
+		class Item15
 		{
 			className="ace_compat_rhs_usf3";
 			name="ACE3 - RHS USF Compatibility";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item15
+		class Item16
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item16
+		class Item17
 		{
 			className="FIR_PilotCrewPack_US";
 			name="FIR_PilotCrewPack_US";
 		};
-		class Item17
+		class Item18
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item19
+		{
+			className="A3_Supplies_F_Heli";
+			name="Arma 3 Helicopters - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item20
+		{
+			className="ace_rearm";
+			name="ACE3 - Rearm";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item21
+		{
+			className="ace_cargo";
+			name="ACE3 - Cargo";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item22
+		{
+			className="ace_refuel";
+			name="ACE3 - Refuel";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item23
+		{
+			className="ace_repair";
+			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
@@ -201,7 +247,8 @@ class AddonsMetaData
 dlcs[]=
 {
 	"Jets",
-	"RHS_USAF"
+	"RHS_USAF",
+	"Heli"
 };
 randomSeed=7564349;
 class ScenarioData
@@ -289,7 +336,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=527;
+		items=531;
 		class Item0
 		{
 			dataType="Marker";
@@ -1005,11 +1052,11 @@ class Mission
 		class Item20
 		{
 			dataType="Marker";
-			position[]={15507.34,81.549805,14455.704};
+			position[]={6700.3374,80.897705,10029.925};
 			name="opfor_airspawn_10";
 			type="Empty";
 			id=1202;
-			atlOffset=145.65335;
+			atlOffset=162.55206;
 		};
 		class Item21
 		{
@@ -19453,6 +19500,73 @@ class Mission
 			name="KP_ARRAY_UNITS_V3";
 			id=7865;
 			atlOffset=185.97;
+		};
+		class Item527
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={27439.635,23.541992,5317.8481};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="a10_0";
+			};
+			id=7868;
+			type="Land_ClutterCutter_small_F";
+			atlOffset=1.335144e-005;
+		};
+		class Item528
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={27411.633,24.905495,5420.6436};
+				angles[]={-0,4.6886816,6.2826972};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=7871;
+			type="B_Slingload_01_Ammo_F";
+			atlOffset=0.00043869019;
+		};
+		class Item529
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={27411.93,24.905602,5414.0957};
+				angles[]={-0,4.7047567,6.2826972};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=7872;
+			type="B_Slingload_01_Fuel_F";
+			atlOffset=0.00042152405;
+		};
+		class Item530
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={27411.621,24.636663,5407.6235};
+				angles[]={0,4.6986856,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=7873;
+			type="B_Slingload_01_Repair_F";
+			atlOffset=209.24614;
 		};
 	};
 	class Connections
