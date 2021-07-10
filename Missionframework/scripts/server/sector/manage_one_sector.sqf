@@ -265,7 +265,7 @@ if ((!(_sector in blufor_sectors)) && (([markerPos _sector, [_opforcount] call K
 
             active_sectors = active_sectors - [_sector]; publicVariable "active_sectors";
 
-            sleep 600;
+            sleep 1200;
 
             {
                 if (_x isKindOf "Man") then {
