@@ -6,8 +6,14 @@ if (KP_liberation_asymmetric_debug > 0) then {[format ["Loop spawned on: %1", de
 
 KP_liberation_asymmetric_sectors = [];
 
-while {GRLIB_endgame isEqualTo 0} do {
-    private _sectors_to_remove = [];
+waitUntil {sleep 1; !isNil "active_sectors"};
+
+[
+    {
+        params ["_args"];
+        _args params [];
+
+        private _sectors_to_remove = [];
 
     {
         if (!(_x in blufor_sectors) || (KP_liberation_civ_rep > -25)) then {
@@ -59,5 +65,7 @@ while {GRLIB_endgame isEqualTo 0} do {
     };
     publicVariable "KP_liberation_asymmetric_sectors";
     publicVariable "asymm_blocked_sectors";
-    sleep 10;
-};
+
+    }, 10, []
+
+] call CBA_fnc_addPerFrameHandler;
