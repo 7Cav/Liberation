@@ -1,8 +1,12 @@
 waitUntil {sleep 1; !isNil "active_sectors"};
 
-while {true} do {
-    uiSleep 600;
-    private _markedgroups = 0;
+[
+    {
+        params ["_args"];
+        _args params [];
+
+        private _markedgroups = 0;
+    
     {
         private _groupOwner = groupOwner _x;
         private _owner = "Server";
@@ -22,4 +26,7 @@ while {true} do {
             };
         };
     } forEach allGroups;
-};
+
+    }, 600, []
+
+] call CBA_fnc_addPerFrameHandler;
