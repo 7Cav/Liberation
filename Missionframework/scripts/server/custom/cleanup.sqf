@@ -19,10 +19,10 @@ _checkFrequencyDefault = 600;					// sleep default
 _checkFrequencyAccelerated = 120;				// sleep accelerated
 _playerThreshold = 20;							// How many players before accelerated cycle kicks in?
 
-_deadMenLimit = -1;								// Bodies. Set -1 to disable.
+_deadMenLimit = 10;								// Bodies. Set -1 to disable.
 _deadMenDistCheck = TRUE;						// TRUE to delete any bodies that are far from players.
 _deadMenDist = 1000;							// Distance (meters) from players that bodies are not deleted if below max.
-_deadVehiclesLimit = -1;						// Wrecks. Set -1 to disable.
+_deadVehiclesLimit = 10;						// Wrecks. Set -1 to disable.
 _deadVehicleDistCheck = TRUE;					// TRUE to delete any destroyed vehicles that are far from players.
 _deadVehicleDist = 1000;						// Distance (meters) from players that destroyed vehicles are not deleted if below max.
 _craterLimit = 10;								// Craters. Set -1 to disable.
