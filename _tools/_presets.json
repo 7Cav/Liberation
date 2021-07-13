@@ -293,5 +293,20 @@
             "KP_liberation_arsenal": 0
         },
         "workshopId": ""
+    },
+    {
+        "sourceFolder": "kp_liberation.WL_Rosche",
+        "missionName": "kp_liberation",
+        "map": "WL_Rosche",
+        "mapDisplay": "Rosche",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor": 6,
+            "KP_liberation_preset_opfor": 21,
+            "KP_liberation_preset_resistance": 9,
+            "KP_liberation_preset_civilians": 0,
+            "KP_liberation_arsenal": 0
+        },
+        "workshopId": ""
     }
 ]
