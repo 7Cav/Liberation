@@ -10,9 +10,14 @@ forceWeatherChange;
 
 [format ["Set initial weather to: %1 - Param Value: %2 - Time: %3", _newWeather, GRLIB_weather_param, diag_tickTime], "WEATHER"] call KPLIB_fnc_log;
 
-while {GRLIB_endgame isEqualTo 0} do {
-    _newWeather = selectRandom _weathers;
-    (3600 * timeMultiplier) setOvercast _newWeather;
-    [format ["Set next weather transition to: %1 - Time: %2", _newWeather, diag_tickTime], "WEATHER"] call KPLIB_fnc_log;
-    sleep 3000; // Slighty less than weather transition time, as sleep duration is depending on FPS
-};
+[
+    {
+        params ["_args"];
+        _args params ["_newWeather"];
+
+        (3600 * timeMultiplier) setOvercast _newWeather;
+        [format ["Set next weather transition to: %1 - Time: %2", _newWeather, diag_tickTime], "WEATHER"] call KPLIB_fnc_log;
+
+    }, 3000, [_newWeather]
+
+] call CBA_fnc_addPerFrameHandler;
