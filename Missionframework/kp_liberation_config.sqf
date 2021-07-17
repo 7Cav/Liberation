@@ -205,13 +205,13 @@ GRLIB_color_enemy = "ColorOPFOR";                                       // Enemy
 GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy sector marker color (activated).
 
 GRLIB_fob_range = 200;                                                  // Build range around the main FOB building.
-GRLIB_halo_altitude = 2500;                                             // Altitude in metres for the HALO jump.
+GRLIB_halo_altitude = 4000;                                             // Altitude in metres for the HALO jump.
 GRLIB_secondary_missions_costs = [15, 10, 8];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.4;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
 GRLIB_recycling_percentage = 0.4;                                       // Percentage of resources you get back from recycling.
 KP_liberation_production_interval = 25;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
-GRLIB_sector_size = 1500;                                               // Range to activate a sector.
+GRLIB_sector_size = 1200;                                               // Range to activate a sector.
 GRLIB_capture_size = 175;                                               // Range to capture a sector.
 GRLIB_defended_buildingpos_part = 0.4;                                  // Multiplier for defenders in buildings.
 GRLIB_battlegroup_size = 6;                                             // Size of enemy battlegroups.

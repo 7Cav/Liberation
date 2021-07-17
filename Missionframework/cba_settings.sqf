@@ -747,7 +747,30 @@ force lambs_main_radioShout = 150.165;
 force lambs_main_radioWest = 500;
 
 // VCOM
+
+Vcm_DrivingActivatd = true;
+
 Vcm_AISkills_East_AimingAccuracy = 0.10;
 Vcm_AISkills_General_AimingAccuracy = 0.10;
 Vcm_AISkills_Resistance_AimingAccuracy = 0.10;
 Vcm_AISkills_West_AimingAccuracy = 0.10;
+
+Vcm_AISkills_East_courage = 0.80;
+Vcm_AISkills_General_courage = 0.80;
+Vcm_AISkills_Resistance_courage = 0.80;
+Vcm_AISkills_West_courage = 0.80;
+
+Vcm_AISkills_East_general = 0.80;
+Vcm_AISkills_General_general = 0.80;
+Vcm_AISkills_Resistance_general = 0.80;
+Vcm_AISkills_West_general = 0.80;
+
+Vcm_AISkills_East_spotDistance = 0.70;
+Vcm_AISkills_General_spotDistance = 0.70;
+Vcm_AISkills_Resistance_spotDistance = 0.70;
+Vcm_AISkills_West_spotDistance = 0.70;
+
+Vcm_AISkills_East_spotTime = 0.70;
+Vcm_AISkills_General_spotTime = 0.70;
+Vcm_AISkills_Resistance_spotTime = 0.70;
+Vcm_AISkills_West_spotTime = 0.70;
