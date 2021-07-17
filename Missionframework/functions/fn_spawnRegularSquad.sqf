@@ -53,6 +53,7 @@ private _grp = createGroup [GRLIB_side_enemy, true];
 {
     if (_forEachIndex < _corrected_amount) then {
         [_x, _spawnPos, _grp, "PRIVATE", 10] call KPLIB_fnc_createManagedUnit;
+        sleep 0.2;
     };
 } forEach _classnames;
 
