@@ -209,23 +209,24 @@ if ((!(_sector in blufor_sectors)) && (([markerPos _sector, [_opforcount] call K
     if (count _squad2 > 0) then {
         _grp = [_sector, _squad2] call KPLIB_fnc_spawnRegularSquad;
         //[_grp, _sectorpos] spawn add_defense_waypoints;
-        [_grp, [_grp], 200, 4, [], true] call lambs_wp_fnc_taskPatrol;
+        //[_grp, [_grp], 200, 4, [], true] call lambs_wp_fnc_taskPatrol;
+        [_grp, _grp, 100] call lambs_wp_fnc_taskGarrison;
         _managed_units = _managed_units + (units _grp);
     };
 
-    if (count _squad3 > 0) then {
-        _grp = [_sector, _squad3] call KPLIB_fnc_spawnRegularSquad;
-        //[_grp, _sectorpos] spawn add_defense_waypoints;
-        [_grp, [_grp], 200, 4, [], true] call lambs_wp_fnc_taskPatrol;
-        _managed_units = _managed_units + (units _grp);
-    };
+    //if (count _squad3 > 0) then {
+    //    _grp = [_sector, _squad3] call KPLIB_fnc_spawnRegularSquad;
+    //    //[_grp, _sectorpos] spawn add_defense_waypoints;
+    //    [_grp, [_grp], 200, 4, [], true] call lambs_wp_fnc_taskPatrol;
+    //    _managed_units = _managed_units + (units _grp);
+    //};
 
-    if (count _squad4 > 0) then {
-        _grp = [_sector, _squad4] call KPLIB_fnc_spawnRegularSquad;
-        //[_grp, _sectorpos] spawn add_defense_waypoints;
-        [_grp, [_grp], 200, 4, [], true] call lambs_wp_fnc_taskPatrol;
-        _managed_units = _managed_units + (units _grp);
-    };
+    //if (count _squad4 > 0) then {
+    //    _grp = [_sector, _squad4] call KPLIB_fnc_spawnRegularSquad;
+    //    //[_grp, _sectorpos] spawn add_defense_waypoints;
+    //    [_grp, [_grp], 200, 4, [], true] call lambs_wp_fnc_taskPatrol;
+    //    _managed_units = _managed_units + (units _grp);
+    //};
 
     if (_spawncivs && GRLIB_civilian_activity > 0) then {
         _managed_units = _managed_units + ([_sector] call KPLIB_fnc_spawnCivilians);
