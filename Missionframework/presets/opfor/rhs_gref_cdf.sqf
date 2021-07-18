@@ -62,13 +62,13 @@ militia_squad = [
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders.
 militia_vehicles = [
     "rhsgref_nat_uaz_dshkm",
-	"rhsgref_nat_uaz"                                                  // GAZ-233014 (Armed)
+	"rhsgref_nat_uaz_dshkm"                                                  // GAZ-233014 (Armed)
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
 opfor_vehicles = [
     "rhsgref_nat_uaz_dshkm",                                                 // GAZ-233014 (Armed)
-    "rhsgref_nat_uaz",                                                 // GAZ-233014 (Armed)
+    "rhsgref_nat_uaz_dshkm",                                                 // GAZ-233014 (Armed)
     "rhsgref_BRDM2_HQ",                                                 // GAZ-233014 (Armed)
     "rhsgref_BRDM2_ATGM"                                                                                                // T90SA (2016)
 ];
@@ -78,24 +78,18 @@ opfor_vehicles_low_intensity = [
     "rhs_tigr_sts_msv",                                                 // GAZ-233014 (Armed)
     "rhs_tigr_sts_msv",                                               // GAZ-233014 (Armed)
 	"rhsgref_nat_uaz_dshkm",                                                 // GAZ-233014 (Armed)
-    "rhsgref_nat_uaz",                                              // GAZ-233014 (Armed)
+    "rhsgref_nat_uaz_dshkm",                                              // GAZ-233014 (Armed)
     "rhsgref_BRDM2_HQ",                                                 // GAZ-233014 (Armed)
     "rhsgref_BRDM2_ATGM",
-    "rhsgref_ins_2b14"
+    "rhsgref_ins_2b14",
+    "rhs_t90a_tv"
 
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles = [
     "rhsgref_nat_btr70",
-	"O_T_LSV_02_AT_F",
-	"O_T_LSV_02_armed_F",
 	"rhsgref_tla_offroad_armed",
-	"I_E_Offroad_01_comms_F",
-	"I_E_Offroad_01_F",
-	"I_E_Truck_02_transport_F",
-	"I_G_Offroad_01_armed_F",
-	"O_G_Offroad_01_AT_F",
 	"rhsgref_hidf_m1025",
 	"rhsgref_hidf_m113a3_unarmed",
 	"rhsgref_hidf_m113a3_m2",                                                 // GAZ-233014 (Armed)
