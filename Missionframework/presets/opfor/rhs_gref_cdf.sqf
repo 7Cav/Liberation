@@ -80,8 +80,9 @@ opfor_vehicles_low_intensity = [
 	"rhsgref_nat_uaz_dshkm",                                                 // GAZ-233014 (Armed)
     "rhsgref_nat_uaz",                                              // GAZ-233014 (Armed)
     "rhsgref_BRDM2_HQ",                                                 // GAZ-233014 (Armed)
-    "rhsgref_BRDM2_ATGM"
-	                                                    // BTR-80A
+    "rhsgref_BRDM2_ATGM",
+    "rhsgref_ins_2b14"
+
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
