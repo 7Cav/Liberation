@@ -287,7 +287,7 @@
         "configFile": "kp_liberation_config.sqf",
         "variables": {
             "KP_liberation_preset_blufor": 6,
-            "KP_liberation_preset_opfor": 21,
+            "KP_liberation_preset_opfor": 2,
             "KP_liberation_preset_resistance": 9,
             "KP_liberation_preset_civilians": 0,
             "KP_liberation_arsenal": 0
@@ -302,7 +302,7 @@
         "configFile": "kp_liberation_config.sqf",
         "variables": {
             "KP_liberation_preset_blufor": 6,
-            "KP_liberation_preset_opfor": 21,
+            "KP_liberation_preset_opfor": 2,
             "KP_liberation_preset_resistance": 9,
             "KP_liberation_preset_civilians": 0,
             "KP_liberation_arsenal": 0
