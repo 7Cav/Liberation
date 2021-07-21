@@ -323,5 +323,19 @@
             "KP_liberation_arsenal": 0
         },
         "workshopId": ""
+    },
+    {
+        "sourceFolder": "kp_liberation.fallujah",
+        "missionName": "kp_liberation",
+        "map": "Fallujah",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor": 7,
+            "KP_liberation_preset_opfor": 22,
+            "KP_liberation_preset_resistance": 9,
+            "KP_liberation_preset_civilians": 0,
+            "KP_liberation_arsenal": 0
+        },
+        "workshopId": "878715681"
     }
 ]
