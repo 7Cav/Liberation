@@ -282,7 +282,7 @@ _player addAction [
     true,
     "",
     "
-        _originalTarget getVariable ['KPLIB_hasDirectAccess', false]
+        true
         && {isNull (objectParent _originalTarget)}
         && {alive _originalTarget}
         && {!(KP_liberation_production isEqualTo [])}
