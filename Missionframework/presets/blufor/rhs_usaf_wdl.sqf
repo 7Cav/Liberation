@@ -129,6 +129,7 @@ heavy_vehicles = [
     ["RHS_M6_wd",300,250,175],                                          // M6A2
     ["rhsusf_m1a1aim_tuski_wd",400,350,225],                            // M1A1SA (Tusk I)
     ["rhsusf_m1a2sep1tuskiiwd_usarmy",500,400,300],                     // M1A2SEPv1 (Tusk II)
+    ["rhsusf_m1a2sep2tuskiiwd_usarmy",500,400,300],                     // M1A2SEPv2 (Tusk II)
     ["rhsusf_m109_usarmy",600,1250,300],                                // M109A6
     ["rhsusf_M142_usarmy_WD",650,1500,350]                              // M142 HIMARS
 ];
