@@ -341,7 +341,7 @@
     {
         "sourceFolder": "kp_liberation.vt7",
         "missionName": "kp_liberation",
-        "map": "Virolahti",
+        "map": "vt7",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
             "KP_liberation_preset_blufor": 6,
