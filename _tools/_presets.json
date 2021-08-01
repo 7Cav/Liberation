@@ -337,5 +337,19 @@
             "KP_liberation_arsenal": 0
         },
         "workshopId": "878715681"
+    },
+    {
+        "sourceFolder": "kp_liberation.vt7",
+        "missionName": "kp_liberation",
+        "map": "Virolahti",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor": 6,
+            "KP_liberation_preset_opfor": 2,
+            "KP_liberation_preset_resistance": 2,
+            "KP_liberation_preset_civilians": 0,
+            "KP_liberation_arsenal": 0
+        },
+        "workshopId": "1578862234"
     }
 ]
