@@ -180,9 +180,9 @@ if (isServer) then {
 };
 
 // Body/Wreck deletion after cleanup delay
-if (isServer && !isplayer _unit) then {
-    sleep GRLIB_cleanup_delay;
-    hidebody _unit;
-    sleep 10;
-    deleteVehicle _unit;
-};
+//if (isServer && !isplayer _unit) then {
+//    sleep GRLIB_cleanup_delay;
+//    hidebody _unit;
+//    sleep 10;
+//    deleteVehicle _unit;
+//};
