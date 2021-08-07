@@ -27,7 +27,8 @@ if (isNil "KPLIB_sectorCratesSpawned") then {KPLIB_sectorCratesSpawned = [];};
 if !(_sector in KPLIB_sectorCratesSpawned) then {
     KPLIB_sectorCratesSpawned pushBack _sector;
 
-    private _amount = (ceil (random 2)) * GRLIB_resources_multiplier;
+    //private _amount = (ceil (random 2)) * GRLIB_resources_multiplier;
+    private _amount = 1;
     private _spawnPos = [];
     private _j = 0;
 
