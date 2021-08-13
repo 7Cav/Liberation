@@ -56,6 +56,7 @@ GRLIB_whitelisted_steamids = [
 	"76561198009849378", // SGT.Stewart.B
 	"76561198031348897", // Gibbs.K
 	"76561198044636421",  // Phoenix.G (Senpai)
+	"76561197963550741", // Boyd.M       - S3
 	"76561198030252880"
 ];
 
@@ -72,7 +73,6 @@ MP_whitelisted_steamids = [
 	"76561198014921178", // Rogers.S     - MP
 	"76561198968070623", // Connelly.M   - MP
 	"76561198103184850", // Davidson.J   - MP
-	"76561197963550741", // Boyd.M       - MP
     "76561197993187376", // Sypolt.R     - MP
     "76561198064801106", // Tiddens.M    - MP
     "76561198028913012", // Rozhkov.P    - MP
