@@ -223,7 +223,7 @@ GRLIB_civilians_amount = 10;                                            // Civil
 GRLIB_cleanup_delay = 1200;                                             // Time in seconds until bodies of dead soldiers are cleaned up.
 
 GRLIB_blufor_cap = 100;                                                 // Cap for BLUFOR.
-GRLIB_sector_cap = 180;                                                 // Cap for sector defenders.
+GRLIB_sector_cap = 100;                                                 // Cap for sector defenders.
 GRLIB_battlegroup_cap = 150;                                            // Cap for enemy battlegroups.
 GRLIB_patrol_cap = 150;                                                 // Cap for enemy patrols.
 

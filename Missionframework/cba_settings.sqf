@@ -44,7 +44,7 @@ force force ace_mk6mortar_useAmmoHandling = false;
 force force ace_captives_allowHandcuffOwnSide = false;
 force force ace_captives_allowSurrender = true;
 force force ace_captives_requireSurrender = 2;
-force force ace_captives_requireSurrenderAi = true;
+force force ace_captives_requireSurrenderAi = false;
 
 // ACE Common
 force force ace_common_allowFadeMusic = true;
@@ -69,7 +69,7 @@ force ace_cookoff_probabilityCoef = 0.1;
 force force ace_csw_ammoHandling = 2;
 force force ace_csw_defaultAssemblyMode = true;
 ace_csw_dragAfterDeploy = false;
-force force ace_csw_handleExtraMagazines = false;
+force force ace_csw_handleExtraMagazines = true;
 force force ace_csw_progressBarTimeCoefficent = 1;
 
 // ACE Explosives
@@ -104,25 +104,25 @@ force force ace_interaction_enableTeamManagement = true;
 
 // ACE Logistics
 force force ace_cargo_enable = true;
-force force ace_cargo_loadTimeCoefficient = 0.2;
+force force ace_cargo_loadTimeCoefficient = 3;
 force force ace_cargo_paradropTimeCoefficent = 0;
 force force ace_rearm_distance = 20;
 force force ace_rearm_level = 1;
 force force ace_rearm_supply = 1;
 force ace_refuel_hoseLength = 20;
-force force ace_refuel_rate = 6;
-force force ace_repair_addSpareParts = false;
+force force ace_refuel_rate = 3;
+force force ace_repair_addSpareParts = true;
 force force ace_repair_autoShutOffEngineWhenStartingRepair = true;
 force force ace_repair_consumeItem_toolKit = 0;
 force force ace_repair_displayTextOnRepair = true;
-force force ace_repair_engineerSetting_fullRepair = 2;
+force force ace_repair_engineerSetting_fullRepair = 1;
 force force ace_repair_engineerSetting_repair = 0;
 force force ace_repair_engineerSetting_wheel = 0;
 force force ace_repair_fullRepairLocation = 3;
 force force ace_repair_fullRepairRequiredItems = ["ToolKit"];
 force force ace_repair_miscRepairRequiredItems = ["ToolKit"];
-force force ace_repair_repairDamageThreshold = 0.600653;
-force force ace_repair_repairDamageThreshold_engineer = 0.904635;
+force force ace_repair_repairDamageThreshold = 0.8;
+force force ace_repair_repairDamageThreshold_engineer = 0.9;
 force force ace_repair_wheelRepairRequiredItems = [];
 
 // ACE Magazine Repack
@@ -158,10 +158,10 @@ ace_maptools_rotateModifierKey = 1;
 // ACE Medical
 force force ace_medical_ai_enabledFor = 0;
 force force ace_medical_AIDamageThreshold = 0.07;
-force force ace_medical_bleedingCoefficient = 0.25;
-force force ace_medical_blood_bloodLifetime = 900;
+force force ace_medical_bleedingCoefficient = 0.5;
+force force ace_medical_blood_bloodLifetime = 300;
 force force ace_medical_blood_enabledFor = 2;
-force force ace_medical_blood_maxBloodObjects = 50;
+force force ace_medical_blood_maxBloodObjects = 20;
 force force ace_medical_fatalDamageSource = 1;
 force force ace_medical_feedback_bloodVolumeEffectType = 0;
 force force ace_medical_feedback_painEffectType = 0;
@@ -171,7 +171,7 @@ force force ace_medical_gui_maxDistance = 3.4;
 force force ace_medical_ivFlowRate = 1.2;
 force force ace_medical_limping = 1;
 force force ace_medical_painCoefficient = 0.5;
-force force ace_medical_playerDamageThreshold = 20;
+force force ace_medical_playerDamageThreshold = 25;
 force force ace_medical_spontaneousWakeUpChance = 0.85;
 force force ace_medical_spontaneousWakeUpEpinephrineBoost = 2.0;
 force force ace_medical_statemachine_AIUnconsciousness = false;
@@ -206,8 +206,10 @@ force force ace_medical_treatment_locationSurgicalKit = 0;
 force force ace_medical_treatment_medicEpinephrine = 0;
 force force ace_medical_treatment_medicIV = 1;
 force force ace_medical_treatment_medicPAK = 2;
-force force ace_medical_treatment_medicSurgicalKit = 1;
-force force ace_medical_treatment_timeCoefficientPAK = 1;
+force force ace_medical_treatment_medicSurgicalKit = 2;
+force force ace_medical_treatment_timeCoefficientPAK = 0.5;
+force force ace_medical_treatment_maxLitterObjects = 20;
+force force ace_medical_treatment_litterCleanupDelay = 300;
 
 // ACE Name Tags
 ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
@@ -229,9 +231,9 @@ ace_nametags_tagSize = 2;
 // ACE Nightvision
 force force ace_nightvision_aimDownSightsBlur = 0;
 force force ace_nightvision_disableNVGsWithSights = false;
-force force ace_nightvision_effectScaling = 0.6;
-force force ace_nightvision_fogScaling = 1;
-force force ace_nightvision_noiseScaling = 0.5;
+force force ace_nightvision_effectScaling = 1.0;
+force force ace_nightvision_fogScaling = 1.0;
+force force ace_nightvision_noiseScaling = 1.0;
 force force ace_nightvision_shutterEffects = false;
 
 // ACE Overheating
@@ -242,6 +244,8 @@ ace_overheating_showParticleEffects = true;
 ace_overheating_showParticleEffectsForEveryone = false;
 force force ace_overheating_unJamFailChance = 0.1;
 force force ace_overheating_unJamOnreload = false;
+force force ace_overheating_heatCoef = 0.01;
+force force ace_overheating_suppressorCoef = 0.01;
 
 // ACE Pointing
 force force ace_finger_enabled = true;
@@ -362,7 +366,7 @@ ace_vehicles_hideEjectAction = true;
 force force ace_vehicles_keepEngineRunning = false;
 
 // ACE View Distance Limiter
-force force ace_viewdistance_enabled = true;
+force force ace_viewdistance_enabled = false;
 force force ace_viewdistance_limitViewDistance = 10000;
 ace_viewdistance_objectViewDistanceCoeff = 3;
 ace_viewdistance_viewDistanceAirVehicle = 0;
@@ -414,10 +418,10 @@ force force acex_fortify_settingHint = 1;
 
 // ACEX Headless
 force force acex_headless_delay = 15;
-force force acex_headless_enabled = false;
+force force acex_headless_enabled = true;
 force force acex_headless_endMission = 0;
 force force acex_headless_log = false;
-force force acex_headless_transferLoadout = 1;
+force force acex_headless_transferLoadout = 0;
 
 // ACEX Sitting
 force force acex_sitting_enable = true;
@@ -748,7 +752,7 @@ force lambs_main_radioWest = 500;
 
 // VCOM
 
-Vcm_DrivingActivatd = true;
+Vcm_DrivingActivated = true;
 
 Vcm_AISkills_East_AimingAccuracy = 0.10;
 Vcm_AISkills_General_AimingAccuracy = 0.10;
@@ -774,3 +778,6 @@ Vcm_AISkills_East_spotTime = 0.70;
 Vcm_AISkills_General_spotTime = 0.70;
 Vcm_AISkills_Resistance_spotTime = 0.70;
 Vcm_AISkills_West_spotTime = 0.70;
+
+// ZEN 
+force force zen_common_disableGearAnim = true;
