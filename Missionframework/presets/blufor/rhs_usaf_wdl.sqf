@@ -28,8 +28,8 @@ fixed_wing_classname = "B_Pilot_F";                                     // This 
 rotary_cas_classname = "B_helicrew_F";                                  // This defines the pilot for rotary cas aircraft.
 rotary_logistics_classname = "B_soldier_repair_F";                      // This defines the pilot for rotary logistics.
 KP_liberation_little_bird_classname = "RHS_MELB_MH6M";                  // These are the little birds which spawn on the Freedom or at Chimera base.
-KP_liberation_blackhawk_classname = "RHS_UH60M";                        // These are the blackhawks which spawn at the Freedom or at Chimera base.
-KP_liberation_black_wasp_classname = "B_Plane_Fighter_01_F";            // These are the F/A-181 Black Wasp IIs that spawn at the freedom or Chimera base.
+KP_liberation_blackhawk_classname = "vtx_MH60M_DAP";                    // These are the blackhawks which spawn at the Freedom or at Chimera base.
+KP_liberation_black_wasp_classname = "JS_JC_FA18E";                     // These are the F/A-181 Black Wasp IIs that spawn at the freedom or Chimera base.
 KP_liberation_a10_classname = "FIR_A10C_Blank";                         // A-10C
 KP_liberation_boat_classname = "B_Boat_Transport_01_F";                 // These are the boats which spawn at the stern of the Freedom.
 KP_liberation_truck_classname = "rhsusf_M977A4_BKIT_usarmy_wd";         // These are the trucks which are used in the logistic convoy system.
@@ -41,8 +41,7 @@ KP_liberation_heli_slot_building = "Land_HelipadSquare_F";              // The h
 KP_liberation_plane_slot_building = "Land_Missle_Trolley_02_F";         // The hangar used to increase the GLOBAL fixed-wing cap.
 KP_liberation_supply_crate = "CargoNet_01_box_F";                       // This defines the supply crates, as in resources.
 KP_liberation_ammo_crate = "B_CargoNet_01_ammo_F";                      // This defines the ammunition crates.
-KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This defines the fuel crates.
-
+KP_liberation_fuel_crate = "CargoNet_01_barrels_F";
 /*
     --- Friendly classnames ---
     Each array below represents one of the 7 pages within the build menu.
