@@ -209,15 +209,38 @@ force force ace_medical_treatment_medicPAK = 2;
 force force ace_medical_treatment_medicSurgicalKit = 2;
 force force ace_medical_treatment_timeCoefficientPAK = 0.5;
 
-// ACEP - Fracture
-force force aceP_circulation_simpleChance = 60;
-force force aceP_circulation_compoundChance = 50;
-force force aceP_circulation_enableFracture = true;
-force force aceP_circulation_fractureCheck = 0;
-force force aceP_circulation_closedReduction = 1;
-force force aceP_circulation_surgicalAction = 2;
-force force aceP_circulation_closedLocation = 0;
-force force aceP_circulation_surgicalLocation = 3;
+// ACE Pharmacy - AED
+force force acep_circulation_useLocation_AED = 0;
+force force acep_circulation_SuccesCh_AED_X = 75;
+force force acep_circulation_SuccesCh_AED = 60;
+force force acep_circulation_medLvl_AED_X = 0;
+force force acep_circulation_distanceLimit_AEDX = 30;
+force force acep_circulation_timeLimit_AEDX = 1800;
+force force acep_circulation_DeactMon_whileAED_X = false;
+force force acep_circulation_CPR_Chance_Doctor = 40;
+force force acep_circulation_CPR_Chance_RegularMedic = 30;
+force force acep_circulation_CPR_Chance_Default = 30;
+
+// ACE Pharmacy - Fracture
+force force acep_circulation_simpleChance = 75;
+force force acep_circulation_compoundChance = 50;
+force force acep_circulation_enable_fracture = true;
+force force acep_circulation_etomidateTime = 45;
+force force acep_circulation_closedTime = 8;
+force force acep_circulation_openTime = 15;
+force force acep_circulation_surgicalTime = 8;
+force force acep_circulation_incisionTime = 10;
+force force acep_circulation_fractureCheck = 0;
+force force acep_circulation_closedReduction = 1;
+force force acep_circulation_surgicalAction = 1;
+force force acep_circulation_closedLocation = 0;
+force force acep_circulation_surgicalLocation = 0;
+
+// ACE Pharmacy - Medications
+force force acep_circulation_IVmedic = 0;
+force force acep_circulation_IVestablish = 7;
+force force acep_circulation_IOestablish = 4;
+force force acep_circulation_PushTime = 3;
 
 // ACE Name Tags
 ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
