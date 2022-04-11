@@ -53,6 +53,10 @@ GRLIB_whitelisted_steamids = [
     "76561198078579510", // Saint.Z      - SL 4/2/C/1-7
 	"76561198157988380", // Terp
 	"76561198117615154"  // Verlot
+    "76561198004650806", // Stetchkov
+    "76561198133157952", // Weiss
+    "76561198168925648", // Varnado
+    "76561198008218746", // Coots
 ];
 
 // Allowed individual player names. Note that this method is not very secure contrary to SteamIDs.
