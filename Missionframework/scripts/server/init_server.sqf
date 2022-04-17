@@ -148,3 +148,15 @@ execVM "scripts\server\custom\fn_advancedTowingInit.sqf";
 
 // Enable Advanced Sling
 execVM "scripts\server\custom\fn_advancedSlingLoadingInit.sqf";
+
+[
+    {
+        params ["_args"];
+        _args params [];
+
+        zeus_whitelist = "cavzeus" callExtension "";
+        publicVariable "zeus_whitelist";
+
+    }, 60, []
+
+] call CBA_fnc_addPerFrameHandler;
