@@ -543,16 +543,16 @@ force force usaf_serviceMenu_setting_repairTime = "100";
 force force usaf_serviceMenu_setting_replaceSources = false;
 
 // A3TI
-force force A3TI_ALLOW_VANILLA_TI = false;
-force A3TI_ACE_JAVELIN = true;
-force A3TI_ALLOW_TANK_DRIVER = true;
-force A3TI_ALLOW_VANILLA_TI = true;
-force A3TI_ENABLE_ZEUS = true;
-force A3TI_HD_VISION_FIGHTER = true;
-force A3TI_HD_VISION_LANDVEH = true;
-force A3TI_HD_VISION_SHIP = false;
-force A3TI_HD_VISION_UAV = true;
-force A3TI_REMOVE_FILMGRAIN_RHS = true;
+A3TI_ALLOW_VANILLA_TI = false;
+A3TI_ACE_JAVELIN = true;
+A3TI_ALLOW_TANK_DRIVER = true;
+A3TI_ALLOW_VANILLA_TI = true;
+A3TI_ENABLE_ZEUS = true;
+A3TI_HD_VISION_FIGHTER = true;
+A3TI_HD_VISION_LANDVEH = true;
+A3TI_HD_VISION_SHIP = false;
+A3TI_HD_VISION_UAV = true;
+A3TI_REMOVE_FILMGRAIN_RHS = true;
 
 // BettIR
 force force BettIR_ViewDistance = 3600;
