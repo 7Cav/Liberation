@@ -111,7 +111,7 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 28 = SFP (Woodland)
 29 = SFP (Desert)
 30 = LDF (Contact DLC) */
-KP_liberation_preset_blufor = 6;
+KP_liberation_preset_blufor = 7;
 
 /* OPFOR preset:
 0  = Custom (default vanilla CSAT)
@@ -135,7 +135,7 @@ KP_liberation_preset_blufor = 6;
 18 = CUP Chernarus Defense Force
 19 = CUP British Armed Forces (Desert)
 20 = CUP British Armed Forces (Woodland) */
-KP_liberation_preset_opfor = 2;
+KP_liberation_preset_opfor = 24;
 
 /* Resistance preset:
 0  = Custom (default vanilla FIA)
@@ -147,7 +147,7 @@ KP_liberation_preset_opfor = 2;
 6  = Unsung
 7  = CUP Takistani Locals
 8  = CUP National Party of Chernarus */
-KP_liberation_preset_resistance = 2;
+KP_liberation_preset_resistance = 9;
 
 /* Civilians preset:
 0  = Custom (default vanilla)
