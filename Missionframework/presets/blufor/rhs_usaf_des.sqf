@@ -144,7 +144,9 @@ air_vehicles = [
     ["RHS_AH1Z",500,500,200],                                           // AH-1Z (Multi-Role)
     ["RHS_AH64D",750,750,250],                                          // AH-64D (Multi-Role)
     ["RHS_UH60M2_d",250,0,150],                                         // UH-60M (Unarmed)
-    ["RHS_UH60M_d",250,80,150],                                         // UH-60M
+    ["RHS_UH60M_d",250,80,150], 
+    ["vtx_MH60M",250,80,150],                                           // UH-60M
+    ["vtx_MH60M_DAP",250,80,150],                                       // UH-60M 
     ["RHS_UH60M_MEV2_d",300,0,150],                                     // UH-60M MEV2
     ["RHS_CH_47F_10",275,80,175],                                       // CH-47 Chinook (Armed)
     ["rhsusf_CH53E_USMC_D",300,0,175],                                  // CH-53E Super Stallion
