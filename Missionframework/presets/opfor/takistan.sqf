@@ -67,8 +67,7 @@ opfor_vehicles = [
     "LOP_TKA_UAZ_AGS",                                                  // UAZ-3151 (AGS-30)
     "LOP_TKA_UAZ_SPG",                                                  // UAZ-3151 (SPG-9)
     "LOP_TKA_BMP2",                                                     // BMP-2
-    "LOP_TKA_BMP2D",                                                    // BMP-2D
-    "LOP_TKA_BTR70",                                                    // BTR-70
+    "LOP_TKA_BMP2D",                                                    // BMP-2D                                                    // BTR-70
     "LOP_TKA_ZSU234",                                                   // ZSU-23-4V
     "LOP_TKA_ZSU234",                                                   // ZSU-23-4V
     "LOP_TKA_T55",                                                      // T-55A
