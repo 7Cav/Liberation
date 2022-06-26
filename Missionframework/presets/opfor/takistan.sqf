@@ -67,7 +67,11 @@ opfor_vehicles = [
     "LOP_TKA_UAZ_AGS",                                                  // UAZ-3151 (AGS-30)
     "LOP_TKA_UAZ_SPG",                                                  // UAZ-3151 (SPG-9)
 <<<<<<< HEAD
+<<<<<<< HEAD
     "LOP_TKA_BMP1D",                                                    // BMP-1D
+=======
+    "LOP_TKA_BMP1D",                                                     // BMP-2
+>>>>>>> develop
 =======
     "LOP_TKA_BMP1D",                                                     // BMP-2
 >>>>>>> develop
