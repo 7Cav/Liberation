@@ -70,10 +70,10 @@ opfor_vehicles = [
 <<<<<<< HEAD
     "LOP_TKA_BMP1D",                                                    // BMP-1D
 =======
-    "LOP_TKA_BMP1D",                                                     // BMP-2
+    "LOP_TKA_BMP1D",                                                    // BMP-1D
 >>>>>>> develop
 =======
-    "LOP_TKA_BMP1D",                                                     // BMP-2
+    "LOP_TKA_BMP1D",                                                    // BMP-1D
 >>>>>>> develop
     "LOP_TKA_BTR70",                                                    // BTR-70
     "LOP_TKA_ZSU234",                                                   // ZSU-23-4V
