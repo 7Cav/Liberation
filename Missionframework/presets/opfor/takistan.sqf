@@ -66,8 +66,9 @@ opfor_vehicles = [
     "LOP_TKA_UAZ_DshKM",                                                // UAZ-3151 (DShKM)
     "LOP_TKA_UAZ_AGS",                                                  // UAZ-3151 (AGS-30)
     "LOP_TKA_UAZ_SPG",                                                  // UAZ-3151 (SPG-9)
-    "LOP_TKA_BMP2",                                                     // BMP-2
-    "LOP_TKA_BMP2D",                                                    // BMP-2D
+    "LOP_TKA_BMP1D",                                                    // BMP-1D
+    "LOP_TKA_BMP1D",                                                    // BMP-1D
+    "LOP_TKA_BMP1D",                                                    // BMP-1D
     "LOP_TKA_BTR70",                                                    // BTR-70
     "LOP_TKA_ZSU234",                                                   // ZSU-23-4V
     "LOP_TKA_ZSU234",                                                   // ZSU-23-4V
@@ -93,9 +94,8 @@ opfor_battlegroup_vehicles = [
     "LOP_TKA_UAZ_SPG",                                                  // UAZ-3151 (SPG-9)
     "LOP_TKA_Ural_open",                                                // Ural-4320 Transport
     "LOP_TKA_Ural",                                                     // Ural-4320 Transport (Covered)
-    "LOP_TKA_BMP2",                                                     // BMP-2
-    "LOP_TKA_BMP2D",                                                    // BMP-2D
     "LOP_TKA_BTR70",                                                    // BTR-70
+    "LOP_TKA_BMP1D",                                                    // BMP-1D
     "LOP_TKA_ZSU234",                                                   // ZSU-23-4V
     "LOP_TKA_ZSU234",                                                   // ZSU-23-4V
     "LOP_TKA_T55",                                                      // T-55A
@@ -128,7 +128,6 @@ opfor_troup_transports = [
     "LOP_TKA_Ural",                                                     // Ural-4320 Transport (Covered)
     "LOP_TKA_BTR70",                                                    // BTR-70
     "LOP_TKA_BMP1D",                                                    // BMP-1D
-    "LOP_TKA_BMP2D",                                                    // BMP-2D
     "LOP_TKA_Mi8MT_Cargo",                                              // Mi-8MT (Cargo)
     "LOP_TKA_Mi24V_AT",                                                 // Mi-24P (AT)
     "LOP_TKA_Mi24V_UPK23"                                               // Mi-24V (UPK)
