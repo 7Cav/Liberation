@@ -43,21 +43,21 @@ Therefore, adding the same value twice or three times means they are more likely
 /* Militia infantry. Lightweight soldier classnames the game will pick from randomly as sector defenders.
 Think of them like garrison or military police forces, which are more meant to control the local population instead of fighting enemy armies. */
 militia_squad = [
-    "UK3CB_TKP_O_SL",                                             // Rifleman
-    "UK3CB_TKP_O_TL",                                             // Rifleman
-    "UK3CB_TKP_O_RIF_1",                                          // Rifleman
-    "UK3CB_TKP_O_AR",                                             // AR
-    "UK3CB_TKP_O_QRF_AT",                                         // AT
-    "UK3CB_TKP_O_MD",                                             // Medic
-    "UK3CB_TKP_O_MK",                                             // marksman
-    "UK3CB_TKP_O_QRF_ENG"                                         // Engineer
+    "UK3CB_TKM_O_SL",                                             // Rifleman
+    "UK3CB_TKM_O_TL",                                             // Rifleman
+    "UK3CB_TKM_O_RIF_1",                                          // Rifleman
+    "UK3CB_TKM_O_AR",                                             // AR
+    "UK3CB_TKM_O_QRF_AT",                                         // AT
+    "UK3CB_TKM_O_MD",                                             // Medic
+    "UK3CB_TKM_O_MK",                                             // marksman
+    "UK3CB_TKM_O_QRF_ENG"                                         // Engineer
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders.
 militia_vehicles = [
-    "UK3CB_TKP_O_Datsun_Pickup_PKM",
-	"UK3CB_TKP_O_Hilux_Dshkm",
-	"UK3CB_TKP_O_LandRover_M2"                                                 
+    "UK3CB_TKM_O_Datsun_Pickup_PKM",
+	"UK3CB_TKM_O_Hilux_Dshkm",
+	"UK3CB_TKM_O_LandRover_M2"                                                 
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
