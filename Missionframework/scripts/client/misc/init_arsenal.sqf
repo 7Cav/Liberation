@@ -60,7 +60,7 @@ if (KP_liberation_arsenalUsePreset) then {
         if ((count blacklisted_from_arsenal) isEqualTo 0) then {
             _items = _crawled select 2;
         } else {
-            {if (!(_x in blacklisted_from_arsenal)) then {_items pushBack _x};} forEach (_crawled select 2);
+            {if (!(_x in blacklisted_from_arsenal) && !(["RUGBY", _x] call BIS_fnc_inString)) then {_items pushBack _x};} forEach (_crawled select 2);
         };
         [missionNamespace, _items] call BIS_fnc_addVirtualItemCargo;
         KP_liberation_allowed_items append _items;
