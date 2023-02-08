@@ -47,7 +47,6 @@ addons[]=
 	"rhsusf_c_troops",
 	"ace_compat_rhs_usf3",
 	"ace_explosives",
-	"FIR_PilotCrewPack_US",
 	"ace_gforces",
 	"ace_parachute",
 	"A3_Structures_F_Mil_Cargo",
@@ -57,8 +56,7 @@ addons[]=
 	"ace_rearm",
 	"ace_cargo",
 	"ace_refuel",
-	"ace_repair",
-	"FIR_AirWeaponSystem_US"
+	"ace_repair"
 };
 class AddonsMetaData
 {
@@ -179,63 +177,53 @@ class AddonsMetaData
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
-		};
+		};		
 		class Item17
-		{
-			className="FIR_PilotCrewPack_US";
-			name="FIR_PilotCrewPack_US";
-		};
-		class Item18
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item19
+		class Item18
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
-		class Item20
+		class Item19
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item20
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item22
+		class Item21
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item23
+		class Item22
 		{
 			className="ace_refuel";
 			name="ACE3 - Refuel";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item24
+		class Item23
 		{
 			className="ace_repair";
 			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
-		};
-		class Item25
-		{
-			className="FIR_AirWeaponSystem_US";
-			name="FIR_AirWeaponSystem_US";
 		};
 	};
 };

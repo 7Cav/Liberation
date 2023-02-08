@@ -35,13 +35,11 @@ addons[]=
 	"rhsusf_c_troops",
 	"ace_compat_rhs_usf3",
 	"ace_explosives",
-	"FIR_PilotCrewPack_US",
 	"ace_gforces",
 	"ace_parachute",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Structures_F_Mil_Helipads",
-	"A3_Structures_F_System",
-	"FIR_AirWeaponSystem_US"
+	"A3_Structures_F_System"
 };
 class AddonsMetaData
 {
@@ -113,41 +111,31 @@ class AddonsMetaData
 		};
 		class Item9
 		{
-			className="FIR_PilotCrewPack_US";
-			name="FIR_PilotCrewPack_US";
-		};
-		class Item10
-		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item11
+		class Item10
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item11
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item13
+		class Item12
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
-		};
-		class Item14
-		{
-			className="FIR_AirWeaponSystem_US";
-			name="FIR_AirWeaponSystem_US";
 		};
 	};
 };
@@ -12607,7 +12595,7 @@ class Mission
 			{
 			};
 			id=934;
-			type="FIR_Baseplate";
+			type="Land_ClutterCutter_small_F";
 		};
 	};
 	class Connections

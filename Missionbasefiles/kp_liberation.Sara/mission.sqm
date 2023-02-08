@@ -64,7 +64,6 @@ addons[]=
 	"rhsusf_c_troops",
 	"ace_compat_rhs_usf3",
 	"ace_explosives",
-	"FIR_PilotCrewPack_US",
 	"ace_gforces",
 	"ace_parachute"
 };
@@ -200,11 +199,6 @@ class AddonsMetaData
 			url="http://ace3mod.com/";
 		};
 		class Item18
-		{
-			className="FIR_PilotCrewPack_US";
-			name="FIR_PilotCrewPack_US";
-		};
-		class Item19
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
