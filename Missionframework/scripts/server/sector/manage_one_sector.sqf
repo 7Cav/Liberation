@@ -74,7 +74,7 @@ if ((!(_sector in blufor_sectors)) && (([markerPos _sector, [_opforcount] call K
         } else {
             _iedcount = 0;
         };
-        if (_iedcount > 16) then {_iedcount = 16};
+        if (_iedcount > 6) then {_iedcount = 6};
     };
 
     if (_sector in sectors_capture) then {
@@ -107,7 +107,7 @@ if ((!(_sector in blufor_sectors)) && (([markerPos _sector, [_opforcount] call K
         } else {
             _iedcount = 0;
         };
-        if (_iedcount > 12) then {_iedcount = 12};
+        if (_iedcount > 5) then {_iedcount = 5};
     };
 
     if (_sector in sectors_military) then {
@@ -151,7 +151,7 @@ if ((!(_sector in blufor_sectors)) && (([markerPos _sector, [_opforcount] call K
         } else {
             _iedcount = 0;
         };
-        if (_iedcount > 8) then {_iedcount = 8};
+        if (_iedcount > 4) then {_iedcount = 4};
     };
 
     if (_sector in sectors_tower) then {

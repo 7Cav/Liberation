@@ -228,12 +228,12 @@ GRLIB_battlegroup_cap = 150;                                            // Cap f
 GRLIB_patrol_cap = 150;                                                 // Cap for enemy patrols.
 
 KP_liberation_cr_kill_penalty = 5;                                      // Civil Reputation penalty for killing a civilian.
-KP_liberation_cr_building_penalty = 3;                                  // Civil Reputation penalty for destroying/damaging a building.
-KP_liberation_cr_vehicle_penalty = 5;                                   // Civil Reputation penalty for stealing a civilian vehicle.
-KP_liberation_cr_resistance_penalty = 8;                                // Civil Reputation penalty for killing a friendly resistance soldier.
+KP_liberation_cr_building_penalty = 1;                                  // Civil Reputation penalty for destroying/damaging a building.
+KP_liberation_cr_vehicle_penalty = 3;                                   // Civil Reputation penalty for stealing a civilian vehicle.
+KP_liberation_cr_resistance_penalty = 10;                                // Civil Reputation penalty for killing a friendly resistance soldier.
 KP_liberation_cr_sector_gain = 15;                                      // Civil Reputation gain for liberate a sector.
 KP_liberation_cr_wounded_chance = 65;                                   // Chance (0-100) that there are wounded civilians right after capturing a sector.
-KP_liberation_cr_wounded_gain = 2;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
+KP_liberation_cr_wounded_gain = 5;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
 
 KP_liberation_civinfo_min = 5400;                                       // Civil Informant minimum spawn time. (seconds)
 KP_liberation_civinfo_max = 10800;                                      // Civil Informant maximum spawn time. (seconds)
@@ -272,7 +272,8 @@ KP_liberation_commander_actions = [
     "76561197963459537", // Sweetwater.I
     "76561197997124640", // Liber.N
     "76561199181230059", // Liber.N
-    "76561197993187376"  // Sypolt.R
+    "76561197993187376", // Sypolt.R
+    "76561198038511870"  // Bethea. A
 ];
 
 /* Whitelist for BI support framework access.
