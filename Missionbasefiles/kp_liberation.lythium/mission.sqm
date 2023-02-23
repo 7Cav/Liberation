@@ -126,7 +126,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=59;
+		items=58;
 		class Item0
 		{
 			className="Jbad_afghan_houses_old";

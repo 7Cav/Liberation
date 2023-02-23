@@ -67,7 +67,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=27;
+		items=25;
 		class Item0
 		{
 			className="A3_Ui_F";
