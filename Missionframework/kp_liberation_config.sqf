@@ -80,104 +80,28 @@ KP_liberation_ace_crates = [
 If you want to change a preset, it's recommended to set all four presets to 0 and edit the appropriate custom.sqf files in the preset folders.*/
 
 /* BLUFOR preset:
-0  = Custom (default vanilla with many optional mods supported)
-1  = Apex Tanoa (apex vanilla with many optional mods supported)
-2  = 3cb BAF (MTP)
-3  = 3cb BAF (Desert)
-4  = BWMod Bundeswehr (Flecktarn)
-5  = BWMod Bundeswehr (Tropentarn)
-6  = RHS USAF (Woodland)
-7  = RHS USAF (Desert)
-8  = RHS AFRF (VDV/MSV)
-9  = Germany West (Global Mobilization)
-10 = Germany West Winter (Global Mobilization)
-11 = Germany East (Global Mobilization)
-12 = Germany East Winter (Global Mobilization)
-13 = CSAT Brown
-14 = CSAT Green
-15 = Unsung US
-16 = CUP British Armed Forces (Desert)
-17 = CUP British Armed Forces (Woodland)
-18 = CUP US Marine Corps (Desert)
-19 = CUP US Marine Corps (Woodland)
-20 = CUP US Army (Desert)
-21 = CUP US Army (Woodland)
-22 = CUP Chernarus Defense Force
-23 = CUP Army of the Czech Republic (Desert)
-24 = CUP Army of the Czech Republic (Woodland)
-25 = CUP Chernarussian Movement of the Red Star
-26 = CUP Sahrani Liberation Army
-27 = CUP Takistani Army
-28 = SFP (Woodland)
-29 = SFP (Desert)
-30 = LDF (Contact DLC) */
-KP_liberation_preset_blufor = 7;
+WIP 
+*/
+KP_liberation_preset_blufor = 4;
 
 /* OPFOR preset:
-0  = Custom (default vanilla CSAT)
-1  = Apex Tanoa (apex vanilla CSAT)
-2  = RHS AFRF (EMR/MSV)
-3  = Project OPFOR (Takistan)
-4  = Project OPFOR (Islamic State)
-5  = Project OPFOR (Sahrani)
-6  = AAF
-7  = NATO
-8  = Germany West (Global Mobilization)
-9  = Germany West Winter (Global Mobilization)
-10 = Germany East (Global Mobilization)
-11 = Germany East Winter (Global Mobilization)
-12 = Unsung NVA
-13 = CUP Sahrani Liberation Army
-14 = CUP Takistani Army
-15 = CUP Chernarussian Movement of the Red Star
-16 = CUP Armed Forces of the Russian Federation (MSV - EMR)
-17 = CUP Armed Forces of the Russian Federation (Modern MSV)
-18 = CUP Chernarus Defense Force
-19 = CUP British Armed Forces (Desert)
-20 = CUP British Armed Forces (Woodland) */
-KP_liberation_preset_opfor = 24;
+WIP 
+*/
+KP_liberation_preset_opfor = 4;
 
 /* Resistance preset:
-0  = Custom (default vanilla FIA)
-1  = Apex Tanoa (apex vanilla Syndikat)
-2  = RHS GREF
-3  = Project OPFOR (Middle Eastern)
-4  = Project OPFOR (Sahrani)
-5  = Germany (Global Mobilization)
-6  = Unsung
-7  = CUP Takistani Locals
-8  = CUP National Party of Chernarus */
-KP_liberation_preset_resistance = 7;
+WIP
+*/
+KP_liberation_preset_resistance = 2;
 
-/* Civilians preset:
-0  = Custom (default vanilla)
-1  = Apex Tanoa (apex vanilla)
-2  = Project OPFOR (Middle Eastern)
-3  = RDS Civilians
-4  = Germany (Global Mobilization)
-5  = Unsung
-6  = CUP Takistani Civilians
-7  = CUP Chernarussian Civilians */
-KP_liberation_preset_civilians = 6;
+/* 
+WIP
+*/
+KP_liberation_preset_civilians = 1;
 
-/* Which arsenal preset should be used?
-0  = Use the default blacklist method (defined below)
-1  = Custom arsenal preset (edit the custom.sqf in the arsenal_presets\ folder to change things for your own versions and tweaks)
-2  = RHS USAF arsenal preset
-3  = 3cbBAF and RHS USAF arsenal preset
-4  = GM West arsenal preset
-5  = GM East arsenal preset
-6  = CSAT arsenal preset
-7  = Unsung US arsenal preset
-8  = SFP arsenal preset
-9  = BWMod arsenal preset
-10 = NATO MTP arsenal preset
-11 = NATO Tropic arsenal preset
-12 = NATO Woodland arsenal preset
-13 = CSAT Hex arsenal preset
-14 = CSAT Green Hex arsenal preset
-15 = AAF arsenal preset
-16 = LDF arsenal preset */
+/*
+WIP
+*/
 KP_liberation_arsenal = 0;
 
 /* - Fuel consumption settings.
