@@ -24,6 +24,8 @@ opfor_aa = "rhs_vdv_des_aa";                                            // AA Sp
 opfor_medic = "rhs_vdv_des_medic";                                      // Combat Life Saver
 opfor_engineer = "rhs_vdv_des_engineer";                                // Engineer
 opfor_paratrooper = "rhs_vdv_des_efreitor";                                // Paratrooper
+opfor_crew_ground = "rhs_msv_emr_armoredcrew";                          // Crewman
+opfor_crew_air = "rhssaf_airforce_o_pilot_transport_heli";              // Pilot
 
 // Enemy vehicles used by secondary objectives.
 opfor_mrap = "rhs_tigr_m_3camo_vdv";                                            // GAZ-233011

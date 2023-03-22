@@ -14,28 +14,25 @@ switch (KP_liberation_preset_blufor) do {
     case  3: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\rhs_usaf_wdl.sqf";};
     case  4: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\rhs_usaf_des.sqf";};
     case  5: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\rhs_afrf.sqf";};
-    case  6: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\vn.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom.sqf";};
 };
 
 switch (KP_liberation_preset_opfor) do {
     case  1: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\rhs_gref_cdf.sqf";};
     case  2: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\rhs_afrf_d.sqf";};
-    case  3: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\vn.sqf";};
-    case  4: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\takistan_army.sqf";};
+    case  3: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\takistan_army.sqf";};
+    case  4: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\3cb_ldf_hybrid.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom.sqf";};
 };
 
 switch (KP_liberation_preset_resistance) do {
     case  1: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\rhs_gref.sqf";};
     case  2: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\rhs_gref_civ.sqf";};
-    case  3: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\vn.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\resistance\custom.sqf";};
 };
 
 switch (KP_liberation_preset_civilians) do {
     case  1: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\middle_eastern.sqf";};
-    case  2: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\vn.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\civilians\custom.sqf";};
 };
 
