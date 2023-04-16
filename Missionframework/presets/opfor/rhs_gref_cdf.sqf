@@ -24,6 +24,8 @@ opfor_aa = "rhsgref_cdf_para_specialist_aa";                                    
 opfor_medic = "rhsgref_cdf_ngd_medic";                                      // Combat Life Saver
 opfor_engineer = "rhsgref_cdf_ngd_engineer";                                // Engineer
 opfor_paratrooper = "rhsgref_cdf_para_rifleman";                                // Paratrooper
+opfor_crew_ground = "rhsgref_cdf_reg_crew";                                 // Crewman
+opfor_crew_air = "rhsgref_cdf_air_pilot";                                   // Pilot
 
 // Enemy vehicles used by secondary objectives.
 opfor_mrap = "rhsgref_BRDM2_HQ";                                            // GAZ-233011

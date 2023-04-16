@@ -24,6 +24,8 @@ opfor_aa = "O_Soldier_AA_F";                                            // AA Sp
 opfor_medic = "O_medic_F";                                              // Combat Life Saver
 opfor_engineer = "O_engineer_F";                                        // Engineer
 opfor_paratrooper = "O_soldier_PG_F";                                   // Paratrooper
+opfor_crew_ground = "O_crew_F";                                         // Crewman
+opfor_crew_air = "O_Pilot_F";                                           // Pilot
 
 // Enemy vehicles used by secondary objectives.
 opfor_mrap = "O_MRAP_02_F";                                             // Ifrit

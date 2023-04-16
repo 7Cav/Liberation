@@ -24,8 +24,16 @@ if (isNull _vehicle) exitWith {["Null object given"] call BIS_fnc_error; false};
 // Spawn units
 private _grp = createGroup [GRLIB_side_enemy, true];
 private _units = [];
+
+private _unitType = switch (true) do
+    {
+    case (_vehicle isKindOf "Plane") : {opfor_crew_air};
+    case (_vehicle isKindOf "Helicopter") : {opfor_crew_air};
+    default {opfor_crew_ground}; 
+    };
+
 for "_i" from 1 to 3 do {
-    _units pushBack ([selectRandom militia_squad, getPos _vehicle, _grp] call KPLIB_fnc_createManagedUnit);
+        _units pushBack ([_unitType, getPos _vehicle, _grp] call KPLIB_fnc_createManagedUnit);
 };
 
 // Assign to vehicle
