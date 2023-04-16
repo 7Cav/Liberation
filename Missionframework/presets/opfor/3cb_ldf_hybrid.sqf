@@ -26,14 +26,13 @@ opfor_aa = "UK3CB_LDF_O_AA";                                            // AA Sp
 opfor_medic = "UK3CB_LDF_O_MD";                                         // Combat Life Saver
 opfor_engineer = "UK3CB_LDF_O_ENG";                                     // Engineer
 opfor_paratrooper = "UK3CB_LDF_O_LAT";                                  // Paratrooper'
-opfor_crew_ground = "UK3CB_LDF_O_CREW";                                 // Crewman
+opfor_crew_ground = "UK3CB_LDF_O_TANK_CREW";                            // Crewman
 opfor_crew_air = "UK3CB_LDF_O_JET_PILOT";                               // Pilot
 
 // Enemy vehicles used by secondary objectives.
-opfor_mrap = "rhsusf_M1220_usarmy_wd";                                  // M1220
-opfor_mrap_armed = "rhsusf_M1220_M153_M2_usarmy_wd";                    // M1220 W/ M2
-opfor_transport_helo = "RHS_Mi8AMT_vdv";                                // Mi-8MT (Cargo)
-opfor_transport_truck = "rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy";         // M1083A1P2 W/ M2
+opfor_mrap = "UK3CB_LDF_O_Marshall";                                  // M1220
+opfor_transport_helo = "UK3CB_LDF_O_Mi8AMT";                                // Mi-8MT (Cargo)
+opfor_transport_truck = "UK3CB_LDF_O_T810_Closed";         // M1083A1P2 W/ M2
 opfor_ammobox_transport = "RHS_Ural_Open_MSV_01";                       // Ural-4320 Transport (Open) -> Has to be able to transport resource crates!
 opfor_fuel_truck = "RHS_Ural_Fuel_MSV_01";                              // Ural-4320 Fuel
 opfor_ammo_truck = "rhs_gaz66_ammo_msv";                                // GAZ-66 Ammo
@@ -59,99 +58,70 @@ militia_squad = [
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders.
 militia_vehicles = [
-    "rhsusf_m1043_w_m2",                                                // M1043A2 (M2)
-    "rhsusf_m1043_w_m2",                                                // M1043A2 (M2)
-    "rhsusf_m1151_m2crows_usarmy_wd"                                    // M1151A1 (M2 CROWS)
+    "UK3CB_LDF_O_M1151_GPK_M2",                                                // M1043A2 (M2)
+    "UK3CB_LDF_O_M1025_M2",                                                // M1043A2 (M2)
+    "UK3CB_LDF_O_M1151_OGPK_M2"                                    // M1151A1 (M2 CROWS)
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
 opfor_vehicles = [
-    "rhsusf_m1043_w_m2",                                                // M1043A2 (M2)
-    "rhsusf_m1043_w_m2",                                                // M1043A2 (M2)
-    "rhsusf_m1151_m2crows_usarmy_wd",                                   // M1151A1 (M2 CROWS)
-    "rhsusf_m1151_m2crows_usarmy_wd",                                   // M1151A1 (M2 CROWS)
-    "rhsusf_m966_w",                                                    // M966A1 (TOW)
-    "rhsusf_m113_usarmy_M240",                                          // M113A3 (M240)
-    "rhsusf_m113_usarmy",                                               // M113A3 (M2)
-    "rhsusf_stryker_m1126_m2_wd",                                       // M1126 (M2)
-    "RHS_M2A2_wd",                                                      // M2A2ODS
-    "RHS_Stinger_AA_pod_WD",                                            // Stinger Turret
-    "rhsusf_m1a1aimwd_usarmy",                                          // M1A1AIM
-    "rhsusf_m1a1aim_tuski_wd"                                           // M1A1AIM TUSK I
+    "UK3CB_LDF_O_M1151_GPK_M2",                                              
+    "UK3CB_LDF_O_M1025_M2",                                               
+    "UK3CB_LDF_O_M1151_OGPK_M2",
+    "UK3CB_LDF_O_DSHKM"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
 opfor_vehicles_low_intensity = [
-    "rhsusf_m1043_w_m2",                                                // M1043A2 (M2)
-    "rhsusf_m1043_w_m2",                                                // M1043A2 (M2)
-    "rhsusf_m1151_m2crows_usarmy_wd",                                   // M1151A1 (M2 CROWS)
-    "rhsusf_m1151_m2crows_usarmy_wd",                                   // M1151A1 (M2 CROWS)
-    "rhsusf_m966_w",                                                    // M966A1 (TOW)
-    "rhsusf_m113_usarmy",                                               // M113A3 (M2)
-    "rhsusf_stryker_m1126_m2_wd"                                        // M1126 (M2)
+    "UK3CB_LDF_O_M1151_GPK_M2",                                              
+    "UK3CB_LDF_O_M1025_M2",                                               
+    "UK3CB_LDF_O_M1151_OGPK_M2",
+    "UK3CB_LDF_O_BRDM2_HQ",
+    "UK3CB_LDF_O_Pickup_M2"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
-opfor_battlegroup_vehicles = [
-    "rhsusf_m1043_w_m2",                                                // M1043A2 (M2)
-    "rhsusf_m1043_w_m2",                                                // M1043A2 (M2)
-    "rhsusf_m1151_m2crows_usarmy_wd",                                   // M1151A1 (M2 CROWS)
-    "rhsusf_m1151_m2crows_usarmy_wd",                                   // M1151A1 (M2 CROWS)
-    "rhsusf_m966_w",                                                    // M966A1 (TOW)
-    "rhsusf_m113_usarmy_M240",                                          // M113A3 (M240)
-    "rhsusf_m113_usarmy",                                               // M113A3 (M2)
-    "rhsusf_stryker_m1126_m2_wd",                                       // M1126 (M2)
-    "RHS_M2A2_wd",                                                      // M2A2ODS
-    "rhsusf_m1a1aimwd_usarmy",                                          // M1A1AIM
-    "rhsusf_m1a1aim_tuski_wd",                                          // M1A1AIM TUSK I
-    "rhsusf_m1a1aimwd_usarmy",                                          // M1A1AIM
-    "rhsusf_m1a1aim_tuski_wd",                                          // M1A1AIM TUSK I
-    "RHS_Mi8AMT_vdv",                                                   // Mi-8MT (Cargo)
-    "RHS_Mi8AMT_vdv",                                                   // Mi-8MT (Cargo)
-    "rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy",                             // M1083A1P2 W/ M2
-    "rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy",                             // M1083A1P2 W/ M2
-    "rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy",                             // M1083A1P2 W/ M2
-    "rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy",                             // M1083A1P2 W/ M2
-    "RHS_Mi24V_vdv"                                                     // Mi-24V (AT)
+opfor_battlegroup_vehicles = [                                              
+    "UK3CB_LDF_O_M1151_OGPK_M2",
+    "UK3CB_LDF_O_M1151_OGPK_M2",
+    "UK3CB_LDF_O_T810_Closed_PKM",
+    "UK3CB_LDF_O_M1151_OGPK_M2",
+    "UK3CB_LDF_O_M1151_OGPK_M2",
+    "UK3CB_LDF_O_T810_Closed_PKM",
+    "UK3CB_LDF_O_MTLB_KPVT",
+    "UK3CB_LDF_O_BRDM2",
+    "UK3CB_LDF_O_BRDM2",
+    "UK3CB_LDF_O_Mi8",
+    "UK3CB_LDF_O_Mi8",
+    "UK3CB_LDF_O_Marshall_Camo",
+    "UK3CB_LDF_O_Leopard_Cage_Camo"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles_low_intensity = [
-    "rhsusf_m1043_w_m2",                                                // M1043A2 (M2)
-    "rhsusf_m1043_w_m2",                                                // M1043A2 (M2)
-    "rhsusf_m1151_m2crows_usarmy_wd",                                   // M1151A1 (M2 CROWS)
-    "rhsusf_m1151_m2crows_usarmy_wd",                                   // M1151A1 (M2 CROWS)
-    "rhsusf_m113_usarmy_M240",                                          // M113A3 (M240)
-    "rhsusf_m113_usarmy",                                               // M113A3 (M2)
-    "rhsusf_stryker_m1126_m2_wd",                                       // M1126 (M2)
-    "rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy",                             // M1083A1P2 W/ M2
-    "rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy",                             // M1083A1P2 W/ M2
-    "rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy",                             // M1083A1P2 W/ M2
-    "RHS_Mi8AMT_vdv",                                                   // Mi-8MT (Cargo)
-    "RHS_M2A2_wd"                                                       // M2A2ODS
-
+    "UK3CB_LDF_O_M1151_OGPK_M2",
+    "UK3CB_LDF_O_M1151_OGPK_M2",
+    "UK3CB_LDF_O_T810_Closed_PKM",
+    "UK3CB_LDF_O_T810_Closed_PKM",
+    "UK3CB_LDF_O_BRDM2",
+    "UK3CB_LDF_O_MTLB_KPVT"
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
 If something in this array can't hold all 8 soldiers then buggy behaviours may occur.    */
 opfor_troup_transports = [
-    "rhsusf_m113_usarmy_M240",                                          // M113A3 (M240)
-    "rhsusf_m113_usarmy",                                               // M113A3 (M2)
-    "rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy",                             // M1083A1P2 W/ M2
-    "rhsusf_stryker_m1126_m2_wd",                                       // M1126 (M2)
-    "RHS_Mi8AMT_vdv",                                                   // Mi-8MT (Cargo)
-    "RHS_Mi24V_vdv"                                                     // Mi-24V (AT)
+    "UK3CB_LDF_O_Marshall_Camo",
+    "UK3CB_LDF_O_BRDM2",
+    "UK3CB_LDF_O_T810_Closed_PKM",
+    "UK3CB_LDF_O_Mi8"        
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
 opfor_choppers = [
-    "RHS_Mi8AMT_vdv",                                                   // Mi-8MT (Cargo)
-    "RHS_Mi24V_vdv"                                                     // Mi-24V (AT)
+    "UK3CB_LDF_O_Mi8"
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
-    "RHS_Su25SM_vvsc",                                                  // Su-25
-    "RHS_Su25SM_KH29_vvsc",                                             // Su-25 (KH29)
-    "rhs_mig29sm_vvsc"                                                  // Mig-29SM
+    "UK3CB_LDF_O_C400"                                                 
 ];

@@ -1036,7 +1036,11 @@ KPLIB_transportConfigs = [
     ["uns_nvatruck", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
     ["vn_b_wheeled_m54_01", -5, [0,-0.8,0.18], [0,-2.5,0.18]],
     ["vn_b_wheeled_m54_02", -5, [0,-0.8,0.18], [0,-2.5,0.18]],
-    ["vn_o_wheeled_z157_01", -5.5, [0,-1.2,0.18], [0,-2.9,0.18]]
+    ["vn_o_wheeled_z157_01", -5.5, [0,-1.2,0.18], [0,-2.9,0.18]],
+    ["UK3CB_ION_O_Desert_Merlin", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
+    ["UK3CB_ION_O_Desert_T810_Closed", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
+    ["UK3CB_ION_O_Woodland_Merlin", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
+    ["UK3CB_ION_O_Desert_T810_Closed", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]]
 ];
 
 /* Various other settings.
@@ -1081,7 +1085,9 @@ KPLIB_aiResupplySources = [
     "uns_M113_ENG",
     "uns_M35A2_ammo",
     "uns_motorpool1_repair",
-    "vn_b_wheeled_m54_ammo"
+    "vn_b_wheeled_m54_ammo",
+    "UK3CB_ION_O_Desert_T810_Reammo",
+    "UK3CB_ION_O_Woodland_T810_Reammo"
 ];
 
 // Everything that can resupply other vehicles.
@@ -1167,7 +1173,9 @@ vehicle_rearm_sources = [
     "sfp_tgb40_ammo",
     "uns_M113_ENG",
     "uns_M35A2_ammo",
-    "vn_b_wheeled_m54_ammo"
+    "vn_b_wheeled_m54_ammo",
+    "UK3CB_ION_O_Desert_T810_Reammo",
+    "UK3CB_ION_O_Woodland_T810_Reammo"
 ];
 
 vehicle_refuel_sources = [
@@ -1210,7 +1218,9 @@ vehicle_refuel_sources = [
     "uns_M113_ENG",
     "uns_M35A2_fuel",
     "uns_M35A2_fueltanker",
-    "vn_b_wheeled_m54_fuel"
+    "vn_b_wheeled_m54_fuel",
+    "UK3CB_ION_O_Desert_T810_Refuel",
+    "UK3CB_ION_O_Woodland_T810_Refuel"
 ];
 
 // Classnames of boats, so they can be built on water.

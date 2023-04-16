@@ -1,5 +1,5 @@
 /*
-    LDF w/ Western Armaments - Eastern Rotary
+    ION PMC - Desert - Western Weaponry
 
     Needed Mods:
     - 3CB
@@ -26,17 +26,17 @@ opfor_aa = "UK3CB_ION_O_Desert_AA";                                     // AA Sp
 opfor_medic = "UK3CB_ION_O_Desert_MD";                                  // Combat Life Saver
 opfor_engineer = "UK3CB_ION_O_Desert_ENG";                              // Engineer
 opfor_paratrooper = "UK3CB_ION_O_Urban_RIF_2";                          // Paratrooper'
-opfor_crew_ground = "UK3CB_ION_O_Desert_HELI_CREW";                     // Crewman
+opfor_crew_ground = "UK3CB_ION_O_Desert_CREW";                          // Crewman
 opfor_crew_air = "UK3CB_ION_O_Desert_HELI_CREW";                        // Pilot
 
 // Enemy vehicles used by secondary objectives.
 opfor_mrap = "UK3CB_ION_O_Desert_Offroad";                              // M1220
 opfor_mrap_armed = "UK3CB_ION_O_Desert_MaxxPro_M2";                     // M1220 W/ M2
-opfor_transport_helo = "UK3CB_ION_O_Desert_Bell412_Utility";            // Mi-8MT (Cargo)
+opfor_transport_helo = "UK3CB_ION_O_Desert_Merlin";                     // Mi-8MT (Cargo)
 opfor_transport_truck = "UK3CB_ION_O_Desert_T810_Closed";               // M1083A1P2 W/ M2
-opfor_ammobox_transport = "RHS_Ural_Open_MSV_01";                       // Ural-4320 Transport (Open) -> Has to be able to transport resource crates!
-opfor_fuel_truck = "RHS_Ural_Fuel_MSV_01";                              // Ural-4320 Fuel
-opfor_ammo_truck = "rhs_gaz66_ammo_msv";                                // GAZ-66 Ammo
+opfor_ammobox_transport = "UK3CB_ION_O_Desert_T810_Closed";                       // Ural-4320 Transport (Open) -> Has to be able to transport resource crates!
+opfor_fuel_truck = "UK3CB_ION_O_Desert_T810_Refuel";                              // Ural-4320 Fuel
+opfor_ammo_truck = "UK3CB_ION_O_Desert_T810_Reammo";                                // GAZ-66 Ammo
 opfor_fuel_container = "Land_Pod_Heli_Transport_04_fuel_F";             // FUEL TANK
 opfor_ammo_container = "VirtualReammoBox_camonet_F";                    // AMMO CRATES
 opfor_flag = "Flag_ION_F";                                                // Flag

@@ -23,6 +23,7 @@ switch (KP_liberation_preset_opfor) do {
     case  3: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\takistan_army.sqf";};
     case  4: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\3cb_ldf_hybrid.sqf";};
     case  5: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\3cb_ion_d.sqf";};
+    case  6: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\3cb_ion_w.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom.sqf";};
 };
 
@@ -34,6 +35,7 @@ switch (KP_liberation_preset_resistance) do {
 
 switch (KP_liberation_preset_civilians) do {
     case  1: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\middle_eastern.sqf";};
+    case  2: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\3cb_chernarus_civs.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\civilians\custom.sqf";};
 };
 
