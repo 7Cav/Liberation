@@ -24,6 +24,8 @@ opfor_aa = "UK3CB_ADA_O_AA";                                        // AA Specia
 opfor_medic = "UK3CB_ADA_O_MD";                                     // Combat Life Saver
 opfor_engineer = "UK3CB_ADA_O_ENG";                                 // Engineer
 opfor_paratrooper = "UK3CB_ADA_O_SF_TL";                         // Paratrooper
+opfor_crew_ground = "UK3CB_ADA_O_CREW";                          // Crewman
+opfor_crew_air = "UK3CB_ADA_O_JET_PILOT";                        // Pilot
 
 // Enemy vehicles used by secondary objectives.
 opfor_mrap = "rhs_tigr_m_vmf";                                    // Vodnik
