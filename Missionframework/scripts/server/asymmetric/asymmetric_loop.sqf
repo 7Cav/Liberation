@@ -50,10 +50,10 @@ waitUntil {sleep 1; !isNil "active_sectors"};
 
                     if (isNull _hc) then {
                         [_sector, _ieds] spawn manage_asymIED;
-                        [_sector] spawn asym_sector_ambush;
+                        //[_sector] spawn asym_sector_ambush;
                     } else {
                         [_sector, _ieds] remoteExec ["manage_asymIED", _hc];
-                        [_sector] remoteExec ["asym_sector_ambush",_hc];
+                        //[_sector] remoteExec ["asym_sector_ambush",_hc];
                     };
                 };
             };
