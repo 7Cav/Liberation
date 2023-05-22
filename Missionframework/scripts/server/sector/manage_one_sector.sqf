@@ -235,9 +235,9 @@ if ((!(_sector in blufor_sectors)) && (([markerPos _sector, [_opforcount] call K
     if (KP_liberation_asymmetric_debug > 0) then {[format ["Sector %1 (%2) - Range: %3 - Count: %4", (markerText _sector), _sector, _building_range, _iedcount], "ASYMMETRIC"] remoteExecCall ["KPLIB_fnc_log", 2];};
     [_sector, _building_range, _iedcount] spawn ied_manager;
 
-    if (_guerilla) then {
+    /*if (_guerilla) then {
         [_sector] spawn sector_guerilla;
-    };
+    };*/
 
     sleep 10;
 
