@@ -26,6 +26,7 @@ switch (KP_liberation_preset_opfor) do {
     case  6: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\3cb_ion_w.sqf";};
     case  7: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\african_desert.sqf";};
     case  8: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\3cb_ChDKZ_w.sqf";};
+    case  9: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\3cb_MDF_w.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom.sqf";};
 };
 

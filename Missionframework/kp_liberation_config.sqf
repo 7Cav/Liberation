@@ -1040,7 +1040,8 @@ KPLIB_transportConfigs = [
     ["UK3CB_ION_O_Desert_Merlin", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
     ["UK3CB_ION_O_Desert_T810_Closed", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
     ["UK3CB_ION_O_Woodland_Merlin", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
-    ["UK3CB_ION_O_Desert_T810_Closed", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]]
+    ["UK3CB_ION_O_Desert_T810_Closed", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
+    ["UK3CB_MDF_O_MTVR_Open", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]]
 ];
 
 /* Various other settings.
