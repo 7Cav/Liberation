@@ -79,6 +79,10 @@ if (_classname in opfor_choppers) then {
 // Spawn crew of vehicle
 [_newvehicle] call KPLIB_fnc_spawnMilitiaCrew;
 
+// Vehicle Locking
+_newvehicle setVehicleLock "LOCKED";
+_newvehicle lockDriver true;
+_newvehicle lockCargo true;
 
 // Add MPKilled and GetIn EHs and enable damage again
 _newvehicle addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
