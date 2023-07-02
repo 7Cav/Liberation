@@ -9,12 +9,8 @@ if (isServer) then {
 };
 
 switch (KP_liberation_preset_blufor) do {
-    case  1: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\3cbBAF_mtp.sqf";};
-    case  2: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\3cbBAF_des.sqf";};
-    case  3: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\rhs_usaf_wdl.sqf";};
-    case  4: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\rhs_usaf_des.sqf";};
-    case  5: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\rhs_afrf.sqf";};
-    default  {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom.sqf";};
+    case  1: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\rhs_usaf_des.sqf";};
+    default  {[] call compileFinal preprocessFileLineNumbers "presets\blufor\rhs_usaf_des.sqf";};
 };
 
 switch (KP_liberation_preset_opfor) do {

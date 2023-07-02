@@ -52,7 +52,7 @@ KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This 
     IMPORTANT: The last element inside each array must have no comma at the end!
 */
 infantry_units = [
-    ["rhsusf_army_ocp_riflemanl",15,0,0],                               // Rifleman (Light)
+    ["rhsusf_army_ocp_riflemanl",0,0,0],                               // Rifleman (Light)
     ["rhsusf_army_ocp_rifleman",20,0,0],                                // Rifleman
     ["rhsusf_army_ocp_riflemanat",30,0,0],                              // Rifleman (AT)
     ["rhsusf_army_ocp_grenadier",25,0,0],                               // Grenadier
@@ -138,22 +138,22 @@ air_vehicles = [
     ["B_UAV_06_F",80,0,30],                                             // AL-6 Pelican (Cargo)
     ["RHS_MELB_MH6M",200,0,100],                                        // MH-6M Little Bird
     ["RHS_MELB_AH6M",200,200,100],                                      // AH-6M Pawnee
-    ["RHS_UH1Y_UNARMED_d",225,0,125],                                   // UH-1Y (Unarmed)
+    ["RHS_UH1Y_UNARMED_d",0,0,0],                                       // UH-1Y (Unarmed)
     ["RHS_UH1Y_d_GS",225,200,125],                                      // UH-1Y (Ground Suppression)
     ["rhs_uh1h_hidf_gunship",250,300,125],                              // UH-1H Gunship (Vietnam)
     ["RHS_AH1Z",500,500,200],                                           // AH-1Z (Multi-Role)
     ["RHS_AH64D",750,750,250],                                          // AH-64D (Multi-Role)
-    ["RHS_UH60M2_d",250,0,150],                                         // UH-60M (Unarmed)
-    ["RHS_UH60M_d",250,80,150], 
-    ["vtx_MH60M",250,80,150],                                           // UH-60M
+    ["RHS_UH60M2_d",0,0,0],                                         // UH-60M (Unarmed)
+    ["RHS_UH60M_d",0,0,0], 
+    ["vtx_MH60M",0,0,0],                                           // UH-60M
     ["vtx_MH60M_DAP",250,80,150],                                       // UH-60M 
     ["RHS_UH60M_MEV2_d",300,0,150],                                     // UH-60M MEV2
     ["RHS_CH_47F_10",275,80,175],                                       // CH-47 Chinook (Armed)
     ["rhsusf_CH53E_USMC_D",300,0,175],                                  // CH-53E Super Stallion
     ["rhsusf_CH53E_USMC_GAU21_D",300,100,175],                          // CH-53E Super Stallion (GAU-21)
-    ["USAF_C130J",200,0,250],                                           // C-130J Super Hercules
-    ["USAF_C130J_Cargo",200,0,250],                                     // C-130J Super Hercules (Cargo)
-    ["USAF_C17",500,0,400],                                             // C-17 Globemaster III
+    ["USAF_C130J",0,0,0],                                           // C-130J Super Hercules
+    ["USAF_C130J_Cargo",0,0,0],                                     // C-130J Super Hercules (Cargo)
+    ["USAF_C17",0,0,0],                                             // C-17 Globemaster III
     ["usaf_kc135",600,0,2500],                                          // KC-135 Stratotanker
     ["B_UAV_02_dynamicLoadout_F",400,300,200],                          // MQ-4A Greyhawk
     ["B_T_UAV_03_dynamicLoadout_F",450,500,250],                        // MQ-12 Falcon

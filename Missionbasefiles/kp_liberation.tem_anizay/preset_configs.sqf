@@ -4,7 +4,7 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 /* BLUFOR preset:
 WIP 
 */
-KP_liberation_preset_blufor = 4;
+KP_liberation_preset_blufor = 1;
 
 /* OPFOR preset:
 WIP 
