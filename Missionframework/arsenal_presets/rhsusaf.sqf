@@ -7,6 +7,7 @@
 
     Optional:
         - ACE  - https://steamcommunity.com/sharedfiles/filedetails/?id=463939057
+        - ACRE - https://steamcommunity.com/sharedfiles/filedetails/?id=751965892
         - TFAR - https://steamcommunity.com/sharedfiles/filedetails/?id=894678801
 */
 
@@ -923,6 +924,15 @@ GRLIB_arsenal_items = [
     "ACE_VMM3",                                                     // VMM3
     "ACE_wirecutter",                                               // Wirecutter
     "ACE_Yardage450",                                               // Yardage 450
+
+    // ACRE Items
+    "ACRE_PRC117F",                                                 // AN/PRC-117F
+    "ACRE_PRC148",                                                  // AN/PRC-148
+    "ACRE_PRC152",                                                  // AN/PRC-152
+    "ACRE_PRC343",                                                  // AN/PRC-343
+    "ACRE_PRC77",                                                   // AN/PRC-77
+    "ACRE_SEM52SL",                                                 // SEM 52 SL
+    "ACRE_SEM70",                                                   // SEM 70
 
     // CTAB Items
     "ItemAndroid",
