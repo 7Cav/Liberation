@@ -387,8 +387,6 @@ GRLIB_arsenal_items = [
     "vn_anpvs2_binoc",
     "vn_o_anpvs2_m14",
     "vn_o_9x_m14",
-
-    "ACRE_PRC77",
     "ACE_salineIV_500",
     "ACE_salineIV_250",
     "ACE_salineIV",
