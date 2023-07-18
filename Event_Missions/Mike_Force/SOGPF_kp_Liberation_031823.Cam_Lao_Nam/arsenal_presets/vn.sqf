@@ -1424,6 +1424,7 @@ GRLIB_arsenal_magazines = [
     "vn_i_helmet_m1_01_01",
     "vn_i_helmet_m1_01_02",
     //Mods
+    "ACRE_PRC77",
     "ACE_M26_Clacker",
     "ACE_Flashlight_MX991",
     "ACE_EntrenchingTool",

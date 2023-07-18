@@ -473,6 +473,7 @@ force force acex_volume_reduction = 5;
 force force acex_volume_remindIfLowered = false;
 force force acex_volume_showNotification = false;
 
+
 // TFAR - Clientside settings
 TFAR_curatorCamEars = false;
 TFAR_default_radioVolume = 6;

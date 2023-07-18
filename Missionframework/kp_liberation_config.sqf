@@ -749,13 +749,7 @@ blacklisted_from_arsenal = [
     "rhs_rpg7_TBG7V_mag",
     "FirstAidKit",                  //First Aid Kits Remove if not using ACE medical
     "vn_b_item_firstaidkit",
-    "vn_o_item_firstaidkit",
-    "ACE_key_civ",
-    "ACE_key_east",
-    "ACE_key_west",
-    "ACE_key_master",
-    "ACE_key_indp",
-    "ACE_key_lockpick"
+    "vn_o_item_firstaidkit"
 ];
 
 // Items which should be added as allowed Items, when they get blacklisted, even if they are not in the blacklisted_from_arsenal array
@@ -842,6 +836,7 @@ KP_liberation_allowed_items_extension = [
     "BWA3_PzF3",
     "BWA3_RGW90_Used",
     "BWA3_RGW90",
+    "ItemRadioAcreFlagged",
     "ItemAndroid",
     "ItemCtab",
     "rhs_acc_ekp8_18b",
