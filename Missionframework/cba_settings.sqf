@@ -515,7 +515,7 @@ force TFAR_objectInterceptionStrength = 400;
 force tfar_radiocode_east = "OPFOR";
 force tfar_radiocode_independent = "GREENFOR";
 force tfar_radiocode_west = "_bluefor";
-force tfar_radioCodesDisabled = false;
+force tfar_radioCodesDisabled = true;
 force TFAR_SameLRFrequenciesForSide = true;
 force TFAR_SameSRFrequenciesForSide = true;
 force TFAR_setting_defaultFrequencies_lr_east = "57,60,63,66,69,72,75,78";
@@ -542,7 +542,7 @@ force TFAR_spectatorCanHearFriendlies = true;
 force TFAR_takingRadio = 2;
 force TFAR_Teamspeak_Channel_Name = "TaskForceRadio";
 force TFAR_Teamspeak_Channel_Password = "123";
-force tfar_terrain_interception_coefficient = 2;
+force tfar_terrain_interception_coefficient = 7;
 force TFAR_voiceCone = true;
 
 // CBA UI
