@@ -280,6 +280,7 @@ buildings = [
 ];
 
 support_vehicles = [
+    ["Land_Billboard_02_blank_F",0,0,0],
     [Arsenal_typename,100,200,0],
     [Respawn_truck_typename,200,0,100],
     [FOB_box_typename,2000,2000,2000],
