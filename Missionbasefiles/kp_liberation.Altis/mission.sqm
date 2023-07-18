@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=8140;
+		nextID=8143;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1986;
+		nextID=2194;
 	};
 	class Camera
 	{
-		pos[]={14532.643,42.22583,5850.3716};
-		dir[]={-0.52552968,-0.47555339,0.70545566};
-		up[]={-0.28409818,0.87968689,0.38136506};
-		aside[]={0.80193955,0,0.59740543};
+		pos[]={18744.086,77.780861,6227.4238};
+		dir[]={0.55588073,-0.38731566,0.73551565};
+		up[]={0.23352891,0.92194718,0.30899465};
+		aside[]={0.79778504,0,-0.60294205};
 	};
 };
 binarizationWanted=0;
@@ -12789,7 +12789,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								description="FAC@INFIDEL-1";
+								description="FAC@CHAOS-1";
 								isPlayable=1;
 								class Inventory
 								{
@@ -12880,7 +12880,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{this setGroupId [""INFIDEL-1""];}";
+								init="call{this setGroupId [""CHAOS-1""];}";
 								description="FAC Observer";
 								isPlayable=1;
 								class Inventory
@@ -12975,7 +12975,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="INFIDEL-1";
+									value="CHAOS-1";
 								};
 							};
 						};
@@ -17015,8 +17015,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14472.839,12.231151,5889.4673};
-				angles[]={0.14432329,0,6.2060056};
+				position[]={14472.839,12.231217,5889.4668};
+				angles[]={0.14432128,0,6.206007};
 			};
 			id=8137;
 			type="ModuleCurator_F";
@@ -17082,11 +17082,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14470.058,12.76226,5886.3716};
-				angles[]={0.02666023,0,6.2060056};
+				position[]={14470.058,12.762247,5886.3721};
+				angles[]={0.026668631,0,6.206007};
 			};
 			id=8138;
 			type="ModuleCurator_F";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
