@@ -65,7 +65,7 @@ player createDiaryRecord ["radioinformation", ["Unit Callsigns",
 <font face='EtelkaMonospacePro' size='10'>
 <br/>Mission Controller             Godfather
 <br/>Sniper/Recon                   Longshot
-<br/>Forward Air Controller         Infidel
+<br/>Forward Air Controller         CHAOS
 <br/>Logistics/FOB Ops              Atlas 3/4
 <br/>Combat Medics                  Atlas 1/2
 <br/>Mechanized                     Viking

@@ -192,13 +192,14 @@ KPLIB_objectInits = [
         ["vn_b_air_uh1d_01_07", "vn_b_air_uh1d_01_02", "vn_b_air_uh1d_01_01"],
         {_this setVariable ["ace_medical_isMedicalVehicle", true, true];}
     ],
-    //Test - Remove Radio Rack 103 to add prc-77
+    //Turn radar sensors on
     [
-        ["vn_b_air_f4c_ehcas", "vn_b_air_f4c_sead", "vn_b_air_f4c_lrbmb", "vn_b_air_f4b_navy_at", "vn_b_air_f4c_at"],
-        {[_this, ["ACRE_PRC77", "Upper Dash", "Dash", false, ["external"], [], "ACRE_PRC77", [], ["intercom_1"]], false, {}] call acre_api_fnc_addRackToVehicle;}
-    ],
-        [
         ["B_Radar_System_01_F"],
         {_this setVehicleRadar 1;}
+    ],
+    //Set billboard texture to CEOI image
+    [
+        ["Land_Billboard_02_blank_F"],
+        {_this setObjectTextureGlobal [0,"res\tacr_ceoi_tfar.paa"];}
     ]
 ];
