@@ -9539,8 +9539,8 @@ class Mission
 							class Attributes
 							{
 								rank="CAPTAIN";
-								init="call{this setGroupId [""INFIDEL-1""];}";
-								description="Forward Air Controller@INFIDEL-1";
+								init="call{this setGroupId [""CHAOS-1""];}";
+								description="Forward Air Controller@CHAOS-1";
 								isPlayable=1;
 								class Inventory
 								{
@@ -9686,7 +9686,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="INFIDEL-1";
+									value="CHAOS-1";
 								};
 							};
 						};
