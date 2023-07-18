@@ -153,8 +153,8 @@ GRLIB_ignore_colisions_when_building = [
     "vn_flag_usarmy",
     "vn_flag_usmc",
     "B_Radar_System_01_F",
-    "B_SAM_System_03_F"
-
+    "B_SAM_System_03_F",
+    "Land_Billboard_02_blank_F"
 ];
 
 /*
