@@ -192,8 +192,14 @@ KPLIB_objectInits = [
         ["vn_b_air_uh1d_01_07", "vn_b_air_uh1d_01_02", "vn_b_air_uh1d_01_01"],
         {_this setVariable ["ace_medical_isMedicalVehicle", true, true];}
     ],
-        [
+    //Turn radar sensors on
+    [
         ["B_Radar_System_01_F"],
         {_this setVehicleRadar 1;}
+    ],
+    //Set billboard texture to CEOI image
+    [
+        ["Land_Billboard_02_blank_F"],
+        {_this setObjectTextureGlobal [0,"res\tacr_ceoi_tfar.paa"];}
     ]
 ];

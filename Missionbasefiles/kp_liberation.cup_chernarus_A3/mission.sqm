@@ -8403,7 +8403,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								description="FAC@INFIDEL-1";
+								description="FAC@CHAOS-1";
 								isPlayable=1;
 								class Inventory
 								{
@@ -8482,7 +8482,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{this setGroupId [""INFIDEL-1""];}";
+								init="call{this setGroupId [""CHAOS-1""];}";
 								description="FAC Observer";
 								isPlayable=1;
 								class Inventory
@@ -8566,7 +8566,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="INFIDEL-1";
+									value="CHAOS-1";
 								};
 							};
 						};

@@ -65,8 +65,8 @@ player createDiaryRecord ["radioinformation", ["Unit Callsigns",
 <font face='EtelkaMonospacePro' size='10'>
 <br/>Mission Controller             Godfather
 <br/>Sniper/Recon                   Longshot
-<br/>Forward Air Controller         Infidel
-<br/>Logistics/FOB Ops              Atlas 3/4
+<br/>Forward Air Controller         Chaos
+<br/>Logistics/FOB Ops              Atlas 4
 <br/>Combat Medics                  Atlas 1/2
 <br/>Mechanized                     Viking
 <br/>Airborne/Air Assault           Misfit/Bandit
@@ -105,44 +105,51 @@ player createDiaryRecord ["radioinformation", ["Unit Callsigns",
 "
 ]];
 
-player createDiaryRecord ["radioinformation", ["Frequencies",
+player createDiaryRecord ["radioinformation", ["Long Range Frequencies",
 "
-<font face='EtelkaMonospacePro' size='10'><br/>01 - Gunslinger Platoon Net</font>
+<font face='EtelkaMonospacePro' size='10'><br/>50 MHz - Gunslinger Platoon Net</font>
 <br/>            Used to communicate between infantry squads in field
 <br/>
-<font face='EtelkaMonospacePro' size='10'><br/>02 - Aviation</font>
+<font face='EtelkaMonospacePro' size='10'><br/>52 MHz - Aviation</font>
 <br/>            Used for air to air communications and CTAF/Air Traffic Control
 <br/>
-<font face='EtelkaMonospacePro' size='10'><br/>03 thru 09 - Other Platoon Nets</font>
-<br/>            Used whenever there is an MCC or multiple platoons, also utilized if a Platoon comes in for a Platoon FTX
-<br/>
-<font face='EtelkaMonospacePro' size='10'><br/>10 / 11 - IDF-1 and IDF-2</font>
+<font face='EtelkaMonospacePro' size='10'><br/>57 MHz - Fires</font>
 <br/>            Used to conduct indirect fire missions from artillery or mortars
 <br/>
-<font face='EtelkaMonospacePro' size='10'><br/>12 / 13 - CAS-1 and CAS-2</font>
+<font face='EtelkaMonospacePro' size='10'><br/>59 MHz - CAS</font>
 <br/>            Used to call in fixed-wing or attack rotary close air support
 <br/>
-<font face='EtelkaMonospacePro' size='10'><br/>14 - Ground-To-Air</font>
+<font face='EtelkaMonospacePro' size='10'><br/>50 MHz - Ground-To-Air</font>
 <br/>            Used to conduct pick-up requests from logistical aviation units 
 <br/>
-<font face='EtelkaMonospacePro' size='10'><br/>15 - Logistics</font>
+<font face='EtelkaMonospacePro' size='10'><br/>56 MHz - Logistics</font>
 <br/>            Used by ATLAS personnel to dispatch where needed. 
 <br/>
-<font face='EtelkaMonospacePro' size='10'><br/>16 - FARP Requests</font>
-<br/>            Used to communicate with ATLAS personnel when you are inbound to a FARP.
-<br/>
-<font face='EtelkaMonospacePro' size='10'><br/>17 - Convoy</font>
-<br/>            Used when conducting a convoy 
-<br/>
-<font face='EtelkaMonospacePro' size='10'><br/>18 - Zeus</font>
+<font face='EtelkaMonospacePro' size='10'><br/>50 MHz - Zeus</font>
 <br/>            Used to communicate with a Zeus if required 
 <br/>
-<font face='EtelkaMonospacePro' size='10'><br/>19 - CAG</font>
-<br/>            Classified 
+"
+]];
+
+player createDiaryRecord ["radioinformation", ["Short Range Frequencies",
+"
+<font face='EtelkaMonospacePro' size='10'>
+<br/>115 MHz   | Gunslinger-6
+<br/>115 MHz   | Gunslinger-5
+<br/>115 MHz   | Gunslinger-7
+<br/>115 MHz   | Chaos-1
+<br/>111 MHz   | Gunslinger-1
+<br/>112 MHz   | Gunslinger-2
+<br/>113 MHz   | Gunslinger-3
 <br/>
-<font face='EtelkaMonospacePro' size='10'><br/>20 - Command</font>
-<br/>            Used to coordinate across different platoons or other big picture items 
+<br/> 53 MHz   | Viking-1
+<br/> 53 MHz   | Sabre-1
+<br/> 53 MHz   | Banshee-1
+<br/> 53 MHz   | Longshot-1
 <br/>
+<br/>121.1 MHz | Atlas-1
+<br/>121.1 MHz | Atlas-2
+<br/>121.4 MHz | Atlas-4</font>
 "
 ]];
 };
