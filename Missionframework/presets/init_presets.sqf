@@ -23,7 +23,8 @@ switch (KP_liberation_preset_opfor) do {
     case  7: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\african_desert.sqf";};
     case  8: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\3cb_ChDKZ_w.sqf";};
     case  9: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\3cb_MDF_w.sqf";};
-    default  {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom.sqf";};
+    case  10: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\pracs_sla.sqf";};
+	default  {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom.sqf";};
 };
 
 switch (KP_liberation_preset_resistance) do {

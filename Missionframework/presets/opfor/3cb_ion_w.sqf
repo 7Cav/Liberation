@@ -86,7 +86,10 @@ opfor_vehicles_low_intensity = [
     "UK3CB_ION_O_Woodland_M113_M240",                                               
     "UK3CB_ION_O_Woodland_M113_M2",                                       
     "UK3CB_ION_O_Woodland_M1025_TOW",                                                      
-    "UK3CB_ION_O_Woodland_SUV_Armed"                                            
+    "RHS_M2A3_wd",
+	"rhsusf_m1a1aim_tuski_wd",
+	"rhsgref_cdf_t80uk_tv",
+	"UK3CB_ION_O_Woodland_SUV_Armed"                                            
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
@@ -106,7 +109,10 @@ opfor_battlegroup_vehicles = [
     "UK3CB_ION_O_Woodland_Merlin",
     "UK3CB_ION_O_Woodland_UH1H_GUNSHIP",
     "UK3CB_ION_O_Woodland_UH1H_M240",
-    "UK3CB_ION_O_Woodland_T810_Closed"
+    "UK3CB_ION_O_Woodland_T810_Closed",
+	"RHS_M2A3_wd",
+	"rhsusf_m1a1aim_tuski_wd",
+	"rhsgref_cdf_t80uk_tv"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
@@ -121,7 +127,10 @@ opfor_battlegroup_vehicles_low_intensity = [
     "UK3CB_ION_O_Woodland_SUV_Armed",                                                       
     "UK3CB_ION_O_Woodland_UH1H_M240",
     "UK3CB_ION_O_Woodland_MELB_MH6M",
-    "UK3CB_ION_O_Woodland_T810_Closed"
+    "UK3CB_ION_O_Woodland_T810_Closed",
+	"RHS_M2A3_wd",
+	"rhsusf_m1a1aim_tuski_wd",
+	"rhsgref_cdf_t80uk_tv"
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
