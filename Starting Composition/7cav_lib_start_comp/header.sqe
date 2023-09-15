@@ -1,0 +1,20 @@
+version=54;
+name="7cav_lib_start_comp";
+author="=7Cav=SGT.Westcott.R";
+category="Cav_EdSubcat_Deploy_Platoon";
+requiredAddons[]=
+{
+	"A3_Characters_F",
+	"ace_vector",
+	"A3_Weapons_F",
+	"ace_goggles",
+	"rhsusf_c_troops",
+	"ace_compat_rhs_usf3",
+	"ace_explosives",
+	"ace_gforces",
+	"ace_parachute",
+	"A3_Ui_F",
+	"A3_Structures_F_System",
+	"A3_Modules_F_Curator_Curator",
+	"A3_Modules_F"
+};
