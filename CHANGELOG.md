@@ -1,4 +1,7 @@
 # Changelog
+## 0.96.7a-7cav-1.01
+* Added: Blacklisted ACE Vehicle Keys & Deadman's Switch.
+* Tweaked: CBA settings to align with those used by cScripts.
 
 ## 0.96.7a-7cav-0.8
 * Fixed: Removed fire barrels from buildable due to bug with DLC
