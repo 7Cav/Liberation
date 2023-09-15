@@ -107,7 +107,7 @@ GRLIB_halo_altitude = 4000;                                             // Altit
 GRLIB_secondary_missions_costs = [15, 10, 8];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.4;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
 GRLIB_recycling_percentage = 0.4;                                       // Percentage of resources you get back from recycling.
-KP_liberation_production_interval = 25;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
+KP_liberation_production_interval = 14;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
 GRLIB_sector_size = 1200;                                               // Range to activate a sector.
 GRLIB_capture_size = 175;                                               // Range to capture a sector.
@@ -171,7 +171,8 @@ KP_liberation_commander_actions = [
     "76561197997124640", // Liber.N
     "76561199181230059", // Liber.N
     "76561197993187376", // Sypolt.R
-    "76561198038511870"  // Bethea. A
+    "76561198038511870", // Bethea. A
+    "76561198040743677"  // Westcott.R
 ];
 
 /* Whitelist for BI support framework access.
