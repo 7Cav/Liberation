@@ -13117,6 +13117,34 @@
     "rhs_weap_m4a1_wd_mstock_grip2",
     "rhs_weap_M590_8RD",
     "rhs_weap_M590_5RD",
+    "rhs_weap_mk18",
+    "rhs_weap_mk18_grip",
+    "rhs_weap_mk18_grip2_wd",
+    "rhs_weap_mk18_grip_d",
+    "rhs_weap_mk18_grip2_d",
+    "rhs_weap_mk18_grip_wd",
+    "rhs_weap_mk18_grip2",
+    "rhs_weap_mk18_grip_bk",
+    "rhs_weap_mk18_grip2_bk",
+    "rhs_weap_mk18_grip2_KAC",
+    "rhs_weap_mk18_grip_KAC",
+    "rhs_weap_mk18_grip2_KAC_d",
+    "rhs_weap_mk18_grip2_KAC_bk",
+    "rhs_weap_mk18_grip_KAC_bk",
+    "rhs_weap_mk18_grip_KAC_wd",
+    "rhs_weap_mk18_grip_KAC_d",
+    "rhs_weap_mk18_grip2_KAC_wd",
+    "rhs_weap_mk18_bk",
+    "rhs_weap_mk18_KAC_bk",
+    "rhs_weap_mk18_d",
+    "rhs_weap_mk18_KAC_d",
+    "rhs_weap_mk18_m320",
+    "rhs_weap_mk18_eotech_sup",
+    "rhs_weap_mk18_eotech",
+    "rhs_weap_mk18_SU230",
+    "rhs_weap_mk18_KAC",
+    "rhs_weap_mk18_wd",
+    "rhs_weap_mk18_KAC_wd",
     "rhs_weap_SCARH_CQC",
     "rhs_weap_SCARH_FDE_CQC",
     "rhs_weap_SCARH_CQC_Folded",
@@ -13297,7 +13325,7 @@
     "rhs_weap_m14_socom",
     "rhs_weap_m14_socom_rail",
     "rhsusf_weap_MP7A2_aor1"
-    ];
+];
 
 GRLIB_arsenal_magazines = ["ItemCompass"];
 
