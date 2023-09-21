@@ -24,4 +24,4 @@ KP_liberation_preset_civilians = 3;
 /*
 WIP
 */
-KP_liberation_arsenal = 0;
+KP_liberation_arsenal = 5;
