@@ -9,7 +9,7 @@ KP_liberation_preset_blufor = 1;
 /* OPFOR preset:
 WIP 
 */
-KP_liberation_preset_opfor = 4;
+KP_liberation_preset_opfor = 3;
 
 /* Resistance preset:
 WIP
