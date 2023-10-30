@@ -172,7 +172,8 @@ KP_liberation_commander_actions = [
     "76561199181230059", // Liber.N
     "76561197993187376", // Sypolt.R
     "76561198038511870", // Bethea. A
-    "76561198040743677"  // Westcott.R
+    "76561198040743677",  // Westcott.R
+	"76561198067151616"  // Brian.F
 ];
 
 /* Whitelist for BI support framework access.
