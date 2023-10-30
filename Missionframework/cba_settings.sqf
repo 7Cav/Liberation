@@ -493,6 +493,21 @@ force force ace_medical_treatment_treatmentTimeSplint = 7;
 force force ace_medical_treatment_treatmentTimeTourniquet = 7;
 force force ace_medical_treatment_woundReopenChance = 0.495006;
 force force ace_medical_treatment_woundStitchTime = 5;
+force force ace_medical_ai_requireItems = true;
+force force ace_medical_dropWeaponUnconsciousChance = 0;
+force force ace_medical_engine_damagePassThroughEffect = 0;
+//force force ace_medical_gui_bodyPartOutlineColor = false;
+//force force ace_medical_gui_peekMedicalInfoReleaseDelay = false;
+//force force ace_medical_gui_peekMedicualOnHit = false;
+//force force ace_medical_gui_peekMedicalOnHitDuration = false;
+//force force ace_medical_gui_showDamageEntry = false;
+force force ace_medical_gui_tourniquetWarning = true;
+force force ace_medical_painUnconsciousThreshold = 0.5;
+force force ace_medical_treatment_allowGraveDigging = 0;
+force force ace_medical_treatment_bandageEffectiveness = 1;
+force force ace_medical_treatment_bandageRollover = true;
+force force ace_medical_treartment_graveDiggingMarker = false;
+force force ace_medical_treartment_treatmentTimeGrave = false;
 
 
 // ACE Name Tags
@@ -777,6 +792,7 @@ force force kat_surgery_Surgery_ConsciousnessRequirement = 1;
 force force kat_surgery_surgicalAction_MedLevel = 2;
 force force kat_surgery_surgicalLocation = 0;
 force force kat_surgery_woundDebrideTime = 5;
+
 
 // ACE Pointing
 force force ace_finger_enabled = true;
