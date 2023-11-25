@@ -1,0 +1,11 @@
+version=54;
+name="Lib Tools Dec23";
+author="=7Cav=SSG.Westcott.R";
+category="EdSubcat_Jbad_Ruins";
+requiredAddons[]=
+{
+	"A3_Ui_F",
+	"A3_Structures_F_System",
+	"A3_Modules_F",
+	"A3_Characters_F"
+};
