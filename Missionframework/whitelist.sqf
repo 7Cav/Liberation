@@ -59,6 +59,7 @@ GRLIB_whitelisted_steamids = [
     "76561198020898195",   //Telinov.V
 	"76561198040139049",   //Hilberg.A
 	"76561198157988380",   //Terp.J 
+    "76561198124679716",   //Morozov.M 
 	"76561199299060635"    //Harsh.M
 
 ];
