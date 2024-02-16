@@ -13848,6 +13848,9 @@
 "UK3CB_FNFAL_20rnd_762x51",
 "UK3CB_FNFAL_20rnd_762x51_RT",
 "rhs_mag_20Rnd_762x51_m80a1_fnfal",
+"CUP_optic_RCO",
+"CUP_optic_ACOG_TA01NSN_Black_PIP",
+"CUP_optic_ACOG_TA01NSN_Black_3D",
 "M320_GL"];
 
 GRLIB_arsenal_magazines = ["ItemCompass"];
