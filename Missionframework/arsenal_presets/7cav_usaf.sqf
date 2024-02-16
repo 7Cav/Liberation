@@ -13842,16 +13842,12 @@
 "rhs_weap_hk416d145_m320",
 "rhs_weap_hk416d145_wd",
 "rhs_weap_hk416d145_wd_2",
-"CUP_arifle_DSA_SA58_OSW",
-"CUP_arifle_DSA_SA58_OSW_VFG_Woodland",
-"CUP_arifle_DSA_SA58_OSW_M203",
-"CUP_arifle_DSA_SA58_OSW_Sand",
-"CUP_arifle_DSA_SA58_DMR",
-"CUP_20Rnd_762x51_FNFAL_M",
-"CUP_30Rnd_762x51_FNFAL_M",
+"UK3CB_FNFAL_OSW",
+"UK3CB_FNFAL_OSW_GL",
+"UK3CB_FNFAL_PARA_RAILS",
+"UK3CB_FNFAL_20rnd_762x51",
+"UK3CB_FNFAL_20rnd_762x51_RT",
 "rhs_mag_20Rnd_762x51_m80a1_fnfal",
-"rhs_mag_20Rnd_762x51_m62_fnfal",
-"UK3CB_FNFAL_30rnd_762x51",
 "M320_GL"];
 
 GRLIB_arsenal_magazines = ["ItemCompass"];
